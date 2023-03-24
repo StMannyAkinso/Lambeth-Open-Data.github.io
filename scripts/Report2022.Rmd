@@ -1,0 +1,5176 @@
+---
+title: "State Of the Borough Report 2022"
+author: "London Borough of Lambeth"
+date: "April 2023"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    css: "style.css"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(plotly)
+library(DT)
+library(shiny)
+library(magrittr)
+
+run_direct = F
+
+source('data and charts.r')
+source('colour_theme.r')
+source('section_charts/key_demographics.r')
+source('section_charts/jobs_earnings_business.r')
+source('section_charts/education.r')
+source('section_charts/environment.r')
+source('section_charts/housing_infrastructure.r')
+source('section_charts/crime_safety_justice.r')
+source('section_charts/community.r')
+source('section_charts/map_ward_key_demographics.r')
+source('section_charts/Health.r')
+source('section_charts/key_census_data.r')
+
+
+previous_button = function(data_sources_f = data_sources, ref_name_f = ref_name) {
+
+  last_button <- actionButton(paste(c(data_sources_f[`Visual short name` == ref_name_f, `Internal link suffix`],"-last"),collapse=""), label = "Previous", class = "btn btn-lg btn-primary", icon = icon("chevron-left", lib = "glyphicon"), 
+             onclick=paste(c("location.href='",data_sources_f[Number == (data_sources_f[`Visual short name` == ref_name_f, Number - 1]), `Internal link`],"';"), collapse = ""), width = "49%")
+
+  return(last_button)
+  
+}
+
+next_button = function(data_sources_f = data_sources, ref_name_f = ref_name) {
+
+  nxt_button <- actionButton(paste(c(data_sources_f[`Visual short name` == ref_name_f, `Internal link suffix`],"-next"),collapse=""), label = "Next", class = "btn btn-lg btn-primary", icon = icon("chevron-right", lib = "glyphicon"), 
+             onclick=paste(c("location.href='",data_sources_f[Number == (data_sources_f[`Visual short name` == ref_name_f, Number] + 1), `Internal link`],"';"), collapse = ""), width = "49%")
+  
+  return(nxt_button)
+}
+
+get_source = function(data_sources_f = data_sources, ref_name_f = ref_name) {
+  
+  data_link_col = "Source data link"
+  
+  
+  source_out <- htmltools::withTags(HTML(
+       paste(c("Data source: ", data_sources_f[`Visual short name`== ref_name_f,`Table commentary`], ". Latest data from ",
+            data_sources_f[`Visual short name`== ref_name_f,`Year (latest year in data)`],". Underlying data sourced from ",
+            data_sources_f[`Visual short name`== ref_name_f,`Source organisation`], " <a href=",
+            data_sources_f[`Visual short name`== ref_name_f, ..data_link_col],' target="_blank">',
+            "here</a>.")
+      ),collapse=""))
+
+return(source_out)
+}
+
+```
+
+# Cover
+
+![Cover image](../img/front_cover.jpg)
+
+# Introduction
+
+```{r echo=FALSE}
+ref_name = "Introduction"
+```
+
+
+## Column {data-width="300"}
+
+### **Contents**
+
+-   [Key demographics](#key-demographics-introduction)\
+-   [Jobs earnings and businesses](#jobs-earnings-and-businesses-introduction)\
+-   [Financial resilience](#financial-resilience)\
+-   [Education](#education-introduction)\
+-   [Health and Wellbeing](#health-and-wellbeing-introduction)\
+-   [Crime, safety and
+    justice](#crime-safety-and-justice-introduction)\
+-   [Environment](#environment-introduction)\
+-   [Housing and
+    infrastructure](#housing-and-infrastructure-introduction)\
+-   [Community](#community-introduction)
+
+
+```{r}
+
+next_button()
+```
+
+
+### **About this document**
+
+Title: State of the Borough 2022\
+Purpose: Summary of information about Lambeth\
+Approved by: Approval pending\
+Date: April 2023\
+Status: Draft\
+Implementation date: Immediate\
+Review frequency: Refresh every 1 year\
+Next review date: April 2024
+
+## Column {data-width="700"}
+
+### **Introduction**
+
+**Welcome to the Lambeth State of the Borough report.** Over the last
+year we have engaged with residents, businesses and partners across
+Lambeth to establish the key themes that are important to giving a view
+of life in Lambeth. This report therefore aims to highlight and present
+data across these themes for the use of key stakeholders, businesses and
+residents.
+
+The key themes are part of our local policies and plans including our
+local Societal Impact Framework, also known as the Better Neighbourhoods
+Index.
+
+Additional data can be found in the Appendix at the end. If you have
+questions about this profile please contact our Data, Analytics and
+Insight team: [data\@lambeth.gov.uk](mailto:data@lambeth.gov.uk){.email}
+
+Almost three years on from the start of the Covid-19 global pandemic, this
+report will touch upon the effects that it has had on the borough,
+residents and businesses.
+
+The report has been divided into 8 key themes that spans across multiple facets of life in Lambeth, London, and England. There is also a key demographic section to reflect the new 2021 Census data. Click on the approriate dropdown menus at the top to explore the sections or the "Next" or "Previous" button to navigate through the report. 
+
+# Key demographics introduction {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Key demographics introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Key demographics")
+
+previous_button()
+next_button()
+```
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth has a goal by 2030 to make the borough a place we can all call home. This will be a borough with the best conditions to grow up and age well, where everyone can contribute to an inclusive economy, and have a place to call home. 'Everyone' in Lambeth terms means an exceptionally diverse population, in terms of background, ethnicity, religion, sexual orientation, and gender identity.
+
+Key aspects of the demographics in Lambeth include:
+
+- Lambeth has a slightly higher proportion of women and people born in the UK.
+
+- Lambeth has more people aged 25-34 than other areas, and a lower proportion of older people.
+
+- Lambeth has a lower proportion of single-family households than London or England, but a higher proportion of single parent and families where the parents are not married or in a civil partnership.
+
+- Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds than London or England.
+
+- Lambeth also has a slightly higher proportion of people from mixed/multiple ethnic groups, and significantly lower people from an Asian, Asian British, or Asian Welsh background than London as a whole.
+
+- Lambeth has a significantly higher proportion of people born in the Americas and the Caribbean, Africa, and the EU than London or England.
+Lambeth residents are more likely to hold a passport from another country than London or England residents.
+
+- Lambeth residents are more likely to speak English as their main language, but there are also significant proportions of people who speak Spanish, Portuguese, and an African language as their main language.
+
+- A slightly higher proportion of Lambeth residents say they cannot speak English well or cannot speak English at all than London or England residents.
+
+- The largest religious group in Lambeth is Christian, followed by people with no religion. More people say they have no religion than London or England. Lambeth has a lower Muslim and Hindu population than London.
+
+- Lambeth has a higher percentage of people who identify as Gay/Lesbian , Bisexual, or another sexual orientation than London or England.
+
+- Lambeth has a higher percentage of people who have a gender identity that is different from their sex registered at birth but did not give a specific identity, or identified as trans man or trans woman than England, but was similar to London.
+
+Much of the data reported in this section comes from the latest UK
+Census (2021). A comparison between Lambeth demographics between the
+2011 and 2021 Census can be found
+[here](https://www.ons.gov.uk/visualisations/censusareachanges/E09000022/).
+
+# Population {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Population"
+```
+
+## Column {.tabset data-width="300"}
+
+### Population by gender
+
+**`r ref_name` by gender**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+### Population by age
+
+**`r ref_name` by age**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary page 2`])
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` by sex
+
+```{r}
+
+ggplotly(pop_cen_m_d_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` by age
+
+```{r}
+
+ggplotly(comb_graph, tooltip = c("text")) %>% layout(autosize = T,  #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_age, variable_name = descending_sort_vars_not_all_age, popup = welcome_popup_age)
+
+```
+
+
+### Data table - population by sex
+
+```{r}
+
+make_datatable(pop_cen_m_d_g, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+### Data table - population by age
+
+```{r}
+
+make_datatable(comb, visual_name = ref_name) %>%
+  formatRound(c("All persons", "Female", "Male"), digits = 0) %>%
+  formatRound(c("Percentage Female", "Percentage Male", "Percentage All persons"), digits = 1)
+
+```
+
+# Household composition {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Household composition"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Household composition
+
+```{r}
+
+ggplotly(household_comp_l1_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Household composition - lower categories
+
+```{r}
+
+ggplotly(household_comp_l2_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_hous, variable_name = descending_sort_vars_not_all_hous, popup = welcome_popup_hous)
+
+```
+
+
+
+### Data table
+
+```{r}
+
+make_datatable(household_comp_m_d, visual_name = ref_name) %>%
+  formatRound(c("Population"), digits = 0)# %>%
+  #formatRound(c("Percentage Female", "Percentage Male", "Percentage All persons"), digits = 1)
+
+```
+
+# Country of birth {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Country of birth"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Country of birth
+
+```{r}
+
+ggplotly(cob_m_d_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_cob, variable_name = descending_sort_vars_not_all_cob, popup = welcome_popup_cob)
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(cob_m_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Passports held {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Passports held"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Passports held
+
+```{r}
+
+ggplotly(pass_m_d_graph, tooltip = c("text")) %>% layout(autosize = T,# margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pass_m_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+
+# Main language {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Main language"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(lang_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(lang_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# English proficiency {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "English proficiency"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(eng_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_eng, variable_name = descending_sort_vars_not_all_eng, popup = welcome_popup_eng)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(eng_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+
+# Ethnicity {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Ethnicity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(eth_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_eth, variable_name = descending_sort_vars_not_all_eth, popup = welcome_popup_eth)
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(eth_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Religion {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Religion"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Religion
+
+```{r}
+
+ggplotly(rel_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_rel, variable_name = descending_sort_vars_not_all_rel, popup = welcome_popup_rel)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(rel_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Sexual orientation {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Sexual orientation"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ori_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ori_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Gender identity {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Gender identity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(gen_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(gen_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Jobs earnings and businesses introduction {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name = "Jobs earnings and businesses introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+
+```{r}
+make_theme_index(data_sources, "Jobs, earnings, and businesses")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+Skills and employment, access to good jobs, fair pay and resilience are key to achieving the ambitions we have set in the Skills and Employment Strategy and in our Economic Resilience Strategy. The data provided here confirms the importance of the objectives set out in these strategies to achieve our ambition that Lambeth will emerge at the forefront of a newly invigorated global London post pandemic, with an economy which provides more opportunities for more people. 
+
+We need to:  
+
+Overcome the long-term skills and employment inequalities faced by many of our residents  
+
+Tackle the current and lasting impact of Covid-19 on livelihoods  
+
+Ensure our skills system is responsive to the rapidly changing needs of the economy and residents now and in the future. 
+
+We want our economy to grow in a way which works better for all our residents, and in which no one finds themselves excluded from opportunity. We have many opportunities from our diverse business and employment base that benefits from being situated at the heart of one of the world’s greatest cities. Our employers rely on access to a talented and skilled workforce, and they share our ambition to provide opportunity for those most in need. 
+
+# Working age population {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Working age population"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Working age population
+
+```{r}
+
+ggplotly(work_age_pop_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(work_age_pop_df_m_s, visual_name = ref_name)
+
+```
+
+# Employment by occupation {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Employment by occupation"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Employment categories
+
+```{r}
+
+ggplotly(emp_occ_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  margin = m,
+                                                                   font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(emp_occ_latest_refined_m, visual_name = ref_name)
+
+```
+
+
+# Types of industry {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Types of industry"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Industry categories as % of total workforce
+
+```{r}
+
+ggplotly(bus_df_3_lam_p_m_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(bus_df_3_lam_p_m, visual_name="Types of industry")
+
+```
+
+# Qualifications {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Qualifications"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Qualifications
+
+```{r}
+
+ggplotly(qual_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(qual_latest_refined_m, visual_name=ref_name)
+
+```
+
+
+# Weekly earnings by sex {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Weekly earnings by sex"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Weekly earnings by sex - full-time
+
+```{r}
+
+ggplotly(earn_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  margin = m,
+                                                                   font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table - full-time
+
+```{r}
+
+make_datatable(earn_part_df_m, visual_name=ref_name)
+
+```
+
+### Weekly earnings by sex - part-time
+
+```{r}
+
+ggplotly(earn_part_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  margin = m,
+                                                                   font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table - part-time
+
+```{r}
+
+make_datatable(earn_df_m, visual_name=ref_name)
+
+```
+
+
+# Earning a living wage {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Earning a living wage"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Earning under the London Living Wage
+
+```{r}
+
+ggplotly(llw_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  margin = m,
+                                                                   font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(llw_df_comb, visual_name=ref_name)
+
+```
+
+
+
+# Unemployment rate {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Unemployment rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Unemployment rate
+
+```{r}
+
+ggplotly(unemp_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table - unemployment rate
+
+```{r}
+
+make_datatable(unemp_latest_refined_m, visual_name=ref_name)
+
+```
+
+
+
+# Unemployment by sex and ethnicity {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Unemployment by sex and ethnicity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Unemployment rate by group
+
+```{r}
+
+ggplotly(unemp_m_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Unemployment rate disparity
+
+```{r}
+
+ggplotly(unemp_m_comparison_disparity_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
+
+```
+
+
+
+# Claimant count {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Claimant count"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+
+### Claimant count rate
+
+```{r}
+
+ggplotly(claim_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+  font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Claimant count rate by age
+
+```{r}
+
+ggplotly(claim_comparison_age_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+  font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+
+### Data table
+
+```{r}
+
+make_datatable(claim_latest_refined_m, visual_name=ref_name, data_link_col = "Summary data link")
+
+```
+
+
+### Data table - by age
+
+```{r}
+
+make_datatable(claim_all_ages, visual_name=ref_name, data_link_col = "Summary data link")
+
+```
+
+
+# Distance to work {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Distance to work"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(dist_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(dist_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Business creation and closure rate {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Business creation and closure rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Business creation rate (per 10k people aged 16+)
+
+```{r}
+
+ggplotly(closure_creation_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,  #margin = m,
+                                                                    font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(creation_closure_df_m_d_yr_18_g_m, visual_name=ref_name)
+
+```
+
+# Non-domestic rate collection {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Non-domestic rate collection"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Non-domestic rates compared to 2019
+
+```{r}
+
+ggplotly(nndr_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,  #margin = m,
+                                                                font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(nndr_df_m_d_yr_18_g, visual_name=ref_name)
+
+```
+
+# Financial resilience introduction {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name = "Financial resilience introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+
+```{r}
+make_theme_index(data_sources, "Financial resilience")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+
+We want Lambeth residents to thrive financially, no matter what life throws their way. Financial resilience means having better chances at overall well-being: economic, physical, and emotional.
+ 
+The data presented here sets out how our residents view their financial resilience (their ability to withstand financial shocks), poverty rates across the borough and specifically how these impact children and older people.
+
+This information should be considered alongside information presented elsewhere in the report including employment and worklessness, homelessness (if included) and life expectancy.
+
+A good understanding of poverty in our borough, the financial resilience of residents and levels of deprivation enables us to understand better how to tackle the inequalities that walk hand-in-hand with deprivation.
+
+
+The data shows that:
+
+- The cost of living is increasing in Lambeth, and many residents are struggling to make ends meet.
+- Poverty rates in Lambeth as high as the London average.
+- Children are more likely to live in poverty in Lambeth than in London, with a similar proportion to England.
+- Older people are more likely to live in poverty in Lambeth than in London or England.
+- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021. 
+
+# Financial resilience - Resident survey {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name="Financial resilience - Resident survey"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_cost_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+
+# Poverty rate {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name="Poverty rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(pov_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pov_df_comb, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Children in low-income households {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name="Children in low-income households"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Pension credit {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name="Pension credit"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(pension_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pension_df_m, visual_name = ref_name) %>%
+  formatRound(c('Population','Number of people aged 65+ on pension credit'), digits = 0)
+
+```
+
+
+# Census measures of deprivation {data-navmenu="Financial resilience"}
+
+```{r echo=FALSE}
+ref_name="Census measures of deprivation"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r census_text`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Lambeth Wards
+
+```{r}
+
+totallist[[1]]
+
+```
+
+### London Borough
+
+```{r}
+
+totallist[[2]]
+
+```
+
+
+# Education introduction {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name = "Education introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+
+```{r}
+make_theme_index(data_sources, "Education")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth has the aim by 2030 to make the borough a place we can all call home, including with the best conditions to grow up and age well. A key component of this is a childcare and education system that supports our children to learn and grow.
+
+Overall, the data shows that until Key Stage 4, Lambeth education system performs in a similar way to London and England. From this age, Lambeth performs worse on average, in terms of average Attainment 8 score (for 16 year olds) and progression.
+
+***Early years***
+
+- Lambeth has a higher provision of early years care providers than London or England.
+- Lambeth has a similar percentage of early years institutions that received a good or outstanding Ofsted rating as London and England.
+- Lambeth has a similar percentage of children who achieve the expected level in all prime areas in early years settings as London and England.
+
+***Schools***
+
+- Key stage 2 pupils in Lambeth perform in between the London (higher) and England (lower) average for Reading, Writing, and Maths.
+- Lambeth has a lower average Attainment 8 score than London or England (for 16 year olds).
+- Lambeth has a smaller gap between Black and White pupils in terms of Attainment 8 scores than London or England.
+- The attainment gap between disadvantaged and non-disadvantaged pupils is smaller in Lambeth than London or England.
+
+***Progression***
+
+- The percentage of Key Stage 5 pupils who progressed on to education, apprenticeships, or employment is lower in Lambeth than London or England.
+- The percentage of 16/17 year olds who are not in education, employment, or training is higher in Lambeth than London.
+
+
+# Early years providers {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Early years providers"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Early years providers
+
+```{r}
+
+ggplotly(ey_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ey_df_comb, visual_name = ref_name)  %>%
+  formatRound(c("Number of providers for aged 2",	"Number of providers for ages 3-4",	"Total providers for ages 2-4",	"Population"), digits = 0)
+
+```
+
+# Early years Ofsted ratings {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Early years Ofsted ratings"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Early years Ofsted ratings
+
+```{r}
+
+ggplotly(ey_ofsted_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ey_of_d_out, visual_name = ref_name) %>%
+  formatRound(c("Outstanding",	"Good", "Total"), digits = 0)
+
+```
+
+# Early years areas of learning performance {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Early years areas of learning performance"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Early years areas of learning performance
+
+```{r}
+
+ggplotly(eyfs_aol_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(eyfs_aol_df_all, visual_name = ref_name)
+
+
+
+```
+
+# Key Stage 2 performance {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Key Stage 2 performance"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Key Stage 2 performance
+
+```{r}
+
+ggplotly(ks2_results_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ks2_results_all, visual_name = ref_name)
+
+```
+
+# Key Stage 4 performance {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Key Stage 4 performance"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Key Stage 4 performance
+
+```{r}
+
+ggplotly(ks4_results_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ks4_results_all, visual_name = ref_name)
+
+```
+
+# Key Stage 4 performance by ethnicity {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Key Stage 4 performance by ethnicity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Key Stage 4 performance
+
+```{r}
+
+ggplotly(ks4_results_eth_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ks4_results_eth_all, visual_name = ref_name)
+
+```
+
+# Key Stage 4 performance gap {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Key Stage 4 performance gap"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Key Stage 4 performance gap - disadvantaged pupils
+
+Number indicates how much higher attainment 8 scores are overall
+compared to disadvantaged pupils.
+
+```{r}
+
+ggplotly(ks4_dis_all_g_wide_graph_dis, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Key Stage 4 performance gap - free school meal eligible pupils
+
+Number indicates how much higher attainment 8 scores are overall
+compared to FSM-eligible pupils.
+
+```{r}
+
+ggplotly(ks4_dis_all_g_wide_graph_fsm, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ks4_dis_all_g_wide, visual_name = ref_name)
+
+```
+
+# Key stage 5 progression {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Key stage 5 progression"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Key stage 5 progression
+
+```{r}
+
+ggplotly(progression_to_he_graph, tooltip = c("text")) %>% layout(autosize = T, font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(progression_to_he_all, visual_name = ref_name)
+
+```
+
+# NEET 16-17 year olds {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="NEET 16-17 year olds"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### NEET 16-17 year olds
+
+```{r}
+
+ggplotly(neet_results_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(neet_results_all, visual_name = ref_name)
+
+```
+
+
+
+# Education funding {data-navmenu="Education"}
+
+```{r echo=FALSE}
+ref_name="Education funding"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(yth_spnd_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(yth_spnd_all_out, visual_name = ref_name) %>%
+  formatRound(c("Expenditure per pupil (GBP)"), digits = 0)
+
+```
+
+
+# Health and Wellbeing introduction {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Health and Wellbeing introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+
+```{r}
+make_theme_index(data_sources, "Health and Wellbeing")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+This section of the State of the Borough looks at the Health and Wellbeing outcomes. While some metrics are similar across the borough, London, and England, there are significant differences in other metrics that are worth highlighting to guide future policy. The order of the metrics represents a journey of one's health, from starting a healthy lifestyle from childhood, then living habits to maintain health, and finally aging metrics to examine mortality.
+
+# Childhood Vaccinations {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Childhood Vaccinations"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(vax_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(vax, visual_name = ref_name)
+
+```
+
+# Healthy Weight - Reception {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Healthy Weight - Reception"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(RecObesity_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(RecObesity, visual_name = ref_name)
+
+```
+
+# Healthy Weight - Year 6 {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Healthy Weight - Year 6"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(Yr6Obesity_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(Yr6Obesity, visual_name = ref_name)
+
+```
+
+# Good Level of Development - Age 5 {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Good Level of Development - Age 5"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(dev_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(dev, visual_name = ref_name)
+
+```
+
+# Wellbeing - Resident survey {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Wellbeing - Resident survey"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_health_time_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Happiness
+
+```{r}
+
+
+ggplotly(happiness_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Life Satisfaction
+
+```{r}
+
+ggplotly(lifesat_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Worthwhile
+
+```{r}
+
+ggplotly(worthwhile_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Anxiety
+
+```{r}
+
+ggplotly(anxiety_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_health_all_grp, visual_name = ref_name) #%>%
+  #formatRound(c('All 18+', 'Electoral registrations December 2021', 'Electoral registrations December 2020'), digits = 0) %>%
+  #formatRound(c('Percentage of eligible adults registered to vote in local elections (December 2021)'), digits = 1)
+
+```
+### Data table 2
+
+```{r}
+
+make_datatable(happiness_compare, visual_name = ref_name)
+
+```
+
+# Sexual Health {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Sexual Health"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(STI_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(STI, visual_name = ref_name)
+
+```
+
+# Physical Exercise {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Physical Exercise"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(physical_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(physical, visual_name = ref_name)
+
+```
+
+# Healthy Weight {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Healthy Weight"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(obesity_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(obesity, visual_name = ref_name)
+
+```
+
+# Smoking {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Smoking"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(smoke_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(smoke, visual_name = ref_name)
+
+```
+
+# High Blood Pressure {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "High Blood Pressure"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(htn_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(htn, visual_name = ref_name)
+
+```
+
+# Drug and Alcohol Misuse {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Drug and Alcohol Misuse"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(drug_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(drug, visual_name = ref_name)
+
+```
+
+# Life Expectancy at Birth {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Life Expectancy at Birth"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(HLE_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+
+```
+### Data table
+
+```{r}
+
+make_datatable(HLE, visual_name = ref_name)
+
+```
+
+
+# Healthy Life Expectancy {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Healthy Life Expectancy"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(HLE_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+
+```
+### Data table
+
+```{r}
+
+make_datatable(HLE, visual_name = ref_name)
+
+```
+
+# Deaths Under 75 from Preventable Causes {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Deaths Under 75 from Preventable Causes"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(death75_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(deathunder75, visual_name = ref_name)
+
+```
+
+# Covid Deaths per Capita {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Covid Deaths per Capita"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(covidplot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(covid, visual_name = ref_name)
+
+```
+
+# Preventable Mortality - Cancer {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Preventable Mortality - Cancer"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(cancer_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(cancer, visual_name = ref_name)
+
+```
+
+# Preventable Mortality - Cardiovascular Disease {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Preventable Mortality - Cardiovascular Disease"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(cvd_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(cvd, visual_name = ref_name)
+
+```
+
+# Preventable Mortality - Liver Disease {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Preventable Mortality - Liver Disease"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(liver_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(liver, visual_name = ref_name)
+
+```
+
+# Preventable Mortality - Respiratory Disease {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Preventable Mortality - Respiratory Disease"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(resp_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(resp, visual_name = ref_name)
+
+```
+
+# Crime safety and justice introduction {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Crime safety and justice introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Crime, Safety & Justice")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth aims to to be one of the safest Boroughs in London, the new Borough Plan states that 'By 2030, Lambeth will be one of the safest boroughs in London, where everyone feels safe and secure – in all places'. 
+
+However, not all Lambeth residents feel safe in their local area. 92% of Lambeth residents feel that their local area is safe during the day, and 63% feel it is safe at night. 10.5% of residents feel that their local area is not at all safe at night.
+
+However, currently the crime rate in Lambeth is higher than the London average. This applies to a number of sub-categories of crime:
+
+- Violent crime, knife crime, and domestic abuse are all higher in Lambeth than in London.
+- Hate crime is also higher in Lambeth than in London.
+- Drug-related crime is roughly the same in Lambeth and London.
+- The rate of domestic burglary and drug-related crime has decreased in Lambeth over time, while the rate of hate crime has increased.
+- The rate of anti-social behavior is higher in Lambeth than in London.
+- The reoffending rate in Lambeth is not consistently higher or lower than other areas.
+
+
+The data shows that police do not have full confidence of the local population:
+
+- The rate of stop and searches is much greater for people from an ethnic minority background than for white people in Lambeth.
+- 43% of Lambeth residents believe that the police do a good job in their local area. This is lower than the average for London boroughs (49%).
+- 34% of Lambeth residents have confidence in the police, while 33% do not.
+Lambeth had a higher rate of traffic incidents casualties (4.2 per 1,000 people) compared to the London average (3) in 2021.
+
+# Overall crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Overall crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_b_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_b_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Violent crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Violent crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_b_v_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_b_v_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Knife crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Knife crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_knife_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_knife_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Knife crime rate with victims younger than 25 {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Knife crime rate with victims younger than 25"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_knife24_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_knife24_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Domestic abuse crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Domestic abuse crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_b_da_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_b_da_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Anti-social behaviour {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Anti-social behaviour"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(asb_m_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(asb_m, visual_name = ref_name) #%>%
+  #formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Hate crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Hate crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_bh_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_bh, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+### `r ref_name` - by time
+
+```{r}
+
+ggplotly(crime_b_hate_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table - by time
+
+```{r}
+
+make_datatable(crime_b_hate_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Drug-related crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Drug-related crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_drug_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_drug_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Domestic burglary crime rate {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Domestic burglary crime rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(crime_burglar_time_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(crime_burglar_time, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Reoffending rates {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Reoffending rates"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(reoff_f_17_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(reoff_f_17, visual_name = ref_name) #%>%
+  #formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Stop and search {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Stop and search"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(stops_b_out_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(stops_b_out_m, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+# Public perception of police {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Public perception of police"
+```
+
+## Column {data-width="300"}
+
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(gj_out_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(gj_out, visual_name = ref_name) #%>%
+  #formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Resident survey perception of safety {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Resident survey perception of safety"
+```
+
+## Column {data-width="300"}
+
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_crime_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` - time series
+
+```{r}
+
+ggplotly(surv_sat_f_crime_time_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_crime, visual_name = ref_name) #%>%
+  #formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+### Data table - time series
+
+```{r}
+
+make_datatable(surv_sat_f_crime_all_grp, visual_name = ref_name) #%>%
+  #formatRound(c('Population', 'Count'), digits = 0)
+
+```
+
+
+# Traffic incidents {data-navmenu="Crime safety and justice"}
+
+```{r echo=FALSE}
+ref_name = "Traffic incidents"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(traffic_b_out_m_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(traffic_b_out_m, visual_name = ref_name) %>%
+  formatRound(c('Population', 'Number of traffic incidents casualties'), digits = 0)
+
+```
+
+# Environment introduction {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Environment introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Environment")
+
+previous_button()
+next_button()
+```
+
+## Column {data-width="700"}
+
+### Introduction
+Lambeth’s Climate Action Plan sets out our vision for the borough in 2030: a place where we can live, work, learn 
+and enjoy life in our local areas, where we can travel safely and easily by foot, bike and public transport, in an environment with clean, green and nature-rich spaces. Our homes and workplaces will be comfortable 
+and affordable to run, with good jobs and strong, inclusive, resilient communities where everyone’s needs 
+are met, and everyone plays a part.
+
+Achieving this vision will require us to overcome the environmental challenges we face as an inner London borough with one of the highest population densities of any London borough. Key challenges include air pollution that exceeds legal limits in parts of the borough, an aging building stock that is energy inefficient and at risk of overheating, high risk of exposure to heat and the Urban Heat Island effect, flood risk, and limited access to greenspace.
+
+Lambeth has made significant progress in recent years. Carbon emissions are falling year on year, and per capita emissions are lower than the London average and significantly lower than the UK wide average. Nitrogen dioxide pollution on Brixton Road has fallen by over 60% since 2014. And ongoing work to retrofit buildings, plant trees, install sustainable drainage systems and repurpose our streets to serve communities over cars, is helping to reduce carbon emissions, improve environmental quality, and increase the borough’s resilience to climate change. However, significant work remains to achieve the vision described above.  
+
+
+# Greenhouse gas emissions {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Greenhouse gas emissions"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ghg_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ghg_f, visual_name = ref_name) %>%
+  formatRound('Total GHG emissions (ktCO2e)', digits = 0)
+
+```
+
+# Pollutant concentrations {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Pollutant concentrations"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### NO2 concentrations
+
+Average NO2 concentrations by area in 2016 and 2019. Black lines show
+the UK/EU Air Quality Objective concentration (40 ug/m3) and the WHO guideline concentration post 2021 (10 ug/m3).
+
+```{r}
+
+ggplotly(no2_conc_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### NO2 Data table
+
+```{r}
+make_datatable(no2_conc_d_out_dt, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+### PM25 concentrations
+
+Average PM2.5 concentrations by area in 2016 and 2019. Black line shows
+the WHO guideline concentration.
+
+```{r}
+
+ggplotly(pm_conc_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### PM25 Data table
+
+```{r}
+make_datatable(pm_conc_d_out_dt, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+# Recycling rates {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Recycling rates"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(rec_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(rec_f, visual_name = ref_name) #%>%
+  #formatRound('Total GHG emissions (ktCO2e)', digits = 0)
+
+```
+
+# Energy Performance Certificate ratings {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Energy Performance Certificate ratings"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(epc_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(epc_f, visual_name = ref_name) %>%
+  formatRound(c('Number of Lodgements', 'A', 'B', 'C', 'D', 'E','F','G', 'A-C', 'D-G', '% A-C'), digits = 0)
+
+```
+
+# Solar panel installations {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Solar panel installations"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(renew_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(renew_f, visual_name = ref_name) %>%
+  formatRound(c('Estimated number of households', 'Total number of solar PV installations in area'), digits = 0)
+
+```
+
+
+# Access to public green space {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Access to public green space"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(gs_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(gs_d_out_num, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+# Tree canopy cover {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Tree canopy cover"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(tree_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(tree_f, visual_name = ref_name) %>%
+  formatRound(c('Total square km', 'Total square km of tree canopy'), digits = 0)
+
+```
+
+# Method of travel to work {data-navmenu="Environment"}
+
+```{r echo=FALSE}
+ref_name = "Method of travel to work"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(motw_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(motw_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+
+# Housing and infrastructure introduction {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Housing and infrastructure introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Housing and infrastructure")
+
+previous_button()
+next_button()
+```
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth has a more diverse housing stock than London and England. However, of houses that are owner occupied in Lambeth are on average more expensive than the London or England average. In terms of transport infrastructure, the latest available data suggest that Lambeth has a slighly better public transport infrastructure than inner London, and slightly less traffic.
+
+Key data points include: 
+
+- Lambeth has a higher proportion of social housing (34%) than London (23%) or England (17%).
+- Lambeth has a lower proportion of owner-occupied housing (33%) than London (45%) or England (61%).
+- Lambeth has a higher proportion of properties in lower council tax bands than London (55% vs 44%) or England (65%).
+- Lambeth has a higher median house price than the London average (£546,000 vs £510,000).
+- Lambeth has a higher average PTAL score than Inner London (22 vs 20).
+- Lambeth has slightly less road traffic than the rest of London (3,200 vs 3,250 vehicles per km per day), but significantly more than the average in England.
+
+
+# Tenure type {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Tenure type"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(tenure_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(tenure_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Dwelling type {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Dwelling type"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(dwelling_types_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(dwelling_types_c_m, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+# House prices {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "House prices"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(house_prices_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(house_prices_out, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+
+
+# Council tax bands {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Council tax bands"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ctb_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ctb_f_m, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Public transport accessibility {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Public transport accessibility"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ptal_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ptal_out, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+# Road traffic {data-navmenu="Housing and infrastructure"}
+
+```{r echo=FALSE}
+ref_name = "Road traffic"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(road_traffic_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(road_traffic_out, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+
+# Community introduction {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Community introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Community")
+
+previous_button()
+next_button()
+```
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth 2030 sets out the vision for Lambeth to be a clean, vibrant and lifelong borough, where people can feel safe, have the best conditions to grow up and age well, and live healthier, happier lives.  
+
+We know Lambeth is a borough of great diversity; our history has been shaped by radicals and reformers, and for hundreds of years, Lambeth has welcomed people from all around the world – providing sanctuary and a place they can call home. 
+
+We know that residents want to feel proud of their neighbourhoods, building on the strong sense of community across the borough. Residents are concerned with cleanliness and waste, crime and safety, and having accessible parks and open spaces to connect with one another. Residents also want to feel satisfied with the way the Council operates, being communicated with effectively and seeing value for money. 
+
+Key findings:
+
+- The majority of Lambeth residents are satisfied with their local area, although a minority are not.
+
+- Just under half of residents were satisfied with how Lambeth Council runs things, showing that we need to do more to gain the trust of residents.
+
+- Lambeth residents are satisfied with the parks and open spaces in the area, and the diversity and multicultural communities in Lambeth.
+
+- Residents are concerned about cleanliness and crime in Lambeth.
+
+- Residents are willing to work together in their neighbourhood to help improve it.
+
+- Residents value friendships and people helping each other in their local area.
+
+- Lambeth has a lower registration rate to vote, and a lower turnout in the 2022 local elections than London and England.
+
+- Lambeth and London have equivalent Internet use, and the vast majority of Lambeth residents access the Internet in their home. But 5% of residents haven't used the internet in three months.
+
+# Resident survey results - overall and Council {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Resident survey results - overall and Council"
+```
+
+## Column {.tabset data-width="250"}
+
+### Overall
+
+**Resident survey results - overall and Council**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="750"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_general_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table - Overall and improving the area
+
+```{r}
+
+make_datatable(surv_sat_f_general, visual_name = ref_name) #%>%
+  #formatRound(c('Used the Internet in the last 3 months (2020, %)'), digits = 1)
+
+```
+
+
+
+# Resident survey results - improving the area {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Resident survey results - improving the area"
+```
+
+## Column {.tabset data-width="250"}
+
+### Overall
+
+**Resident survey results - improving the area**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="750"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_general_graph_2, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table - Overall and improving the area
+
+```{r}
+
+make_datatable(surv_sat_f_general, visual_name = ref_name) #%>%
+  #formatRound(c('Used the Internet in the last 3 months (2020, %)'), digits = 1)
+
+```
+
+
+
+
+
+
+
+
+
+# Resident survey results - local area {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Resident survey results - local area"
+```
+
+## Column {.tabset data-width="250"}
+
+### Overall
+
+**Resident survey results - local area**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="750"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_graph_local, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table - local area
+
+```{r}
+
+make_datatable(surv_sat_f_local, visual_name = ref_name) #%>%
+  #formatRound(c('Used the Internet in the last 3 months (2020, %)'), digits = 1)
+
+```
+
+
+
+
+
+
+
+
+# Electoral registration {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Electoral registration"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(er_loc_m_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(er_loc_m, visual_name = ref_name) %>%
+  formatRound(c('All 18+', 'Electoral registrations December 2021', 'Electoral registrations December 2020'), digits = 0) %>%
+  formatRound(c('Percentage of eligible adults registered to vote in local elections (December 2021)'), digits = 1)
+
+```
+
+# Local election turnout {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Local election turnout"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(let_f_g_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(let_f_g, visual_name = ref_name) %>%
+  formatRound(c('Ballot papers at the count', 'Electorate'), digits = 0) %>%
+  formatRound(c('Ballot box turnout (%)'), digits = 1)
+
+```
+
+# Internet users {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Internet users"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(internet_f_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(internet_f, visual_name = ref_name) %>%
+  formatRound(c('Used the Internet in the last 3 months (2020, %)'), digits = 1)
+
+```
+
+# Internet users - resident survey {data-navmenu="Community"}
+
+```{r echo=FALSE}
+ref_name = "Internet users - resident survey"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_graph_tintenet, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_tintenet, visual_name = ref_name) #%>%
+  #formatRound(c('Used the Internet in the last 3 months (2020, %)'), digits = 1)
+
+```
+
+
+# Data sources {data-navmenu="Data sources"}
+
+## Column {data-width="1000"}
+
+### Data sources
+
+```{r}
+data_sources <- read.xlsx('Data sources.xlsx') %>% as.data.table()
+names(data_sources) <- gsub("\\.", " ", names(data_sources))
+
+col_no <- ncol(data_sources) - 1
+
+datatable(data_sources, 
+                      
+                      rownames = FALSE,
+                      extensions = c('Buttons'),#, 'Scroller'), 
+                      options = list(
+                        #dom = "ft",
+                        pageLength = 500,
+                        autoWidth=T,
+                        columnDefs = list(list(width = '10%', targets = c(0:col_no))),
+                        dom = 'Bfrti',
+                        buttons = c('copy', 'csv', 'excel')#,
+                        #deferRender = TRUE,
+                        #scrollY = 200,
+                        #scroller = T
+                      ))
+```
