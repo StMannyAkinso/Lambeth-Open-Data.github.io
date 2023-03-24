@@ -1,0 +1,1099 @@
+time_period,time_identifier,geographic_level,country_code,country_name,characteristic,characteristic_type,gender,number_of_pupils,elg_number,elg_percent,gld_number,gld_percent,point_score,average_point_score,gld_gap
+201819,Academic year,National,E92000001,England, , ,Total,638946,451531,71,458815,72,22088472,34.6,.
+201819,Academic year,National,E92000001,England, , ,Girls,311521,241823,78,244274,78,11137066,35.8,.
+201819,Academic year,National,E92000001,England, , ,Boys,327425,209708,64,214541,66,10951406,33.4,.
+201819,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,459403,329368,72,333885,73,16019945,34.9,0.9
+201819,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,224063,176032,79,177479,79,8067809,36,0.8
+201819,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,235340,153336,65,156406,66,7952136,33.8,0.9
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,41685,30071,72,30562,73,1456169,34.9,1.5
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,20335,16084,79,16244,80,735920,36.2,1.5
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,21350,13987,66,14318,67,720249,33.7,1.5
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,69185,48045,69,49353,71,2332709,33.7,-0.5
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,33648,25845,77,26309,78,1178853,35,-0.2
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,35537,22200,62,23044,65,1153856,32.5,-0.7
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,31136,21096,68,21566,69,1040154,33.4,-2.5
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15200,11562,76,11727,77,530847,34.9,-1.3
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,15936,9534,60,9839,62,509307,32,-3.8
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,3002,2294,76,2345,78,106674,35.5,6.3
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1413,1148,81,1165,82,51368,36.4,4
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1589,1146,72,1180,74,55306,34.8,8.7
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,12048,7588,63,7793,65,390999,32.5,-7.1
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,5889,4118,70,4210,71,198357,33.7,-6.9
+201819,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,6159,3470,56,3583,58,192642,31.3,-7.3
+201819,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,22487,13069,58,13311,59,741822,33,-12.6
+201819,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,10973,7034,64,7140,65,373912,34.1,-13.3
+201819,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,11514,6035,52,6171,54,367910,32,-11.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,409675,297446,73,301219,74,14377976,35.1,1.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,199805,158749,79,159914,80,7236531,36.2,1.6
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,209870,138697,66,141305,67,7141445,34,1.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1551,1152,74,1166,75,56092,36.2,3.4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,777,633,81,638,82,29050,37.4,3.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,774,519,67,528,68,27042,34.9,2.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,665,258,39,266,40,19680,29.6,-31.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,335,156,47,160,48,10365,30.9,-30.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,330,102,31,106,32,9315,28.2,-33.4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,2151,732,34,753,35,61222,28.5,-36.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,1081,447,41,459,42,32224,29.8,-36
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,1070,285,27,294,27,28998,27.1,-38
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,45361,29780,66,30481,67,1504975,33.2,-4.6
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,22065,16047,73,16308,74,759639,34.4,-4.5
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,23296,13733,59,14173,61,745336,32,-4.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,9814,6761,69,6863,70,336557,34.3,-1.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4901,3757,77,3787,77,173858,35.5,-1.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,4913,3004,61,3076,63,162699,33.1,-2.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5777,4087,71,4157,72,199735,34.6,0.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2807,2190,78,2214,79,101083,36,0.5
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2970,1897,64,1943,65,98652,33.2,-0.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,10305,7754,75,7872,76,368550,35.8,4.6
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,5024,4099,82,4140,82,186096,37,4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,5281,3655,69,3732,71,182454,34.5,5.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,15789,11469,73,11670,74,551327,34.9,2.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,7603,6038,79,6103,80,274883,36.2,1.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,8186,5431,66,5567,68,276444,33.8,2.5
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,20363,15810,78,16148,79,722931,35.5,7.5
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,9902,8319,84,8434,85,363533,36.7,6.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,10461,7491,72,7714,74,359398,34.4,8.2
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,27141,17476,64,18046,66,886710,32.7,-5.3
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,13184,9495,72,9708,74,447919,34,-4.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,13957,7981,57,8338,60,438791,31.4,-5.8
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,10212,6873,67,7059,69,338029,33.1,-2.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,4993,3752,75,3822,77,172716,34.6,-1.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,5219,3121,60,3237,62,165313,31.7,-3.5
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,11469,7886,69,8100,71,385039,33.6,-1.2
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5569,4279,77,4345,78,194685,35,-0.4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,5900,3607,61,3755,64,190354,32.3,-1.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5270,3559,68,3628,69,177064,33.6,-3
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2554,1924,75,1948,76,89135,34.9,-2.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,2716,1635,60,1680,62,87929,32.4,-3.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,21432,14627,68,14951,70,716157,33.4,-2
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10474,8037,77,8145,78,366699,35,-0.6
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,10958,6590,60,6806,62,349458,31.9,-3.4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4434,2910,66,2987,67,146933,33.1,-4.4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2172,1601,74,1634,75,75013,34.5,-3.2
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2262,1309,58,1353,60,71920,31.8,-5.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,3002,2294,76,2345,78,106674,35.5,6.3
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1413,1148,81,1165,82,51368,36.4,4
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1589,1146,72,1180,74,55306,34.8,8.7
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,12048,7588,63,7793,65,390999,32.5,-7.1
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,5889,4118,70,4210,71,198357,33.7,-6.9
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,6159,3470,56,3583,58,192642,31.3,-7.3
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,22487,13069,58,13311,59,741822,33,-12.6
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,10973,7034,64,7140,65,373912,34.1,-13.3
+201819,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,11514,6035,52,6171,54,367910,32,-11.9
+201819,Academic year,National,E92000001,England,First language,English,Total,500066,362950,73,367864,74,17528741,35.1,6.6
+201819,Academic year,National,E92000001,England,First language,English,Girls,244135,193994,79,195557,80,8838224,36.2,6.2
+201819,Academic year,National,E92000001,England,First language,English,Boys,255931,168956,66,172307,67,8690517,34,7
+201819,Academic year,National,E92000001,England,First language,Other than English,Total,123805,80627,65,82843,67,4070998,32.9,.
+201819,Academic year,National,E92000001,England,First language,Other than English,Girls,60043,43539,73,44358,74,2053379,34.2,.
+201819,Academic year,National,E92000001,England,First language,Other than English,Boys,63762,37088,58,38485,60,2017619,31.6,.
+201819,Academic year,National,E92000001,England,First language,unclassified,Total,15075,7954,53,8108,54,488733,32.4,.
+201819,Academic year,National,E92000001,England,First language,unclassified,Girls,7343,4290,58,4359,59,245463,33.4,.
+201819,Academic year,National,E92000001,England,First language,unclassified,Boys,7732,3664,47,3749,48,243270,31.5,.
+201819,Academic year,National,E92000001,England,FSM,FSM,Total,89742,49442,55,50732,57,2823632,31.5,17.8
+201819,Academic year,National,E92000001,England,FSM,FSM,Girls,43796,27767,63,28257,65,1436958,32.8,16.2
+201819,Academic year,National,E92000001,England,FSM,FSM,Boys,45946,21675,47,22475,49,1386674,30.2,19.3
+201819,Academic year,National,E92000001,England,FSM,All other pupils,Total,549204,402089,73,408083,74,19264840,35.1,.
+201819,Academic year,National,E92000001,England,FSM,All other pupils,Girls,267725,214056,80,216017,81,9700108,36.2,.
+201819,Academic year,National,E92000001,England,FSM,All other pupils,Boys,281479,188033,67,192066,68,9564732,34,.
+201819,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,217750,173096,79,175350,81,7988451,36.7,18.5
+201819,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,105754,90550,86,91260,86,4006219,37.9,16.8
+201819,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,111996,82546,74,84090,75,3982232,35.6,20.2
+201819,Academic year,National,E92000001,England,Month of birth,Spring born,Total,204940,147015,72,149288,73,7085904,34.6,.
+201819,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,100062,78767,79,79518,79,3576355,35.7,.
+201819,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,104878,68248,65,69770,67,3509549,33.5,.
+201819,Academic year,National,E92000001,England,Month of birth,Summer born,Total,216256,131420,61,134177,62,7014117,32.4,.
+201819,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,105705,72506,69,73496,70,3554492,33.6,.
+201819,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,110551,58914,53,60681,55,3459625,31.3,.
+201819,Academic year,National,E92000001,England,SEN,No identified SEN,Total,564913,430878,76,437383,77,20126222,35.6,52.8
+201819,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,287233,233226,81,235463,82,10456326,36.4,52.1
+201819,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,277680,197652,71,201920,73,9669896,34.8,50.3
+201819,Academic year,National,E92000001,England,SEN,All SEN,Total,61237,14428,24,15077,25,1553591,25.4,.
+201819,Academic year,National,E92000001,England,SEN,All SEN,Girls,18080,5254,29,5409,30,476303,26.3,.
+201819,Academic year,National,E92000001,England,SEN,All SEN,Boys,43157,9174,21,9668,22,1077288,25,.
+201819,Academic year,National,E92000001,England,SEN,SEN support,Total,50490,13974,28,14592,29,1344306,26.6,.
+201819,Academic year,National,E92000001,England,SEN,SEN support,Girls,15075,5091,34,5238,35,417166,27.7,.
+201819,Academic year,National,E92000001,England,SEN,SEN support,Boys,35415,8883,25,9354,26,927140,26.2,.
+201819,Academic year,National,E92000001,England,SEN,SEN statement,Total,10747,454,4,485,5,209285,19.5,.
+201819,Academic year,National,E92000001,England,SEN,SEN statement,Girls,3005,163,5,171,6,59137,19.7,.
+201819,Academic year,National,E92000001,England,SEN,SEN statement,Boys,7742,291,4,314,4,150148,19.4,.
+201819,Academic year,National,E92000001,England,SEN,unclassified,Total,12796,6225,49,6355,50,408659,31.9,.
+201819,Academic year,National,E92000001,England,SEN,unclassified,Girls,6208,3343,54,3402,55,204437,32.9,.
+201819,Academic year,National,E92000001,England,SEN,unclassified,Boys,6588,2882,44,2953,45,204222,31,.
+201819,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,1423,223,16,230,16,33849,23.8,.
+201819,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,402,71,18,73,18,9673,24.1,.
+201819,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,1021,152,15,157,15,24176,23.7,.
+201819,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,4328,569,13,599,14,101288,23.4,.
+201819,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,1447,222,15,227,16,34718,24,.
+201819,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,2881,347,12,372,13,66570,23.1,.
+201819,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1589,9,1,10,1,27824,17.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,485,3,1,3,1,8478,17.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1104,6,1,7,1,19346,17.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,734,7,1,9,1,12966,17.7,.
+201819,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,269,0,0,0,0,4675,17.4,.
+201819,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,465,7,2,9,2,8291,17.8,.
+201819,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Total,6412,1678,26,1757,27,174625,27.2,.
+201819,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Girls,1521,521,34,538,35,43287,28.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Boys,4891,1157,24,1219,25,131338,26.9,.
+201819,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,32071,8865,28,9260,29,844799,26.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,9560,3192,33,3291,34,261192,27.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,22511,5673,25,5969,27,583607,25.9,.
+201819,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,1041,410,39,421,40,30167,29,.
+201819,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,470,205,44,210,45,13994,29.8,.
+201819,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,571,205,36,211,37,16173,28.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,604,262,43,271,45,17838,29.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,259,123,47,126,49,7822,30.2,.
+201819,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,345,139,40,145,42,10016,29,.
+201819,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,233,68,29,72,31,6135,26.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,86,28,33,30,35,2335,27.2,.
+201819,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,147,40,27,42,29,3800,25.9,.
+201819,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,2189,666,30,684,31,59624,27.2,.
+201819,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,1010,344,34,351,35,28128,27.8,.
+201819,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1179,322,27,333,28,31496,26.7,.
+201819,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,7364,806,11,864,12,158408,21.5,.
+201819,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,1547,227,15,236,15,34250,22.1,.
+201819,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,5817,579,10,628,11,124158,21.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,1769,524,30,541,31,47316,26.7,.
+201819,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,614,218,36,221,36,16918,27.6,.
+201819,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,1155,306,26,320,28,30398,26.3,.
+201819,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Total,1480,341,23,359,24,38752,26.2,.
+201819,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Girls,410,100,24,103,25,10833,26.4,.
+201819,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Boys,1070,241,23,256,24,27919,26.1,.
+201718,Academic year,National,E92000001,England, , ,Total,652349,457772,70,466668,72,22550657,34.6,.
+201718,Academic year,National,E92000001,England, , ,Girls,318270,246648,77,249651,78,11382095,35.8,.
+201718,Academic year,National,E92000001,England, , ,Boys,334079,211124,63,217017,65,11168562,33.4,.
+201718,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,473998,337474,71,343014,72,16517182,34.8,0.8
+201718,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,230864,181015,78,182803,79,8309495,36,0.7
+201718,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,243134,156459,64,160211,66,8207687,33.8,0.9
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,41621,29878,72,30439,73,1454978,35,1.6
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,20224,16070,79,16247,80,732951,36.2,1.9
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,21397,13808,65,14192,66,722027,33.7,1.4
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,69154,47247,68,48888,71,2323717,33.6,-0.8
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,33995,25808,76,26424,78,1187546,34.9,-0.7
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,35159,21439,61,22464,64,1136171,32.3,-1.1
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,32342,22044,68,22681,70,1088376,33.7,-1.4
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15955,12182,76,12408,78,560486,35.1,-0.7
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,16387,9862,60,10273,63,527890,32.2,-2.3
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,3278,2493,76,2576,79,117256,35.8,7
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1595,1327,83,1352,85,59133,37.1,6.3
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1683,1166,69,1224,73,58123,34.5,7.8
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,12037,7471,62,7690,64,391148,32.5,-7.7
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,5844,4100,70,4185,72,198178,33.9,-6.8
+201718,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,6193,3371,54,3505,57,192970,31.2,-8.4
+201718,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,19919,11165,56,11380,57,658000,33,-14.4
+201718,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,9793,6146,63,6232,64,334306,34.1,-14.8
+201718,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,10126,5019,50,5148,51,323694,32,-14.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,424179,306108,72,310788,73,14878033,35.1,1.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,206718,164088,79,165549,80,7486425,36.2,1.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,217461,142020,65,145239,67,7391608,34,1.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1598,1180,74,1193,75,57508,36,3.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,791,630,80,635,80,29105,36.8,1.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,807,550,68,558,69,28403,35.2,4.2
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,591,181,31,185,31,17121,29,-40.2
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,279,108,39,110,39,8501,30.5,-39
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,312,73,23,75,24,8620,27.6,-40.9
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,2024,674,33,689,34,57405,28.4,-37.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,957,380,40,386,40,28360,29.6,-38.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,1067,294,28,303,28,29045,27.2,-36.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,45606,29331,64,30159,66,1507115,33,-5.4
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,22119,15809,71,16123,73,757104,34.2,-5.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,23487,13522,58,14036,60,750011,31.9,-5.2
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,9973,6818,68,6947,70,341076,34.2,-1.9
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4840,3727,77,3768,78,171814,35.5,-0.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,5133,3091,60,3179,62,169262,33,-3
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5683,4077,72,4154,73,197346,34.7,1.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2751,2182,79,2206,80,99171,36,1.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2932,1895,65,1948,66,98175,33.5,1.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,10288,7639,74,7787,76,366862,35.7,4.2
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,5000,4106,82,4146,83,185037,37,4.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,5288,3533,67,3641,69,181825,34.4,3.9
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,15677,11344,72,11551,74,549694,35.1,2.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,7633,6055,79,6127,80,276929,36.3,1.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,8044,5289,66,5424,67,272765,33.9,2.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,20190,15520,77,15928,79,715001,35.4,7.4
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,9954,8312,84,8464,85,364577,36.6,6.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,10236,7208,70,7464,73,350424,34.2,8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,27076,16980,63,17712,65,879072,32.5,-6.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,13263,9386,71,9671,73,449045,33.9,-5.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,13813,7594,55,8041,58,430027,31.1,-6.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,10271,6777,66,7032,68,339092,33,-3.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,5091,3775,74,3867,76,175392,34.5,-2.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,5180,3002,58,3165,61,163700,31.6,-3.9
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,11617,7970,69,8216,71,390552,33.6,-0.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5687,4335,76,4422,78,198532,34.9,-0.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,5930,3635,61,3794,64,192020,32.4,-1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5659,3808,67,3888,69,191376,33.8,-2.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2798,2109,75,2136,76,98435,35.2,-2.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,2861,1699,59,1752,61,92941,32.5,-3.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,22099,15182,69,15663,71,743395,33.6,-0.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10941,8419,77,8597,79,385102,35.2,0.1
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,11158,6763,61,7066,63,358293,32.1,-1.6
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4584,3054,67,3130,68,153605,33.5,-3.3
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2216,1654,75,1675,76,76949,34.7,-2.9
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2368,1400,59,1455,61,76656,32.4,-3.5
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,3278,2493,76,2576,79,117256,35.8,7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1595,1327,83,1352,85,59133,37.1,6.3
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1683,1166,69,1224,73,58123,34.5,7.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,12037,7471,62,7690,64,391148,32.5,-7.7
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,5844,4100,70,4185,72,198178,33.9,-6.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,6193,3371,54,3505,57,192970,31.2,-8.4
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,19919,11165,56,11380,57,658000,33,-14.4
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,9793,6146,63,6232,64,334306,34.1,-14.8
+201718,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,10126,5019,50,5148,51,323694,32,-14.1
+201718,Academic year,National,E92000001,England,First language,English,Total,511092,368814,72,374756,73,17912297,35,6.8
+201718,Academic year,National,E92000001,England,First language,English,Girls,249276,198047,79,199922,80,9028027,36.2,6.6
+201718,Academic year,National,E92000001,England,First language,English,Boys,261816,170767,65,174834,67,8884270,33.9,7.1
+201718,Academic year,National,E92000001,England,First language,Other than English,Total,128130,82386,64,85199,66,4212116,32.9,.
+201718,Academic year,National,E92000001,England,First language,Other than English,Girls,62572,44987,72,46058,74,2138503,34.2,.
+201718,Academic year,National,E92000001,England,First language,Other than English,Boys,65558,37399,57,39141,60,2073613,31.6,.
+201718,Academic year,National,E92000001,England,First language,unclassified,Total,13127,6572,50,6713,51,426244,32.5,.
+201718,Academic year,National,E92000001,England,First language,unclassified,Girls,6422,3614,56,3671,57,215565,33.6,.
+201718,Academic year,National,E92000001,England,First language,unclassified,Boys,6705,2958,44,3042,45,210679,31.4,.
+201718,Academic year,National,E92000001,England,FSM,FSM,Total,87190,47880,55,49312,57,2747141,31.5,17.3
+201718,Academic year,National,E92000001,England,FSM,FSM,Girls,42403,27000,64,27543,65,1393689,32.9,15.6
+201718,Academic year,National,E92000001,England,FSM,FSM,Boys,44787,20880,47,21769,49,1353452,30.2,18.9
+201718,Academic year,National,E92000001,England,FSM,All other pupils,Total,565159,409892,73,417356,74,19803516,35,.
+201718,Academic year,National,E92000001,England,FSM,All other pupils,Girls,275867,219648,80,222108,81,9988406,36.2,.
+201718,Academic year,National,E92000001,England,FSM,All other pupils,Boys,289292,190244,66,195248,67,9815110,33.9,.
+201718,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,226558,179671,79,182470,81,8310892,36.7,19.1
+201718,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,110251,94387,86,95267,86,4174791,37.9,17.2
+201718,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,116307,85284,73,87203,75,4136101,35.6,21
+201718,Academic year,National,E92000001,England,Month of birth,Spring born,Total,207144,147029,71,149855,72,7150976,34.5,.
+201718,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,100978,79316,79,80255,79,3608103,35.7,.
+201718,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,106166,67713,64,69600,66,3542873,33.4,.
+201718,Academic year,National,E92000001,England,Month of birth,Summer born,Total,218647,131072,60,134343,61,7088789,32.4,.
+201718,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,107041,72945,68,74129,69,3599201,33.6,.
+201718,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,111606,58127,52,60214,54,3489588,31.3,.
+201718,Academic year,National,E92000001,England,SEN,No identified SEN,Total,579279,437950,76,446003,77,20608887,35.6,52.8
+201718,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,294280,238288,81,241072,82,10707885,36.4,52.4
+201718,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,284999,199662,70,204931,72,9901002,34.7,49.9
+201718,Academic year,National,E92000001,England,SEN,All SEN,Total,60662,13976,23,14704,24,1543562,25.4,.
+201718,Academic year,National,E92000001,England,SEN,All SEN,Girls,17911,5119,29,5290,30,472340,26.4,.
+201718,Academic year,National,E92000001,England,SEN,All SEN,Boys,42751,8857,21,9414,22,1071222,25.1,.
+201718,Academic year,National,E92000001,England,SEN,SEN support,Total,50957,13547,27,14240,28,1353756,26.6,.
+201718,Academic year,National,E92000001,England,SEN,SEN support,Girls,15239,4959,33,5125,34,419445,27.5,.
+201718,Academic year,National,E92000001,England,SEN,SEN support,Boys,35718,8588,24,9115,26,934311,26.2,.
+201718,Academic year,National,E92000001,England,SEN,SEN statement,Total,9705,429,4,464,5,189806,19.6,.
+201718,Academic year,National,E92000001,England,SEN,SEN statement,Girls,2672,160,6,165,6,52895,19.8,.
+201718,Academic year,National,E92000001,England,SEN,SEN statement,Boys,7033,269,4,299,4,136911,19.5,.
+201718,Academic year,National,E92000001,England,SEN,unclassified,Total,12408,5846,47,5961,48,398208,32.1,.
+201718,Academic year,National,E92000001,England,SEN,unclassified,Girls,6079,3241,53,3289,54,201870,33.2,.
+201718,Academic year,National,E92000001,England,SEN,unclassified,Boys,6329,2605,41,2672,42,196338,31,.
+201718,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,1327,199,15,213,16,31323,23.6,.
+201718,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,404,67,17,70,17,9480,23.5,.
+201718,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,923,132,14,143,15,21843,23.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,4787,685,14,748,16,114585,23.9,.
+201718,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,1595,261,16,281,18,38710,24.3,.
+201718,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,3192,424,13,467,15,75875,23.8,.
+201718,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1530,15,1,16,1,27081,17.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,447,4,1,4,1,7882,17.6,.
+201718,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1083,11,1,12,1,19199,17.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,728,8,1,8,1,12877,17.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,275,1,0,1,0,4831,17.6,.
+201718,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,453,7,2,7,2,8046,17.8,.
+201718,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Total,6196,1540,25,1610,26,168368,27.2,.
+201718,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Girls,1443,459,32,466,32,40548,28.1,.
+201718,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Boys,4753,1081,23,1144,24,127820,26.9,.
+201718,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,31634,8463,27,8881,28,833218,26.3,.
+201718,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,9398,3075,33,3186,34,257409,27.4,.
+201718,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,22236,5388,24,5695,26,575809,25.9,.
+201718,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,1100,409,37,423,38,31359,28.5,.
+201718,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,503,199,40,203,40,14495,28.8,.
+201718,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,597,210,35,220,37,16864,28.2,.
+201718,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,602,246,41,255,42,17662,29.3,.
+201718,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,281,132,47,133,47,8448,30.1,.
+201718,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,321,114,36,122,38,9214,28.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,217,53,24,54,25,5417,25,.
+201718,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,66,21,32,21,32,1717,26,.
+201718,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,151,32,21,33,22,3700,24.5,.
+201718,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,2217,676,30,693,31,60016,27.1,.
+201718,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,937,326,35,329,35,26030,27.8,.
+201718,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1280,350,27,364,28,33986,26.6,.
+201718,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,6790,717,11,783,12,147549,21.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,1361,187,14,195,14,30125,22.1,.
+201718,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,5429,530,10,588,11,117424,21.6,.
+201718,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,1909,550,29,572,30,50968,26.7,.
+201718,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,703,239,34,243,35,19159,27.3,.
+201718,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,1206,311,26,329,27,31809,26.4,.
+201718,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Total,1625,415,26,448,28,43139,26.5,.
+201718,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Girls,498,148,30,158,32,13506,27.1,.
+201718,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Boys,1127,267,24,290,26,29633,26.3,.
+201617,Academic year,National,E92000001,England, , ,Total,669864,462298,69,473626,71,23080454,34.5,.
+201617,Academic year,National,E92000001,England, , ,Girls,326827,250147,77,254061,78,11659880,35.7,.
+201617,Academic year,National,E92000001,England, , ,Boys,343037,212151,62,219565,64,11420574,33.3,.
+201617,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,490390,343269,70,350697,72,17028025,34.7,0.8
+201617,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,239166,185208,77,187686,78,8586945,35.9,0.7
+201617,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,251224,158061,63,163011,65,8441080,33.6,0.9
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,41401,29374,71,30086,73,1442611,34.8,2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,20103,15770,78,16030,80,725708,36.1,2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,21298,13604,64,14056,66,716903,33.7,2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,70380,46959,67,48870,69,2358153,33.5,-1.3
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,34393,25685,75,26388,77,1199734,34.9,-1
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,35987,21274,59,22482,62,1158419,32.2,-1.5
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,33328,22528,68,23198,70,1118483,33.6,-1.1
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,16415,12531,76,12765,78,575178,35,0
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,16913,9997,59,10433,62,543305,32.1,-2.3
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,3334,2388,72,2482,74,115693,34.7,3.7
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1605,1258,78,1290,80,57761,36,2.6
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1729,1130,65,1192,69,57932,33.5,4.9
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,11824,7219,61,7503,63,384019,32.5,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,5745,3940,69,4052,71,194448,33.8,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,6079,3279,54,3451,57,189571,31.2,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,19207,10561,55,10790,56,633470,33,-14.5
+201617,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,9400,5755,61,5850,62,320106,34.1,-15.5
+201617,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,9807,4806,49,4940,50,313364,32,-13.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,439886,312668,71,319050,73,15376964,35,1.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,214372,168458,79,170503,80,7746612,36.1,1.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,225514,144210,64,148547,66,7630352,33.8,1.9
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1615,1203,74,1223,76,58088,36,5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,831,673,81,681,82,30629,36.9,4.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,784,530,68,542,69,27459,35,5.1
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,656,245,37,254,39,19596,29.9,-32
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,334,147,44,153,46,10365,31,-31.9
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,322,98,30,101,31,9231,28.7,-32.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,1997,597,30,627,31,55455,27.8,-39.3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,1010,361,36,378,37,28946,28.7,-40.3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,987,236,24,249,25,26509,26.9,-38.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,46236,28556,62,29543,64,1517922,32.8,-6.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,22619,15569,69,15971,71,770393,34.1,-7.1
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,23617,12987,55,13572,57,747529,31.7,-6.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,10389,6899,66,7069,68,354173,34.1,-2.7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,5042,3760,75,3832,76,178148,35.3,-1.7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,5347,3139,59,3237,61,176025,32.9,-3.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5698,3992,70,4095,72,197452,34.7,1.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2770,2165,78,2197,79,99402,35.9,1.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2928,1827,62,1898,65,98050,33.5,0.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,10213,7678,75,7854,77,364500,35.7,6.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,4979,4067,82,4126,83,183407,36.8,5.1
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,5234,3611,69,3728,71,181093,34.6,7.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,15101,10805,72,11068,73,526486,34.9,2.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,7312,5778,79,5875,80,264751,36.2,2.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,7789,5027,65,5193,67,261735,33.6,2.7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,20514,15404,75,15856,77,722514,35.2,6.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,9956,8220,83,8356,84,364271,36.6,6.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,10558,7184,68,7500,71,358243,33.9,7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,27931,17125,61,17971,64,905154,32.4,-6.4
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,13837,9639,70,9988,72,467367,33.8,-5.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,14094,7486,53,7983,57,437787,31.1,-7.4
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,10363,6633,64,6953,67,341422,32.9,-3.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,5058,3668,73,3791,75,174392,34.5,-2.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,5305,2965,56,3162,60,167030,31.5,-4.4
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,11572,7797,67,8090,70,389063,33.6,-0.8
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5542,4158,75,4253,77,193704,35,-1
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,6030,3639,60,3837,64,195359,32.4,-0.4
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5964,3977,67,4063,68,201066,33.7,-2.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2971,2272,76,2301,77,104538,35.2,-0.3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,2993,1705,57,1762,59,96528,32.3,-5.1
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,22542,15374,68,15869,70,756794,33.6,-0.3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,11073,8511,77,8681,78,388141,35.1,0.7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,11469,6863,60,7188,63,368653,32.1,-1.3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4822,3177,66,3266,68,160623,33.3,-3
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2371,1748,74,1783,75,82499,34.8,-2.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2451,1429,58,1483,61,78124,31.9,-3.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,3334,2388,72,2482,74,115693,34.7,3.7
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1605,1258,78,1290,80,57761,36,2.6
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1729,1130,65,1192,69,57932,33.5,4.9
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,11824,7219,61,7503,63,384019,32.5,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,5745,3940,69,4052,71,194448,33.8,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,6079,3279,54,3451,57,189571,31.2,-7.2
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,19207,10561,55,10790,56,633470,33,-14.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,9400,5755,61,5850,62,320106,34.1,-15.5
+201617,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,9807,4806,49,4940,50,313364,32,-13.6
+201617,Academic year,National,E92000001,England,First language,English,Total,524126,372735,71,380603,73,18310505,34.9,7.5
+201617,Academic year,National,E92000001,England,First language,English,Girls,255819,201194,79,203768,80,9242394,36.1,7.4
+201617,Academic year,National,E92000001,England,First language,English,Boys,268307,171541,64,176835,66,9068111,33.8,7.6
+201617,Academic year,National,E92000001,England,First language,Other than English,Total,132413,82931,63,86251,65,4337501,32.8,.
+201617,Academic year,National,E92000001,England,First language,Other than English,Girls,64483,45336,70,46617,72,2198732,34.1,.
+201617,Academic year,National,E92000001,England,First language,Other than English,Boys,67930,37595,55,39634,58,2138769,31.5,.
+201617,Academic year,National,E92000001,England,First language,unclassified,Total,13325,6632,50,6772,51,432448,32.5,.
+201617,Academic year,National,E92000001,England,First language,unclassified,Girls,6525,3617,55,3676,56,218754,33.5,.
+201617,Academic year,National,E92000001,England,First language,unclassified,Boys,6800,3015,44,3096,46,213694,31.4,.
+201617,Academic year,National,E92000001,England,FSM,FSM,Total,91641,49395,54,51316,56,2885807,31.5,17
+201617,Academic year,National,E92000001,England,FSM,FSM,Girls,44391,27825,63,28576,64,1457463,32.8,15.5
+201617,Academic year,National,E92000001,England,FSM,FSM,Boys,47250,21570,46,22740,48,1428344,30.2,18.4
+201617,Academic year,National,E92000001,England,FSM,All other pupils,Total,578223,412903,71,422310,73,20194647,34.9,.
+201617,Academic year,National,E92000001,England,FSM,All other pupils,Girls,282436,222322,79,225485,80,10202417,36.1,.
+201617,Academic year,National,E92000001,England,FSM,All other pupils,Boys,295787,190581,64,196825,67,9992230,33.8,.
+201617,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,224359,176180,79,179611,80,8205220,36.6,19.4
+201617,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,109318,92951,85,94028,86,4133059,37.8,17.3
+201617,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,115041,83229,72,85583,74,4072161,35.4,21.4
+201617,Academic year,National,E92000001,England,Month of birth,Spring born,Total,218088,152308,70,156021,72,7511800,34.4,.
+201617,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,106583,82485,77,83765,79,3797999,35.6,.
+201617,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,111505,69823,63,72256,65,3713801,33.3,.
+201617,Academic year,National,E92000001,England,Month of birth,Summer born,Total,227417,133810,59,137994,61,7363434,32.4,.
+201617,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,110926,74711,67,76268,69,3728822,33.6,.
+201617,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,116491,59099,51,61726,53,3634612,31.2,.
+201617,Academic year,National,E92000001,England,SEN,No identified SEN,Total,597144,443091,74,453481,76,21141813,35.4,52.5
+201617,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,303055,242109,80,245795,81,10990255,36.3,52.8
+201617,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,294089,200982,68,207686,71,10151558,34.5,49.2
+201617,Academic year,National,E92000001,England,SEN,All SEN,Total,60135,13288,22,14099,23,1534325,25.5,.
+201617,Academic year,National,E92000001,England,SEN,All SEN,Girls,17646,4823,27,4994,28,466084,26.4,.
+201617,Academic year,National,E92000001,England,SEN,All SEN,Boys,42489,8465,20,9105,21,1068241,25.1,.
+201617,Academic year,National,E92000001,England,SEN,SEN support,Total,50862,12940,25,13719,27,1353446,26.6,.
+201617,Academic year,National,E92000001,England,SEN,SEN support,Girls,15088,4689,31,4857,32,415679,27.6,.
+201617,Academic year,National,E92000001,England,SEN,SEN support,Boys,35774,8251,23,8862,25,937767,26.2,.
+201617,Academic year,National,E92000001,England,SEN,SEN statement,Total,9273,348,4,380,4,180879,19.5,.
+201617,Academic year,National,E92000001,England,SEN,SEN statement,Girls,2558,134,5,137,5,50405,19.7,.
+201617,Academic year,National,E92000001,England,SEN,SEN statement,Boys,6715,214,3,243,4,130474,19.4,.
+201617,Academic year,National,E92000001,England,SEN,unclassified,Total,12585,5919,47,6046,48,404316,32.1,.
+201617,Academic year,National,E92000001,England,SEN,unclassified,Girls,6126,3215,52,3272,53,203541,33.2,.
+201617,Academic year,National,E92000001,England,SEN,unclassified,Boys,6459,2704,42,2774,43,200775,31.1,.
+201617,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,1331,186,14,200,15,32409,24.3,.
+201617,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,414,63,15,65,16,10154,24.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,917,123,13,135,15,22255,24.3,.
+201617,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,4757,633,13,690,15,113579,23.9,.
+201617,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,1557,260,17,275,18,38295,24.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,3200,373,12,415,13,75284,23.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1586,11,1,11,1,27947,17.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,522,2,0,2,0,9166,17.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1064,9,1,9,1,18781,17.7,.
+201617,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,798,5,1,5,1,14054,17.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,329,1,0,1,0,5724,17.4,.
+201617,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,469,4,1,4,1,8330,17.8,.
+201617,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Total,6569,1562,24,1654,25,178600,27.2,.
+201617,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Girls,1486,449,30,469,32,41738,28.1,.
+201617,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Boys,5083,1113,22,1185,23,136862,26.9,.
+201617,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,30930,8129,26,8621,28,820108,26.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,9129,2882,32,2982,33,250611,27.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,21801,5247,24,5639,26,569497,26.1,.
+201617,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,1105,358,32,375,34,31064,28.1,.
+201617,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,514,207,40,213,41,15175,29.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,591,151,26,162,27,15889,26.9,.
+201617,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,610,274,45,284,47,18424,30.2,.
+201617,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,289,146,51,151,52,8937,30.9,.
+201617,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,321,128,40,133,41,9487,29.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,221,63,29,66,30,5738,26,.
+201617,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,82,30,37,31,38,2194,26.8,.
+201617,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,139,33,24,35,25,3544,25.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,2295,624,27,646,28,61722,26.9,.
+201617,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,993,308,31,310,31,27041,27.2,.
+201617,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1302,316,24,336,26,34681,26.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,6148,520,8,574,9,130822,21.3,.
+201617,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,1127,123,11,128,11,24335,21.6,.
+201617,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,5021,397,8,446,9,106487,21.2,.
+201617,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,2099,593,28,617,29,56096,26.7,.
+201617,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,741,239,32,247,33,20162,27.2,.
+201617,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,1358,354,26,370,27,35934,26.5,.
+201617,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Total,1686,330,20,356,21,43762,26,.
+201617,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Girls,463,113,24,120,26,12552,27.1,.
+201617,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Boys,1223,217,18,236,19,31210,25.5,.
+201516,Academic year,National,E92000001,England, , ,Total,669052,450492,67,463601,69,23050075,34.5,.
+201516,Academic year,National,E92000001,England, , ,Girls,326105,245792,75,250471,77,11648684,35.7,.
+201516,Academic year,National,E92000001,England, , ,Boys,342947,204700,60,213130,62,11401391,33.2,.
+201516,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,469032,322148,69,330195,70,16303801,34.8,1.1
+201516,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,228070,175258,77,178009,78,8212916,36,1.2
+201516,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,240962,146890,61,152186,63,8090885,33.6,1
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,37862,26175,69,26853,71,1318133,34.8,1.6
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,18629,14348,77,14568,78,673187,36.1,1.4
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,19233,11827,61,12285,64,644946,33.5,1.7
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,61999,40077,65,42119,68,2076007,33.5,-1.4
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,30330,21968,72,22790,75,1055448,34.8,-1.7
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,31669,18109,57,19329,61,1020559,32.2,-1.1
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,30676,20258,66,20991,68,1031362,33.6,-0.9
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15218,11344,75,11599,76,533921,35.1,-0.6
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,15458,8914,58,9392,61,497441,32.2,-1.4
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,2928,1942,66,2034,69,100393,34.3,0.2
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1388,1044,75,1067,77,49558,35.7,0.1
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1540,898,58,967,63,50835,33,0.6
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,10410,6079,58,6376,61,337810,32.5,-8
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,4939,3258,66,3369,68,166476,33.7,-8.6
+201516,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,5471,2821,52,3007,55,171334,31.3,-7.2
+201516,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,56145,33813,60,35033,62,1882569,33.5,-6.9
+201516,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,27531,18572,67,19069,69,957178,34.8,-7.5
+201516,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,28614,15241,53,15964,56,925391,32.3,-6.4
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,422359,295098,70,302116,72,14783438,35,2.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,205343,160303,78,162626,79,7444305,36.3,2.4
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,217016,134795,62,139490,64,7339133,33.8,2.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1598,1114,70,1136,71,56812,35.6,1.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,736,565,77,570,77,26958,36.6,0.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,862,549,64,566,66,29854,34.6,3.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,644,231,36,235,36,19078,29.6,-32.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,316,141,45,142,45,9739,30.8,-31.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,328,90,27,93,28,9339,28.5,-33.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,1793,438,24,471,26,49327,27.5,-43
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,902,274,30,293,32,25619,28.4,-44.3
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,891,164,18,178,20,23708,26.6,-42.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,42638,25267,59,26237,62,1395146,32.7,-7.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,20773,13975,67,14378,69,706295,34,-7.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,21865,11292,52,11859,54,688851,31.5,-7.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,9501,6185,65,6364,67,323548,34.1,-2.3
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4689,3469,74,3530,75,166326,35.5,-1.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,4812,2716,56,2834,59,157222,32.7,-3.3
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5474,3772,69,3864,71,189826,34.7,1.3
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2744,2112,77,2140,78,98641,35.9,1.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2730,1660,61,1724,63,91185,33.4,1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,9153,6711,73,6880,75,326870,35.7,5.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,4527,3638,80,3700,82,167215,36.9,4.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,4626,3073,66,3180,69,159655,34.5,6.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,13734,9507,69,9745,71,477889,34.8,1.7
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,6669,5129,77,5198,78,241005,36.1,1.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,7065,4378,62,4547,64,236884,33.5,2.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,18457,13533,73,14046,76,649166,35.2,6.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,8941,7226,81,7408,83,325839,36.4,6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,9516,6307,66,6638,70,323327,34,7.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,23710,13913,59,14799,62,766658,32.3,-6.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,11664,7782,67,8170,70,392386,33.6,-6.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,12046,6131,51,6629,55,374272,31.1,-7.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,9065,5586,62,5897,65,298526,32.9,-4.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,4469,3131,70,3253,73,154197,34.5,-4
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,4596,2455,53,2644,58,144329,31.4,-4.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,10767,7045,65,7377,69,361657,33.6,-0.8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5256,3829,73,3959,75,183026,34.8,-1.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,5511,3216,58,3418,62,178631,32.4,-0.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5532,3607,65,3701,67,186934,33.8,-2.4
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2765,2049,74,2081,75,97524,35.3,-1.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,2767,1558,56,1620,59,89410,32.3,-3.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,20837,13863,67,14412,69,700459,33.6,-0.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10331,7738,75,7931,77,362514,35.1,0
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,10506,6125,58,6481,62,337945,32.2,-0.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4307,2788,65,2878,67,143969,33.4,-2.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2122,1557,73,1587,75,73883,34.8,-2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2185,1231,56,1291,59,70086,32.1,-3.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,2928,1942,66,2034,69,100393,34.3,0.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1388,1044,75,1067,77,49558,35.7,0.1
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1540,898,58,967,63,50835,33,0.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,10410,6079,58,6376,61,337810,32.5,-8
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,4939,3258,66,3369,68,166476,33.7,-8.6
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,5471,2821,52,3007,55,171334,31.3,-7.2
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,56145,33813,60,35033,62,1882569,33.5,-6.9
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,27531,18572,67,19069,69,957178,34.8,-7.5
+201516,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,28614,15241,53,15964,56,925391,32.3,-6.4
+201516,Academic year,National,E92000001,England,First language,English,Total,469875,327717,70,335804,71,16424636,35,8.1
+201516,Academic year,National,E92000001,England,First language,English,Girls,228756,178258,78,180976,79,8286943,36.2,8.5
+201516,Academic year,National,E92000001,England,First language,English,Boys,241119,149459,62,154828,64,8137693,33.7,7.7
+201516,Academic year,National,E92000001,England,First language,Other than English,Total,118030,71432,61,74843,63,3865920,32.8,.
+201516,Academic year,National,E92000001,England,First language,Other than English,Girls,57676,39366,68,40731,71,1963261,34,.
+201516,Academic year,National,E92000001,England,First language,Other than English,Boys,60354,32066,53,34112,57,1902659,31.5,.
+201516,Academic year,National,E92000001,England,First language,unclassified,Total,81147,51343,63,52954,65,2759519,34,.
+201516,Academic year,National,E92000001,England,First language,unclassified,Girls,39673,28168,71,28764,73,1398480,35.3,.
+201516,Academic year,National,E92000001,England,First language,unclassified,Boys,41474,23175,56,24190,58,1361039,32.8,.
+201516,Academic year,National,E92000001,England,FSM,FSM,Total,93538,48629,52,50890,54,2943572,31.5,17.3
+201516,Academic year,National,E92000001,England,FSM,FSM,Girls,45393,27909,61,28820,63,1493158,32.9,15.5
+201516,Academic year,National,E92000001,England,FSM,FSM,Boys,48145,20720,43,22070,46,1450414,30.1,19
+201516,Academic year,National,E92000001,England,FSM,All other pupils,Total,575514,401863,70,412711,72,20106503,34.9,.
+201516,Academic year,National,E92000001,England,FSM,All other pupils,Girls,280712,217883,78,221651,79,10155526,36.2,.
+201516,Academic year,National,E92000001,England,FSM,All other pupils,Boys,294802,183980,62,191060,65,9950977,33.8,.
+201516,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,227637,175657,77,179790,79,8321899,36.6,20.1
+201516,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,110744,93237,84,94527,85,4187033,37.8,18
+201516,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,116893,82420,71,85263,73,4134866,35.4,22.1
+201516,Academic year,National,E92000001,England,Month of birth,Spring born,Total,212845,144991,68,149165,70,7327735,34.4,.
+201516,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,103711,79187,76,80696,78,3702969,35.7,.
+201516,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,109134,65804,60,68469,63,3624766,33.2,.
+201516,Academic year,National,E92000001,England,Month of birth,Summer born,Total,228570,129844,57,134646,59,7400441,32.4,.
+201516,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,111650,73368,66,75248,67,3758682,33.7,.
+201516,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,116920,56476,48,59398,51,3641759,31.1,.
+201516,Academic year,National,E92000001,England,SEN,No identified SEN,Total,595528,431622,72,443676,75,21080109,35.4,51.4
+201516,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,301954,237664,79,242032,80,10963221,36.3,51.4
+201516,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,293574,193958,66,201644,69,10116888,34.5,48
+201516,Academic year,National,E92000001,England,SEN,All SEN,Total,60560,13044,22,13960,23,1556696,25.7,.
+201516,Academic year,National,E92000001,England,SEN,All SEN,Girls,17722,4861,27,5098,29,473430,26.7,.
+201516,Academic year,National,E92000001,England,SEN,All SEN,Boys,42838,8183,19,8862,21,1083266,25.3,.
+201516,Academic year,National,E92000001,England,SEN,SEN support,Total,51891,12719,25,13605,26,1387431,26.7,.
+201516,Academic year,National,E92000001,England,SEN,SEN support,Girls,15321,4734,31,4964,32,426090,27.8,.
+201516,Academic year,National,E92000001,England,SEN,SEN support,Boys,36570,7985,22,8641,24,961341,26.3,.
+201516,Academic year,National,E92000001,England,SEN,SEN statement,Total,8669,325,4,355,4,169265,19.5,.
+201516,Academic year,National,E92000001,England,SEN,SEN statement,Girls,2401,127,5,134,6,47340,19.7,.
+201516,Academic year,National,E92000001,England,SEN,SEN statement,Boys,6268,198,3,221,4,121925,19.5,.
+201516,Academic year,National,E92000001,England,SEN,unclassified,Total,12964,5826,45,5965,46,413270,31.9,.
+201516,Academic year,National,E92000001,England,SEN,unclassified,Girls,6429,3267,51,3341,52,212033,33,.
+201516,Academic year,National,E92000001,England,SEN,unclassified,Boys,6535,2559,39,2624,40,201237,30.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,1377,208,15,231,17,34065,24.7,.
+201516,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,417,81,19,87,21,10745,25.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,960,127,13,144,15,23320,24.3,.
+201516,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,5374,703,13,770,14,130613,24.3,.
+201516,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,1739,248,14,272,16,42755,24.6,.
+201516,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,3635,455,13,498,14,87858,24.2,.
+201516,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1597,6,0,7,0,28075,17.6,.
+201516,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,469,0,0,0,0,8170,17.4,.
+201516,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1128,6,1,7,1,19905,17.6,.
+201516,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,833,8,1,8,1,14612,17.5,.
+201516,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,355,5,1,5,1,6246,17.6,.
+201516,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,478,3,1,3,1,8366,17.5,.
+201516,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Total,6876,1509,22,1621,24,186545,27.1,.
+201516,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Girls,1576,447,28,475,30,44239,28.1,.
+201516,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Boys,5300,1062,20,1146,22,142306,26.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,31037,7997,26,8515,27,829381,26.7,.
+201516,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,9203,2998,33,3132,34,257061,27.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,21834,4999,23,5383,25,572320,26.2,.
+201516,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,1010,323,32,337,33,28146,27.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,452,163,36,171,38,13033,28.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,558,160,29,166,30,15113,27.1,.
+201516,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,563,230,41,245,44,16871,30,.
+201516,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,242,107,44,115,48,7287,30.1,.
+201516,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,321,123,38,130,40,9584,29.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,184,42,23,47,26,4747,25.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,71,15,21,16,23,1752,24.7,.
+201516,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,113,27,24,31,27,2995,26.5,.
+201516,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,2284,621,27,650,28,61554,27,.
+201516,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,980,301,31,309,32,26641,27.2,.
+201516,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1304,320,25,341,26,34913,26.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,5688,474,8,538,9,121859,21.4,.
+201516,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,996,114,11,123,12,21769,21.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,4692,360,8,415,9,100090,21.3,.
+201516,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,2033,574,28,610,30,55237,27.2,.
+201516,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,730,255,35,261,36,20348,27.9,.
+201516,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,1303,319,24,349,27,34889,26.8,.
+201516,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Total,1704,349,20,381,22,44991,26.4,.
+201516,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Girls,492,127,26,132,27,13384,27.2,.
+201516,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Boys,1212,222,18,249,21,31607,26.1,.
+201415,Academic year,National,E92000001,England, , ,Total,654848,419855,64,433881,66,22486809,34.3,.
+201415,Academic year,National,E92000001,England, , ,Girls,319211,231855,73,237101,74,11381938,35.7,.
+201415,Academic year,National,E92000001,England, , ,Boys,335637,188000,56,196780,59,11104871,33.1,.
+201415,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,453573,297414,66,305676,67,15714901,34.6,1.1
+201415,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,220989,163850,74,166769,75,7943963,35.9,1.2
+201415,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,232584,133564,57,138907,60,7770938,33.4,1.1
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,35987,23769,66,24487,68,1247192,34.7,1.8
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,17567,13174,75,13442,77,633011,36,2.2
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,18420,10595,58,11045,60,614181,33.3,1.3
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,59337,35825,60,38128,64,1971957,33.2,-2
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,28970,19851,69,20825,72,1001038,34.6,-2.4
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,30367,15974,53,17303,57,970919,32,-1.6
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,30993,19313,62,20178,65,1036720,33.5,-1.2
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15297,10907,71,11236,73,533894,34.9,-0.8
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,15696,8406,54,8942,57,502826,32,-1.7
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,2893,1825,63,1935,67,98433,34,0.6
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1413,997,71,1041,74,49520,35,-0.6
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1480,828,56,894,60,48913,33,1.8
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,10061,5493,55,5823,58,324942,32.3,-8.4
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,4879,3055,63,3190,65,163931,33.6,-8.9
+201415,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,5182,2438,47,2633,51,161011,31.1,-7.8
+201415,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,62004,36216,58,37654,61,2092664,33.8,-5.5
+201415,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,30096,20021,67,20598,68,1056581,35.1,-5.8
+201415,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,31908,16195,51,17056,53,1036083,32.5,-5.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,409739,273712,67,281036,69,14294853,34.9,2.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,199538,150627,75,153150,77,7221517,36.2,2.5
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,210201,123085,59,127886,61,7073336,33.7,2.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1586,1049,66,1069,67,56225,35.5,1.1
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,751,563,75,567,75,27351,36.4,1.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,835,486,58,502,60,28874,34.6,1.5
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,621,229,37,238,38,18707,30.1,-27.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,310,145,47,152,49,9815,31.7,-25.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,311,84,27,86,28,8892,28.6,-31
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,1676,386,23,407,24,46264,27.6,-42
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,841,237,28,247,29,24278,28.9,-44.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,835,149,18,160,19,21986,26.3,-39.5
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,39951,22038,55,22926,57,1298852,32.5,-8.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,19549,12278,63,12653,65,661002,33.8,-9.6
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,20402,9760,48,10273,50,637850,31.3,-8.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,9040,5673,63,5827,64,308455,34.1,-1.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4435,3208,72,3263,74,157217,35.4,-0.7
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,4605,2465,54,2564,56,151238,32.8,-3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5191,3400,65,3521,68,178321,34.4,1.6
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2552,1907,75,1955,77,91421,35.8,2.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2639,1493,57,1566,59,86900,32.9,0.7
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,8602,5949,69,6120,71,303478,35.3,4.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,4235,3265,77,3333,79,155197,36.6,4.4
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,4367,2684,61,2787,64,148281,34,5.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,13154,8747,66,9019,69,456938,34.7,2.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,6345,4794,76,4891,77,229176,36.1,2.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,6809,3953,58,4128,61,227762,33.5,2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,16958,11950,70,12474,74,596867,35.2,7.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,8224,6393,78,6584,80,299385,36.4,5.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,8734,5557,64,5890,67,297482,34.1,8.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,23223,12510,54,13560,58,741758,31.9,-7.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,11415,7107,62,7584,66,379269,33.2,-7.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,11808,5403,46,5976,51,362489,30.7,-8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,8779,4930,56,5307,60,285786,32.6,-5.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,4294,2794,65,2966,69,146405,34.1,-5.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,4485,2136,48,2341,52,139381,31.1,-6.4
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,10377,6435,62,6787,65,347546,33.5,-0.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5037,3557,71,3691,73,175979,34.9,-1
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,5340,2878,54,3096,58,171567,32.1,-0.7
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5536,3394,61,3500,63,185293,33.5,-3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2693,1915,71,1952,72,94101,34.9,-1.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,2843,1479,52,1548,54,91192,32.1,-4.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,21235,13334,63,13987,66,711185,33.5,-0.4
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10520,7539,72,7779,74,367985,35,-0.3
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,10715,5795,54,6208,58,343200,32,-0.7
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4222,2585,61,2691,64,140242,33.2,-2.5
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2084,1453,70,1505,72,71808,34.5,-2.1
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2138,1132,53,1186,55,68434,32,-3.2
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,2893,1825,63,1935,67,98433,34,0.6
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1413,997,71,1041,74,49520,35,-0.6
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1480,828,56,894,60,48913,33,1.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,10061,5493,55,5823,58,324942,32.3,-8.4
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,4879,3055,63,3190,65,163931,33.6,-8.9
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,5182,2438,47,2633,51,161011,31.1,-7.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,62004,36216,58,37654,61,2092664,33.8,-5.5
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,30096,20021,67,20598,68,1056581,35.1,-5.8
+201415,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,31908,16195,51,17056,53,1036083,32.5,-5.2
+201415,Academic year,National,E92000001,England,First language,English,Total,451626,300910,67,309283,68,15731271,34.8,8.7
+201415,Academic year,National,E92000001,England,First language,English,Girls,220414,165988,75,168913,77,7966966,36.1,9.3
+201415,Academic year,National,E92000001,England,First language,English,Boys,231212,134922,58,140370,61,7764305,33.6,8.1
+201415,Academic year,National,E92000001,England,First language,Other than English,Total,114038,64390,56,68145,60,3710913,32.5,.
+201415,Academic year,National,E92000001,England,First language,Other than English,Girls,55646,35863,64,37452,67,1883650,33.9,.
+201415,Academic year,National,E92000001,England,First language,Other than English,Boys,58392,28527,49,30693,53,1827263,31.3,.
+201415,Academic year,National,E92000001,England,First language,unclassified,Total,89184,54555,61,56453,63,3044625,34.1,.
+201415,Academic year,National,E92000001,England,First language,unclassified,Girls,43151,30004,70,30736,71,1531322,35.5,.
+201415,Academic year,National,E92000001,England,First language,unclassified,Boys,46033,24551,53,25717,56,1513303,32.9,.
+201415,Academic year,National,E92000001,England,FSM,FSM,Total,97156,47217,49,49747,51,3043507,31.3,17.7
+201415,Academic year,National,E92000001,England,FSM,FSM,Girls,47086,27353,58,28406,60,1542815,32.8,16.4
+201415,Academic year,National,E92000001,England,FSM,FSM,Boys,50070,19864,40,21341,43,1500692,30,18.8
+201415,Academic year,National,E92000001,England,FSM,All other pupils,Total,557692,372638,67,384134,69,19443302,34.9,.
+201415,Academic year,National,E92000001,England,FSM,All other pupils,Girls,272125,204502,75,208695,77,9839123,36.2,.
+201415,Academic year,National,E92000001,England,FSM,All other pupils,Boys,285567,168136,59,175439,61,9604179,33.6,.
+201415,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,219460,163335,74,167865,76,8007836,36.5,21
+201415,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,106760,87583,82,89136,83,4032970,37.8,19.2
+201415,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,112700,75752,67,78729,70,3974866,35.3,22.8
+201415,Academic year,National,E92000001,England,Month of birth,Spring born,Total,211247,137171,65,141724,67,7252959,34.3,.
+201415,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,103121,76002,74,77659,75,3678002,35.7,.
+201415,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,108126,61169,57,64065,59,3574957,33.1,.
+201415,Academic year,National,E92000001,England,Month of birth,Summer born,Total,224141,119349,53,124292,55,7226014,32.2,.
+201415,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,109330,68270,62,70306,64,3670966,33.6,.
+201415,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,114811,51079,44,53986,47,3555048,31,.
+201415,Academic year,National,E92000001,England,SEN,No identified SEN,Total,581027,402291,69,415267,71,20508035,35.3,50.4
+201415,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,295040,224205,76,229155,78,10695464,36.3,51
+201415,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,285987,178086,62,186112,65,9812571,34.3,46.4
+201415,Academic year,National,E92000001,England,SEN,All SEN,Total,60453,11801,20,12712,21,1553300,25.7,.
+201415,Academic year,National,E92000001,England,SEN,All SEN,Girls,17727,4487,25,4731,27,473608,26.7,.
+201415,Academic year,National,E92000001,England,SEN,All SEN,Boys,42726,7314,17,7981,19,1079692,25.3,.
+201415,Academic year,National,E92000001,England,SEN,SEN support,Total,51495,11462,22,12348,24,1376380,26.7,.
+201415,Academic year,National,E92000001,England,SEN,SEN support,Girls,15247,4368,29,4607,30,424219,27.8,.
+201415,Academic year,National,E92000001,England,SEN,SEN support,Boys,36248,7094,20,7741,21,952161,26.3,.
+201415,Academic year,National,E92000001,England,SEN,SEN statement,Total,8958,339,4,364,4,176920,19.7,.
+201415,Academic year,National,E92000001,England,SEN,SEN statement,Girls,2480,119,5,124,5,49389,19.9,.
+201415,Academic year,National,E92000001,England,SEN,SEN statement,Boys,6478,220,3,240,4,127531,19.7,.
+201415,Academic year,National,E92000001,England,SEN,unclassified,Total,13368,5763,43,5902,44,425474,31.8,.
+201415,Academic year,National,E92000001,England,SEN,unclassified,Girls,6444,3163,49,3215,50,212866,33,.
+201415,Academic year,National,E92000001,England,SEN,unclassified,Boys,6924,2600,38,2687,39,212608,30.7,.
+201415,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,1159,164,14,174,15,28511,24.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,367,53,14,56,15,9103,24.8,.
+201415,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,792,111,14,118,15,19408,24.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,4452,440,10,496,11,105342,23.7,.
+201415,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,1515,175,12,194,13,36541,24.1,.
+201415,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,2937,265,9,302,10,68801,23.4,.
+201415,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1733,12,1,12,1,30768,17.8,.
+201415,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,524,6,1,6,1,9382,17.9,.
+201415,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1209,6,0,6,0,21386,17.7,.
+201415,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,884,6,1,6,1,15578,17.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,366,4,1,4,1,6451,17.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,518,2,0,2,0,9127,17.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Total,6108,1156,19,1250,20,164771,27,.
+201415,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Girls,1350,374,28,394,29,38049,28.2,.
+201415,Academic year,National,E92000001,England,SEN primary need,Social; emotional and mental health,Boys,4758,782,16,856,18,126722,26.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,26955,6143,23,6607,25,715272,26.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,7925,2305,29,2428,31,219553,27.7,.
+201415,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,19030,3838,20,4179,22,495719,26,.
+201415,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,976,257,26,272,28,26830,27.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,401,138,34,141,35,11530,28.8,.
+201415,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,575,119,21,131,23,15300,26.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,557,190,34,198,36,15970,28.7,.
+201415,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,237,93,39,97,41,6963,29.4,.
+201415,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,320,97,30,101,32,9007,28.1,.
+201415,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,153,32,21,37,24,3990,26.1,.
+201415,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,46,14,30,15,33,1253,27.2,.
+201415,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,107,18,17,22,21,2737,25.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,2054,458,22,486,24,54694,26.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,900,231,26,242,27,24281,27,.
+201415,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1154,227,20,244,21,30413,26.4,.
+201415,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,5170,336,6,377,7,110611,21.4,.
+201415,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,803,65,8,71,9,17266,21.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,4367,271,6,306,7,93345,21.4,.
+201415,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,1927,493,26,529,27,51297,26.6,.
+201415,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,679,218,32,223,33,18672,27.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,1248,275,22,306,25,32625,26.1,.
+201415,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Total,1569,307,20,336,21,41606,26.5,.
+201415,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Girls,464,112,24,121,26,12685,27.3,.
+201415,Academic year,National,E92000001,England,SEN primary need,No specialist assessment,Boys,1105,195,18,215,19,28921,26.2,.
+201314,Academic year,National,E92000001,England, , ,Total,641331,371970,58,387086,60,21671658,33.8,.
+201314,Academic year,National,E92000001,England, , ,Girls,312970,209224,67,215081,69,10981291,35.1,.
+201314,Academic year,National,E92000001,England, , ,Boys,328361,162746,50,172005,52,10690367,32.6,.
+201314,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,450325,267972,60,277191,62,15366453,34.1,1.2
+201314,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,219470,150329,68,153771,70,7769727,35.4,1.3
+201314,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,230855,117643,51,123420,53,7596726,32.9,1.1
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,34717,20887,60,21656,62,1185813,34.2,2
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,17143,11878,69,12150,71,608462,35.5,2.2
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,17574,9009,51,9506,54,577351,32.9,1.7
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,60550,32126,53,34635,57,1963451,32.4,-3.2
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,29704,18158,61,19220,65,1001431,33.7,-4
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,30846,13968,45,15415,50,962020,31.2,-2.4
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,31792,17914,56,18846,59,1049373,33,-1.1
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15561,10188,65,10547,68,535090,34.4,-0.9
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,16231,7726,48,8299,51,514283,31.7,-1.3
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,2774,1518,55,1617,58,91786,33.1,-2.1
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1329,841,63,883,66,45822,34.5,-2.3
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1445,677,47,734,51,45964,31.8,-1.6
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,10058,4868,48,5173,51,318140,31.6,-8.9
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,4841,2748,57,2889,60,159835,33,-9
+201314,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,5217,2120,41,2284,44,158305,30.3,-8.6
+201314,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,51115,26685,52,27968,55,1696642,33.2,-5.6
+201314,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,24922,15082,61,15621,63,860924,34.5,-6
+201314,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,26193,11603,44,12347,47,835718,31.9,-5.2
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,408824,248584,61,256891,63,14050202,34.4,2.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,199323,139400,70,142474,71,7105994,35.7,2.8
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,209501,109184,52,114417,55,6944208,33.1,2.2
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1633,1021,63,1033,63,57296,35.1,2.9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,795,560,70,563,71,29039,36.5,2.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,838,461,55,470,56,28257,33.7,3.7
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,564,158,28,174,31,16259,28.8,-29.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,254,82,32,86,34,7506,29.6,-34.9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,310,76,25,88,28,8753,28.2,-24
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,1695,303,18,324,19,45362,26.8,-41.2
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,832,193,23,204,25,23298,28,-44.2
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,863,110,13,120,14,22064,25.6,-38.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,37609,17906,48,18769,50,1197334,31.8,-10.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,18266,10094,55,10444,57,603890,33.1,-11.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,19343,7812,40,8325,43,593444,30.7,-9.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,8831,4985,56,5163,58,296521,33.6,-1.9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4406,2887,66,2957,67,153426,34.8,-1.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,4425,2098,47,2206,50,143095,32.3,-2.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,5127,3048,59,3163,62,174083,34,1.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2537,1716,68,1764,70,89031,35.1,0.8
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2590,1332,51,1399,54,85052,32.8,1.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,8234,5262,64,5456,66,286998,34.9,5.9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,3974,2935,74,2994,75,144386,36.3,6.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,4260,2327,55,2462,58,142612,33.5,5.4
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,12525,7592,61,7874,63,428211,34.2,2.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,6226,4340,70,4435,71,221619,35.6,2.5
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,6299,3252,52,3439,55,206592,32.8,2.2
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,16838,10639,63,11225,67,579430,34.4,6.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,8261,5872,71,6098,74,294683,35.7,5.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,8577,4767,56,5127,60,284747,33.2,7.4
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,24022,10952,46,12104,50,744635,31,-10
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,11689,6287,54,6796,58,377191,32.3,-10.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,12333,4665,38,5308,43,367444,29.8,-9.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,9137,4661,51,5045,55,292249,32,-5.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,4582,2666,58,2845,62,152120,33.2,-6.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,4555,1995,44,2200,48,140129,30.8,-4.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,10553,5874,56,6261,59,347137,32.9,-1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5172,3333,64,3481,67,177437,34.3,-1.4
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,5381,2541,47,2780,52,169700,31.5,-0.7
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,5934,3325,56,3444,58,197581,33.3,-2.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,2934,1919,65,1954,67,101513,34.6,-2.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,3000,1406,47,1490,50,96068,32,-2.7
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,21547,12238,57,12935,60,710619,33,-0.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10564,6953,66,7230,68,363142,34.4,-0.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,10983,5285,48,5705,52,347477,31.6,-0.4
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4311,2351,55,2467,57,141173,32.7,-3.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2063,1316,64,1363,66,70435,34.1,-2.7
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2248,1035,46,1104,49,70738,31.5,-3.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,2774,1518,55,1617,58,91786,33.1,-2.1
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1329,841,63,883,66,45822,34.5,-2.3
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1445,677,47,734,51,45964,31.8,-1.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,10058,4868,48,5173,51,318140,31.6,-8.9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,4841,2748,57,2889,60,159835,33,-9
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,5217,2120,41,2284,44,158305,30.3,-8.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,51115,26685,52,27968,55,1696642,33.2,-5.6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,24922,15082,61,15621,63,860924,34.5,-6
+201314,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,26193,11603,44,12347,47,835718,31.9,-5.2
+201314,Academic year,National,E92000001,England,First language,English,Total,459790,279025,61,288674,63,15781242,34.3,10.2
+201314,Academic year,National,E92000001,England,First language,English,Girls,224361,156473,70,160045,71,7989671,35.6,11.1
+201314,Academic year,National,E92000001,England,First language,English,Boys,235429,122552,52,128629,55,7791571,33.1,9.4
+201314,Academic year,National,E92000001,England,First language,Other than English,Total,113410,55840,49,59623,53,3607218,31.8,.
+201314,Academic year,National,E92000001,England,First language,Other than English,Girls,55425,31779,57,33380,60,1834901,33.1,.
+201314,Academic year,National,E92000001,England,First language,Other than English,Boys,57985,24061,41,26243,45,1772317,30.6,.
+201314,Academic year,National,E92000001,England,First language,unclassified,Total,68131,37105,54,38789,57,2283198,33.5,.
+201314,Academic year,National,E92000001,England,First language,unclassified,Girls,33184,20972,63,21656,65,1156719,34.9,.
+201314,Academic year,National,E92000001,England,First language,unclassified,Boys,34947,16133,46,17133,49,1126479,32.2,.
+201314,Academic year,National,E92000001,England,FSM,FSM,Total,112697,47381,42,50452,45,3474209,30.8,18.9
+201314,Academic year,National,E92000001,England,FSM,FSM,Girls,55217,28133,51,29520,53,1778711,32.2,18.5
+201314,Academic year,National,E92000001,England,FSM,FSM,Boys,57480,19248,33,20932,36,1695498,29.5,19.4
+201314,Academic year,National,E92000001,England,FSM,All other pupils,Total,528634,324589,61,336634,64,18197449,34.4,.
+201314,Academic year,National,E92000001,England,FSM,All other pupils,Girls,257753,181091,70,185561,72,9202580,35.7,.
+201314,Academic year,National,E92000001,England,FSM,All other pupils,Boys,270881,143498,53,151073,56,8994869,33.2,.
+201314,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,213883,147457,69,152634,71,7684844,35.9,22.4
+201314,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,104117,80253,77,82047,79,3873498,37.2,20.7
+201314,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,109766,67204,61,70587,64,3811346,34.7,24.1
+201314,Academic year,National,E92000001,England,Month of birth,Spring born,Total,206204,121088,59,126112,61,6969410,33.8,.
+201314,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,100712,68270,68,70210,70,3534119,35.1,.
+201314,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,105492,52818,50,55902,53,3435291,32.6,.
+201314,Academic year,National,E92000001,England,Month of birth,Summer born,Total,221244,103425,47,108340,49,7017404,31.7,.
+201314,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,108141,60701,56,62824,58,3573674,33,.
+201314,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,113103,42724,38,45516,40,3443730,30.4,.
+201314,Academic year,National,E92000001,England,SEN,No identified SEN,Total,563356,355513,63,369521,66,19586689,34.8,47.1
+201314,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,286577,201736,70,207223,72,10238423,35.7,48.6
+201314,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,276779,153777,56,162298,59,9348266,33.8,42.4
+201314,Academic year,National,E92000001,England,SEN,All SEN,Total,64495,11046,17,11949,19,1661314,25.8,.
+201314,Academic year,National,E92000001,England,SEN,All SEN,Girls,19908,4459,22,4726,24,531278,26.7,.
+201314,Academic year,National,E92000001,England,SEN,All SEN,Boys,44587,6587,15,7223,16,1130036,25.3,.
+201314,Academic year,National,E92000001,England,SEN,SEN without a statement,Total,56155,10799,19,11679,21,1497161,26.7,.
+201314,Academic year,National,E92000001,England,SEN,SEN without a statement,Girls,17532,4357,25,4621,26,484122,27.6,.
+201314,Academic year,National,E92000001,England,SEN,SEN without a statement,Boys,38623,6442,17,7058,18,1013039,26.2,.
+201314,Academic year,National,E92000001,England,SEN,unclassified,Total,21820,5658,26,5886,27,587808,26.9,.
+201314,Academic year,National,E92000001,England,SEN,unclassified,Girls,8861,3131,35,3237,37,258746,29.2,.
+201314,Academic year,National,E92000001,England,SEN,unclassified,Boys,12959,2527,19,2649,20,329062,25.4,.
+201314,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,781,73,9,86,11,18085,23.2,.
+201314,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,232,31,13,31,13,5561,24,.
+201314,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,549,42,8,55,10,12524,22.8,.
+201314,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,2196,127,6,137,6,47663,21.7,.
+201314,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,641,41,6,43,7,13853,21.6,.
+201314,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,1555,86,6,94,6,33810,21.7,.
+201314,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1584,9,1,11,1,28152,17.8,.
+201314,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,512,4,1,4,1,9119,17.8,.
+201314,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1072,5,0,7,1,19033,17.8,.
+201314,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,764,2,0,3,0,13371,17.5,.
+201314,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,324,1,0,1,0,5597,17.3,.
+201314,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,440,1,0,2,0,7774,17.7,.
+201314,Academic year,National,E92000001,England,SEN primary need,"Behaviour, emotional and social difficulty",Total,4299,520,12,568,13,109577,25.5,.
+201314,Academic year,National,E92000001,England,SEN primary need,"Behaviour, emotional and social difficulty",Girls,877,164,19,174,20,23080,26.3,.
+201314,Academic year,National,E92000001,England,SEN primary need,"Behaviour, emotional and social difficulty",Boys,3422,356,10,394,12,86497,25.3,.
+201314,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,18868,3468,18,3733,20,490027,26,.
+201314,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,5463,1291,24,1362,25,147035,26.9,.
+201314,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,13405,2177,16,2371,18,342992,25.6,.
+201314,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,868,220,25,226,26,23635,27.2,.
+201314,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,402,115,29,119,30,11255,28,.
+201314,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,466,105,23,107,23,12380,26.6,.
+201314,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,494,135,27,151,31,13955,28.2,.
+201314,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,207,58,28,67,32,5880,28.4,.
+201314,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,287,77,27,84,29,8075,28.1,.
+201314,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,92,15,16,15,16,2245,24.4,.
+201314,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,40,9,23,9,23,969,24.2,.
+201314,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,52,6,12,6,12,1276,24.5,.
+201314,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,1828,337,18,358,20,47736,26.1,.
+201314,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,796,184,23,194,24,21500,27,.
+201314,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1032,153,15,164,16,26236,25.4,.
+201314,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,4317,219,5,255,6,90716,21,.
+201314,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,681,47,7,50,7,14434,21.2,.
+201314,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,3636,172,5,205,6,76282,21,.
+201314,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,1394,287,21,307,22,36061,25.9,.
+201314,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,578,143,25,155,27,15261,26.4,.
+201314,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,816,144,18,152,19,20800,25.5,.
+201213,Academic year,National,E92000001,England, , ,Total,643302,314649,49,332438,52,21122110,32.8,.
+201213,Academic year,National,E92000001,England, , ,Girls,314098,181048,58,188011,60,10714574,34.1,.
+201213,Academic year,National,E92000001,England, , ,Boys,329204,133601,41,144427,44,10407536,31.6,.
+201213,Academic year,National,E92000001,England,Ethnicity: major group,White,Total,450431,227683,51,239009,53,14941821,33.2,1.4
+201213,Academic year,National,E92000001,England,Ethnicity: major group,White,Girls,219491,130738,60,135057,62,7559340,34.4,1.7
+201213,Academic year,National,E92000001,England,Ethnicity: major group,White,Boys,230940,96945,42,103952,45,7382481,32,1.1
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Total,33808,17015,50,17959,53,1120642,33.1,1.4
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Girls,16692,9940,60,10288,62,575586,34.5,1.8
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Mixed,Boys,17116,7075,41,7671,45,545056,31.8,0.9
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Total,60556,26082,43,28621,47,1896462,31.3,-4.4
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Girls,29659,14996,51,16092,54,965554,32.6,-5.6
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Asian,Boys,30897,11086,36,12529,41,930908,30.1,-3.3
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Black,Total,32305,15162,47,16360,51,1036706,32.1,-1
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Black,Girls,15967,8862,56,9357,59,534273,33.5,-1.3
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Black,Boys,16338,6300,39,7003,43,502433,30.8,-1
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Total,2530,1156,46,1238,49,81756,32.3,-2.7
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Girls,1249,648,52,681,55,41729,33.4,-5.3
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Chinese,Boys,1281,508,40,557,43,40027,31.2,-0.4
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Other,Total,9790,3969,41,4299,44,303729,31,-7.8
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Other,Girls,4742,2291,48,2415,51,153055,32.3,-8.9
+201213,Academic year,National,E92000001,England,Ethnicity: major group,Other,Boys,5048,1678,33,1884,37,150674,29.8,-6.5
+201213,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Total,53882,23582,44,24952,46,1740994,32.3,-5.4
+201213,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Girls,26298,13573,52,14121,54,885037,33.7,-6.2
+201213,Academic year,National,E92000001,England,Ethnicity: major group,unclassified,Boys,27584,10009,36,10831,39,855957,31,-4.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Total,412587,213144,52,223529,54,13773660,33.4,2.5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Girls,200962,122306,61,126211,63,6963500,34.7,2.9
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White British,Boys,211625,90838,43,97318,46,6810160,32.2,2.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Total,1681,929,55,967,58,57456,34.2,5.8
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Girls,833,529,64,542,65,29417,35.3,5.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Irish,Boys,848,400,47,425,50,28039,33.1,6.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Total,542,116,21,128,24,15301,28.2,-28.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Girls,280,68,24,75,27,8153,29.1,-33.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Traveller of Irish heritage,Boys,262,48,18,53,20,7148,27.3,-23.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Total,1443,217,15,237,16,37767,26.2,-35.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Girls,713,142,20,154,22,19546,27.4,-38.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Gypsy Romany,Boys,730,75,10,83,11,18221,25,-32.5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Total,34178,13277,39,14148,41,1057637,30.9,-10.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Girls,16703,7693,46,8075,48,538724,32.3,-11.5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other white background,Boys,17475,5584,32,6073,35,518913,29.7,-9.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Total,8919,4199,47,4402,49,290858,32.6,-2.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Girls,4365,2481,57,2556,59,148462,34,-1.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black Caribbean,Boys,4554,1718,38,1846,41,142396,31.3,-3.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Total,4837,2365,49,2511,52,158780,32.8,0.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Girls,2445,1427,58,1488,61,83747,34.3,1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and black African,Boys,2392,938,39,1023,43,75033,31.4,-1.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Total,7965,4327,54,4560,57,268892,33.8,5.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Girls,3921,2471,63,2549,65,137207,35,5.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,White and Asian,Boys,4044,1856,46,2011,50,131685,32.6,5.9
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Total,12087,6124,51,6486,54,402112,33.3,2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Girls,5961,3561,60,3695,62,206170,34.6,2.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other mixed background,Boys,6126,2563,42,2791,46,195942,32,1.7
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Total,16554,8651,52,9377,57,548642,33.1,5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Girls,8125,4870,60,5162,64,279226,34.4,3.7
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Indian,Boys,8429,3781,45,4215,50,269416,32,6.1
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Total,23070,8471,37,9455,41,692818,30,-10.7
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Girls,11275,4913,44,5360,48,352025,31.2,-12.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Pakistani,Boys,11795,3558,30,4095,35,340793,28.9,-9.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Total,9008,3648,40,4050,45,277738,30.8,-6.7
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Girls,4393,2157,49,2331,53,141814,32.3,-6.8
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Bangladeshi,Boys,4615,1491,32,1719,37,135924,29.5,-6.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Total,11924,5312,45,5739,48,377264,31.6,-3.5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Girls,5866,3056,52,3239,55,192489,32.8,-4.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other Asian background,Boys,6058,2256,37,2500,41,184775,30.5,-2.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Total,6238,2865,46,3063,49,201571,32.3,-2.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Girls,3129,1726,55,1812,58,105557,33.7,-1.9
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Caribbean,Boys,3109,1139,37,1251,40,96014,30.9,-3.6
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,African,Total,21862,10352,47,11216,51,701119,32.1,-0.4
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,African,Girls,10766,6007,56,6351,59,359986,33.4,-0.9
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,African,Boys,11096,4345,39,4865,44,341133,30.7,0
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Total,4205,1945,46,2081,49,134016,31.9,-2.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Girls,2072,1129,54,1194,58,68730,33.2,-2.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other black background,Boys,2133,816,38,887,42,65286,30.6,-2.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Total,2530,1156,46,1238,49,81756,32.3,-2.7
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Girls,1249,648,52,681,55,41729,33.4,-5.3
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Chinese,Boys,1281,508,40,557,43,40027,31.2,-0.4
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Total,9790,3969,41,4299,44,303729,31,-7.8
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Girls,4742,2291,48,2415,51,153055,32.3,-8.9
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,Any other ethnic group,Boys,5048,1678,33,1884,37,150674,29.8,-6.5
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Total,53882,23582,44,24952,46,1740994,32.3,-5.4
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Girls,26298,13573,52,14121,54,885037,33.7,-6.2
+201213,Academic year,National,E92000001,England,Ethnicity: minor group,unclassified,Boys,27584,10009,36,10831,39,855957,31,-4.6
+201213,Academic year,National,E92000001,England,First language,English,Total,448550,231177,52,242802,54,14953722,33.3,10.6
+201213,Academic year,National,E92000001,England,First language,English,Girls,219051,133025,61,137440,63,7582631,34.6,12.4
+201213,Academic year,National,E92000001,England,First language,English,Boys,229499,98152,43,105362,46,7371091,32.1,8.8
+201213,Academic year,National,E92000001,England,First language,Other than English,Total,108629,43378,40,47331,44,3350853,30.8,.
+201213,Academic year,National,E92000001,England,First language,Other than English,Girls,53168,25071,47,26772,50,1707412,32.1,.
+201213,Academic year,National,E92000001,England,First language,Other than English,Boys,55461,18307,33,20559,37,1643441,29.6,.
+201213,Academic year,National,E92000001,England,First language,unclassified,Total,86123,40094,47,42305,49,2817535,32.7,.
+201213,Academic year,National,E92000001,England,First language,unclassified,Girls,41879,22952,55,23799,57,1424531,34,.
+201213,Academic year,National,E92000001,England,First language,unclassified,Boys,44244,17142,39,18506,42,1393004,31.5,.
+201213,Academic year,National,E92000001,England,FSM,FSM,Total,118945,39708,33,43079,36,3561330,29.9,19
+201213,Academic year,National,E92000001,England,FSM,FSM,Girls,58303,24181,41,25674,44,1824476,31.3,19.4
+201213,Academic year,National,E92000001,England,FSM,FSM,Boys,60642,15527,26,17405,29,1736854,28.6,18.6
+201213,Academic year,National,E92000001,England,FSM,All other pupils,Total,524357,274941,52,289359,55,17560780,33.5,.
+201213,Academic year,National,E92000001,England,FSM,All other pupils,Girls,255795,156867,61,162337,63,8890098,34.8,.
+201213,Academic year,National,E92000001,England,FSM,All other pupils,Boys,268562,118074,44,127022,47,8670682,32.3,.
+201213,Academic year,National,E92000001,England,Month of birth,Autumn born,Total,211655,126960,60,133404,63,7381558,34.9,22.7
+201213,Academic year,National,E92000001,England,Month of birth,Autumn born,Girls,103014,70564,68,72839,71,3718402,36.1,22.2
+201213,Academic year,National,E92000001,England,Month of birth,Autumn born,Boys,108641,56396,52,60565,56,3663156,33.7,23.3
+201213,Academic year,National,E92000001,England,Month of birth,Spring born,Total,209083,103364,49,109323,52,6872152,32.9,.
+201213,Academic year,National,E92000001,England,Month of birth,Spring born,Girls,102029,59901,59,62258,61,3486924,34.2,.
+201213,Academic year,National,E92000001,England,Month of birth,Spring born,Boys,107054,43463,41,47065,44,3385228,31.6,.
+201213,Academic year,National,E92000001,England,Month of birth,Summer born,Total,222564,84325,38,89711,40,6868400,30.9,.
+201213,Academic year,National,E92000001,England,Month of birth,Summer born,Girls,109055,50583,46,52914,49,3509248,32.2,.
+201213,Academic year,National,E92000001,England,Month of birth,Summer born,Boys,113509,33742,30,36797,32,3359152,29.6,.
+201213,Academic year,National,E92000001,England,SEN,No identified SEN,Total,566076,301432,53,318204,56,19094277,33.7,42.1
+201213,Academic year,National,E92000001,England,SEN,No identified SEN,Girls,287865,174767,61,181451,63,9988123,34.7,44.7
+201213,Academic year,National,E92000001,England,SEN,No identified SEN,Boys,278211,126665,46,136753,49,9106154,32.7,36.9
+201213,Academic year,National,E92000001,England,SEN,All SEN,Total,63148,8131,13,8923,14,1591811,25.2,.
+201213,Academic year,National,E92000001,England,SEN,All SEN,Girls,19196,3339,17,3526,18,500923,26.1,.
+201213,Academic year,National,E92000001,England,SEN,All SEN,Boys,43952,4792,11,5397,12,1090888,24.8,.
+201213,Academic year,National,E92000001,England,SEN,SEN without a statement,Total,55144,7992,14,8766,16,1435295,26,.
+201213,Academic year,National,E92000001,England,SEN,SEN without a statement,Girls,16885,3278,19,3459,20,455259,27,.
+201213,Academic year,National,E92000001,England,SEN,SEN without a statement,Boys,38259,4714,12,5307,14,980036,25.6,.
+201213,Academic year,National,E92000001,England,SEN,unclassified,Total,22082,5225,24,5468,25,592538,26.8,.
+201213,Academic year,National,E92000001,England,SEN,unclassified,Girls,9348,3003,32,3101,33,271192,29,.
+201213,Academic year,National,E92000001,England,SEN,unclassified,Boys,12734,2222,17,2367,19,321346,25.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Total,771,49,6,56,7,17136,22.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Girls,223,15,7,15,7,4859,21.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Specific learning difficulty,Boys,548,34,6,41,7,12277,22.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Total,2326,84,4,100,4,49693,21.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Girls,704,37,5,43,6,15297,21.7,.
+201213,Academic year,National,E92000001,England,SEN primary need,Moderate learning difficulty,Boys,1622,47,3,57,4,34396,21.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Total,1499,6,0,7,0,26687,17.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Girls,460,3,1,3,1,8190,17.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Severe learning difficulty,Boys,1039,3,0,4,0,18497,17.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Total,742,7,1,8,1,13145,17.7,.
+201213,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Girls,327,5,2,5,2,5834,17.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Profound and multiple learning difficulties,Boys,415,2,0,3,1,7311,17.6,.
+201213,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Total,18070,2674,15,2872,16,459609,25.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Girls,5145,1003,19,1039,20,135501,26.3,.
+201213,Academic year,National,E92000001,England,SEN primary need,Speech; language and communication difficulty,Boys,12925,1671,13,1833,14,324108,25.1,.
+201213,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Total,845,165,20,171,20,22511,26.6,.
+201213,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Girls,375,92,25,95,25,10281,27.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Hearing impairment,Boys,470,73,16,76,16,12230,26,.
+201213,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Total,488,106,22,118,24,13741,28.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Girls,209,54,26,57,27,5954,28.5,.
+201213,Academic year,National,E92000001,England,SEN primary need,Visual impairment,Boys,279,52,19,61,22,7787,27.9,.
+201213,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Total,85,6,7,8,9,1907,22.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Girls,31,2,6,3,10,689,22.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Multi sensory impairment,Boys,54,4,7,5,9,1218,22.6,.
+201213,Academic year,National,E92000001,England,SEN primary need,Physical disability,Total,1800,197,11,217,12,45369,25.2,.
+201213,Academic year,National,E92000001,England,SEN primary need,Physical disability,Girls,748,89,12,99,13,19060,25.5,.
+201213,Academic year,National,E92000001,England,SEN primary need,Physical disability,Boys,1052,108,10,118,11,26309,25,.
+201213,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Total,3807,130,3,152,4,79007,20.8,.
+201213,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Girls,593,37,6,41,7,12695,21.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Autistic spectrum disorder,Boys,3214,93,3,111,3,66312,20.6,.
+201213,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Total,1309,222,17,242,18,33303,25.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Girls,489,115,24,117,24,12907,26.4,.
+201213,Academic year,National,E92000001,England,SEN primary need,Other difficulty or disability,Boys,820,107,13,125,15,20396,24.9,.

@@ -1,0 +1,177 @@
+Early years foundation stage profile results
+2018/19 Academic Year
+
+Description
+
+This document describes the underlying data in the ‘Early years foundation stage profile results: 2018 to 2019’ csv data files.
+
+Coverage
+
+The data covers early years foundation stage profile (EYFSP) assessment results for those children who were in receipt of a government funded early education place at the end of the early years foundation stage only. All providers of state-funded early years education, including: academies; free schools; and private, voluntary and independent (PVI) providers in England are within the scope of the EYFSP data collection. Refer to the technical document for more information on coverage.
+
+In 2018/19, 23 schools piloted a revised set of early learning goals and a revised approach to assessment and moderation. These schools are excluded from the results for 2019.
+
+The underlying data files include national, regional and local authority-level information for England.
+
+File formats and conventions
+
+The three main release files are titled after the key measures contained, followed by the years for which data is available.
+
+The additional characteristics files are titled ‘EYFSP National', followed by the characteristics contained and the years for which data is available.
+
+Data files
+
+APS - Good level of development and early learning goals - 2013 - 2019
+
+Filename: file1_aps_gld_elg_exp_2013_2019.csv
+Geographic levels: National; Local Authority; Regional
+Time period: 2012/13 to 2018/19
+Content summary: Attainment in headline measures and the Communication & Language and Literacy measure.
+
+APS = Average Point Score, GLD = Good Level of Development, ELG = Early Learning Goals, Exp = Expected Level.
+
+Variable names and descriptions for this file are provided below:
+
+Variable name          |  Variable description
+---------------------  |  -------------------------------------------------------------------------------------------------------------------
+average_point_score    |  Average point score: total point score divided by number of children
+comm_lang_lit_number   |  Number of children achieving at least expected level in Communication & Language and Literacy areas of learning
+comm_lang_lit_percent  |  Percentage of children achieving at least expected level in Communication & Language and Literacy areas of learning
+elg_number             |  Number of children achieving at least expected level across all early learning goals
+elg_percent            |  Percentage of children achieving at least expected level across all early learning goals
+gender                 |  Gender of child: total (girls and boys); girls; boys - Select Gender group: Male Female or Total
+gld_number             |  Number of children achieving a good level of development
+gld_percent            |  Percentage of children achieving a good level of development
+number_of_children     |  Number of children included in EYFSP results
+point_score            |  Total point score based on assessment rating: 1 (point) - emerging; 2 - expected; 3 - exceeded
+
+Footnotes:
+
+1. Average total point score across all the early learning goals (ELGs). This is a supporting measure taking into account performance across all 17 ELGs, 1 point for emerging, 2 for expected and 3 for exceeding. The sum is then taken for all pupils with that characteristic and the mean given.
+2. Achieved at least the expected level across all ELGs means a child achieved ‘expected’ or ‘exceeded’ in all 17 ELGs.
+3. Children achieving at least the expected level in the ELGs within the three prime areas of learning (personal, social and emotional development; physical development; communication and language) as well as within literacy and mathematics is classed as achieving a 'good level of development'.
+4. Achieved at least the expected level in Communication & Language and Literacy are those children who achieved ‘expected’ or ‘exceeded’ in the following early learning goals (ELGs): listening and attention, understanding, speaking, reading and writing.
+5. The Communication & Language and Literacy figures in this table are based on data for all children with a valid result for every ELG and may not match those in the additional table published in July 2018 as part of the 2017 statistical release. The figures in the additional table are based on data matched to the national pupil database (NPD) and exclude shielded children and duplicate records.
+6. Percentages rounded to 1 decimal place.
+7. Before using this table please check the methodology section for important information such as definitions, limitations and caveats about the data that may not be included in these footnotes.
+
+
+Areas of Learning (2013 - 2019)
+
+Filename: areas_of_learning_2013_2019.csv
+Geographic levels: National; Local Authority; Regional
+Time period: 2012/13 to 2018/19
+Content summary: Attainment in the prime and specific areas of learning.
+
+Variable names and descriptions for this file are provided below:
+
+Variable name              |  Variable description
+-------------------------  |  ------------------------------------------------------------------------------------------------------------
+area_of_learning           |  Area of learning - Select area of learning: eg, litracy, all prime areas and others.
+at_least_expected_number   |  Number of children achieving at least expected level across all early learning goals in area of learning
+at_least_expected_percent  |  Percentage of children achieving at least expected level across all early learning goals in area of learning
+exceeded_number            |  Number of children achieving exceeded level across all early learning goals in area of learning
+exceeded_percent           |  Percentage of children achieving exceeded level across all early learning goals in area of learning
+gender                     |  Gender of child: total (girls and boys); girls; boys - Select Gender group: Male Female or Total
+number_of_children         |  Number of children included in EYFSP results
+
+Footnotes:
+
+1. Achieved at least the expected level across all ELGs means a child achieved ‘expected’ or ‘exceeded’ in all 17 ELGs.
+2. Children achieving at least the expected level in the ELGs within the three prime areas of learning (personal, social and emotional development; physical development; communication and language) as well as within literacy and mathematics is classed as achieving a 'good level of development'.
+3. Percentages rounded to 1 decimal place.
+4. Before using this table please check the methodology section for important information such as definitions, limitations and caveats about the data that may not be included in these footnotes.
+
+
+Early Learning Goals (2013 - 2019)
+
+Filename: elg_2013_2019.csv
+Geographic levels: National; Local Authority; Regional
+Time period: 2012/13 to 2018/19
+Content summary: Attainment in the 17 early learning goals.
+
+Variable names and descriptions for this file are provided below:
+
+Variable name              |  Variable description
+-------------------------  |  ------------------------------------------------------------------------------------------------
+at_least_expected_number   |  Number of children achieving at least expected level in EYFSP assessment
+at_least_expected_percent  |  Percentage of children achieving at least expected level in EYFSP assessment
+elg_category               |  Early Learning Goal category - Select ELG: eg, numbers, reading and others.
+emerging_number            |  Number of children achieving emerging level in EYFSP assessment
+emerging_percent           |  Percentage of children achieving emerging level in EYFSP assessment
+exceeded_number            |  Number of children achieving exceeded level in EYFSP assessment
+exceeded_percent           |  Percentage of children achieving exceeded level in EYFSP assessment
+expected_number            |  Number of children achieving expected level in EYFSP assessment
+expected_percent           |  Percentage of children achieving expected level in EYFSP assessment
+gender                     |  Gender of child: total (girls and boys); girls; boys - Select Gender group: Male Female or Total
+number_of_children         |  Number of children included in EYFSP results
+
+Footnotes:
+
+1. Only includes children with a valid result for every ELG. 
+2. Percentages rounded to 1 decimal place.
+3. Before using this table please check the methodology section for important information such as definitions, limitations and caveats about the data that may not be included in these footnotes.
+
+
+Early Years Foundation Stage Profile by Ethnicity and Free School Meal status (2018 - 2019)
+
+Filename: eyfsp_national_2_ethnicity_fsm_additional_tables_2018_2019_final.csv
+Geographic levels: National
+Time period: 2017/18 to 2018/19
+Content summary: Attainment in headline measures ethnicity and FSM (Free School Meal) status.
+
+Variable names and descriptions for this file are provided below:
+
+Variable name        |  Variable description
+-------------------  |  ----------------------------------------------------------------------------------------------------------------------------------
+average_point_score  |  Average point score: total point score divided by number of children
+elg_number           |  Number of children achieving at least expected level across all early learning goals
+elg_percent          |  Percentage of children achieving at least expected level across all early learning goals
+ethnicity_major      |  Major Ethnic Group (7 options) - Select Major Ethnicity Category
+ethnicity_minor      |  Minor Ethnic Group (19 options) - Select Minor Ethnicity Category
+fsm                  |  Free School Meal Status: total (FSM and non-FSM); FSM; all other pupils - Select FSM group: Total, FSM pupils, or all other pupils
+gender               |  Gender of child: total (girls and boys); girls; boys - Select Gender group: Male Female or Total
+gld_number           |  Number of children achieving a good level of development
+gld_percent          |  Percentage of children achieving a good level of development
+number_of_pupils     |  Number of children included in EYFSP results
+
+Footnotes:
+
+1. Average total point score across all the early learning goals (ELGs). This is a supporting measure taking into account performance across all 17 ELGs, 1 point for emerging, 2 for expected and 3 for exceeding. The sum is then taken for all pupils with that characteristic and the mean given.
+2. Achieved at least the expected level across all ELGs means a child achieved ‘expected’ or ‘exceeded’ in all 17 ELGs.
+3. Children achieving at least the expected level in the ELGs within the three prime areas of learning (personal, social and emotional development; physical development; communication and language) as well as within literacy and mathematics is classed as achieving a 'good level of development'.
+4. Major and minor ethnicity breakdowns detailed at https://www.gov.uk/guidance/complete-the-school-census/find-a-school-census-code#ethnicity. 
+5. A minor ethnicity result will not be reported unless the relevant major ethnicity group is also selected. 
+6. Percentages rounded to nearest integer.
+7. Before using this table please check the methodology section for important information such as definitions, limitations and caveats about the data that may not be included in these footnotes.
+
+
+Early Years Foundation Stage Profile by Special Educational Needs and Free School Meal status (2018 - 2019)
+
+Filename: eyfsp_national_2_sen_fsm_additional_tables_2018_2019.csv
+Geographic levels: National
+Time period: 2017/18 to 2018/19
+Content summary: Attainment in headline measures by SEN (Special Educational Need) and FSM (Free School Meal) status.
+
+Variable names and descriptions for this file are provided below:
+
+Variable name        |  Variable description
+-------------------  |  -------------------------------------------------------------------------------------------------------------------------------------
+average_point_score  |  Average point score: total point score divided by number of children
+elg_number           |  Number of children achieving at least expected level across all early learning goals
+elg_percent          |  Percentage of children achieving at least expected level across all early learning goals
+fsm                  |  Free School Meal Status: total (FSM and non-FSM); FSM; all other pupils - Select FSM group: Total, FSM pupils, or all other pupils
+gender               |  Gender of child: total (girls and boys); girls; boys - Select Gender group: Male Female or Total
+gld_number           |  Number of children achieving a good level of development
+gld_percent          |  Percentage of children achieving a good level of development
+number_of_pupils     |  Number of children included in EYFSP results
+sen                  |  Special Educational Needs: Total (SEN and non-SEN); No SEN identified; Any SEN; SEN Support; SEN Statement; unclassified - Select SEN
+
+Footnotes:
+
+1. Average total point score across all the early learning goals (ELGs). This is a supporting measure taking into account performance across all 17 ELGs, 1 point for emerging, 2 for expected and 3 for exceeding. The sum is then taken for all pupils with that characteristic and the mean given.
+2. Achieved at least the expected level across all ELGs means a child achieved ‘expected’ or ‘exceeded’ in all 17 ELGs.
+3. Children achieving at least the expected level in the ELGs within the three prime areas of learning (personal, social and emotional development; physical development; communication and language) as well as within literacy and mathematics is classed as achieving a 'good level of development'.
+4. A minor ethnicity result will not be reported unless the relevant major ethnicity group is also selected. 
+5. Percentages rounded to nearest integer.
+6. Before using this table please check the methodology section for important information such as definitions, limitations and caveats about the data that may not be included in these footnotes.

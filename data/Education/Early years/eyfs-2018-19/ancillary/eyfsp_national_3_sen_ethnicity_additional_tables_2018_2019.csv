@@ -1,0 +1,211 @@
+time_identifier,time_period,geographic_level,country_code,country_name,characteristic,characteristic_type,ethnicity,gender,number_of_pupils,elg_number,elg_percent,gld_number,gld_percent,point_score,average_point_score
+Academic year,201819,National,E92000001,England, , ,Total,Total,638946,451531,71,458815,72,22088472,34.6
+Academic year,201819,National,E92000001,England, , ,Total,Girls,311521,241823,78,244274,78,11137066,35.8
+Academic year,201819,National,E92000001,England, , ,Total,Boys,327425,209708,64,214541,66,10951406,33.4
+Academic year,201819,National,E92000001,England, , ,White,Total,459403,329368,72,333885,73,16019945,34.9
+Academic year,201819,National,E92000001,England, , ,White,Girls,224063,176032,79,177479,79,8067809,36
+Academic year,201819,National,E92000001,England, , ,White,Boys,235340,153336,65,156406,66,7952136,33.8
+Academic year,201819,National,E92000001,England, , ,Mixed,Total,41685,30071,72,30562,73,1456169,34.9
+Academic year,201819,National,E92000001,England, , ,Mixed,Girls,20335,16084,79,16244,80,735920,36.2
+Academic year,201819,National,E92000001,England, , ,Mixed,Boys,21350,13987,66,14318,67,720249,33.7
+Academic year,201819,National,E92000001,England, , ,Asian,Total,69185,48045,69,49353,71,2332709,33.7
+Academic year,201819,National,E92000001,England, , ,Asian,Girls,33648,25845,77,26309,78,1178853,35
+Academic year,201819,National,E92000001,England, , ,Asian,Boys,35537,22200,62,23044,65,1153856,32.5
+Academic year,201819,National,E92000001,England, , ,Black,Total,31136,21096,68,21566,69,1040154,33.4
+Academic year,201819,National,E92000001,England, , ,Black,Girls,15200,11562,76,11727,77,530847,34.9
+Academic year,201819,National,E92000001,England, , ,Black,Boys,15936,9534,60,9839,62,509307,32
+Academic year,201819,National,E92000001,England, , ,Chinese,Total,3002,2294,76,2345,78,106674,35.5
+Academic year,201819,National,E92000001,England, , ,Chinese,Girls,1413,1148,81,1165,82,51368,36.4
+Academic year,201819,National,E92000001,England, , ,Chinese,Boys,1589,1146,72,1180,74,55306,34.8
+Academic year,201819,National,E92000001,England, , ,Other,Total,12048,7588,63,7793,65,390999,32.5
+Academic year,201819,National,E92000001,England, , ,Other,Girls,5889,4118,70,4210,71,198357,33.7
+Academic year,201819,National,E92000001,England, , ,Other,Boys,6159,3470,56,3583,58,192642,31.3
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Total,Total,564913,430878,76,437383,77,20126222,35.6
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Total,Girls,287233,233226,81,235463,82,10456326,36.4
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Total,Boys,277680,197652,71,201920,73,9669896,34.8
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,White,Total,416263,318746,77,322857,78,14903212,35.8
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,White,Girls,211170,172135,82,173489,82,7722146,36.6
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,White,Boys,205093,146611,71,149368,73,7181066,35
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Mixed,Total,37735,29162,77,29611,78,1356390,35.9
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Mixed,Girls,19204,15743,82,15897,83,705776,36.8
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Mixed,Boys,18531,13419,72,13714,74,650614,35.1
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Asian,Total,61252,46326,76,47504,78,2141844,35
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Asian,Girls,31287,25206,81,25636,82,1119525,35.8
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Asian,Boys,29965,21120,70,21868,73,1022319,34.1
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Black,Total,26812,20173,75,20600,77,936226,34.9
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Black,Girls,13976,11239,80,11390,81,499857,35.8
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Black,Boys,12836,8934,70,9210,72,436369,34
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Chinese,Total,2763,2228,81,2275,82,100580,36.4
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Chinese,Girls,1342,1127,84,1143,85,49534,36.9
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Chinese,Boys,1421,1101,77,1132,80,51046,35.9
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Other,Total,10752,7344,68,7533,70,360174,33.5
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Other,Girls,5492,4028,73,4116,75,188513,34.3
+Academic year,201819,National,E92000001,England,SEN,No identified SEN,Other,Boys,5260,3316,63,3417,65,171661,32.6
+Academic year,201819,National,E92000001,England,SEN,All SEN,Total,Total,61237,14428,24,15077,25,1553591,25.4
+Academic year,201819,National,E92000001,England,SEN,All SEN,Total,Girls,18080,5254,29,5409,30,476303,26.3
+Academic year,201819,National,E92000001,England,SEN,All SEN,Total,Boys,43157,9174,21,9668,22,1077288,25
+Academic year,201819,National,E92000001,England,SEN,All SEN,White,Total,42813,10514,25,10918,26,1107236,25.9
+Academic year,201819,National,E92000001,England,SEN,All SEN,White,Girls,12740,3837,30,3930,31,340987,26.8
+Academic year,201819,National,E92000001,England,SEN,All SEN,White,Boys,30073,6677,22,6988,23,766249,25.5
+Academic year,201819,National,E92000001,England,SEN,All SEN,Mixed,Total,3899,884,23,926,24,98256,25.2
+Academic year,201819,National,E92000001,England,SEN,All SEN,Mixed,Girls,1109,328,30,334,30,29471,26.6
+Academic year,201819,National,E92000001,England,SEN,All SEN,Mixed,Boys,2790,556,20,592,21,68785,24.7
+Academic year,201819,National,E92000001,England,SEN,All SEN,Asian,Total,7778,1657,21,1785,23,186412,24
+Academic year,201819,National,E92000001,England,SEN,All SEN,Asian,Girls,2292,607,26,641,28,57271,25
+Academic year,201819,National,E92000001,England,SEN,All SEN,Asian,Boys,5486,1050,19,1144,21,129141,23.5
+Academic year,201819,National,E92000001,England,SEN,All SEN,Black,Total,4276,894,21,937,22,102394,23.9
+Academic year,201819,National,E92000001,England,SEN,All SEN,Black,Girls,1205,310,26,324,27,30328,25.2
+Academic year,201819,National,E92000001,England,SEN,All SEN,Black,Boys,3071,584,19,613,20,72066,23.5
+Academic year,201819,National,E92000001,England,SEN,All SEN,Chinese,Total,233,60,26,64,27,5872,25.2
+Academic year,201819,National,E92000001,England,SEN,All SEN,Chinese,Girls,68,18,26,19,28,1726,25.4
+Academic year,201819,National,E92000001,England,SEN,All SEN,Chinese,Boys,165,42,25,45,27,4146,25.1
+Academic year,201819,National,E92000001,England,SEN,All SEN,Other,Total,1257,232,18,248,20,29751,23.7
+Academic year,201819,National,E92000001,England,SEN,All SEN,Other,Girls,378,84,22,88,23,9295,24.6
+Academic year,201819,National,E92000001,England,SEN,All SEN,Other,Boys,879,148,17,160,18,20456,23.3
+Academic year,201819,National,E92000001,England,SEN,SEN support,Total,Total,50490,13974,28,14592,29,1344306,26.6
+Academic year,201819,National,E92000001,England,SEN,SEN support,Total,Girls,15075,5091,34,5238,35,417166,27.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Total,Boys,35415,8883,25,9354,26,927140,26.2
+Academic year,201819,National,E92000001,England,SEN,SEN support,White,Total,35681,10177,29,10561,30,966455,27.1
+Academic year,201819,National,E92000001,England,SEN,SEN support,White,Girls,10735,3713,35,3801,35,300917,28
+Academic year,201819,National,E92000001,England,SEN,SEN support,White,Boys,24946,6464,26,6760,27,665538,26.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Mixed,Total,3096,850,27,888,29,82519,26.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Mixed,Girls,894,319,36,324,36,25271,28.3
+Academic year,201819,National,E92000001,England,SEN,SEN support,Mixed,Boys,2202,531,24,564,26,57248,26
+Academic year,201819,National,E92000001,England,SEN,SEN support,Asian,Total,6294,1611,26,1735,28,158637,25.2
+Academic year,201819,National,E92000001,England,SEN,SEN support,Asian,Girls,1878,589,31,621,33,49444,26.3
+Academic year,201819,National,E92000001,England,SEN,SEN support,Asian,Boys,4416,1022,23,1114,25,109193,24.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Black,Total,3445,877,25,918,27,86924,25.2
+Academic year,201819,National,E92000001,England,SEN,SEN support,Black,Girls,986,306,31,320,32,26253,26.6
+Academic year,201819,National,E92000001,England,SEN,SEN support,Black,Boys,2459,571,23,598,24,60671,24.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Chinese,Total,190,58,31,62,33,5034,26.5
+Academic year,201819,National,E92000001,England,SEN,SEN support,Chinese,Girls,55,17,31,18,33,1476,26.8
+Academic year,201819,National,E92000001,England,SEN,SEN support,Chinese,Boys,135,41,30,44,33,3558,26.4
+Academic year,201819,National,E92000001,England,SEN,SEN support,Other,Total,1033,226,22,242,23,25508,24.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Other,Girls,314,83,26,87,28,8055,25.7
+Academic year,201819,National,E92000001,England,SEN,SEN support,Other,Boys,719,143,20,155,22,17453,24.3
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Total,Total,10747,454,4,485,5,209285,19.5
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Total,Girls,3005,163,5,171,6,59137,19.7
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Total,Boys,7742,291,4,314,4,150148,19.4
+Academic year,201819,National,E92000001,England,SEN,SEN statement,White,Total,7132,337,5,357,5,140781,19.7
+Academic year,201819,National,E92000001,England,SEN,SEN statement,White,Girls,2005,124,6,129,6,40070,20
+Academic year,201819,National,E92000001,England,SEN,SEN statement,White,Boys,5127,213,4,228,4,100711,19.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Mixed,Total,803,34,4,38,5,15737,19.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Mixed,Girls,215,9,4,10,5,4200,19.5
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Mixed,Boys,588,25,4,28,5,11537,19.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Asian,Total,1484,46,3,50,3,27775,18.7
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Asian,Girls,414,18,4,20,5,7827,18.9
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Asian,Boys,1070,28,3,30,3,19948,18.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Black,Total,831,17,2,19,2,15470,18.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Black,Girls,219,4,2,4,2,4075,18.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Black,Boys,612,13,2,15,2,11395,18.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Chinese,Total,43,2,5,2,5,838,19.5
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Chinese,Girls,13,1,8,1,8,250,19.2
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Chinese,Boys,30,1,3,1,3,588,19.6
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Other,Total,224,6,3,6,3,4243,18.9
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Other,Girls,64,1,2,1,2,1240,19.4
+Academic year,201819,National,E92000001,England,SEN,SEN statement,Other,Boys,160,5,3,5,3,3003,18.8
+Academic year,201718,National,E92000001,England, , ,Total,Total,652349,457772,70,466668,72,22550657,34.6
+Academic year,201718,National,E92000001,England, , ,Total,Girls,318270,246648,77,249651,78,11382095,35.8
+Academic year,201718,National,E92000001,England, , ,Total,Boys,334079,211124,63,217017,65,11168562,33.4
+Academic year,201718,National,E92000001,England, , ,White,Total,473998,337474,71,343014,72,16517182,34.8
+Academic year,201718,National,E92000001,England, , ,White,Girls,230864,181015,78,182803,79,8309495,36
+Academic year,201718,National,E92000001,England, , ,White,Boys,243134,156459,64,160211,66,8207687,33.8
+Academic year,201718,National,E92000001,England, , ,Mixed,Total,41621,29878,72,30439,73,1454978,35
+Academic year,201718,National,E92000001,England, , ,Mixed,Girls,20224,16070,79,16247,80,732951,36.2
+Academic year,201718,National,E92000001,England, , ,Mixed,Boys,21397,13808,65,14192,66,722027,33.7
+Academic year,201718,National,E92000001,England, , ,Asian,Total,69154,47247,68,48888,71,2323717,33.6
+Academic year,201718,National,E92000001,England, , ,Asian,Girls,33995,25808,76,26424,78,1187546,34.9
+Academic year,201718,National,E92000001,England, , ,Asian,Boys,35159,21439,61,22464,64,1136171,32.3
+Academic year,201718,National,E92000001,England, , ,Black,Total,32342,22044,68,22681,70,1088376,33.7
+Academic year,201718,National,E92000001,England, , ,Black,Girls,15955,12182,76,12408,78,560486,35.1
+Academic year,201718,National,E92000001,England, , ,Black,Boys,16387,9862,60,10273,63,527890,32.2
+Academic year,201718,National,E92000001,England, , ,Chinese,Total,3278,2493,76,2576,79,117256,35.8
+Academic year,201718,National,E92000001,England, , ,Chinese,Girls,1595,1327,83,1352,85,59133,37.1
+Academic year,201718,National,E92000001,England, , ,Chinese,Boys,1683,1166,69,1224,73,58123,34.5
+Academic year,201718,National,E92000001,England, , ,Other,Total,12037,7471,62,7690,64,391148,32.5
+Academic year,201718,National,E92000001,England, , ,Other,Girls,5844,4100,70,4185,72,198178,33.9
+Academic year,201718,National,E92000001,England, , ,Other,Boys,6193,3371,54,3505,57,192970,31.2
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Total,Total,579279,437950,76,446003,77,20608887,35.6
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Total,Girls,294280,238288,81,241072,82,10707885,36.4
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Total,Boys,284999,199662,70,204931,72,9901002,34.7
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,White,Total,430964,327133,76,332228,77,15402485,35.7
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,White,Girls,218028,177200,81,178880,82,7965424,36.5
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,White,Boys,212936,149933,70,153348,72,7437061,34.9
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Mixed,Total,37696,28982,77,29500,78,1354943,35.9
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Mixed,Girls,19135,15755,82,15925,83,704109,36.8
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Mixed,Boys,18561,13227,71,13575,73,650834,35.1
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Asian,Total,61337,45641,74,47135,77,2136270,34.8
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Asian,Girls,31591,25191,80,25769,82,1127300,35.7
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Asian,Boys,29746,20450,69,21366,72,1008970,33.9
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Black,Total,28139,21136,75,21713,77,985496,35
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Black,Girls,14771,11859,80,12076,82,530207,35.9
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Black,Boys,13368,9277,69,9637,72,455289,34.1
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Chinese,Total,3039,2438,80,2515,83,111304,36.6
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Chinese,Girls,1536,1308,85,1333,87,57597,37.5
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Chinese,Boys,1503,1130,75,1182,79,53707,35.7
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Other,Total,10687,7218,68,7416,69,358637,33.6
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Other,Girls,5425,3996,74,4073,75,187520,34.6
+Academic year,201718,National,E92000001,England,SEN,No identified SEN,Other,Boys,5262,3222,61,3343,64,171117,32.5
+Academic year,201718,National,E92000001,England,SEN,All SEN,Total,Total,60662,13976,23,14704,24,1543562,25.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Total,Girls,17911,5119,29,5290,30,472340,26.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Total,Boys,42751,8857,21,9414,22,1071222,25.1
+Academic year,201718,National,E92000001,England,SEN,All SEN,White,Total,42683,10229,24,10672,25,1104769,25.9
+Academic year,201718,National,E92000001,England,SEN,All SEN,White,Girls,12661,3751,30,3858,30,338881,26.8
+Academic year,201718,National,E92000001,England,SEN,All SEN,White,Boys,30022,6478,22,6814,23,765888,25.5
+Academic year,201718,National,E92000001,England,SEN,All SEN,Mixed,Total,3853,871,23,914,24,97990,25.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Mixed,Girls,1065,306,29,313,29,28140,26.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Mixed,Boys,2788,565,20,601,22,69850,25.1
+Academic year,201718,National,E92000001,England,SEN,All SEN,Asian,Total,7654,1538,20,1684,22,182839,23.9
+Academic year,201718,National,E92000001,England,SEN,All SEN,Asian,Girls,2329,577,25,614,26,57955,24.9
+Academic year,201718,National,E92000001,England,SEN,All SEN,Asian,Boys,5325,961,18,1070,20,124884,23.5
+Academic year,201718,National,E92000001,England,SEN,All SEN,Black,Total,4151,887,21,946,23,101324,24.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Black,Girls,1160,309,27,318,27,29465,25.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Black,Boys,2991,578,19,628,21,71859,24
+Academic year,201718,National,E92000001,England,SEN,All SEN,Chinese,Total,237,54,23,60,25,5901,24.9
+Academic year,201718,National,E92000001,England,SEN,All SEN,Chinese,Girls,59,19,32,19,32,1536,26
+Academic year,201718,National,E92000001,England,SEN,All SEN,Chinese,Boys,178,35,20,41,23,4365,24.5
+Academic year,201718,National,E92000001,England,SEN,All SEN,Other,Total,1316,249,19,270,21,31673,24.1
+Academic year,201718,National,E92000001,England,SEN,All SEN,Other,Girls,407,101,25,109,27,10343,25.4
+Academic year,201718,National,E92000001,England,SEN,All SEN,Other,Boys,909,148,16,161,18,21330,23.5
+Academic year,201718,National,E92000001,England,SEN,SEN support,Total,Total,50957,13547,27,14240,28,1353756,26.6
+Academic year,201718,National,E92000001,England,SEN,SEN support,Total,Girls,15239,4959,33,5125,34,419445,27.5
+Academic year,201718,National,E92000001,England,SEN,SEN support,Total,Boys,35718,8588,24,9115,26,934311,26.2
+Academic year,201718,National,E92000001,England,SEN,SEN support,White,Total,36142,9894,27,10312,29,974786,27
+Academic year,201718,National,E92000001,England,SEN,SEN support,White,Girls,10921,3632,33,3736,34,303790,27.8
+Academic year,201718,National,E92000001,England,SEN,SEN support,White,Boys,25221,6262,25,6576,26,670996,26.6
+Academic year,201718,National,E92000001,England,SEN,SEN support,Mixed,Total,3203,847,26,890,28,85417,26.7
+Academic year,201718,National,E92000001,England,SEN,SEN support,Mixed,Girls,916,296,32,303,33,25229,27.5
+Academic year,201718,National,E92000001,England,SEN,SEN support,Mixed,Boys,2287,551,24,587,26,60188,26.3
+Academic year,201718,National,E92000001,England,SEN,SEN support,Asian,Total,6278,1497,24,1637,26,157066,25
+Academic year,201718,National,E92000001,England,SEN,SEN support,Asian,Girls,1884,554,29,591,31,49426,26.2
+Academic year,201718,National,E92000001,England,SEN,SEN support,Asian,Boys,4394,943,21,1046,24,107640,24.5
+Academic year,201718,National,E92000001,England,SEN,SEN support,Black,Total,3435,871,25,928,27,87909,25.6
+Academic year,201718,National,E92000001,England,SEN,SEN support,Black,Girls,954,304,32,313,33,25599,26.8
+Academic year,201718,National,E92000001,England,SEN,SEN support,Black,Boys,2481,567,23,615,25,62310,25.1
+Academic year,201718,National,E92000001,England,SEN,SEN support,Chinese,Total,182,52,29,58,32,4841,26.6
+Academic year,201718,National,E92000001,England,SEN,SEN support,Chinese,Girls,47,19,40,19,40,1323,28.1
+Academic year,201718,National,E92000001,England,SEN,SEN support,Chinese,Boys,135,33,24,39,29,3518,26.1
+Academic year,201718,National,E92000001,England,SEN,SEN support,Other,Total,1097,243,22,263,24,27531,25.1
+Academic year,201718,National,E92000001,England,SEN,SEN support,Other,Girls,335,100,30,107,32,9018,26.9
+Academic year,201718,National,E92000001,England,SEN,SEN support,Other,Boys,762,143,19,156,20,18513,24.3
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Total,Total,9705,429,4,464,5,189806,19.6
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Total,Girls,2672,160,6,165,6,52895,19.8
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Total,Boys,7033,269,4,299,4,136911,19.5
+Academic year,201718,National,E92000001,England,SEN,SEN statement,White,Total,6541,335,5,360,6,129983,19.9
+Academic year,201718,National,E92000001,England,SEN,SEN statement,White,Girls,1740,119,7,122,7,35091,20.2
+Academic year,201718,National,E92000001,England,SEN,SEN statement,White,Boys,4801,216,4,238,5,94892,19.8
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Mixed,Total,650,24,4,24,4,12573,19.3
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Mixed,Girls,149,10,7,10,7,2911,19.5
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Mixed,Boys,501,14,3,14,3,9662,19.3
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Asian,Total,1376,41,3,47,3,25773,18.7
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Asian,Girls,445,23,5,23,5,8529,19.2
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Asian,Boys,931,18,2,24,3,17244,18.5
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Black,Total,716,16,2,18,3,13415,18.7
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Black,Girls,206,5,2,5,2,3866,18.8
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Black,Boys,510,11,2,13,3,9549,18.7
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Chinese,Total,55,2,4,2,4,1060,19.3
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Chinese,Girls,12,0,0,0,0,213,17.8
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Chinese,Boys,43,2,5,2,5,847,19.7
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Other,Total,219,6,3,7,3,4142,18.9
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Other,Girls,72,1,1,2,3,1325,18.4
+Academic year,201718,National,E92000001,England,SEN,SEN statement,Other,Boys,147,5,3,5,3,2817,19.2

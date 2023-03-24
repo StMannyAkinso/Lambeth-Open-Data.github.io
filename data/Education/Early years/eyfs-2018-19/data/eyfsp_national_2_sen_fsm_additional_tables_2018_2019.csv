@@ -1,0 +1,103 @@
+time_identifier,time_period,geographic_level,country_code,country_name,sen,fsm,gender,number_of_pupils,elg_number,elg_percent,gld_number,gld_percent,average_point_score
+Academic year,201819,National,E92000001,England,Total,Total,Total,638946,451531,71,458815,72,34.6
+Academic year,201819,National,E92000001,England,Total,Total,Girls,311521,241823,78,244274,78,35.8
+Academic year,201819,National,E92000001,England,Total,Total,Boys,327425,209708,64,214541,66,33.4
+Academic year,201819,National,E92000001,England,Total,FSM,Total,89742,49442,55,50732,57,31.5
+Academic year,201819,National,E92000001,England,Total,FSM,Girls,43796,27767,63,28257,65,32.8
+Academic year,201819,National,E92000001,England,Total,FSM,Boys,45946,21675,47,22475,49,30.2
+Academic year,201819,National,E92000001,England,Total,All other pupils,Total,549204,402089,73,408083,74,35.1
+Academic year,201819,National,E92000001,England,Total,All other pupils,Girls,267725,214056,80,216017,81,36.2
+Academic year,201819,National,E92000001,England,Total,All other pupils,Boys,281479,188033,67,192066,68,34
+Academic year,201819,National,E92000001,England,No identified SEN,Total,Total,564913,430878,76,437383,77,35.6
+Academic year,201819,National,E92000001,England,No identified SEN,Total,Girls,287233,233226,81,235463,82,36.4
+Academic year,201819,National,E92000001,England,No identified SEN,Total,Boys,277680,197652,71,201920,73,34.8
+Academic year,201819,National,E92000001,England,No identified SEN,FSM,Total,74598,46608,62,47758,64,32.9
+Academic year,201819,National,E92000001,England,No identified SEN,FSM,Girls,38959,26639,68,27090,70,33.7
+Academic year,201819,National,E92000001,England,No identified SEN,FSM,Boys,35639,19969,56,20668,58,32
+Academic year,201819,National,E92000001,England,No identified SEN,All other pupils,Total,490315,384270,78,389625,79,36
+Academic year,201819,National,E92000001,England,No identified SEN,All other pupils,Girls,248274,206587,83,208373,84,36.8
+Academic year,201819,National,E92000001,England,No identified SEN,All other pupils,Boys,242041,177683,73,181252,75,35.2
+Academic year,201819,National,E92000001,England,All SEN,Total,Total,61237,14428,24,15077,25,25.4
+Academic year,201819,National,E92000001,England,All SEN,Total,Girls,18080,5254,29,5409,30,26.3
+Academic year,201819,National,E92000001,England,All SEN,Total,Boys,43157,9174,21,9668,22,25
+Academic year,201819,National,E92000001,England,All SEN,FSM,Total,15144,2834,19,2974,20,24.4
+Academic year,201819,National,E92000001,England,All SEN,FSM,Girls,4837,1128,23,1167,24,25.4
+Academic year,201819,National,E92000001,England,All SEN,FSM,Boys,10307,1706,17,1807,18,23.9
+Academic year,201819,National,E92000001,England,All SEN,All other pupils,Total,46093,11594,25,12103,26,25.7
+Academic year,201819,National,E92000001,England,All SEN,All other pupils,Girls,13243,4126,31,4242,32,26.7
+Academic year,201819,National,E92000001,England,All SEN,All other pupils,Boys,32850,7468,23,7861,24,25.3
+Academic year,201819,National,E92000001,England,SEN support,Total,Total,50490,13974,28,14592,29,26.6
+Academic year,201819,National,E92000001,England,SEN support,Total,Girls,15075,5091,34,5238,35,27.7
+Academic year,201819,National,E92000001,England,SEN support,Total,Boys,35415,8883,25,9354,26,26.2
+Academic year,201819,National,E92000001,England,SEN support,FSM,Total,12833,2773,22,2911,23,25.4
+Academic year,201819,National,E92000001,England,SEN support,FSM,Girls,4160,1107,27,1146,28,26.4
+Academic year,201819,National,E92000001,England,SEN support,FSM,Boys,8673,1666,19,1765,20,24.9
+Academic year,201819,National,E92000001,England,SEN support,All other pupils,Total,37657,11201,30,11681,31,27
+Academic year,201819,National,E92000001,England,SEN support,All other pupils,Girls,10915,3984,37,4092,37,28.1
+Academic year,201819,National,E92000001,England,SEN support,All other pupils,Boys,26742,7217,27,7589,28,26.6
+Academic year,201819,National,E92000001,England,SEN statement,Total,Total,10747,454,4,485,5,19.5
+Academic year,201819,National,E92000001,England,SEN statement,Total,Girls,3005,163,5,171,6,19.7
+Academic year,201819,National,E92000001,England,SEN statement,Total,Boys,7742,291,4,314,4,19.4
+Academic year,201819,National,E92000001,England,SEN statement,FSM,Total,2311,61,3,63,3,19
+Academic year,201819,National,E92000001,England,SEN statement,FSM,Girls,677,21,3,21,3,19.1
+Academic year,201819,National,E92000001,England,SEN statement,FSM,Boys,1634,40,2,42,3,19
+Academic year,201819,National,E92000001,England,SEN statement,All other pupils,Total,8436,393,5,422,5,19.6
+Academic year,201819,National,E92000001,England,SEN statement,All other pupils,Girls,2328,142,6,150,6,19.8
+Academic year,201819,National,E92000001,England,SEN statement,All other pupils,Boys,6108,251,4,272,4,19.5
+Academic year,201819,National,E92000001,England,unclassified,Total,Total,12796,6225,49,6355,50,31.9
+Academic year,201819,National,E92000001,England,unclassified,Total,Girls,6208,3343,54,3402,55,32.9
+Academic year,201819,National,E92000001,England,unclassified,Total,Boys,6588,2882,44,2953,45,31
+Academic year,201819,National,E92000001,England,unclassified,All other pupils,Total,12796,6225,49,6355,50,31.9
+Academic year,201819,National,E92000001,England,unclassified,All other pupils,Girls,6208,3343,54,3402,55,32.9
+Academic year,201819,National,E92000001,England,unclassified,All other pupils,Boys,6588,2882,44,2953,45,31
+Academic year,201718,National,E92000001,England,Total,Total,Total,652349,457772,70,466668,72,34.6
+Academic year,201718,National,E92000001,England,Total,Total,Girls,318270,246648,77,249651,78,35.8
+Academic year,201718,National,E92000001,England,Total,Total,Boys,334079,211124,63,217017,65,33.4
+Academic year,201718,National,E92000001,England,Total,FSM,Total,87190,47880,55,49312,57,31.5
+Academic year,201718,National,E92000001,England,Total,FSM,Girls,42403,27000,64,27543,65,32.9
+Academic year,201718,National,E92000001,England,Total,FSM,Boys,44787,20880,47,21769,49,30.2
+Academic year,201718,National,E92000001,England,Total,All other pupils,Total,565159,409892,73,417356,74,35
+Academic year,201718,National,E92000001,England,Total,All other pupils,Girls,275867,219648,80,222108,81,36.2
+Academic year,201718,National,E92000001,England,Total,All other pupils,Boys,289292,190244,66,195248,67,33.9
+Academic year,201718,National,E92000001,England,No identified SEN,Total,Total,579279,437950,76,446003,77,35.6
+Academic year,201718,National,E92000001,England,No identified SEN,Total,Girls,294280,238288,81,241072,82,36.4
+Academic year,201718,National,E92000001,England,No identified SEN,Total,Boys,284999,199662,70,204931,72,34.7
+Academic year,201718,National,E92000001,England,No identified SEN,FSM,Total,72766,45236,62,46522,64,32.9
+Academic year,201718,National,E92000001,England,No identified SEN,FSM,Girls,37843,25957,69,26455,70,33.8
+Academic year,201718,National,E92000001,England,No identified SEN,FSM,Boys,34923,19279,55,20067,57,32
+Academic year,201718,National,E92000001,England,No identified SEN,All other pupils,Total,506513,392714,78,399481,79,36
+Academic year,201718,National,E92000001,England,No identified SEN,All other pupils,Girls,256437,212331,83,214617,84,36.8
+Academic year,201718,National,E92000001,England,No identified SEN,All other pupils,Boys,250076,180383,72,184864,74,35.1
+Academic year,201718,National,E92000001,England,All SEN,Total,Total,60662,13976,23,14704,24,25.4
+Academic year,201718,National,E92000001,England,All SEN,Total,Girls,17911,5119,29,5290,30,26.4
+Academic year,201718,National,E92000001,England,All SEN,Total,Boys,42751,8857,21,9414,22,25.1
+Academic year,201718,National,E92000001,England,All SEN,FSM,Total,14424,2644,18,2790,19,24.4
+Academic year,201718,National,E92000001,England,All SEN,FSM,Girls,4560,1043,23,1088,24,25.3
+Academic year,201718,National,E92000001,England,All SEN,FSM,Boys,9864,1601,16,1702,17,24
+Academic year,201718,National,E92000001,England,All SEN,All other pupils,Total,46238,11332,25,11914,26,25.8
+Academic year,201718,National,E92000001,England,All SEN,All other pupils,Girls,13351,4076,31,4202,31,26.7
+Academic year,201718,National,E92000001,England,All SEN,All other pupils,Boys,32887,7256,22,7712,23,25.4
+Academic year,201718,National,E92000001,England,SEN support,Total,Total,50957,13547,27,14240,28,26.6
+Academic year,201718,National,E92000001,England,SEN support,Total,Girls,15239,4959,33,5125,34,27.5
+Academic year,201718,National,E92000001,England,SEN support,Total,Boys,35718,8588,24,9115,26,26.2
+Academic year,201718,National,E92000001,England,SEN support,FSM,Total,12401,2579,21,2718,22,25.3
+Academic year,201718,National,E92000001,England,SEN support,FSM,Girls,3986,1016,25,1058,27,26.1
+Academic year,201718,National,E92000001,England,SEN support,FSM,Boys,8415,1563,19,1660,20,24.9
+Academic year,201718,National,E92000001,England,SEN support,All other pupils,Total,38556,10968,28,11522,30,27
+Academic year,201718,National,E92000001,England,SEN support,All other pupils,Girls,11253,3943,35,4067,36,28
+Academic year,201718,National,E92000001,England,SEN support,All other pupils,Boys,27303,7025,26,7455,27,26.6
+Academic year,201718,National,E92000001,England,SEN statement,Total,Total,9705,429,4,464,5,19.6
+Academic year,201718,National,E92000001,England,SEN statement,Total,Girls,2672,160,6,165,6,19.8
+Academic year,201718,National,E92000001,England,SEN statement,Total,Boys,7033,269,4,299,4,19.5
+Academic year,201718,National,E92000001,England,SEN statement,FSM,Total,2023,65,3,72,4,19.1
+Academic year,201718,National,E92000001,England,SEN statement,FSM,Girls,574,27,5,30,5,19.4
+Academic year,201718,National,E92000001,England,SEN statement,FSM,Boys,1449,38,3,42,3,19
+Academic year,201718,National,E92000001,England,SEN statement,All other pupils,Total,7682,364,5,392,5,19.7
+Academic year,201718,National,E92000001,England,SEN statement,All other pupils,Girls,2098,133,6,135,6,19.9
+Academic year,201718,National,E92000001,England,SEN statement,All other pupils,Boys,5584,231,4,257,5,19.6
+Academic year,201718,National,E92000001,England,unclassified,Total,Total,12408,5846,47,5961,48,32.1
+Academic year,201718,National,E92000001,England,unclassified,Total,Girls,6079,3241,53,3289,54,33.2
+Academic year,201718,National,E92000001,England,unclassified,Total,Boys,6329,2605,41,2672,42,31
+Academic year,201718,National,E92000001,England,unclassified,All other pupils,Total,12408,5846,47,5961,48,32.1
+Academic year,201718,National,E92000001,England,unclassified,All other pupils,Girls,6079,3241,53,3289,54,33.2
+Academic year,201718,National,E92000001,England,unclassified,All other pupils,Boys,6329,2605,41,2672,42,31

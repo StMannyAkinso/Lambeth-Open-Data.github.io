@@ -1,0 +1,961 @@
+time_period,time_identifier,geographic_level,country_code,country_name,lad_code,lad_name,fsm,number_of_pupils,elg_number,elg_percent,gld_number,gld_percent,point_score,average_point_score
+201819,Academic year,National,E92000001,England, , ,Total,638946,451531,71,458815,72,22088472,34.6
+201819,Academic year,National,E92000001,England, , ,FSM,89742,49442,55,50732,57,2823632,31.5
+201819,Academic year,National,E92000001,England, , ,All_other,549204,402089,73,408083,74,19264840,35.1
+201819,Academic year,Local authority district,E92000001,England,E06000001,Hartlepool,Total,1080,772,71,780,72,37400,34.6
+201819,Academic year,Local authority district,E92000001,England,E06000001,Hartlepool,FSM,325,197,61,200,62,10348,31.8
+201819,Academic year,Local authority district,E92000001,England,E06000001,Hartlepool,All_other,755,575,76,580,77,27052,35.8
+201819,Academic year,Local authority district,E92000001,England,E06000002,Middlesbrough,Total,1948,1197,61,1230,63,62586,32.1
+201819,Academic year,Local authority district,E92000001,England,E06000002,Middlesbrough,FSM,566,298,53,311,55,17060,30.1
+201819,Academic year,Local authority district,E92000001,England,E06000002,Middlesbrough,All_other,1382,899,65,919,66,45526,32.9
+201819,Academic year,Local authority district,E92000001,England,E06000003,Redcar and Cleveland,Total,1592,1109,70,1132,71,52632,33.1
+201819,Academic year,Local authority district,E92000001,England,E06000003,Redcar and Cleveland,FSM,349,182,52,185,53,10530,30.2
+201819,Academic year,Local authority district,E92000001,England,E06000003,Redcar and Cleveland,All_other,1243,927,75,947,76,42102,33.9
+201819,Academic year,Local authority district,E92000001,England,E06000004,Stockton-on-Tees,Total,2436,1776,73,1798,74,88640,36.4
+201819,Academic year,Local authority district,E92000001,England,E06000004,Stockton-on-Tees,FSM,386,222,58,225,58,12413,32.2
+201819,Academic year,Local authority district,E92000001,England,E06000004,Stockton-on-Tees,All_other,2050,1554,76,1573,77,76227,37.2
+201819,Academic year,Local authority district,E92000001,England,E06000005,Darlington,Total,1198,843,70,859,72,40876,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000005,Darlington,FSM,238,136,57,144,61,7217,30.3
+201819,Academic year,Local authority district,E92000001,England,E06000005,Darlington,All_other,960,707,74,715,74,33659,35.1
+201819,Academic year,Local authority district,E92000001,England,E06000006,Halton,Total,1456,948,65,962,66,47659,32.7
+201819,Academic year,Local authority district,E92000001,England,E06000006,Halton,FSM,308,147,48,148,48,9180,29.8
+201819,Academic year,Local authority district,E92000001,England,E06000006,Halton,All_other,1148,801,70,814,71,38479,33.5
+201819,Academic year,Local authority district,E92000001,England,E06000007,Warrington,Total,2432,1768,73,1791,74,85742,35.3
+201819,Academic year,Local authority district,E92000001,England,E06000007,Warrington,FSM,316,187,59,194,61,10169,32.2
+201819,Academic year,Local authority district,E92000001,England,E06000007,Warrington,All_other,2116,1581,75,1597,75,75573,35.7
+201819,Academic year,Local authority district,E92000001,England,E06000008,Blackburn with Darwen,Total,2074,1378,66,1421,69,69747,33.6
+201819,Academic year,Local authority district,E92000001,England,E06000008,Blackburn with Darwen,FSM,347,198,57,205,59,10908,31.4
+201819,Academic year,Local authority district,E92000001,England,E06000008,Blackburn with Darwen,All_other,1727,1180,68,1216,70,58839,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000009,Blackpool,Total,1753,1172,67,1191,68,57498,32.8
+201819,Academic year,Local authority district,E92000001,England,E06000009,Blackpool,FSM,390,221,57,228,58,11967,30.7
+201819,Academic year,Local authority district,E92000001,England,E06000009,Blackpool,All_other,1363,951,70,963,71,45531,33.4
+201819,Academic year,Local authority district,E92000001,England,E06000010,Kingston upon Hull City of,Total,3262,2068,63,2209,68,107836,33.1
+201819,Academic year,Local authority district,E92000001,England,E06000010,Kingston upon Hull City of,FSM,712,383,54,420,59,22200,31.2
+201819,Academic year,Local authority district,E92000001,England,E06000010,Kingston upon Hull City of,All_other,2550,1685,66,1789,70,85636,33.6
+201819,Academic year,Local authority district,E92000001,England,E06000011,East Riding of Yorkshire,Total,3372,2457,73,2487,74,119580,35.5
+201819,Academic year,Local authority district,E92000001,England,E06000011,East Riding of Yorkshire,FSM,399,216,54,220,55,12580,31.5
+201819,Academic year,Local authority district,E92000001,England,E06000011,East Riding of Yorkshire,All_other,2973,2241,75,2267,76,107000,36
+201819,Academic year,Local authority district,E92000001,England,E06000012,North East Lincolnshire,Total,1897,1333,70,1351,71,64090,33.8
+201819,Academic year,Local authority district,E92000001,England,E06000012,North East Lincolnshire,FSM,372,224,60,227,61,11690,31.4
+201819,Academic year,Local authority district,E92000001,England,E06000012,North East Lincolnshire,All_other,1525,1109,73,1124,74,52400,34.4
+201819,Academic year,Local authority district,E92000001,England,E06000013,North Lincolnshire,Total,1836,1291,70,1317,72,62365,34
+201819,Academic year,Local authority district,E92000001,England,E06000013,North Lincolnshire,FSM,289,157,54,159,55,9129,31.6
+201819,Academic year,Local authority district,E92000001,England,E06000013,North Lincolnshire,All_other,1547,1134,73,1158,75,53236,34.4
+201819,Academic year,Local authority district,E92000001,England,E06000014,York,Total,1950,1447,74,1475,76,70156,36
+201819,Academic year,Local authority district,E92000001,England,E06000014,York,FSM,150,78,52,80,53,4649,31
+201819,Academic year,Local authority district,E92000001,England,E06000014,York,All_other,1800,1369,76,1395,78,65507,36.4
+201819,Academic year,Local authority district,E92000001,England,E06000015,Derby,Total,3259,2266,70,2303,71,112284,34.5
+201819,Academic year,Local authority district,E92000001,England,E06000015,Derby,FSM,628,367,58,377,60,19993,31.8
+201819,Academic year,Local authority district,E92000001,England,E06000015,Derby,All_other,2631,1899,72,1926,73,92291,35.1
+201819,Academic year,Local authority district,E92000001,England,E06000016,Leicester,Total,4701,3081,66,3183,68,158899,33.8
+201819,Academic year,Local authority district,E92000001,England,E06000016,Leicester,FSM,668,394,59,406,61,21613,32.4
+201819,Academic year,Local authority district,E92000001,England,E06000016,Leicester,All_other,4033,2687,67,2777,69,137286,34
+201819,Academic year,Local authority district,E92000001,England,E06000017,Rutland,Total,392,305,78,305,78,14205,36.2
+201819,Academic year,Local authority district,E92000001,England,E06000017,Rutland,FSM,12,6,50,6,50,361,30.1
+201819,Academic year,Local authority district,E92000001,England,E06000017,Rutland,All_other,380,299,79,299,79,13844,36.4
+201819,Academic year,Local authority district,E92000001,England,E06000018,Nottingham,Total,3732,2430,65,2495,67,122512,32.8
+201819,Academic year,Local authority district,E92000001,England,E06000018,Nottingham,FSM,880,489,56,501,57,27296,31
+201819,Academic year,Local authority district,E92000001,England,E06000018,Nottingham,All_other,2852,1941,68,1994,70,95216,33.4
+201819,Academic year,Local authority district,E92000001,England,E06000019,Herefordshire County of,Total,1850,1392,75,1395,75,64737,35
+201819,Academic year,Local authority district,E92000001,England,E06000019,Herefordshire County of,FSM,233,124,53,124,53,7275,31.2
+201819,Academic year,Local authority district,E92000001,England,E06000019,Herefordshire County of,All_other,1617,1268,78,1271,79,57462,35.5
+201819,Academic year,Local authority district,E92000001,England,E06000020,Telford and Wrekin,Total,2209,1536,70,1576,71,74951,33.9
+201819,Academic year,Local authority district,E92000001,England,E06000020,Telford and Wrekin,FSM,397,235,59,241,61,12475,31.4
+201819,Academic year,Local authority district,E92000001,England,E06000020,Telford and Wrekin,All_other,1812,1301,72,1335,74,62476,34.5
+201819,Academic year,Local authority district,E92000001,England,E06000021,Stoke-on-Trent,Total,3368,2204,65,2256,67,111795,33.2
+201819,Academic year,Local authority district,E92000001,England,E06000021,Stoke-on-Trent,FSM,932,509,55,522,56,28925,31
+201819,Academic year,Local authority district,E92000001,England,E06000021,Stoke-on-Trent,All_other,2436,1695,70,1734,71,82870,34
+201819,Academic year,Local authority district,E92000001,England,E06000022,Bath and North East Somerset,Total,1775,1288,73,1307,74,61562,34.7
+201819,Academic year,Local authority district,E92000001,England,E06000022,Bath and North East Somerset,FSM,203,88,43,92,45,6133,30.2
+201819,Academic year,Local authority district,E92000001,England,E06000022,Bath and North East Somerset,All_other,1572,1200,76,1215,77,55429,35.3
+201819,Academic year,Local authority district,E92000001,England,E06000023,Bristol City of,Total,5273,3669,70,3724,71,179015,33.9
+201819,Academic year,Local authority district,E92000001,England,E06000023,Bristol City of,FSM,894,467,52,476,53,27423,30.7
+201819,Academic year,Local authority district,E92000001,England,E06000023,Bristol City of,All_other,4379,3202,73,3248,74,151592,34.6
+201819,Academic year,Local authority district,E92000001,England,E06000024,North Somerset,Total,2237,1664,74,1670,75,78922,35.3
+201819,Academic year,Local authority district,E92000001,England,E06000024,North Somerset,FSM,223,121,54,123,55,7043,31.6
+201819,Academic year,Local authority district,E92000001,England,E06000024,North Somerset,All_other,2014,1543,77,1547,77,71879,35.7
+201819,Academic year,Local authority district,E92000001,England,E06000025,South Gloucestershire,Total,3341,2548,76,2569,77,119901,35.9
+201819,Academic year,Local authority district,E92000001,England,E06000025,South Gloucestershire,FSM,216,105,49,107,50,6680,30.9
+201819,Academic year,Local authority district,E92000001,England,E06000025,South Gloucestershire,All_other,3125,2443,78,2462,79,113221,36.2
+201819,Academic year,Local authority district,E92000001,England,E06000026,Plymouth,Total,2939,2000,68,2013,68,96463,32.8
+201819,Academic year,Local authority district,E92000001,England,E06000026,Plymouth,FSM,528,285,54,290,55,15973,30.3
+201819,Academic year,Local authority district,E92000001,England,E06000026,Plymouth,All_other,2411,1715,71,1723,71,80490,33.4
+201819,Academic year,Local authority district,E92000001,England,E06000027,Torbay,Total,1460,1023,70,1033,71,48993,33.6
+201819,Academic year,Local authority district,E92000001,England,E06000027,Torbay,FSM,364,190,52,194,53,11068,30.4
+201819,Academic year,Local authority district,E92000001,England,E06000027,Torbay,All_other,1096,833,76,839,77,37925,34.6
+201819,Academic year,Local authority district,E92000001,England,E06000030,Swindon,Total,2950,2065,70,2099,71,103748,35.2
+201819,Academic year,Local authority district,E92000001,England,E06000030,Swindon,FSM,317,169,53,172,54,9985,31.5
+201819,Academic year,Local authority district,E92000001,England,E06000030,Swindon,All_other,2633,1896,72,1927,73,93763,35.6
+201819,Academic year,Local authority district,E92000001,England,E06000031,Peterborough,Total,3032,1964,65,2035,67,102531,33.8
+201819,Academic year,Local authority district,E92000001,England,E06000031,Peterborough,FSM,501,276,55,285,57,15843,31.6
+201819,Academic year,Local authority district,E92000001,England,E06000031,Peterborough,All_other,2531,1688,67,1750,69,86688,34.3
+201819,Academic year,Local authority district,E92000001,England,E06000032,Luton,Total,3219,2150,67,2201,68,106448,33.1
+201819,Academic year,Local authority district,E92000001,England,E06000032,Luton,FSM,473,302,64,309,65,15460,32.7
+201819,Academic year,Local authority district,E92000001,England,E06000032,Luton,All_other,2746,1848,67,1892,69,90988,33.1
+201819,Academic year,Local authority district,E92000001,England,E06000033,Southend-on-Sea,Total,2177,1594,73,1610,74,77207,35.5
+201819,Academic year,Local authority district,E92000001,England,E06000033,Southend-on-Sea,FSM,359,204,57,208,58,11697,32.6
+201819,Academic year,Local authority district,E92000001,England,E06000033,Southend-on-Sea,All_other,1818,1390,76,1402,77,65510,36
+201819,Academic year,Local authority district,E92000001,England,E06000034,Thurrock,Total,2269,1620,71,1666,73,76995,33.9
+201819,Academic year,Local authority district,E92000001,England,E06000034,Thurrock,FSM,292,183,63,196,67,9449,32.4
+201819,Academic year,Local authority district,E92000001,England,E06000034,Thurrock,All_other,1977,1437,73,1470,74,67546,34.2
+201819,Academic year,Local authority district,E92000001,England,E06000035,Medway,Total,3486,2532,73,2569,74,121396,34.8
+201819,Academic year,Local authority district,E92000001,England,E06000035,Medway,FSM,430,245,57,248,58,13708,31.9
+201819,Academic year,Local authority district,E92000001,England,E06000035,Medway,All_other,3056,2287,75,2321,76,107688,35.2
+201819,Academic year,Local authority district,E92000001,England,E06000036,Bracknell Forest,Total,1297,985,76,991,76,46289,35.7
+201819,Academic year,Local authority district,E92000001,England,E06000036,Bracknell Forest,FSM,63,37,59,38,60,1981,31.4
+201819,Academic year,Local authority district,E92000001,England,E06000036,Bracknell Forest,All_other,1234,948,77,953,77,44308,35.9
+201819,Academic year,Local authority district,E92000001,England,E06000037,West Berkshire,Total,1863,1387,74,1390,75,67404,36.2
+201819,Academic year,Local authority district,E92000001,England,E06000037,West Berkshire,FSM,140,58,41,58,41,4292,30.7
+201819,Academic year,Local authority district,E92000001,England,E06000037,West Berkshire,All_other,1723,1329,77,1332,77,63112,36.6
+201819,Academic year,Local authority district,E92000001,England,E06000038,Reading,Total,1998,1351,68,1384,69,68101,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000038,Reading,FSM,310,169,55,176,57,9804,31.6
+201819,Academic year,Local authority district,E92000001,England,E06000038,Reading,All_other,1688,1182,70,1208,72,58297,34.5
+201819,Academic year,Local authority district,E92000001,England,E06000039,Slough,Total,2326,1705,73,1736,75,79387,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000039,Slough,FSM,221,149,67,152,69,7356,33.3
+201819,Academic year,Local authority district,E92000001,England,E06000039,Slough,All_other,2105,1556,74,1584,75,72031,34.2
+201819,Academic year,Local authority district,E92000001,England,E06000040,Windsor and Maidenhead,Total,1631,1206,74,1212,74,59466,36.5
+201819,Academic year,Local authority district,E92000001,England,E06000040,Windsor and Maidenhead,FSM,100,52,52,53,53,3268,32.7
+201819,Academic year,Local authority district,E92000001,England,E06000040,Windsor and Maidenhead,All_other,1531,1154,75,1159,76,56198,36.7
+201819,Academic year,Local authority district,E92000001,England,E06000041,Wokingham,Total,2105,1603,76,1628,77,78122,37.1
+201819,Academic year,Local authority district,E92000001,England,E06000041,Wokingham,FSM,132,66,50,66,50,4415,33.4
+201819,Academic year,Local authority district,E92000001,England,E06000041,Wokingham,All_other,1973,1537,78,1562,79,73707,37.4
+201819,Academic year,Local authority district,E92000001,England,E06000042,Milton Keynes,Total,3644,2649,73,2671,73,130493,35.8
+201819,Academic year,Local authority district,E92000001,England,E06000042,Milton Keynes,FSM,326,183,56,185,57,10610,32.5
+201819,Academic year,Local authority district,E92000001,England,E06000042,Milton Keynes,All_other,3318,2466,74,2486,75,119883,36.1
+201819,Academic year,Local authority district,E92000001,England,E06000043,Brighton and Hove,Total,2639,1874,71,1888,72,89959,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000043,Brighton and Hove,FSM,400,205,51,207,52,12177,30.4
+201819,Academic year,Local authority district,E92000001,England,E06000043,Brighton and Hove,All_other,2239,1669,75,1681,75,77782,34.7
+201819,Academic year,Local authority district,E92000001,England,E06000044,Portsmouth,Total,2385,1643,69,1656,69,81375,34.1
+201819,Academic year,Local authority district,E92000001,England,E06000044,Portsmouth,FSM,471,252,54,255,54,14854,31.5
+201819,Academic year,Local authority district,E92000001,England,E06000044,Portsmouth,All_other,1914,1391,73,1401,73,66521,34.8
+201819,Academic year,Local authority district,E92000001,England,E06000045,Southampton,Total,2892,2038,70,2066,71,99720,34.5
+201819,Academic year,Local authority district,E92000001,England,E06000045,Southampton,FSM,565,324,57,326,58,18104,32
+201819,Academic year,Local authority district,E92000001,England,E06000045,Southampton,All_other,2327,1714,74,1740,75,81616,35.1
+201819,Academic year,Local authority district,E92000001,England,E06000046,Isle of Wight,Total,1328,930,70,949,71,44815,33.7
+201819,Academic year,Local authority district,E92000001,England,E06000046,Isle of Wight,FSM,218,112,51,117,54,6640,30.5
+201819,Academic year,Local authority district,E92000001,England,E06000046,Isle of Wight,All_other,1110,818,74,832,75,38175,34.4
+201819,Academic year,Local authority district,E92000001,England,E06000047,County Durham,Total,5414,3837,71,3885,72,190963,35.3
+201819,Academic year,Local authority district,E92000001,England,E06000047,County Durham,FSM,1282,684,53,700,55,40554,31.6
+201819,Academic year,Local authority district,E92000001,England,E06000047,County Durham,All_other,4132,3153,76,3185,77,150409,36.4
+201819,Academic year,Local authority district,E92000001,England,E06000049,Cheshire East,Total,4092,2925,71,2981,73,142583,34.8
+201819,Academic year,Local authority district,E92000001,England,E06000049,Cheshire East,FSM,322,157,49,163,51,9716,30.2
+201819,Academic year,Local authority district,E92000001,England,E06000049,Cheshire East,All_other,3770,2768,73,2818,75,132867,35.2
+201819,Academic year,Local authority district,E92000001,England,E06000050,Cheshire West and Chester,Total,3829,2698,70,2748,72,137959,36
+201819,Academic year,Local authority district,E92000001,England,E06000050,Cheshire West and Chester,FSM,420,212,50,220,52,13327,31.7
+201819,Academic year,Local authority district,E92000001,England,E06000050,Cheshire West and Chester,All_other,3409,2486,73,2528,74,124632,36.6
+201819,Academic year,Local authority district,E92000001,England,E06000051,Shropshire,Total,2926,2109,72,2123,73,104914,35.9
+201819,Academic year,Local authority district,E92000001,England,E06000051,Shropshire,FSM,291,155,53,158,54,9408,32.3
+201819,Academic year,Local authority district,E92000001,England,E06000051,Shropshire,All_other,2635,1954,74,1965,75,95506,36.2
+201819,Academic year,Local authority district,E92000001,England,E06000052,Cornwall,Total,5715,3951,69,4017,70,196597,34.4
+201819,Academic year,Local authority district,E92000001,England,E06000052,Cornwall,FSM,760,381,50,388,51,23383,30.8
+201819,Academic year,Local authority district,E92000001,England,E06000052,Cornwall,All_other,4955,3570,72,3629,73,173214,35
+201819,Academic year,Local authority district,E92000001,England,E06000053,Isles of Scilly,Total,28,22,79,22,79,1022,36.5
+201819,Academic year,Local authority district,E92000001,England,E06000053,Isles of Scilly,FSM,0,.,.,.,.,.,.
+201819,Academic year,Local authority district,E92000001,England,E06000053,Isles of Scilly,All_other,28,22,79,22,79,1022,36.5
+201819,Academic year,Local authority district,E92000001,England,E06000054,Wiltshire,Total,5466,3905,71,3955,72,190991,34.9
+201819,Academic year,Local authority district,E92000001,England,E06000054,Wiltshire,FSM,506,242,48,247,49,15744,31.1
+201819,Academic year,Local authority district,E92000001,England,E06000054,Wiltshire,All_other,4960,3663,74,3708,75,175247,35.3
+201819,Academic year,Local authority district,E92000001,England,E06000055,Bedford,Total,2314,1567,68,1598,69,76916,33.2
+201819,Academic year,Local authority district,E92000001,England,E06000055,Bedford,FSM,313,160,51,166,53,9686,30.9
+201819,Academic year,Local authority district,E92000001,England,E06000055,Bedford,All_other,2001,1407,70,1432,72,67230,33.6
+201819,Academic year,Local authority district,E92000001,England,E06000056,Central Bedfordshire,Total,3600,2577,72,2610,73,123938,34.4
+201819,Academic year,Local authority district,E92000001,England,E06000056,Central Bedfordshire,FSM,239,104,44,106,44,7147,29.9
+201819,Academic year,Local authority district,E92000001,England,E06000056,Central Bedfordshire,All_other,3361,2473,74,2504,75,116791,34.7
+201819,Academic year,Local authority district,E92000001,England,E06000057,Northumberland,Total,3098,2303,74,2316,75,110626,35.7
+201819,Academic year,Local authority district,E92000001,England,E06000057,Northumberland,FSM,417,252,60,253,61,13280,31.8
+201819,Academic year,Local authority district,E92000001,England,E06000057,Northumberland,All_other,2681,2051,77,2063,77,97346,36.3
+201819,Academic year,Local authority district,E92000001,England,E06000058,Bournemouth Christchurch and Poole,Total,3948,2895,73,2914,74,140192,35.5
+201819,Academic year,Local authority district,E92000001,England,E06000058,Bournemouth Christchurch and Poole,FSM,463,267,58,270,58,14933,32.3
+201819,Academic year,Local authority district,E92000001,England,E06000058,Bournemouth Christchurch and Poole,All_other,3485,2628,75,2644,76,125259,35.9
+201819,Academic year,Local authority district,E92000001,England,E06000059,Dorset,Total,3416,2430,71,2443,72,121124,35.5
+201819,Academic year,Local authority district,E92000001,England,E06000059,Dorset,FSM,381,203,53,204,54,12133,31.8
+201819,Academic year,Local authority district,E92000001,England,E06000059,Dorset,All_other,3035,2227,73,2239,74,108991,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000004,Aylesbury Vale,Total,2457,1838,75,1854,75,87309,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000004,Aylesbury Vale,FSM,216,124,57,125,58,6767,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000004,Aylesbury Vale,All_other,2241,1714,76,1729,77,80542,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000005,Chiltern,Total,1031,766,74,769,75,37103,36
+201819,Academic year,Local authority district,E92000001,England,E07000005,Chiltern,FSM,60,21,35,21,35,1788,29.8
+201819,Academic year,Local authority district,E92000001,England,E07000005,Chiltern,All_other,971,745,77,748,77,35315,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000006,South Bucks,Total,698,546,78,548,79,25232,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000006,South Bucks,FSM,54,32,59,33,61,1799,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000006,South Bucks,All_other,644,514,80,515,80,23433,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000007,Wycombe,Total,1978,1379,70,1402,71,69835,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000007,Wycombe,FSM,183,94,51,94,51,5854,32
+201819,Academic year,Local authority district,E92000001,England,E07000007,Wycombe,All_other,1795,1285,72,1308,73,63981,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000008,Cambridge,Total,1158,805,70,823,71,39510,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000008,Cambridge,FSM,179,78,44,80,45,5366,30
+201819,Academic year,Local authority district,E92000001,England,E07000008,Cambridge,All_other,979,727,74,743,76,34144,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000009,East Cambridgeshire,Total,986,710,72,715,73,33947,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000009,East Cambridgeshire,FSM,91,42,46,43,47,2800,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000009,East Cambridgeshire,All_other,895,668,75,672,75,31147,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000010,Fenland,Total,1034,667,65,701,68,33572,32.5
+201819,Academic year,Local authority district,E92000001,England,E07000010,Fenland,FSM,190,110,58,112,59,5815,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000010,Fenland,All_other,844,557,66,589,70,27757,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000011,Huntingdonshire,Total,1947,1328,68,1371,70,65641,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000011,Huntingdonshire,FSM,253,114,45,118,47,7476,29.5
+201819,Academic year,Local authority district,E92000001,England,E07000011,Huntingdonshire,All_other,1694,1214,72,1253,74,58165,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000012,South Cambridgeshire,Total,1817,1347,74,1353,74,64510,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000012,South Cambridgeshire,FSM,171,67,39,67,39,4981,29.1
+201819,Academic year,Local authority district,E92000001,England,E07000012,South Cambridgeshire,All_other,1646,1280,78,1286,78,59529,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000026,Allerdale,Total,967,649,67,660,68,32396,33.5
+201819,Academic year,Local authority district,E92000001,England,E07000026,Allerdale,FSM,109,55,50,57,52,3325,30.5
+201819,Academic year,Local authority district,E92000001,England,E07000026,Allerdale,All_other,858,594,69,603,70,29071,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000027,Barrow-in-Furness,Total,711,498,70,503,71,24211,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000027,Barrow-in-Furness,FSM,83,43,52,46,55,2593,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000027,Barrow-in-Furness,All_other,628,455,72,457,73,21618,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000028,Carlisle,Total,1219,842,69,853,70,42209,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000028,Carlisle,FSM,118,58,49,61,52,3592,30.4
+201819,Academic year,Local authority district,E92000001,England,E07000028,Carlisle,All_other,1101,784,71,792,72,38617,35.1
+201819,Academic year,Local authority district,E92000001,England,E07000029,Copeland,Total,674,456,68,459,68,22533,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000029,Copeland,FSM,83,35,42,35,42,2502,30.1
+201819,Academic year,Local authority district,E92000001,England,E07000029,Copeland,All_other,591,421,71,424,72,20031,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000030,Eden,Total,448,320,71,325,73,15764,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000030,Eden,FSM,24,10,42,10,42,706,29.4
+201819,Academic year,Local authority district,E92000001,England,E07000030,Eden,All_other,424,310,73,315,74,15058,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000031,South Lakeland,Total,862,635,74,644,75,30926,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000031,South Lakeland,FSM,31,15,48,15,48,964,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000031,South Lakeland,All_other,831,620,75,629,76,29962,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000032,Amber Valley,Total,1288,894,69,924,72,44460,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000032,Amber Valley,FSM,224,122,54,127,57,6955,31
+201819,Academic year,Local authority district,E92000001,England,E07000032,Amber Valley,All_other,1064,772,73,797,75,37505,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000033,Bolsover,Total,805,533,66,549,68,27038,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000033,Bolsover,FSM,167,75,45,82,49,4808,28.8
+201819,Academic year,Local authority district,E92000001,England,E07000033,Bolsover,All_other,638,458,72,467,73,22230,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000034,Chesterfield,Total,1072,710,66,740,69,36034,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000034,Chesterfield,FSM,240,124,52,130,54,7297,30.4
+201819,Academic year,Local authority district,E92000001,England,E07000034,Chesterfield,All_other,832,586,70,610,73,28737,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000035,Derbyshire Dales,Total,642,457,71,467,73,23114,36
+201819,Academic year,Local authority district,E92000001,England,E07000035,Derbyshire Dales,FSM,51,23,45,27,53,1640,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000035,Derbyshire Dales,All_other,591,434,73,440,74,21474,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000036,Erewash,Total,1288,864,67,879,68,44109,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000036,Erewash,FSM,246,117,48,120,49,7413,30.1
+201819,Academic year,Local authority district,E92000001,England,E07000036,Erewash,All_other,1042,747,72,759,73,36696,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000037,High Peak,Total,904,656,73,661,73,32283,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000037,High Peak,FSM,120,62,52,65,54,3804,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000037,High Peak,All_other,784,594,76,596,76,28479,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000038,North East Derbyshire,Total,1081,764,71,779,72,38240,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000038,North East Derbyshire,FSM,158,84,53,87,55,4879,30.9
+201819,Academic year,Local authority district,E92000001,England,E07000038,North East Derbyshire,All_other,923,680,74,692,75,33361,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000039,South Derbyshire,Total,1112,793,71,801,72,39740,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000039,South Derbyshire,FSM,146,82,56,84,58,4758,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000039,South Derbyshire,All_other,966,711,74,717,74,34982,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000040,East Devon,Total,1442,1060,74,1069,74,51198,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000040,East Devon,FSM,96,56,58,56,58,3089,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000040,East Devon,All_other,1346,1004,75,1013,75,48109,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000041,Exeter,Total,1194,834,70,842,71,40341,33.8
+201819,Academic year,Local authority district,E92000001,England,E07000041,Exeter,FSM,95,48,51,48,51,2870,30.2
+201819,Academic year,Local authority district,E92000001,England,E07000041,Exeter,All_other,1099,786,72,794,72,37471,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000042,Mid Devon,Total,839,588,70,595,71,28062,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000042,Mid Devon,FSM,68,38,56,40,59,2113,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000042,Mid Devon,All_other,771,550,71,555,72,25949,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000043,North Devon,Total,1074,764,71,771,72,36771,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000043,North Devon,FSM,123,59,48,62,50,3761,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000043,North Devon,All_other,951,705,74,709,75,33010,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000044,South Hams,Total,831,637,77,643,77,29239,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000044,South Hams,FSM,47,29,62,29,62,1525,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000044,South Hams,All_other,784,608,78,614,78,27714,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000045,Teignbridge,Total,1292,936,72,942,73,44535,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000045,Teignbridge,FSM,102,55,54,57,56,3183,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000045,Teignbridge,All_other,1190,881,74,885,74,41352,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000046,Torridge,Total,635,441,69,441,69,21419,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000046,Torridge,FSM,47,25,53,25,53,1461,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000046,Torridge,All_other,588,416,71,416,71,19958,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000047,West Devon,Total,488,359,74,363,74,17148,35.1
+201819,Academic year,Local authority district,E92000001,England,E07000047,West Devon,FSM,40,21,53,21,53,1244,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000047,West Devon,All_other,448,338,75,342,76,15904,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000061,Eastbourne,Total,1099,815,74,818,74,40247,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000061,Eastbourne,FSM,208,132,63,132,63,7058,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000061,Eastbourne,All_other,891,683,77,686,77,33189,37.2
+201819,Academic year,Local authority district,E92000001,England,E07000062,Hastings,Total,981,723,74,730,74,35201,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000062,Hastings,FSM,263,164,62,168,64,8913,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000062,Hastings,All_other,718,559,78,562,78,26288,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000063,Lewes,Total,909,680,75,685,75,33839,37.2
+201819,Academic year,Local authority district,E92000001,England,E07000063,Lewes,FSM,114,68,60,69,61,3921,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000063,Lewes,All_other,795,612,77,616,77,29918,37.6
+201819,Academic year,Local authority district,E92000001,England,E07000064,Rother,Total,843,648,77,653,77,30810,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000064,Rother,FSM,110,62,56,63,57,3495,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000064,Rother,All_other,733,586,80,590,80,27315,37.3
+201819,Academic year,Local authority district,E92000001,England,E07000065,Wealden,Total,1518,1174,77,1180,78,57540,37.9
+201819,Academic year,Local authority district,E92000001,England,E07000065,Wealden,FSM,140,84,60,86,61,4741,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000065,Wealden,All_other,1378,1090,79,1094,79,52799,38.3
+201819,Academic year,Local authority district,E92000001,England,E07000066,Basildon,Total,2407,1769,73,1790,74,82973,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000066,Basildon,FSM,353,208,59,210,59,11134,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000066,Basildon,All_other,2054,1561,76,1580,77,71839,35
+201819,Academic year,Local authority district,E92000001,England,E07000067,Braintree,Total,1653,1212,73,1224,74,58239,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000067,Braintree,FSM,185,91,49,92,50,5675,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000067,Braintree,All_other,1468,1121,76,1132,77,52564,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000068,Brentwood,Total,887,683,77,687,77,32193,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000068,Brentwood,FSM,61,29,48,30,49,1916,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000068,Brentwood,All_other,826,654,79,657,80,30277,36.7
+201819,Academic year,Local authority district,E92000001,England,E07000069,Castle Point,Total,952,680,71,696,73,32875,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000069,Castle Point,FSM,104,61,59,61,59,3271,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000069,Castle Point,All_other,848,619,73,635,75,29604,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000070,Chelmsford,Total,2050,1469,72,1491,73,71480,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000070,Chelmsford,FSM,172,77,45,80,47,5300,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000070,Chelmsford,All_other,1878,1392,74,1411,75,66180,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000071,Colchester,Total,2300,1675,73,1700,74,80309,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000071,Colchester,FSM,259,138,53,141,54,8160,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000071,Colchester,All_other,2041,1537,75,1559,76,72149,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000072,Epping Forest,Total,1344,999,74,1015,76,47400,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000072,Epping Forest,FSM,61,30,49,30,49,1899,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000072,Epping Forest,All_other,1283,969,76,985,77,45501,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000073,Harlow,Total,1253,881,70,908,72,43244,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000073,Harlow,FSM,150,93,62,94,63,4909,32.7
+201819,Academic year,Local authority district,E92000001,England,E07000073,Harlow,All_other,1103,788,71,814,74,38335,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000074,Maldon,Total,583,445,76,451,77,20169,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000074,Maldon,FSM,52,34,65,34,65,1695,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000074,Maldon,All_other,531,411,77,417,79,18474,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000075,Rochford,Total,937,739,79,742,79,33993,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000075,Rochford,FSM,91,54,59,54,59,3030,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000075,Rochford,All_other,846,685,81,688,81,30963,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000076,Tendring,Total,1491,1028,69,1054,71,50525,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000076,Tendring,FSM,249,140,56,148,59,7757,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000076,Tendring,All_other,1242,888,71,906,73,42768,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000077,Uttlesford,Total,1040,795,76,810,78,38336,36.9
+201819,Academic year,Local authority district,E92000001,England,E07000077,Uttlesford,FSM,47,29,62,30,64,1582,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000077,Uttlesford,All_other,993,766,77,780,79,36754,37
+201819,Academic year,Local authority district,E92000001,England,E07000078,Cheltenham,Total,1308,923,71,933,71,46143,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000078,Cheltenham,FSM,133,71,53,73,55,4304,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000078,Cheltenham,All_other,1175,852,73,860,73,41839,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000079,Cotswold,Total,833,613,74,624,75,29876,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000079,Cotswold,FSM,67,32,48,32,48,2059,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000079,Cotswold,All_other,766,581,76,592,77,27817,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000080,Forest of Dean,Total,815,555,68,566,69,28769,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000080,Forest of Dean,FSM,79,49,62,49,62,2623,33.2
+201819,Academic year,Local authority district,E92000001,England,E07000080,Forest of Dean,All_other,736,506,69,517,70,26146,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000081,Gloucester,Total,1617,1082,67,1113,69,56313,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000081,Gloucester,FSM,188,86,46,90,48,5857,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000081,Gloucester,All_other,1429,996,70,1023,72,50456,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000082,Stroud,Total,1244,892,72,908,73,44826,36
+201819,Academic year,Local authority district,E92000001,England,E07000082,Stroud,FSM,104,55,53,55,53,3352,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000082,Stroud,All_other,1140,837,73,853,75,41474,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000083,Tewkesbury,Total,946,712,75,713,75,34576,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000083,Tewkesbury,FSM,70,37,53,37,53,2285,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000083,Tewkesbury,All_other,876,675,77,676,77,32291,36.9
+201819,Academic year,Local authority district,E92000001,England,E07000084,Basingstoke and Deane,Total,2066,1622,79,1647,80,74392,36
+201819,Academic year,Local authority district,E92000001,England,E07000084,Basingstoke and Deane,FSM,211,135,64,135,64,6984,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000084,Basingstoke and Deane,All_other,1855,1487,80,1512,82,67408,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000085,East Hampshire,Total,1206,927,77,932,77,44580,37
+201819,Academic year,Local authority district,E92000001,England,E07000085,East Hampshire,FSM,83,38,46,39,47,2577,31
+201819,Academic year,Local authority district,E92000001,England,E07000085,East Hampshire,All_other,1123,889,79,893,80,42003,37.4
+201819,Academic year,Local authority district,E92000001,England,E07000086,Eastleigh,Total,1568,1222,78,1229,78,56265,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000086,Eastleigh,FSM,130,73,56,73,56,4099,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000086,Eastleigh,All_other,1438,1149,80,1156,80,52166,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000087,Fareham,Total,1297,1001,77,1002,77,46969,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000087,Fareham,FSM,75,47,63,47,63,2410,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000087,Fareham,All_other,1222,954,78,955,78,44559,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000088,Gosport,Total,861,641,74,648,75,30822,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000088,Gosport,FSM,138,82,59,82,59,4531,32.8
+201819,Academic year,Local authority district,E92000001,England,E07000088,Gosport,All_other,723,559,77,566,78,26291,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000089,Hart,Total,1197,968,81,974,81,43207,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000089,Hart,FSM,46,22,48,23,50,1419,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000089,Hart,All_other,1151,946,82,951,83,41788,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000090,Havant,Total,1303,891,68,916,70,45105,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000090,Havant,FSM,243,128,53,138,57,7812,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000090,Havant,All_other,1060,763,72,778,73,37293,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000091,New Forest,Total,1641,1234,75,1240,76,57295,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000091,New Forest,FSM,178,108,61,108,61,5608,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000091,New Forest,All_other,1463,1126,77,1132,77,51687,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000092,Rushmoor,Total,1148,822,72,829,72,39378,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000092,Rushmoor,FSM,102,61,60,62,61,3316,32.5
+201819,Academic year,Local authority district,E92000001,England,E07000092,Rushmoor,All_other,1046,761,73,767,73,36062,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000093,Test Valley,Total,1507,1179,78,1186,79,54943,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000093,Test Valley,FSM,119,63,53,63,53,3707,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000093,Test Valley,All_other,1388,1116,80,1123,81,51236,36.9
+201819,Academic year,Local authority district,E92000001,England,E07000094,Winchester,Total,1358,1056,78,1063,78,49470,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000094,Winchester,FSM,91,43,47,44,48,2800,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000094,Winchester,All_other,1267,1013,80,1019,80,46670,36.8
+201819,Academic year,Local authority district,E92000001,England,E07000095,Broxbourne,Total,1192,840,70,872,73,40874,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000095,Broxbourne,FSM,149,82,55,84,56,4652,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000095,Broxbourne,All_other,1043,758,73,788,76,36222,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000096,Dacorum,Total,1907,1309,69,1330,70,66226,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000096,Dacorum,FSM,177,77,44,79,45,5306,30
+201819,Academic year,Local authority district,E92000001,England,E07000096,Dacorum,All_other,1730,1232,71,1251,72,60920,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000098,Hertsmere,Total,1182,848,72,860,73,41318,35
+201819,Academic year,Local authority district,E92000001,England,E07000098,Hertsmere,FSM,128,57,45,59,46,3762,29.4
+201819,Academic year,Local authority district,E92000001,England,E07000098,Hertsmere,All_other,1054,791,75,801,76,37556,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000099,North Hertfordshire,Total,1568,1186,76,1192,76,55776,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000099,North Hertfordshire,FSM,132,78,59,80,61,4250,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000099,North Hertfordshire,All_other,1436,1108,77,1112,77,51526,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000102,Three Rivers,Total,923,675,73,682,74,33444,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000102,Three Rivers,FSM,74,42,57,42,57,2375,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000102,Three Rivers,All_other,849,633,75,640,75,31069,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000103,Watford,Total,1320,863,65,881,67,45127,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000103,Watford,FSM,115,54,47,55,48,3504,30.5
+201819,Academic year,Local authority district,E92000001,England,E07000103,Watford,All_other,1205,809,67,826,69,41623,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000105,Ashford,Total,1525,1105,72,1113,73,54209,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000105,Ashford,FSM,197,108,55,109,55,6421,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000105,Ashford,All_other,1328,997,75,1004,76,47788,36
+201819,Academic year,Local authority district,E92000001,England,E07000106,Canterbury,Total,1429,1058,74,1065,75,51167,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000106,Canterbury,FSM,195,103,53,105,54,6202,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000106,Canterbury,All_other,1234,955,77,960,78,44965,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000107,Dartford,Total,1578,1153,73,1164,74,54649,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000107,Dartford,FSM,153,85,56,88,58,4808,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000107,Dartford,All_other,1425,1068,75,1076,76,49841,35
+201819,Academic year,Local authority district,E92000001,England,E07000108,Dover,Total,1165,865,74,873,75,41038,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000108,Dover,FSM,188,120,64,121,64,6231,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000108,Dover,All_other,977,745,76,752,77,34807,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000109,Gravesham,Total,1431,1074,75,1080,75,49845,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000109,Gravesham,FSM,185,118,64,120,65,6156,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000109,Gravesham,All_other,1246,956,77,960,77,43689,35.1
+201819,Academic year,Local authority district,E92000001,England,E07000110,Maidstone,Total,1977,1425,72,1442,73,70426,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000110,Maidstone,FSM,214,112,52,115,54,6950,32.5
+201819,Academic year,Local authority district,E92000001,England,E07000110,Maidstone,All_other,1763,1313,74,1327,75,63476,36
+201819,Academic year,Local authority district,E92000001,England,E07000111,Sevenoaks,Total,1338,1022,76,1028,77,48835,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000111,Sevenoaks,FSM,91,50,55,53,58,2951,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000111,Sevenoaks,All_other,1247,972,78,975,78,45884,36.8
+201819,Academic year,Local authority district,E92000001,England,E07000112,Folkestone and Hythe,Total,1169,875,75,880,75,41372,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000112,Folkestone and Hythe,FSM,199,122,61,123,62,6437,32.3
+201819,Academic year,Local authority district,E92000001,England,E07000112,Folkestone and Hythe,All_other,970,753,78,757,78,34935,36
+201819,Academic year,Local authority district,E92000001,England,E07000113,Swale,Total,1842,1364,74,1371,74,62955,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000113,Swale,FSM,287,173,60,174,61,9035,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000113,Swale,All_other,1555,1191,77,1197,77,53920,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000114,Thanet,Total,1591,975,61,1031,65,52536,33
+201819,Academic year,Local authority district,E92000001,England,E07000114,Thanet,FSM,343,148,43,160,47,10262,29.9
+201819,Academic year,Local authority district,E92000001,England,E07000114,Thanet,All_other,1248,827,66,871,70,42274,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000115,Tonbridge and Malling,Total,1631,1258,77,1266,78,58897,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000115,Tonbridge and Malling,FSM,143,69,48,70,49,4380,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000115,Tonbridge and Malling,All_other,1488,1189,80,1196,80,54517,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000116,Tunbridge Wells,Total,1254,947,76,961,77,45527,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000116,Tunbridge Wells,FSM,106,61,58,63,59,3427,32.3
+201819,Academic year,Local authority district,E92000001,England,E07000116,Tunbridge Wells,All_other,1148,886,77,898,78,42100,36.7
+201819,Academic year,Local authority district,E92000001,England,E07000117,Burnley,Total,1159,681,59,725,63,37512,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000117,Burnley,FSM,240,110,46,116,48,7026,29.3
+201819,Academic year,Local authority district,E92000001,England,E07000117,Burnley,All_other,919,571,62,609,66,30486,33.2
+201819,Academic year,Local authority district,E92000001,England,E07000118,Chorley,Total,1355,945,70,955,70,46828,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000118,Chorley,FSM,105,56,53,57,54,3212,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000118,Chorley,All_other,1250,889,71,898,72,43616,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000119,Fylde,Total,696,518,74,528,76,25483,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000119,Fylde,FSM,56,28,50,29,52,1740,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000119,Fylde,All_other,640,490,77,499,78,23743,37.1
+201819,Academic year,Local authority district,E92000001,England,E07000120,Hyndburn,Total,1024,656,64,682,67,33702,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000120,Hyndburn,FSM,178,90,51,94,53,5390,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000120,Hyndburn,All_other,846,566,67,588,70,28312,33.5
+201819,Academic year,Local authority district,E92000001,England,E07000121,Lancaster,Total,1477,1009,68,1033,70,50737,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000121,Lancaster,FSM,238,121,51,129,54,7526,31.6
+201819,Academic year,Local authority district,E92000001,England,E07000121,Lancaster,All_other,1239,888,72,904,73,43211,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000122,Pendle,Total,1237,709,57,768,62,39737,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000122,Pendle,FSM,162,80,49,85,52,4963,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000122,Pendle,All_other,1075,629,59,683,64,34774,32.3
+201819,Academic year,Local authority district,E92000001,England,E07000123,Preston,Total,1799,1185,66,1234,69,60862,33.8
+201819,Academic year,Local authority district,E92000001,England,E07000123,Preston,FSM,263,140,53,146,56,8125,30.9
+201819,Academic year,Local authority district,E92000001,England,E07000123,Preston,All_other,1536,1045,68,1088,71,52737,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000124,Ribble Valley,Total,683,506,74,512,75,24393,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000124,Ribble Valley,FSM,28,19,68,19,68,948,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000124,Ribble Valley,All_other,655,487,74,493,75,23445,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000125,Rossendale,Total,893,621,70,632,71,30896,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000125,Rossendale,FSM,135,77,57,78,58,4231,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000125,Rossendale,All_other,758,544,72,554,73,26665,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000126,South Ribble,Total,1203,844,70,859,71,41218,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000126,South Ribble,FSM,104,47,45,50,48,3102,29.8
+201819,Academic year,Local authority district,E92000001,England,E07000126,South Ribble,All_other,1099,797,73,809,74,38116,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000127,West Lancashire,Total,1215,856,70,867,71,42356,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000127,West Lancashire,FSM,139,70,50,71,51,4292,30.9
+201819,Academic year,Local authority district,E92000001,England,E07000127,West Lancashire,All_other,1076,786,73,796,74,38064,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000128,Wyre,Total,994,703,71,708,71,35030,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000128,Wyre,FSM,139,61,44,62,45,4164,30
+201819,Academic year,Local authority district,E92000001,England,E07000128,Wyre,All_other,855,642,75,646,76,30866,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000129,Blaby,Total,1231,907,74,918,75,43315,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000129,Blaby,FSM,84,39,46,39,46,2574,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000129,Blaby,All_other,1147,868,76,879,77,40741,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000130,Charnwood,Total,1787,1250,70,1256,70,61933,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000130,Charnwood,FSM,171,88,51,89,52,5372,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000130,Charnwood,All_other,1616,1162,72,1167,72,56561,35
+201819,Academic year,Local authority district,E92000001,England,E07000131,Harborough,Total,1014,740,73,749,74,36759,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000131,Harborough,FSM,31,16,52,16,52,970,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000131,Harborough,All_other,983,724,74,733,75,35789,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000132,Hinckley and Bosworth,Total,1250,873,70,883,71,42937,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000132,Hinckley and Bosworth,FSM,88,40,45,41,47,2629,29.9
+201819,Academic year,Local authority district,E92000001,England,E07000132,Hinckley and Bosworth,All_other,1162,833,72,842,72,40308,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000133,Melton,Total,541,406,75,410,76,19288,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000133,Melton,FSM,45,22,49,22,49,1387,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000133,Melton,All_other,496,384,77,388,78,17901,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000134,North West Leicestershire,Total,1133,788,70,808,71,39129,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000134,North West Leicestershire,FSM,104,50,48,53,51,3123,30
+201819,Academic year,Local authority district,E92000001,England,E07000134,North West Leicestershire,All_other,1029,738,72,755,73,36006,35
+201819,Academic year,Local authority district,E92000001,England,E07000135,Oadby and Wigston,Total,725,488,67,515,71,24333,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000135,Oadby and Wigston,FSM,66,27,41,27,41,1916,29
+201819,Academic year,Local authority district,E92000001,England,E07000135,Oadby and Wigston,All_other,659,461,70,488,74,22417,34
+201819,Academic year,Local authority district,E92000001,England,E07000136,Boston,Total,727,468,64,474,65,23925,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000136,Boston,FSM,60,29,48,31,52,1822,30.4
+201819,Academic year,Local authority district,E92000001,England,E07000136,Boston,All_other,667,439,66,443,66,22103,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000137,East Lindsey,Total,1295,886,68,893,69,43879,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000137,East Lindsey,FSM,250,148,59,148,59,7851,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000137,East Lindsey,All_other,1045,738,71,745,71,36028,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000138,Lincoln,Total,1013,672,66,675,67,34159,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000138,Lincoln,FSM,219,113,52,115,53,6806,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000138,Lincoln,All_other,794,559,70,560,71,27353,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000139,North Kesteven,Total,1272,962,76,968,76,45077,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000139,North Kesteven,FSM,74,37,50,38,51,2345,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000139,North Kesteven,All_other,1198,925,77,930,78,42732,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000140,South Holland,Total,1022,664,65,670,66,34228,33.5
+201819,Academic year,Local authority district,E92000001,England,E07000140,South Holland,FSM,100,58,58,58,58,3212,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000140,South Holland,All_other,922,606,66,612,66,31016,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000141,South Kesteven,Total,1552,1103,71,1109,71,54769,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000141,South Kesteven,FSM,125,65,52,66,53,3959,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000141,South Kesteven,All_other,1427,1038,73,1043,73,50810,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000142,West Lindsey,Total,1061,725,68,739,70,36618,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000142,West Lindsey,FSM,188,107,57,108,57,5957,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000142,West Lindsey,All_other,873,618,71,631,72,30661,35.1
+201819,Academic year,Local authority district,E92000001,England,E07000143,Breckland,Total,1381,984,71,992,72,45569,33
+201819,Academic year,Local authority district,E92000001,England,E07000143,Breckland,FSM,157,79,50,80,51,4742,30.2
+201819,Academic year,Local authority district,E92000001,England,E07000143,Breckland,All_other,1224,905,74,912,75,40827,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000144,Broadland,Total,1315,1012,77,1024,78,45677,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000144,Broadland,FSM,107,51,48,53,50,3350,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000144,Broadland,All_other,1208,961,80,971,80,42327,35
+201819,Academic year,Local authority district,E92000001,England,E07000145,Great Yarmouth,Total,1061,752,71,772,73,34919,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000145,Great Yarmouth,FSM,225,133,59,138,61,7037,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000145,Great Yarmouth,All_other,836,619,74,634,76,27882,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000146,Kings Lynn and West Norfolk,Total,1579,1128,71,1139,72,53188,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000146,Kings Lynn and West Norfolk,FSM,228,118,52,120,53,7099,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000146,Kings Lynn and West Norfolk,All_other,1351,1010,75,1019,75,46089,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000147,North Norfolk,Total,842,586,70,596,71,28098,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000147,North Norfolk,FSM,112,55,49,58,52,3454,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000147,North Norfolk,All_other,730,531,73,538,74,24644,33.8
+201819,Academic year,Local authority district,E92000001,England,E07000148,Norwich,Total,1385,912,66,921,66,44917,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000148,Norwich,FSM,286,160,56,162,57,8945,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000148,Norwich,All_other,1099,752,68,759,69,35972,32.7
+201819,Academic year,Local authority district,E92000001,England,E07000149,South Norfolk,Total,1449,1075,74,1091,75,49302,34
+201819,Academic year,Local authority district,E92000001,England,E07000149,South Norfolk,FSM,135,73,54,73,54,4216,31.2
+201819,Academic year,Local authority district,E92000001,England,E07000149,South Norfolk,All_other,1314,1002,76,1018,77,45086,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000150,Corby,Total,1003,662,66,681,68,32673,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000150,Corby,FSM,102,56,55,57,56,3116,30.5
+201819,Academic year,Local authority district,E92000001,England,E07000150,Corby,All_other,901,606,67,624,69,29557,32.8
+201819,Academic year,Local authority district,E92000001,England,E07000151,Daventry,Total,950,681,72,688,72,32977,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000151,Daventry,FSM,52,26,50,26,50,1700,32.7
+201819,Academic year,Local authority district,E92000001,England,E07000151,Daventry,All_other,898,655,73,662,74,31277,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000152,East Northamptonshire,Total,923,642,70,656,71,31227,33.8
+201819,Academic year,Local authority district,E92000001,England,E07000152,East Northamptonshire,FSM,64,35,55,37,58,2028,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000152,East Northamptonshire,All_other,859,607,71,619,72,29199,34
+201819,Academic year,Local authority district,E92000001,England,E07000153,Kettering,Total,1276,891,70,908,71,44307,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000153,Kettering,FSM,114,47,41,48,42,3443,30.2
+201819,Academic year,Local authority district,E92000001,England,E07000153,Kettering,All_other,1162,844,73,860,74,40864,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000154,Northampton,Total,2951,2038,69,2078,70,99285,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000154,Northampton,FSM,288,156,54,158,55,9038,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000154,Northampton,All_other,2663,1882,71,1920,72,90247,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000155,South Northamptonshire,Total,1186,902,76,906,76,42555,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000155,South Northamptonshire,FSM,25,13,52,13,52,787,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000155,South Northamptonshire,All_other,1161,889,77,893,77,41768,36
+201819,Academic year,Local authority district,E92000001,England,E07000156,Wellingborough,Total,969,623,64,655,68,32297,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000156,Wellingborough,FSM,116,62,53,68,59,3577,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000156,Wellingborough,All_other,853,561,66,587,69,28720,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000163,Craven,Total,522,372,71,373,71,18127,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000163,Craven,FSM,30,16,53,16,53,895,29.8
+201819,Academic year,Local authority district,E92000001,England,E07000163,Craven,All_other,492,356,72,357,73,17232,35
+201819,Academic year,Local authority district,E92000001,England,E07000164,Hambleton,Total,808,601,74,603,75,29070,36
+201819,Academic year,Local authority district,E92000001,England,E07000164,Hambleton,FSM,78,39,50,39,50,2377,30.5
+201819,Academic year,Local authority district,E92000001,England,E07000164,Hambleton,All_other,730,562,77,564,77,26693,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000165,Harrogate,Total,1590,1165,73,1184,74,56169,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000165,Harrogate,FSM,112,55,49,55,49,3443,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000165,Harrogate,All_other,1478,1110,75,1129,76,52726,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000166,Richmondshire,Total,545,377,69,386,71,19163,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000166,Richmondshire,FSM,39,21,54,24,62,1259,32.3
+201819,Academic year,Local authority district,E92000001,England,E07000166,Richmondshire,All_other,506,356,70,362,72,17904,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000167,Ryedale,Total,503,354,70,360,72,17474,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000167,Ryedale,FSM,35,12,34,13,37,1005,28.7
+201819,Academic year,Local authority district,E92000001,England,E07000167,Ryedale,All_other,468,342,73,347,74,16469,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000168,Scarborough,Total,1016,681,67,700,69,34117,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000168,Scarborough,FSM,150,73,49,77,51,4473,29.8
+201819,Academic year,Local authority district,E92000001,England,E07000168,Scarborough,All_other,866,608,70,623,72,29644,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000169,Selby,Total,996,746,75,752,76,35367,35.5
+201819,Academic year,Local authority district,E92000001,England,E07000169,Selby,FSM,96,50,52,50,52,3042,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000169,Selby,All_other,900,696,77,702,78,32325,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000170,Ashfield,Total,1512,1019,67,1027,68,49336,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000170,Ashfield,FSM,286,137,48,140,49,8372,29.3
+201819,Academic year,Local authority district,E92000001,England,E07000170,Ashfield,All_other,1226,882,72,887,72,40964,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000171,Bassetlaw,Total,1247,887,71,899,72,42742,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000171,Bassetlaw,FSM,167,100,60,101,60,5294,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000171,Bassetlaw,All_other,1080,787,73,798,74,37448,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000172,Broxtowe,Total,1240,882,71,892,72,42819,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000172,Broxtowe,FSM,128,71,55,72,56,4051,31.6
+201819,Academic year,Local authority district,E92000001,England,E07000172,Broxtowe,All_other,1112,811,73,820,74,38768,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000173,Gedling,Total,1390,976,70,1002,72,47777,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000173,Gedling,FSM,144,54,38,61,42,4199,29.2
+201819,Academic year,Local authority district,E92000001,England,E07000173,Gedling,All_other,1246,922,74,941,76,43578,35
+201819,Academic year,Local authority district,E92000001,England,E07000174,Mansfield,Total,1398,893,64,920,66,44806,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000174,Mansfield,FSM,240,101,42,110,46,6905,28.8
+201819,Academic year,Local authority district,E92000001,England,E07000174,Mansfield,All_other,1158,792,68,810,70,37901,32.7
+201819,Academic year,Local authority district,E92000001,England,E07000175,Newark and Sherwood,Total,1189,778,65,794,67,39102,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000175,Newark and Sherwood,FSM,158,75,47,80,51,4808,30.4
+201819,Academic year,Local authority district,E92000001,England,E07000175,Newark and Sherwood,All_other,1031,703,68,714,69,34294,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000176,Rushcliffe,Total,1367,1054,77,1057,77,49425,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000176,Rushcliffe,FSM,63,33,52,33,52,1943,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000176,Rushcliffe,All_other,1304,1021,78,1024,79,47482,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000177,Cherwell,Total,1727,1221,71,1244,72,59124,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000177,Cherwell,FSM,147,67,46,67,46,4411,30
+201819,Academic year,Local authority district,E92000001,England,E07000177,Cherwell,All_other,1580,1154,73,1177,74,54713,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000178,Oxford,Total,1357,961,71,973,72,46192,34
+201819,Academic year,Local authority district,E92000001,England,E07000178,Oxford,FSM,162,80,49,81,50,4910,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000178,Oxford,All_other,1195,881,74,892,75,41282,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000179,South Oxfordshire,Total,1571,1187,76,1188,76,55597,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000179,South Oxfordshire,FSM,83,44,53,44,53,2675,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000179,South Oxfordshire,All_other,1488,1143,77,1144,77,52922,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000180,Vale of White Horse,Total,1537,1087,71,1111,72,53567,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000180,Vale of White Horse,FSM,116,54,47,55,47,3496,30.1
+201819,Academic year,Local authority district,E92000001,England,E07000180,Vale of White Horse,All_other,1421,1033,73,1056,74,50071,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000181,West Oxfordshire,Total,1196,915,77,921,77,42375,35.4
+201819,Academic year,Local authority district,E92000001,England,E07000181,West Oxfordshire,FSM,91,52,57,52,57,2955,32.5
+201819,Academic year,Local authority district,E92000001,England,E07000181,West Oxfordshire,All_other,1105,863,78,869,79,39420,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000187,Mendip,Total,1110,770,69,789,71,38397,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000187,Mendip,FSM,146,66,45,66,45,4425,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000187,Mendip,All_other,964,704,73,723,75,33972,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000188,Sedgemoor,Total,1387,993,72,995,72,47861,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000188,Sedgemoor,FSM,222,132,59,132,59,7047,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000188,Sedgemoor,All_other,1165,861,74,863,74,40814,35
+201819,Academic year,Local authority district,E92000001,England,E07000189,South Somerset,Total,1671,1199,72,1201,72,57989,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000189,South Somerset,FSM,232,111,48,111,48,7271,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000189,South Somerset,All_other,1439,1088,76,1090,76,50718,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000192,Cannock Chase,Total,1092,790,72,798,73,38094,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000192,Cannock Chase,FSM,138,77,56,78,57,4374,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000192,Cannock Chase,All_other,954,713,75,720,75,33720,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000193,East Staffordshire,Total,1453,1011,70,1036,71,50254,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000193,East Staffordshire,FSM,121,74,61,78,64,3929,32.5
+201819,Academic year,Local authority district,E92000001,England,E07000193,East Staffordshire,All_other,1332,937,70,958,72,46325,34.8
+201819,Academic year,Local authority district,E92000001,England,E07000194,Lichfield,Total,1134,839,74,849,75,40644,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000194,Lichfield,FSM,80,39,49,39,49,2408,30.1
+201819,Academic year,Local authority district,E92000001,England,E07000194,Lichfield,All_other,1054,800,76,810,77,38236,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000195,Newcastle-under-Lyme,Total,1334,983,74,993,74,47881,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000195,Newcastle-under-Lyme,FSM,141,86,61,86,61,4664,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000195,Newcastle-under-Lyme,All_other,1193,897,75,907,76,43217,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000196,South Staffordshire,Total,1182,893,76,903,76,42192,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000196,South Staffordshire,FSM,90,52,58,52,58,2815,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000196,South Staffordshire,All_other,1092,841,77,851,78,39377,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000197,Stafford,Total,1441,1103,77,1107,77,52548,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000197,Stafford,FSM,101,56,55,57,56,3168,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000197,Stafford,All_other,1340,1047,78,1050,78,49380,36.9
+201819,Academic year,Local authority district,E92000001,England,E07000198,Staffordshire Moorlands,Total,1009,752,75,771,76,35649,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000198,Staffordshire Moorlands,FSM,72,25,35,30,42,2047,28.4
+201819,Academic year,Local authority district,E92000001,England,E07000198,Staffordshire Moorlands,All_other,937,727,78,741,79,33602,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000199,Tamworth,Total,800,555,69,573,72,27403,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000199,Tamworth,FSM,100,49,49,54,54,3098,31
+201819,Academic year,Local authority district,E92000001,England,E07000199,Tamworth,All_other,700,506,72,519,74,24305,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000200,Babergh,Total,897,642,72,655,73,31345,34.9
+201819,Academic year,Local authority district,E92000001,England,E07000200,Babergh,FSM,83,44,53,44,53,2611,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000200,Babergh,All_other,814,598,73,611,75,28734,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000202,Ipswich,Total,1714,1130,66,1150,67,56918,33.2
+201819,Academic year,Local authority district,E92000001,England,E07000202,Ipswich,FSM,188,102,54,106,56,5979,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000202,Ipswich,All_other,1526,1028,67,1044,68,50939,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000203,Mid Suffolk,Total,1003,740,74,750,75,35684,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000203,Mid Suffolk,FSM,79,35,44,36,46,2513,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000203,Mid Suffolk,All_other,924,705,76,714,77,33171,35.9
+201819,Academic year,Local authority district,E92000001,England,E07000207,Elmbridge,Total,1763,1414,80,1421,81,67359,38.2
+201819,Academic year,Local authority district,E92000001,England,E07000207,Elmbridge,FSM,127,63,50,65,51,4144,32.6
+201819,Academic year,Local authority district,E92000001,England,E07000207,Elmbridge,All_other,1636,1351,83,1356,83,63215,38.6
+201819,Academic year,Local authority district,E92000001,England,E07000208,Epsom and Ewell,Total,996,778,78,778,78,37050,37.2
+201819,Academic year,Local authority district,E92000001,England,E07000208,Epsom and Ewell,FSM,52,24,46,24,46,1595,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000208,Epsom and Ewell,All_other,944,754,80,754,80,35455,37.6
+201819,Academic year,Local authority district,E92000001,England,E07000209,Guildford,Total,1458,1131,78,1136,78,53378,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000209,Guildford,FSM,130,71,55,71,55,4293,33
+201819,Academic year,Local authority district,E92000001,England,E07000209,Guildford,All_other,1328,1060,80,1065,80,49085,37
+201819,Academic year,Local authority district,E92000001,England,E07000210,Mole Valley,Total,849,667,79,671,79,31481,37.1
+201819,Academic year,Local authority district,E92000001,England,E07000210,Mole Valley,FSM,53,19,36,19,36,1560,29.4
+201819,Academic year,Local authority district,E92000001,England,E07000210,Mole Valley,All_other,796,648,81,652,82,29921,37.6
+201819,Academic year,Local authority district,E92000001,England,E07000211,Reigate and Banstead,Total,1736,1373,79,1375,79,65012,37.4
+201819,Academic year,Local authority district,E92000001,England,E07000211,Reigate and Banstead,FSM,160,91,57,92,58,5289,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000211,Reigate and Banstead,All_other,1576,1282,81,1283,81,59723,37.9
+201819,Academic year,Local authority district,E92000001,England,E07000212,Runnymede,Total,845,642,76,644,76,30697,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000212,Runnymede,FSM,90,42,47,42,47,2983,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000212,Runnymede,All_other,755,600,79,602,80,27714,36.7
+201819,Academic year,Local authority district,E92000001,England,E07000213,Spelthorne,Total,1185,871,74,885,75,42699,36
+201819,Academic year,Local authority district,E92000001,England,E07000213,Spelthorne,FSM,151,78,52,81,54,4864,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000213,Spelthorne,All_other,1034,793,77,804,78,37835,36.6
+201819,Academic year,Local authority district,E92000001,England,E07000214,Surrey Heath,Total,983,795,81,803,82,37117,37.8
+201819,Academic year,Local authority district,E92000001,England,E07000214,Surrey Heath,FSM,62,33,53,35,56,2099,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000214,Surrey Heath,All_other,921,762,83,768,83,35018,38
+201819,Academic year,Local authority district,E92000001,England,E07000215,Tandridge,Total,974,790,81,794,82,36501,37.5
+201819,Academic year,Local authority district,E92000001,England,E07000215,Tandridge,FSM,82,52,63,52,63,2754,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000215,Tandridge,All_other,892,738,83,742,83,33747,37.8
+201819,Academic year,Local authority district,E92000001,England,E07000216,Waverley,Total,1315,1016,77,1024,78,48933,37.2
+201819,Academic year,Local authority district,E92000001,England,E07000216,Waverley,FSM,88,39,44,41,47,2794,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000216,Waverley,All_other,1227,977,80,983,80,46139,37.6
+201819,Academic year,Local authority district,E92000001,England,E07000217,Woking,Total,1280,933,73,940,73,46258,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000217,Woking,FSM,95,50,53,50,53,3079,32.4
+201819,Academic year,Local authority district,E92000001,England,E07000217,Woking,All_other,1185,883,75,890,75,43179,36.4
+201819,Academic year,Local authority district,E92000001,England,E07000218,North Warwickshire,Total,738,519,70,531,72,25026,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000218,North Warwickshire,FSM,72,34,47,36,50,2196,30.5
+201819,Academic year,Local authority district,E92000001,England,E07000218,North Warwickshire,All_other,666,485,73,495,74,22830,34.3
+201819,Academic year,Local authority district,E92000001,England,E07000219,Nuneaton and Bedworth,Total,1549,1044,67,1051,68,51659,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000219,Nuneaton and Bedworth,FSM,248,146,59,147,59,7759,31.3
+201819,Academic year,Local authority district,E92000001,England,E07000219,Nuneaton and Bedworth,All_other,1301,898,69,904,69,43900,33.7
+201819,Academic year,Local authority district,E92000001,England,E07000220,Rugby,Total,1372,962,70,974,71,47175,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000220,Rugby,FSM,129,69,53,71,55,3997,31
+201819,Academic year,Local authority district,E92000001,England,E07000220,Rugby,All_other,1243,893,72,903,73,43178,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000221,Stratford-on-Avon,Total,1291,941,73,948,73,45144,35
+201819,Academic year,Local authority district,E92000001,England,E07000221,Stratford-on-Avon,FSM,94,45,48,46,49,2847,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000221,Stratford-on-Avon,All_other,1197,896,75,902,75,42297,35.3
+201819,Academic year,Local authority district,E92000001,England,E07000222,Warwick,Total,1517,1128,74,1136,75,52131,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000222,Warwick,FSM,93,47,51,48,52,2821,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000222,Warwick,All_other,1424,1081,76,1088,76,49310,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000223,Adur,Total,726,519,71,520,72,24587,33.9
+201819,Academic year,Local authority district,E92000001,England,E07000223,Adur,FSM,70,35,50,35,50,2140,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000223,Adur,All_other,656,484,74,485,74,22447,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000224,Arun,Total,1452,1000,69,1027,71,48197,33.2
+201819,Academic year,Local authority district,E92000001,England,E07000224,Arun,FSM,130,63,48,66,51,3833,29.5
+201819,Academic year,Local authority district,E92000001,England,E07000224,Arun,All_other,1322,937,71,961,73,44364,33.6
+201819,Academic year,Local authority district,E92000001,England,E07000225,Chichester,Total,1222,860,70,881,72,42288,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000225,Chichester,FSM,105,47,45,50,48,3238,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000225,Chichester,All_other,1117,813,73,831,74,39050,35
+201819,Academic year,Local authority district,E92000001,England,E07000226,Crawley,Total,1552,1051,68,1071,69,51079,32.9
+201819,Academic year,Local authority district,E92000001,England,E07000226,Crawley,FSM,174,101,58,104,60,5524,31.7
+201819,Academic year,Local authority district,E92000001,England,E07000226,Crawley,All_other,1378,950,69,967,70,45555,33.1
+201819,Academic year,Local authority district,E92000001,England,E07000227,Horsham,Total,1412,1039,74,1053,75,48988,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000227,Horsham,FSM,83,30,36,30,36,2517,30.3
+201819,Academic year,Local authority district,E92000001,England,E07000227,Horsham,All_other,1329,1009,76,1023,77,46471,35
+201819,Academic year,Local authority district,E92000001,England,E07000228,Mid Sussex,Total,1699,1222,72,1234,73,58168,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000228,Mid Sussex,FSM,89,39,44,41,46,2734,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000228,Mid Sussex,All_other,1610,1183,73,1193,74,55434,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000229,Worthing,Total,1153,833,72,842,73,39247,34
+201819,Academic year,Local authority district,E92000001,England,E07000229,Worthing,FSM,120,64,53,64,53,3735,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000229,Worthing,All_other,1033,769,74,778,75,35512,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000234,Bromsgrove,Total,1142,845,74,851,75,40599,35.6
+201819,Academic year,Local authority district,E92000001,England,E07000234,Bromsgrove,FSM,101,52,51,54,53,3111,30.8
+201819,Academic year,Local authority district,E92000001,England,E07000234,Bromsgrove,All_other,1041,793,76,797,77,37488,36
+201819,Academic year,Local authority district,E92000001,England,E07000235,Malvern Hills,Total,721,551,76,556,77,25974,36
+201819,Academic year,Local authority district,E92000001,England,E07000235,Malvern Hills,FSM,77,43,56,44,57,2446,31.8
+201819,Academic year,Local authority district,E92000001,England,E07000235,Malvern Hills,All_other,644,508,79,512,80,23528,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000236,Redditch,Total,969,661,68,665,69,33412,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000236,Redditch,FSM,153,73,48,73,48,4691,30.7
+201819,Academic year,Local authority district,E92000001,England,E07000236,Redditch,All_other,816,588,72,592,73,28721,35.2
+201819,Academic year,Local authority district,E92000001,England,E07000237,Worcester,Total,1076,731,68,748,70,36710,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000237,Worcester,FSM,146,80,55,82,56,4411,30.2
+201819,Academic year,Local authority district,E92000001,England,E07000237,Worcester,All_other,930,651,70,666,72,32299,34.7
+201819,Academic year,Local authority district,E92000001,England,E07000238,Wychavon,Total,1259,937,74,946,75,45098,35.8
+201819,Academic year,Local authority district,E92000001,England,E07000238,Wychavon,FSM,130,65,50,67,52,4080,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000238,Wychavon,All_other,1129,872,77,879,78,41018,36.3
+201819,Academic year,Local authority district,E92000001,England,E07000239,Wyre Forest,Total,1072,715,67,726,68,35727,33.3
+201819,Academic year,Local authority district,E92000001,England,E07000239,Wyre Forest,FSM,173,78,45,82,47,5041,29.1
+201819,Academic year,Local authority district,E92000001,England,E07000239,Wyre Forest,All_other,899,637,71,644,72,30686,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000240,St Albans,Total,1881,1418,75,1428,76,69314,36.8
+201819,Academic year,Local authority district,E92000001,England,E07000240,St Albans,FSM,124,56,45,58,47,3861,31.1
+201819,Academic year,Local authority district,E92000001,England,E07000240,St Albans,All_other,1757,1362,78,1370,78,65453,37.3
+201819,Academic year,Local authority district,E92000001,England,E07000241,Welwyn Hatfield,Total,1406,1004,71,1022,73,50158,35.7
+201819,Academic year,Local authority district,E92000001,England,E07000241,Welwyn Hatfield,FSM,134,72,54,73,54,4295,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000241,Welwyn Hatfield,All_other,1272,932,73,949,75,45863,36.1
+201819,Academic year,Local authority district,E92000001,England,E07000242,East Hertfordshire,Total,1694,1270,75,1284,76,61295,36.2
+201819,Academic year,Local authority district,E92000001,England,E07000242,East Hertfordshire,FSM,102,46,45,46,45,3122,30.6
+201819,Academic year,Local authority district,E92000001,England,E07000242,East Hertfordshire,All_other,1592,1224,77,1238,78,58173,36.5
+201819,Academic year,Local authority district,E92000001,England,E07000243,Stevenage,Total,1097,776,71,789,72,37467,34.2
+201819,Academic year,Local authority district,E92000001,England,E07000243,Stevenage,FSM,143,77,54,77,54,4508,31.5
+201819,Academic year,Local authority district,E92000001,England,E07000243,Stevenage,All_other,954,699,73,712,75,32959,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000244,East Suffolk,Total,2434,1687,69,1739,71,83098,34.1
+201819,Academic year,Local authority district,E92000001,England,E07000244,East Suffolk,FSM,249,134,54,143,57,7821,31.4
+201819,Academic year,Local authority district,E92000001,England,E07000244,East Suffolk,All_other,2185,1553,71,1596,73,75277,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000245,West Suffolk,Total,1831,1259,69,1288,70,62912,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000245,West Suffolk,FSM,154,86,56,86,56,4962,32.2
+201819,Academic year,Local authority district,E92000001,England,E07000245,West Suffolk,All_other,1677,1173,70,1202,72,57950,34.6
+201819,Academic year,Local authority district,E92000001,England,E07000246,Somerset West and Taunton,Total,1638,1152,70,1164,71,56466,34.5
+201819,Academic year,Local authority district,E92000001,England,E07000246,Somerset West and Taunton,FSM,213,122,57,123,58,6844,32.1
+201819,Academic year,Local authority district,E92000001,England,E07000246,Somerset West and Taunton,All_other,1425,1030,72,1041,73,49622,34.8
+201819,Academic year,Local authority district,E92000001,England,E08000001,Bolton,Total,3943,2579,65,2649,67,133186,33.8
+201819,Academic year,Local authority district,E92000001,England,E08000001,Bolton,FSM,647,322,50,339,52,19868,30.7
+201819,Academic year,Local authority district,E92000001,England,E08000001,Bolton,All_other,3296,2257,68,2310,70,113318,34.4
+201819,Academic year,Local authority district,E92000001,England,E08000002,Bury,Total,2299,1623,71,1644,72,81833,35.6
+201819,Academic year,Local authority district,E92000001,England,E08000002,Bury,FSM,252,148,59,149,59,8002,31.8
+201819,Academic year,Local authority district,E92000001,England,E08000002,Bury,All_other,2047,1475,72,1495,73,73831,36.1
+201819,Academic year,Local authority district,E92000001,England,E08000003,Manchester,Total,7053,4539,64,4643,66,232262,32.9
+201819,Academic year,Local authority district,E92000001,England,E08000003,Manchester,FSM,1842,1096,60,1127,61,58758,31.9
+201819,Academic year,Local authority district,E92000001,England,E08000003,Manchester,All_other,5211,3443,66,3516,67,173504,33.3
+201819,Academic year,Local authority district,E92000001,England,E08000004,Oldham,Total,3387,2247,66,2307,68,111423,32.9
+201819,Academic year,Local authority district,E92000001,England,E08000004,Oldham,FSM,551,306,56,314,57,16869,30.6
+201819,Academic year,Local authority district,E92000001,England,E08000004,Oldham,All_other,2836,1941,68,1993,70,94554,33.3
+201819,Academic year,Local authority district,E92000001,England,E08000005,Rochdale,Total,2988,1908,64,1971,66,98655,33
+201819,Academic year,Local authority district,E92000001,England,E08000005,Rochdale,FSM,519,258,50,277,53,15986,30.8
+201819,Academic year,Local authority district,E92000001,England,E08000005,Rochdale,All_other,2469,1650,67,1694,69,82669,33.5
+201819,Academic year,Local authority district,E92000001,England,E08000006,Salford,Total,3135,2088,67,2131,68,104661,33.4
+201819,Academic year,Local authority district,E92000001,England,E08000006,Salford,FSM,655,389,59,398,61,20663,31.5
+201819,Academic year,Local authority district,E92000001,England,E08000006,Salford,All_other,2480,1699,69,1733,70,83998,33.9
+201819,Academic year,Local authority district,E92000001,England,E08000007,Stockport,Total,3645,2525,69,2568,70,127730,35
+201819,Academic year,Local authority district,E92000001,England,E08000007,Stockport,FSM,378,170,45,173,46,11381,30.1
+201819,Academic year,Local authority district,E92000001,England,E08000007,Stockport,All_other,3267,2355,72,2395,73,116349,35.6
+201819,Academic year,Local authority district,E92000001,England,E08000008,Tameside,Total,2871,1873,65,1918,67,93140,32.4
+201819,Academic year,Local authority district,E92000001,England,E08000008,Tameside,FSM,546,284,52,297,54,16504,30.2
+201819,Academic year,Local authority district,E92000001,England,E08000008,Tameside,All_other,2325,1589,68,1621,70,76636,33
+201819,Academic year,Local authority district,E92000001,England,E08000009,Trafford,Total,2973,2199,74,2222,75,109946,37
+201819,Academic year,Local authority district,E92000001,England,E08000009,Trafford,FSM,184,100,54,103,56,6036,32.8
+201819,Academic year,Local authority district,E92000001,England,E08000009,Trafford,All_other,2789,2099,75,2119,76,103910,37.3
+201819,Academic year,Local authority district,E92000001,England,E08000010,Wigan,Total,3645,2420,66,2474,68,120798,33.1
+201819,Academic year,Local authority district,E92000001,England,E08000010,Wigan,FSM,579,279,48,293,51,16807,29
+201819,Academic year,Local authority district,E92000001,England,E08000010,Wigan,All_other,3066,2141,70,2181,71,103991,33.9
+201819,Academic year,Local authority district,E92000001,England,E08000011,Knowsley,Total,1773,1169,66,1202,68,59925,33.8
+201819,Academic year,Local authority district,E92000001,England,E08000011,Knowsley,FSM,525,273,52,283,54,16484,31.4
+201819,Academic year,Local authority district,E92000001,England,E08000011,Knowsley,All_other,1248,896,72,919,74,43441,34.8
+201819,Academic year,Local authority district,E92000001,England,E08000012,Liverpool,Total,5458,3475,64,3545,65,181929,33.3
+201819,Academic year,Local authority district,E92000001,England,E08000012,Liverpool,FSM,1050,515,49,537,51,32403,30.9
+201819,Academic year,Local authority district,E92000001,England,E08000012,Liverpool,All_other,4408,2960,67,3008,68,149526,33.9
+201819,Academic year,Local authority district,E92000001,England,E08000013,St. Helens,Total,2051,1402,68,1439,70,69507,33.9
+201819,Academic year,Local authority district,E92000001,England,E08000013,St. Helens,FSM,295,150,51,153,52,8888,30.1
+201819,Academic year,Local authority district,E92000001,England,E08000013,St. Helens,All_other,1756,1252,71,1286,73,60619,34.5
+201819,Academic year,Local authority district,E92000001,England,E08000014,Sefton,Total,3020,2048,68,2079,69,102022,33.8
+201819,Academic year,Local authority district,E92000001,England,E08000014,Sefton,FSM,469,239,51,251,54,14662,31.3
+201819,Academic year,Local authority district,E92000001,England,E08000014,Sefton,All_other,2551,1809,71,1828,72,87360,34.2
+201819,Academic year,Local authority district,E92000001,England,E08000015,Wirral,Total,3670,2470,67,2544,69,120579,32.9
+201819,Academic year,Local authority district,E92000001,England,E08000015,Wirral,FSM,646,299,46,323,50,18907,29.3
+201819,Academic year,Local authority district,E92000001,England,E08000015,Wirral,All_other,3024,2171,72,2221,73,101672,33.6
+201819,Academic year,Local authority district,E92000001,England,E08000016,Barnsley,Total,2752,1902,69,1937,70,94620,34.4
+201819,Academic year,Local authority district,E92000001,England,E08000016,Barnsley,FSM,531,300,56,311,59,16791,31.6
+201819,Academic year,Local authority district,E92000001,England,E08000016,Barnsley,All_other,2221,1602,72,1626,73,77829,35
+201819,Academic year,Local authority district,E92000001,England,E08000017,Doncaster,Total,3541,2522,71,2566,72,122676,34.6
+201819,Academic year,Local authority district,E92000001,England,E08000017,Doncaster,FSM,583,334,57,337,58,18441,31.6
+201819,Academic year,Local authority district,E92000001,England,E08000017,Doncaster,All_other,2958,2188,74,2229,75,104235,35.2
+201819,Academic year,Local authority district,E92000001,England,E08000018,Rotherham,Total,3212,2213,69,2258,70,109290,34
+201819,Academic year,Local authority district,E92000001,England,E08000018,Rotherham,FSM,448,241,54,250,56,13915,31.1
+201819,Academic year,Local authority district,E92000001,England,E08000018,Rotherham,All_other,2764,1972,71,2008,73,95375,34.5
+201819,Academic year,Local authority district,E92000001,England,E08000019,Sheffield,Total,6230,4340,70,4362,70,213547,34.3
+201819,Academic year,Local authority district,E92000001,England,E08000019,Sheffield,FSM,1508,812,54,817,54,47389,31.4
+201819,Academic year,Local authority district,E92000001,England,E08000019,Sheffield,All_other,4722,3528,75,3545,75,166158,35.2
+201819,Academic year,Local authority district,E92000001,England,E08000021,Newcastle upon Tyne,Total,3193,2230,70,2247,70,110955,34.7
+201819,Academic year,Local authority district,E92000001,England,E08000021,Newcastle upon Tyne,FSM,1009,616,61,619,61,32597,32.3
+201819,Academic year,Local authority district,E92000001,England,E08000021,Newcastle upon Tyne,All_other,2184,1614,74,1628,75,78358,35.9
+201819,Academic year,Local authority district,E92000001,England,E08000022,North Tyneside,Total,2384,1691,71,1717,72,83555,35
+201819,Academic year,Local authority district,E92000001,England,E08000022,North Tyneside,FSM,402,213,53,218,54,12538,31.2
+201819,Academic year,Local authority district,E92000001,England,E08000022,North Tyneside,All_other,1982,1478,75,1499,76,71017,35.8
+201819,Academic year,Local authority district,E92000001,England,E08000023,South Tyneside,Total,1656,1197,72,1214,73,56932,34.4
+201819,Academic year,Local authority district,E92000001,England,E08000023,South Tyneside,FSM,415,239,58,248,60,13055,31.5
+201819,Academic year,Local authority district,E92000001,England,E08000023,South Tyneside,All_other,1241,958,77,966,78,43877,35.4
+201819,Academic year,Local authority district,E92000001,England,E08000024,Sunderland,Total,2910,2093,72,2113,73,102424,35.2
+201819,Academic year,Local authority district,E92000001,England,E08000024,Sunderland,FSM,511,316,62,320,63,16647,32.6
+201819,Academic year,Local authority district,E92000001,England,E08000024,Sunderland,All_other,2399,1777,74,1793,75,85777,35.8
+201819,Academic year,Local authority district,E92000001,England,E08000025,Birmingham,Total,15712,10405,66,10685,68,521736,33.2
+201819,Academic year,Local authority district,E92000001,England,E08000025,Birmingham,FSM,4047,2363,58,2439,60,127744,31.6
+201819,Academic year,Local authority district,E92000001,England,E08000025,Birmingham,All_other,11665,8042,69,8246,71,393992,33.8
+201819,Academic year,Local authority district,E92000001,England,E08000026,Coventry,Total,4340,2983,69,2998,69,143269,33
+201819,Academic year,Local authority district,E92000001,England,E08000026,Coventry,FSM,522,281,54,284,54,15941,30.5
+201819,Academic year,Local authority district,E92000001,England,E08000026,Coventry,All_other,3818,2702,71,2714,71,127328,33.3
+201819,Academic year,Local authority district,E92000001,England,E08000027,Dudley,Total,3890,2528,65,2611,67,128888,33.1
+201819,Academic year,Local authority district,E92000001,England,E08000027,Dudley,FSM,577,266,46,278,48,16874,29.2
+201819,Academic year,Local authority district,E92000001,England,E08000027,Dudley,All_other,3313,2262,68,2333,70,112014,33.8
+201819,Academic year,Local authority district,E92000001,England,E08000028,Sandwell,Total,4686,3053,65,3128,67,150827,32.2
+201819,Academic year,Local authority district,E92000001,England,E08000028,Sandwell,FSM,914,518,57,527,58,28130,30.8
+201819,Academic year,Local authority district,E92000001,England,E08000028,Sandwell,All_other,3772,2535,67,2601,69,122697,32.5
+201819,Academic year,Local authority district,E92000001,England,E08000029,Solihull,Total,2695,1893,70,1955,73,93304,34.6
+201819,Academic year,Local authority district,E92000001,England,E08000029,Solihull,FSM,384,200,52,216,56,11987,31.2
+201819,Academic year,Local authority district,E92000001,England,E08000029,Solihull,All_other,2311,1693,73,1739,75,81317,35.2
+201819,Academic year,Local authority district,E92000001,England,E08000030,Walsall,Total,3870,2535,66,2614,68,124585,32.2
+201819,Academic year,Local authority district,E92000001,England,E08000030,Walsall,FSM,1034,570,55,592,57,31279,30.3
+201819,Academic year,Local authority district,E92000001,England,E08000030,Walsall,All_other,2836,1965,69,2022,71,93306,32.9
+201819,Academic year,Local authority district,E92000001,England,E08000031,Wolverhampton,Total,3472,2312,67,2409,69,114053,32.8
+201819,Academic year,Local authority district,E92000001,England,E08000031,Wolverhampton,FSM,916,513,56,548,60,28383,31
+201819,Academic year,Local authority district,E92000001,England,E08000031,Wolverhampton,All_other,2556,1799,70,1861,73,85670,33.5
+201819,Academic year,Local authority district,E92000001,England,E08000032,Bradford,Total,7665,5098,67,5212,68,260580,34
+201819,Academic year,Local authority district,E92000001,England,E08000032,Bradford,FSM,1199,640,53,664,55,38249,31.9
+201819,Academic year,Local authority district,E92000001,England,E08000032,Bradford,All_other,6466,4458,69,4548,70,222331,34.4
+201819,Academic year,Local authority district,E92000001,England,E08000033,Calderdale,Total,2646,1820,69,1861,70,90448,34.2
+201819,Academic year,Local authority district,E92000001,England,E08000033,Calderdale,FSM,399,197,49,204,51,12115,30.4
+201819,Academic year,Local authority district,E92000001,England,E08000033,Calderdale,All_other,2247,1623,72,1657,74,78333,34.9
+201819,Academic year,Local authority district,E92000001,England,E08000034,Kirklees,Total,5277,3621,69,3679,70,180819,34.3
+201819,Academic year,Local authority district,E92000001,England,E08000034,Kirklees,FSM,730,386,53,399,55,22795,31.2
+201819,Academic year,Local authority district,E92000001,England,E08000034,Kirklees,All_other,4547,3235,71,3280,72,158024,34.8
+201819,Academic year,Local authority district,E92000001,England,E08000035,Leeds,Total,9784,6419,66,6498,66,340252,34.8
+201819,Academic year,Local authority district,E92000001,England,E08000035,Leeds,FSM,1879,885,47,910,48,58863,31.3
+201819,Academic year,Local authority district,E92000001,England,E08000035,Leeds,All_other,7905,5534,70,5588,71,281389,35.6
+201819,Academic year,Local authority district,E92000001,England,E08000036,Wakefield,Total,4148,2891,70,2938,71,141001,34
+201819,Academic year,Local authority district,E92000001,England,E08000036,Wakefield,FSM,605,319,53,324,54,18436,30.5
+201819,Academic year,Local authority district,E92000001,England,E08000036,Wakefield,All_other,3543,2572,73,2614,74,122565,34.6
+201819,Academic year,Local authority district,E92000001,England,E08000037,Gateshead,Total,2109,1529,72,1547,73,78204,37.1
+201819,Academic year,Local authority district,E92000001,England,E08000037,Gateshead,FSM,427,219,51,225,53,14098,33
+201819,Academic year,Local authority district,E92000001,England,E08000037,Gateshead,All_other,1682,1310,78,1322,79,64106,38.1
+201819,Academic year,Local authority district,E92000001,England,E09000001,City of London,Total,30,25,83,25,83,1057,35.2
+201819,Academic year,Local authority district,E92000001,England,E09000001,City of London,FSM,4,3,75,3,75,146,36.5
+201819,Academic year,Local authority district,E92000001,England,E09000001,City of London,All_other,26,22,85,22,85,911,35
+201819,Academic year,Local authority district,E92000001,England,E09000002,Barking and Dagenham,Total,3432,2398,70,2486,72,115892,33.8
+201819,Academic year,Local authority district,E92000001,England,E09000002,Barking and Dagenham,FSM,383,244,64,251,66,12578,32.8
+201819,Academic year,Local authority district,E92000001,England,E09000002,Barking and Dagenham,All_other,3049,2154,71,2235,73,103314,33.9
+201819,Academic year,Local authority district,E92000001,England,E09000003,Barnet,Total,4202,3086,73,3122,74,146902,35
+201819,Academic year,Local authority district,E92000001,England,E09000003,Barnet,FSM,587,369,63,371,63,18979,32.3
+201819,Academic year,Local authority district,E92000001,England,E09000003,Barnet,All_other,3615,2717,75,2751,76,127923,35.4
+201819,Academic year,Local authority district,E92000001,England,E09000004,Bexley,Total,3117,2348,75,2389,77,108925,34.9
+201819,Academic year,Local authority district,E92000001,England,E09000004,Bexley,FSM,340,215,63,220,65,10977,32.3
+201819,Academic year,Local authority district,E92000001,England,E09000004,Bexley,All_other,2777,2133,77,2169,78,97948,35.3
+201819,Academic year,Local authority district,E92000001,England,E09000005,Brent,Total,3862,2747,71,2778,72,129982,33.7
+201819,Academic year,Local authority district,E92000001,England,E09000005,Brent,FSM,320,209,65,210,66,10341,32.3
+201819,Academic year,Local authority district,E92000001,England,E09000005,Brent,All_other,3542,2538,72,2568,73,119641,33.8
+201819,Academic year,Local authority district,E92000001,England,E09000006,Bromley,Total,3957,3052,77,3093,78,140029,35.4
+201819,Academic year,Local authority district,E92000001,England,E09000006,Bromley,FSM,302,173,57,178,59,9384,31.1
+201819,Academic year,Local authority district,E92000001,England,E09000006,Bromley,All_other,3655,2879,79,2915,80,130645,35.7
+201819,Academic year,Local authority district,E92000001,England,E09000007,Camden,Total,1578,1139,72,1150,73,55520,35.2
+201819,Academic year,Local authority district,E92000001,England,E09000007,Camden,FSM,361,223,62,226,63,11729,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000007,Camden,All_other,1217,916,75,924,76,43791,36
+201819,Academic year,Local authority district,E92000001,England,E09000008,Croydon,Total,4696,3447,73,3503,75,160700,34.2
+201819,Academic year,Local authority district,E92000001,England,E09000008,Croydon,FSM,809,521,64,531,66,25911,32
+201819,Academic year,Local authority district,E92000001,England,E09000008,Croydon,All_other,3887,2926,75,2972,76,134789,34.7
+201819,Academic year,Local authority district,E92000001,England,E09000009,Ealing,Total,4412,3088,70,3127,71,152919,34.7
+201819,Academic year,Local authority district,E92000001,England,E09000009,Ealing,FSM,579,352,61,359,62,18820,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000009,Ealing,All_other,3833,2736,71,2768,72,134099,35
+201819,Academic year,Local authority district,E92000001,England,E09000010,Enfield,Total,4151,2854,69,2899,70,141513,34.1
+201819,Academic year,Local authority district,E92000001,England,E09000010,Enfield,FSM,717,429,60,441,62,23275,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000010,Enfield,All_other,3434,2425,71,2458,72,118238,34.4
+201819,Academic year,Local authority district,E92000001,England,E09000011,Greenwich,Total,3749,2909,78,2920,78,133606,35.6
+201819,Academic year,Local authority district,E92000001,England,E09000011,Greenwich,FSM,564,390,69,392,70,18803,33.3
+201819,Academic year,Local authority district,E92000001,England,E09000011,Greenwich,All_other,3185,2519,79,2528,79,114803,36
+201819,Academic year,Local authority district,E92000001,England,E09000012,Hackney,Total,2925,1997,68,2035,70,100774,34.5
+201819,Academic year,Local authority district,E92000001,England,E09000012,Hackney,FSM,508,344,68,352,69,16780,33
+201819,Academic year,Local authority district,E92000001,England,E09000012,Hackney,All_other,2417,1653,68,1683,70,83994,34.8
+201819,Academic year,Local authority district,E92000001,England,E09000013,Hammersmith and Fulham,Total,1516,1098,72,1110,73,53263,35.1
+201819,Academic year,Local authority district,E92000001,England,E09000013,Hammersmith and Fulham,FSM,258,161,62,162,63,8448,32.7
+201819,Academic year,Local authority district,E92000001,England,E09000013,Hammersmith and Fulham,All_other,1258,937,74,948,75,44815,35.6
+201819,Academic year,Local authority district,E92000001,England,E09000014,Haringey,Total,3014,2228,74,2247,75,107154,35.6
+201819,Academic year,Local authority district,E92000001,England,E09000014,Haringey,FSM,394,247,63,255,65,13051,33.1
+201819,Academic year,Local authority district,E92000001,England,E09000014,Haringey,All_other,2620,1981,76,1992,76,94103,35.9
+201819,Academic year,Local authority district,E92000001,England,E09000015,Harrow,Total,3023,2252,74,2276,75,103611,34.3
+201819,Academic year,Local authority district,E92000001,England,E09000015,Harrow,FSM,153,98,64,99,65,4922,32.2
+201819,Academic year,Local authority district,E92000001,England,E09000015,Harrow,All_other,2870,2154,75,2177,76,98689,34.4
+201819,Academic year,Local authority district,E92000001,England,E09000016,Havering,Total,3192,2266,71,2289,72,108735,34.1
+201819,Academic year,Local authority district,E92000001,England,E09000016,Havering,FSM,354,175,49,176,50,11111,31.4
+201819,Academic year,Local authority district,E92000001,England,E09000016,Havering,All_other,2838,2091,74,2113,74,97624,34.4
+201819,Academic year,Local authority district,E92000001,England,E09000017,Hillingdon,Total,4036,2985,74,3016,75,140496,34.8
+201819,Academic year,Local authority district,E92000001,England,E09000017,Hillingdon,FSM,413,262,63,263,64,13443,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000017,Hillingdon,All_other,3623,2723,75,2753,76,127053,35.1
+201819,Academic year,Local authority district,E92000001,England,E09000018,Hounslow,Total,3385,2434,72,2497,74,117249,34.6
+201819,Academic year,Local authority district,E92000001,England,E09000018,Hounslow,FSM,352,224,64,234,66,11569,32.9
+201819,Academic year,Local authority district,E92000001,England,E09000018,Hounslow,All_other,3033,2210,73,2263,75,105680,34.8
+201819,Academic year,Local authority district,E92000001,England,E09000019,Islington,Total,1929,1314,68,1369,71,67901,35.2
+201819,Academic year,Local authority district,E92000001,England,E09000019,Islington,FSM,578,353,61,371,64,19252,33.3
+201819,Academic year,Local authority district,E92000001,England,E09000019,Islington,All_other,1351,961,71,998,74,48649,36
+201819,Academic year,Local authority district,E92000001,England,E09000020,Kensington and Chelsea,Total,1061,721,68,743,70,36732,34.6
+201819,Academic year,Local authority district,E92000001,England,E09000020,Kensington and Chelsea,FSM,222,128,58,134,60,7222,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000020,Kensington and Chelsea,All_other,839,593,71,609,73,29510,35.2
+201819,Academic year,Local authority district,E92000001,England,E09000021,Kingston upon Thames,Total,1935,1454,75,1465,76,72551,37.5
+201819,Academic year,Local authority district,E92000001,England,E09000021,Kingston upon Thames,FSM,152,85,56,85,56,5059,33.3
+201819,Academic year,Local authority district,E92000001,England,E09000021,Kingston upon Thames,All_other,1783,1369,77,1380,77,67492,37.9
+201819,Academic year,Local authority district,E92000001,England,E09000022,Lambeth,Total,2999,2103,70,2141,71,99688,33.2
+201819,Academic year,Local authority district,E92000001,England,E09000022,Lambeth,FSM,686,411,60,419,61,21808,31.8
+201819,Academic year,Local authority district,E92000001,England,E09000022,Lambeth,All_other,2313,1692,73,1722,74,77880,33.7
+201819,Academic year,Local authority district,E92000001,England,E09000023,Lewisham,Total,3567,2717,76,2725,76,120367,33.7
+201819,Academic year,Local authority district,E92000001,England,E09000023,Lewisham,FSM,497,328,66,328,66,15847,31.9
+201819,Academic year,Local authority district,E92000001,England,E09000023,Lewisham,All_other,3070,2389,78,2397,78,104520,34
+201819,Academic year,Local authority district,E92000001,England,E09000024,Merton,Total,2350,1760,75,1774,75,84010,35.7
+201819,Academic year,Local authority district,E92000001,England,E09000024,Merton,FSM,313,192,61,195,62,10346,33.1
+201819,Academic year,Local authority district,E92000001,England,E09000024,Merton,All_other,2037,1568,77,1579,78,73664,36.2
+201819,Academic year,Local authority district,E92000001,England,E09000025,Newham,Total,4723,3504,74,3583,76,164709,34.9
+201819,Academic year,Local authority district,E92000001,England,E09000025,Newham,FSM,712,488,69,502,71,24022,33.7
+201819,Academic year,Local authority district,E92000001,England,E09000025,Newham,All_other,4011,3016,75,3081,77,140687,35.1
+201819,Academic year,Local authority district,E92000001,England,E09000026,Redbridge,Total,4254,3189,75,3216,76,153119,36
+201819,Academic year,Local authority district,E92000001,England,E09000026,Redbridge,FSM,217,136,63,137,63,7158,33
+201819,Academic year,Local authority district,E92000001,England,E09000026,Redbridge,All_other,4037,3053,76,3079,76,145961,36.2
+201819,Academic year,Local authority district,E92000001,England,E09000027,Richmond upon Thames,Total,2489,1998,80,2006,81,97014,39
+201819,Academic year,Local authority district,E92000001,England,E09000027,Richmond upon Thames,FSM,153,89,58,89,58,5250,34.3
+201819,Academic year,Local authority district,E92000001,England,E09000027,Richmond upon Thames,All_other,2336,1909,82,1917,82,91764,39.3
+201819,Academic year,Local authority district,E92000001,England,E09000028,Southwark,Total,3368,2456,73,2490,74,115335,34.2
+201819,Academic year,Local authority district,E92000001,England,E09000028,Southwark,FSM,706,465,66,472,67,22973,32.5
+201819,Academic year,Local authority district,E92000001,England,E09000028,Southwark,All_other,2662,1991,75,2018,76,92362,34.7
+201819,Academic year,Local authority district,E92000001,England,E09000029,Sutton,Total,2528,1833,73,1867,74,88368,35
+201819,Academic year,Local authority district,E92000001,England,E09000029,Sutton,FSM,234,129,55,132,56,7407,31.7
+201819,Academic year,Local authority district,E92000001,England,E09000029,Sutton,All_other,2294,1704,74,1735,76,80961,35.3
+201819,Academic year,Local authority district,E92000001,England,E09000030,Tower Hamlets,Total,3472,2385,69,2427,70,117954,34
+201819,Academic year,Local authority district,E92000001,England,E09000030,Tower Hamlets,FSM,907,591,65,601,66,29853,32.9
+201819,Academic year,Local authority district,E92000001,England,E09000030,Tower Hamlets,All_other,2565,1794,70,1826,71,88101,34.3
+201819,Academic year,Local authority district,E92000001,England,E09000031,Waltham Forest,Total,3391,2568,76,2598,77,120046,35.4
+201819,Academic year,Local authority district,E92000001,England,E09000031,Waltham Forest,FSM,421,274,65,276,66,13917,33.1
+201819,Academic year,Local authority district,E92000001,England,E09000031,Waltham Forest,All_other,2970,2294,77,2322,78,106129,35.7
+201819,Academic year,Local authority district,E92000001,England,E09000032,Wandsworth,Total,3062,2319,76,2335,76,109625,35.8
+201819,Academic year,Local authority district,E92000001,England,E09000032,Wandsworth,FSM,417,249,60,250,60,13517,32.4
+201819,Academic year,Local authority district,E92000001,England,E09000032,Wandsworth,All_other,2645,2070,78,2085,79,96108,36.3
+201819,Academic year,Local authority district,E92000001,England,E09000033,Westminster,Total,1283,893,70,906,71,43680,34
+201819,Academic year,Local authority district,E92000001,England,E09000033,Westminster,FSM,263,175,67,178,68,8602,32.7
+201819,Academic year,Local authority district,E92000001,England,E09000033,Westminster,All_other,1020,718,70,728,71,35078,34.4
+201819,Academic year,Local authority district,E92000001,England,E07000191,West Somerset,Total,300,214,71,219,73,10498,35
+201819,Academic year,Local authority district,E92000001,England,E07000191,West Somerset,FSM,37,24,65,25,68,1237,33.4
+201819,Academic year,Local authority district,E92000001,England,E07000191,West Somerset,All_other,263,190,72,194,74,9261,35.2
+201819,Academic year,Local authority district,E92000001,England,.,Missing,Total,1255,828,66,856,68,42500,33.9
+201819,Academic year,Local authority district,E92000001,England,.,Missing,FSM,167,74,44,78,47,4935,29.6
+201819,Academic year,Local authority district,E92000001,England,.,Missing,All_other,1088,754,69,778,72,37565,34.5

@@ -1,0 +1,487 @@
+time_identifier,time_period,geographic_level,country_code,country_name,ethnicity_major,ethnicity_minor,fsm,gender,number_of_pupils,elg_number,elg_percent,gld_number,gld_percent,average_point_score
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,Total,Total,638946,451531,71,458815,72,34.6
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,Total,Girls,311521,241823,78,244274,78,35.8
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,Total,Boys,327425,209708,64,214541,66,33.4
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,FSM,Total,89742,49442,55,50732,57,31.5
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,FSM,Girls,43796,27767,63,28257,65,32.8
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,FSM,Boys,45946,21675,47,22475,49,30.2
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Total,549204,402089,73,408083,74,35.1
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Girls,267725,214056,80,216017,81,36.2
+Academic year,201819,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Boys,281479,188033,67,192066,68,34
+Academic year,201819,National,E92000001,England,White,Total,Total,Total,459403,329368,72,333885,73,34.9
+Academic year,201819,National,E92000001,England,White,Total,Total,Girls,224063,176032,79,177479,79,36
+Academic year,201819,National,E92000001,England,White,Total,Total,Boys,235340,153336,65,156406,66,33.8
+Academic year,201819,National,E92000001,England,White,Total,FSM,Total,63326,33546,53,34398,54,31.2
+Academic year,201819,National,E92000001,England,White,Total,FSM,Girls,30904,18964,61,19265,62,32.5
+Academic year,201819,National,E92000001,England,White,Total,FSM,Boys,32422,14582,45,15133,47,30
+Academic year,201819,National,E92000001,England,White,Total,All other pupils,Total,396077,295822,75,299487,76,35.5
+Academic year,201819,National,E92000001,England,White,Total,All other pupils,Girls,193159,157068,81,158214,82,36.6
+Academic year,201819,National,E92000001,England,White,Total,All other pupils,Boys,202918,138754,68,141273,70,34.4
+Academic year,201819,National,E92000001,England,Mixed,Total,Total,Total,41685,30071,72,30562,73,34.9
+Academic year,201819,National,E92000001,England,Mixed,Total,Total,Girls,20335,16084,79,16244,80,36.2
+Academic year,201819,National,E92000001,England,Mixed,Total,Total,Boys,21350,13987,66,14318,67,33.7
+Academic year,201819,National,E92000001,England,Mixed,Total,FSM,Total,8204,4903,60,5016,61,32.5
+Academic year,201819,National,E92000001,England,Mixed,Total,FSM,Girls,4003,2706,68,2751,69,33.8
+Academic year,201819,National,E92000001,England,Mixed,Total,FSM,Boys,4201,2197,52,2265,54,31.1
+Academic year,201819,National,E92000001,England,Mixed,Total,All other pupils,Total,33481,25168,75,25546,76,35.5
+Academic year,201819,National,E92000001,England,Mixed,Total,All other pupils,Girls,16332,13378,82,13493,83,36.8
+Academic year,201819,National,E92000001,England,Mixed,Total,All other pupils,Boys,17149,11790,69,12053,70,34.4
+Academic year,201819,National,E92000001,England,Asian,Total,Total,Total,69185,48045,69,49353,71,33.7
+Academic year,201819,National,E92000001,England,Asian,Total,Total,Girls,33648,25845,77,26309,78,35
+Academic year,201819,National,E92000001,England,Asian,Total,Total,Boys,35537,22200,62,23044,65,32.5
+Academic year,201819,National,E92000001,England,Asian,Total,FSM,Total,7138,4342,61,4478,63,31.8
+Academic year,201819,National,E92000001,England,Asian,Total,FSM,Girls,3432,2389,70,2447,71,33.3
+Academic year,201819,National,E92000001,England,Asian,Total,FSM,Boys,3706,1953,53,2031,55,30.4
+Academic year,201819,National,E92000001,England,Asian,Total,All other pupils,Total,62047,43703,70,44875,72,33.9
+Academic year,201819,National,E92000001,England,Asian,Total,All other pupils,Girls,30216,23456,78,23862,79,35.2
+Academic year,201819,National,E92000001,England,Asian,Total,All other pupils,Boys,31831,20247,64,21013,66,32.7
+Academic year,201819,National,E92000001,England,Black,Total,Total,Total,31136,21096,68,21566,69,33.4
+Academic year,201819,National,E92000001,England,Black,Total,Total,Girls,15200,11562,76,11727,77,34.9
+Academic year,201819,National,E92000001,England,Black,Total,Total,Boys,15936,9534,60,9839,62,32
+Academic year,201819,National,E92000001,England,Black,Total,FSM,Total,7008,4387,63,4507,64,32.4
+Academic year,201819,National,E92000001,England,Black,Total,FSM,Girls,3460,2448,71,2497,72,33.9
+Academic year,201819,National,E92000001,England,Black,Total,FSM,Boys,3548,1939,55,2010,57,30.9
+Academic year,201819,National,E92000001,England,Black,Total,All other pupils,Total,24128,16709,69,17059,71,33.7
+Academic year,201819,National,E92000001,England,Black,Total,All other pupils,Girls,11740,9114,78,9230,79,35.2
+Academic year,201819,National,E92000001,England,Black,Total,All other pupils,Boys,12388,7595,61,7829,63,32.3
+Academic year,201819,National,E92000001,England,Chinese,Total,Total,Total,3002,2294,76,2345,78,35.5
+Academic year,201819,National,E92000001,England,Chinese,Total,Total,Girls,1413,1148,81,1165,82,36.4
+Academic year,201819,National,E92000001,England,Chinese,Total,Total,Boys,1589,1146,72,1180,74,34.8
+Academic year,201819,National,E92000001,England,Chinese,Total,FSM,Total,213,142,67,146,69,33
+Academic year,201819,National,E92000001,England,Chinese,Total,FSM,Girls,95,63,66,64,67,32.7
+Academic year,201819,National,E92000001,England,Chinese,Total,FSM,Boys,118,79,67,82,69,33.3
+Academic year,201819,National,E92000001,England,Chinese,Total,All other pupils,Total,2789,2152,77,2199,79,35.7
+Academic year,201819,National,E92000001,England,Chinese,Total,All other pupils,Girls,1318,1085,82,1101,84,36.6
+Academic year,201819,National,E92000001,England,Chinese,Total,All other pupils,Boys,1471,1067,73,1098,75,34.9
+Academic year,201819,National,E92000001,England,Other,Total,Total,Total,12048,7588,63,7793,65,32.5
+Academic year,201819,National,E92000001,England,Other,Total,Total,Girls,5889,4118,70,4210,71,33.7
+Academic year,201819,National,E92000001,England,Other,Total,Total,Boys,6159,3470,56,3583,58,31.3
+Academic year,201819,National,E92000001,England,Other,Total,FSM,Total,2402,1346,56,1389,58,31.1
+Academic year,201819,National,E92000001,England,Other,Total,FSM,Girls,1182,750,63,772,65,32.4
+Academic year,201819,National,E92000001,England,Other,Total,FSM,Boys,1220,596,49,617,51,29.8
+Academic year,201819,National,E92000001,England,Other,Total,All other pupils,Total,9646,6242,65,6404,66,32.8
+Academic year,201819,National,E92000001,England,Other,Total,All other pupils,Girls,4707,3368,72,3438,73,34
+Academic year,201819,National,E92000001,England,Other,Total,All other pupils,Boys,4939,2874,58,2966,60,31.6
+Academic year,201819,National,E92000001,England,unclassified,Total,Total,Total,22487,13069,58,13311,59,33
+Academic year,201819,National,E92000001,England,unclassified,Total,Total,Girls,10973,7034,64,7140,65,34.1
+Academic year,201819,National,E92000001,England,unclassified,Total,Total,Boys,11514,6035,52,6171,54,32
+Academic year,201819,National,E92000001,England,unclassified,Total,FSM,Total,1451,776,53,798,55,31.1
+Academic year,201819,National,E92000001,England,unclassified,Total,FSM,Girls,720,447,62,461,64,32.5
+Academic year,201819,National,E92000001,England,unclassified,Total,FSM,Boys,731,329,45,337,46,29.8
+Academic year,201819,National,E92000001,England,unclassified,Total,All other pupils,Total,21036,12293,58,12513,59,33.1
+Academic year,201819,National,E92000001,England,unclassified,Total,All other pupils,Girls,10253,6587,64,6679,65,34.2
+Academic year,201819,National,E92000001,England,unclassified,Total,All other pupils,Boys,10783,5706,53,5834,54,32.1
+Academic year,201819,National,E92000001,England,White,White British,Total,Total,409675,297446,73,301219,74,35.1
+Academic year,201819,National,E92000001,England,White,White British,Total,Girls,199805,158749,79,159914,80,36.2
+Academic year,201819,National,E92000001,England,White,White British,Total,Boys,209870,138697,66,141305,67,34
+Academic year,201819,National,E92000001,England,White,White British,FSM,Total,59322,31579,53,32369,55,31.3
+Academic year,201819,National,E92000001,England,White,White British,FSM,Girls,28979,17855,62,18134,63,32.6
+Academic year,201819,National,E92000001,England,White,White British,FSM,Boys,30343,13724,45,14235,47,30
+Academic year,201819,National,E92000001,England,White,White British,All other pupils,Total,350353,265867,76,268850,77,35.7
+Academic year,201819,National,E92000001,England,White,White British,All other pupils,Girls,170826,140894,82,141780,83,36.8
+Academic year,201819,National,E92000001,England,White,White British,All other pupils,Boys,179527,124973,70,127070,71,34.7
+Academic year,201819,National,E92000001,England,White,Irish,Total,Total,1551,1152,74,1166,75,36.2
+Academic year,201819,National,E92000001,England,White,Irish,Total,Girls,777,633,81,638,82,37.4
+Academic year,201819,National,E92000001,England,White,Irish,Total,Boys,774,519,67,528,68,34.9
+Academic year,201819,National,E92000001,England,White,Irish,FSM,Total,197,97,49,100,51,30.5
+Academic year,201819,National,E92000001,England,White,Irish,FSM,Girls,93,63,68,64,69,32.7
+Academic year,201819,National,E92000001,England,White,Irish,FSM,Boys,104,34,33,36,35,28.5
+Academic year,201819,National,E92000001,England,White,Irish,All other pupils,Total,1354,1055,78,1066,79,37
+Academic year,201819,National,E92000001,England,White,Irish,All other pupils,Girls,684,570,83,574,84,38
+Academic year,201819,National,E92000001,England,White,Irish,All other pupils,Boys,670,485,72,492,73,35.9
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,Total,Total,665,258,39,266,40,29.6
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,Total,Girls,335,156,47,160,48,30.9
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,Total,Boys,330,102,31,106,32,28.2
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,FSM,Total,305,89,29,95,31,27.6
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,FSM,Girls,146,56,38,59,40,29.5
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,FSM,Boys,159,33,21,36,23,25.9
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Total,360,169,47,171,48,31.3
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Girls,189,100,53,101,53,32
+Academic year,201819,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Boys,171,69,40,70,41,30.4
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,Total,Total,2151,732,34,753,35,28.5
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,Total,Girls,1081,447,41,459,42,29.8
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,Total,Boys,1070,285,27,294,27,27.1
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,FSM,Total,630,207,33,212,34,28.6
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,FSM,Girls,312,120,38,122,39,29.8
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,FSM,Boys,318,87,27,90,28,27.4
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,All other pupils,Total,1521,525,35,541,36,28.4
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,All other pupils,Girls,769,327,43,337,44,29.8
+Academic year,201819,National,E92000001,England,White,Gypsy Romany,All other pupils,Boys,752,198,26,204,27,27
+Academic year,201819,National,E92000001,England,White,Any other white background,Total,Total,45361,29780,66,30481,67,33.2
+Academic year,201819,National,E92000001,England,White,Any other white background,Total,Girls,22065,16047,73,16308,74,34.4
+Academic year,201819,National,E92000001,England,White,Any other white background,Total,Boys,23296,13733,59,14173,61,32
+Academic year,201819,National,E92000001,England,White,Any other white background,FSM,Total,2872,1574,55,1622,56,31.1
+Academic year,201819,National,E92000001,England,White,Any other white background,FSM,Girls,1374,870,63,886,64,32.5
+Academic year,201819,National,E92000001,England,White,Any other white background,FSM,Boys,1498,704,47,736,49,29.7
+Academic year,201819,National,E92000001,England,White,Any other white background,All other pupils,Total,42489,28206,66,28859,68,33.3
+Academic year,201819,National,E92000001,England,White,Any other white background,All other pupils,Girls,20691,15177,73,15422,75,34.6
+Academic year,201819,National,E92000001,England,White,Any other white background,All other pupils,Boys,21798,13029,60,13437,62,32.2
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,Total,Total,9814,6761,69,6863,70,34.3
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,Total,Girls,4901,3757,77,3787,77,35.5
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,Total,Boys,4913,3004,61,3076,63,33.1
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,FSM,Total,2940,1739,59,1778,60,32.4
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,FSM,Girls,1470,984,67,999,68,33.5
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,FSM,Boys,1470,755,51,779,53,31.2
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Total,6874,5022,73,5085,74,35.1
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Girls,3431,2773,81,2788,81,36.3
+Academic year,201819,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Boys,3443,2249,65,2297,67,33.9
+Academic year,201819,National,E92000001,England,Mixed,White and black African,Total,Total,5777,4087,71,4157,72,34.6
+Academic year,201819,National,E92000001,England,Mixed,White and black African,Total,Girls,2807,2190,78,2214,79,36
+Academic year,201819,National,E92000001,England,Mixed,White and black African,Total,Boys,2970,1897,64,1943,65,33.2
+Academic year,201819,National,E92000001,England,Mixed,White and black African,FSM,Total,1185,713,60,726,61,32.6
+Academic year,201819,National,E92000001,England,Mixed,White and black African,FSM,Girls,569,380,67,383,67,33.8
+Academic year,201819,National,E92000001,England,Mixed,White and black African,FSM,Boys,616,333,54,343,56,31.4
+Academic year,201819,National,E92000001,England,Mixed,White and black African,All other pupils,Total,4592,3374,73,3431,75,35.1
+Academic year,201819,National,E92000001,England,Mixed,White and black African,All other pupils,Girls,2238,1810,81,1831,82,36.6
+Academic year,201819,National,E92000001,England,Mixed,White and black African,All other pupils,Boys,2354,1564,66,1600,68,33.7
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,Total,Total,10305,7754,75,7872,76,35.8
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,Total,Girls,5024,4099,82,4140,82,37
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,Total,Boys,5281,3655,69,3732,71,34.5
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,FSM,Total,1362,809,59,828,61,32.4
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,FSM,Girls,668,450,67,461,69,33.8
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,FSM,Boys,694,359,52,367,53,31
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,All other pupils,Total,8943,6945,78,7044,79,36.3
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,All other pupils,Girls,4356,3649,84,3679,84,37.5
+Academic year,201819,National,E92000001,England,Mixed,White and Asian,All other pupils,Boys,4587,3296,72,3365,73,35.1
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,Total,Total,15789,11469,73,11670,74,34.9
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,Total,Girls,7603,6038,79,6103,80,36.2
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,Total,Boys,8186,5431,66,5567,68,33.8
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,FSM,Total,2717,1642,60,1684,62,32.6
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,FSM,Girls,1296,892,69,908,70,34.2
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,FSM,Boys,1421,750,53,776,55,31
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Total,13072,9827,75,9986,76,35.4
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Girls,6307,5146,82,5195,82,36.6
+Academic year,201819,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Boys,6765,4681,69,4791,71,34.3
+Academic year,201819,National,E92000001,England,Asian,Indian,Total,Total,20363,15810,78,16148,79,35.5
+Academic year,201819,National,E92000001,England,Asian,Indian,Total,Girls,9902,8319,84,8434,85,36.7
+Academic year,201819,National,E92000001,England,Asian,Indian,Total,Boys,10461,7491,72,7714,74,34.4
+Academic year,201819,National,E92000001,England,Asian,Indian,FSM,Total,717,474,66,491,68,32.9
+Academic year,201819,National,E92000001,England,Asian,Indian,FSM,Girls,361,265,73,274,76,34.3
+Academic year,201819,National,E92000001,England,Asian,Indian,FSM,Boys,356,209,59,217,61,31.5
+Academic year,201819,National,E92000001,England,Asian,Indian,All other pupils,Total,19646,15336,78,15657,80,35.6
+Academic year,201819,National,E92000001,England,Asian,Indian,All other pupils,Girls,9541,8054,84,8160,86,36.8
+Academic year,201819,National,E92000001,England,Asian,Indian,All other pupils,Boys,10105,7282,72,7497,74,34.5
+Academic year,201819,National,E92000001,England,Asian,Pakistani,Total,Total,27141,17476,64,18046,66,32.7
+Academic year,201819,National,E92000001,England,Asian,Pakistani,Total,Girls,13184,9495,72,9708,74,34
+Academic year,201819,National,E92000001,England,Asian,Pakistani,Total,Boys,13957,7981,57,8338,60,31.4
+Academic year,201819,National,E92000001,England,Asian,Pakistani,FSM,Total,3514,2112,60,2173,62,31.7
+Academic year,201819,National,E92000001,England,Asian,Pakistani,FSM,Girls,1675,1150,69,1178,70,33.1
+Academic year,201819,National,E92000001,England,Asian,Pakistani,FSM,Boys,1839,962,52,995,54,30.4
+Academic year,201819,National,E92000001,England,Asian,Pakistani,All other pupils,Total,23627,15364,65,15873,67,32.8
+Academic year,201819,National,E92000001,England,Asian,Pakistani,All other pupils,Girls,11509,8345,73,8530,74,34.1
+Academic year,201819,National,E92000001,England,Asian,Pakistani,All other pupils,Boys,12118,7019,58,7343,61,31.6
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,Total,Total,10212,6873,67,7059,69,33.1
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,Total,Girls,4993,3752,75,3822,77,34.6
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,Total,Boys,5219,3121,60,3237,62,31.7
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,FSM,Total,1648,1024,62,1052,64,32
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,FSM,Girls,801,574,72,587,73,33.8
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,FSM,Boys,847,450,53,465,55,30.2
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,All other pupils,Total,8564,5849,68,6007,70,33.3
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,All other pupils,Girls,4192,3178,76,3235,77,34.7
+Academic year,201819,National,E92000001,England,Asian,Bangladeshi,All other pupils,Boys,4372,2671,61,2772,63,32
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,Total,Total,11469,7886,69,8100,71,33.6
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,Total,Girls,5569,4279,77,4345,78,35
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,Total,Boys,5900,3607,61,3755,64,32.3
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,FSM,Total,1259,732,58,762,61,31.3
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,FSM,Girls,595,400,67,408,69,32.9
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,FSM,Boys,664,332,50,354,53,29.9
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,All other pupils,Total,10210,7154,70,7338,72,33.9
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,All other pupils,Girls,4974,3879,78,3937,79,35.2
+Academic year,201819,National,E92000001,England,Asian,Any other Asian background,All other pupils,Boys,5236,3275,63,3401,65,32.6
+Academic year,201819,National,E92000001,England,Black,Caribbean,Total,Total,5270,3559,68,3628,69,33.6
+Academic year,201819,National,E92000001,England,Black,Caribbean,Total,Girls,2554,1924,75,1948,76,34.9
+Academic year,201819,National,E92000001,England,Black,Caribbean,Total,Boys,2716,1635,60,1680,62,32.4
+Academic year,201819,National,E92000001,England,Black,Caribbean,FSM,Total,1540,935,61,958,62,32.2
+Academic year,201819,National,E92000001,England,Black,Caribbean,FSM,Girls,737,509,69,516,70,33.5
+Academic year,201819,National,E92000001,England,Black,Caribbean,FSM,Boys,803,426,53,442,55,31
+Academic year,201819,National,E92000001,England,Black,Caribbean,All other pupils,Total,3730,2624,70,2670,72,34.2
+Academic year,201819,National,E92000001,England,Black,Caribbean,All other pupils,Girls,1817,1415,78,1432,79,35.5
+Academic year,201819,National,E92000001,England,Black,Caribbean,All other pupils,Boys,1913,1209,63,1238,65,33
+Academic year,201819,National,E92000001,England,Black,African,Total,Total,21432,14627,68,14951,70,33.4
+Academic year,201819,National,E92000001,England,Black,African,Total,Girls,10474,8037,77,8145,78,35
+Academic year,201819,National,E92000001,England,Black,African,Total,Boys,10958,6590,60,6806,62,31.9
+Academic year,201819,National,E92000001,England,Black,African,FSM,Total,4416,2813,64,2888,65,32.5
+Academic year,201819,National,E92000001,England,Black,African,FSM,Girls,2199,1585,72,1617,74,34.1
+Academic year,201819,National,E92000001,England,Black,African,FSM,Boys,2217,1228,55,1271,57,30.9
+Academic year,201819,National,E92000001,England,Black,African,All other pupils,Total,17016,11814,69,12063,71,33.7
+Academic year,201819,National,E92000001,England,Black,African,All other pupils,Girls,8275,6452,78,6528,79,35.3
+Academic year,201819,National,E92000001,England,Black,African,All other pupils,Boys,8741,5362,61,5535,63,32.1
+Academic year,201819,National,E92000001,England,Black,Any other black background,Total,Total,4434,2910,66,2987,67,33.1
+Academic year,201819,National,E92000001,England,Black,Any other black background,Total,Girls,2172,1601,74,1634,75,34.5
+Academic year,201819,National,E92000001,England,Black,Any other black background,Total,Boys,2262,1309,58,1353,60,31.8
+Academic year,201819,National,E92000001,England,Black,Any other black background,FSM,Total,1052,639,61,661,63,32.4
+Academic year,201819,National,E92000001,England,Black,Any other black background,FSM,Girls,524,354,68,364,69,33.7
+Academic year,201819,National,E92000001,England,Black,Any other black background,FSM,Boys,528,285,54,297,56,31.1
+Academic year,201819,National,E92000001,England,Black,Any other black background,All other pupils,Total,3382,2271,67,2326,69,33.4
+Academic year,201819,National,E92000001,England,Black,Any other black background,All other pupils,Girls,1648,1247,76,1270,77,34.8
+Academic year,201819,National,E92000001,England,Black,Any other black background,All other pupils,Boys,1734,1024,59,1056,61,32
+Academic year,201819,National,E92000001,England,Chinese,Chinese,Total,Total,3002,2294,76,2345,78,35.5
+Academic year,201819,National,E92000001,England,Chinese,Chinese,Total,Girls,1413,1148,81,1165,82,36.4
+Academic year,201819,National,E92000001,England,Chinese,Chinese,Total,Boys,1589,1146,72,1180,74,34.8
+Academic year,201819,National,E92000001,England,Chinese,Chinese,FSM,Total,213,142,67,146,69,33
+Academic year,201819,National,E92000001,England,Chinese,Chinese,FSM,Girls,95,63,66,64,67,32.7
+Academic year,201819,National,E92000001,England,Chinese,Chinese,FSM,Boys,118,79,67,82,69,33.3
+Academic year,201819,National,E92000001,England,Chinese,Chinese,All other pupils,Total,2789,2152,77,2199,79,35.7
+Academic year,201819,National,E92000001,England,Chinese,Chinese,All other pupils,Girls,1318,1085,82,1101,84,36.6
+Academic year,201819,National,E92000001,England,Chinese,Chinese,All other pupils,Boys,1471,1067,73,1098,75,34.9
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,Total,Total,12048,7588,63,7793,65,32.5
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,Total,Girls,5889,4118,70,4210,71,33.7
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,Total,Boys,6159,3470,56,3583,58,31.3
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,FSM,Total,2402,1346,56,1389,58,31.1
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,FSM,Girls,1182,750,63,772,65,32.4
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,FSM,Boys,1220,596,49,617,51,29.8
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,All other pupils,Total,9646,6242,65,6404,66,32.8
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,All other pupils,Girls,4707,3368,72,3438,73,34
+Academic year,201819,National,E92000001,England,Other,Any other ethnic group,All other pupils,Boys,4939,2874,58,2966,60,31.6
+Academic year,201819,National,E92000001,England,unclassified,unclassified,Total,Total,22487,13069,58,13311,59,33
+Academic year,201819,National,E92000001,England,unclassified,unclassified,Total,Girls,10973,7034,64,7140,65,34.1
+Academic year,201819,National,E92000001,England,unclassified,unclassified,Total,Boys,11514,6035,52,6171,54,32
+Academic year,201819,National,E92000001,England,unclassified,unclassified,FSM,Total,1451,776,53,798,55,31.1
+Academic year,201819,National,E92000001,England,unclassified,unclassified,FSM,Girls,720,447,62,461,64,32.5
+Academic year,201819,National,E92000001,England,unclassified,unclassified,FSM,Boys,731,329,45,337,46,29.8
+Academic year,201819,National,E92000001,England,unclassified,unclassified,All other pupils,Total,21036,12293,58,12513,59,33.1
+Academic year,201819,National,E92000001,England,unclassified,unclassified,All other pupils,Girls,10253,6587,64,6679,65,34.2
+Academic year,201819,National,E92000001,England,unclassified,unclassified,All other pupils,Boys,10783,5706,53,5834,54,32.1
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,Total,Total,652349,457772,70,466668,72,34.6
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,Total,Girls,318270,246648,77,249651,78,35.8
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,Total,Boys,334079,211124,63,217017,65,33.4
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,FSM,Total,87190,47880,55,49312,57,31.5
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,FSM,Girls,42403,27000,64,27543,65,32.9
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,FSM,Boys,44787,20880,47,21769,49,30.2
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Total,565159,409892,73,417356,74,35
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Girls,275867,219648,80,222108,81,36.2
+Academic year,201718,National,E92000001,England,All Major Ethnicities,Total,All other pupils,Boys,289292,190244,66,195248,67,33.9
+Academic year,201718,National,E92000001,England,White,Total,Total,Total,473998,337474,71,343014,72,34.8
+Academic year,201718,National,E92000001,England,White,Total,Total,Girls,230864,181015,78,182803,79,36
+Academic year,201718,National,E92000001,England,White,Total,Total,Boys,243134,156459,64,160211,66,33.8
+Academic year,201718,National,E92000001,England,White,Total,FSM,Total,62198,32880,53,33814,54,31.2
+Academic year,201718,National,E92000001,England,White,Total,FSM,Girls,30126,18565,62,18928,63,32.6
+Academic year,201718,National,E92000001,England,White,Total,FSM,Boys,32072,14315,45,14886,46,30
+Academic year,201718,National,E92000001,England,White,Total,All other pupils,Total,411800,304594,74,309200,75,35.4
+Academic year,201718,National,E92000001,England,White,Total,All other pupils,Girls,200738,162450,81,163875,82,36.5
+Academic year,201718,National,E92000001,England,White,Total,All other pupils,Boys,211062,142144,67,145325,69,34.3
+Academic year,201718,National,E92000001,England,Mixed,Total,Total,Total,41621,29878,72,30439,73,35
+Academic year,201718,National,E92000001,England,Mixed,Total,Total,Girls,20224,16070,79,16247,80,36.2
+Academic year,201718,National,E92000001,England,Mixed,Total,Total,Boys,21397,13808,65,14192,66,33.7
+Academic year,201718,National,E92000001,England,Mixed,Total,FSM,Total,7973,4814,60,4937,62,32.6
+Academic year,201718,National,E92000001,England,Mixed,Total,FSM,Girls,3848,2662,69,2700,70,34
+Academic year,201718,National,E92000001,England,Mixed,Total,FSM,Boys,4125,2152,52,2237,54,31.3
+Academic year,201718,National,E92000001,England,Mixed,Total,All other pupils,Total,33648,25064,74,25502,76,35.5
+Academic year,201718,National,E92000001,England,Mixed,Total,All other pupils,Girls,16376,13408,82,13547,83,36.8
+Academic year,201718,National,E92000001,England,Mixed,Total,All other pupils,Boys,17272,11656,67,11955,69,34.3
+Academic year,201718,National,E92000001,England,Asian,Total,Total,Total,69154,47247,68,48888,71,33.6
+Academic year,201718,National,E92000001,England,Asian,Total,Total,Girls,33995,25808,76,26424,78,34.9
+Academic year,201718,National,E92000001,England,Asian,Total,Total,Boys,35159,21439,61,22464,64,32.3
+Academic year,201718,National,E92000001,England,Asian,Total,FSM,Total,6711,3993,59,4151,62,31.7
+Academic year,201718,National,E92000001,England,Asian,Total,FSM,Girls,3313,2251,68,2312,70,33.1
+Academic year,201718,National,E92000001,England,Asian,Total,FSM,Boys,3398,1742,51,1839,54,30.5
+Academic year,201718,National,E92000001,England,Asian,Total,All other pupils,Total,62443,43254,69,44737,72,33.8
+Academic year,201718,National,E92000001,England,Asian,Total,All other pupils,Girls,30682,23557,77,24112,79,35.1
+Academic year,201718,National,E92000001,England,Asian,Total,All other pupils,Boys,31761,19697,62,20625,65,32.5
+Academic year,201718,National,E92000001,England,Black,Total,Total,Total,32342,22044,68,22681,70,33.7
+Academic year,201718,National,E92000001,England,Black,Total,Total,Girls,15955,12182,76,12408,78,35.1
+Academic year,201718,National,E92000001,England,Black,Total,Total,Boys,16387,9862,60,10273,63,32.2
+Academic year,201718,National,E92000001,England,Black,Total,FSM,Total,6801,4276,63,4428,65,32.6
+Academic year,201718,National,E92000001,England,Black,Total,FSM,Girls,3397,2417,71,2473,73,34.1
+Academic year,201718,National,E92000001,England,Black,Total,FSM,Boys,3404,1859,55,1955,57,31.2
+Academic year,201718,National,E92000001,England,Black,Total,All other pupils,Total,25541,17768,70,18253,71,33.9
+Academic year,201718,National,E92000001,England,Black,Total,All other pupils,Girls,12558,9765,78,9935,79,35.4
+Academic year,201718,National,E92000001,England,Black,Total,All other pupils,Boys,12983,8003,62,8318,64,32.5
+Academic year,201718,National,E92000001,England,Chinese,Total,Total,Total,3278,2493,76,2576,79,35.8
+Academic year,201718,National,E92000001,England,Chinese,Total,Total,Girls,1595,1327,83,1352,85,37.1
+Academic year,201718,National,E92000001,England,Chinese,Total,Total,Boys,1683,1166,69,1224,73,34.5
+Academic year,201718,National,E92000001,England,Chinese,Total,FSM,Total,186,115,62,127,68,32.9
+Academic year,201718,National,E92000001,England,Chinese,Total,FSM,Girls,85,60,71,63,74,34.3
+Academic year,201718,National,E92000001,England,Chinese,Total,FSM,Boys,101,55,54,64,63,31.7
+Academic year,201718,National,E92000001,England,Chinese,Total,All other pupils,Total,3092,2378,77,2449,79,35.9
+Academic year,201718,National,E92000001,England,Chinese,Total,All other pupils,Girls,1510,1267,84,1289,85,37.2
+Academic year,201718,National,E92000001,England,Chinese,Total,All other pupils,Boys,1582,1111,70,1160,73,34.7
+Academic year,201718,National,E92000001,England,Other,Total,Total,Total,12037,7471,62,7690,64,32.5
+Academic year,201718,National,E92000001,England,Other,Total,Total,Girls,5844,4100,70,4185,72,33.9
+Academic year,201718,National,E92000001,England,Other,Total,Total,Boys,6193,3371,54,3505,57,31.2
+Academic year,201718,National,E92000001,England,Other,Total,FSM,Total,2220,1238,56,1276,57,31.2
+Academic year,201718,National,E92000001,England,Other,Total,FSM,Girls,1108,723,65,737,67,32.7
+Academic year,201718,National,E92000001,England,Other,Total,FSM,Boys,1112,515,46,539,48,29.7
+Academic year,201718,National,E92000001,England,Other,Total,All other pupils,Total,9817,6233,63,6414,65,32.8
+Academic year,201718,National,E92000001,England,Other,Total,All other pupils,Girls,4736,3377,71,3448,73,34.2
+Academic year,201718,National,E92000001,England,Other,Total,All other pupils,Boys,5081,2856,56,2966,58,31.5
+Academic year,201718,National,E92000001,England,unclassified,Total,Total,Total,19919,11165,56,11380,57,33
+Academic year,201718,National,E92000001,England,unclassified,Total,Total,Girls,9793,6146,63,6232,64,34.1
+Academic year,201718,National,E92000001,England,unclassified,Total,Total,Boys,10126,5019,50,5148,51,32
+Academic year,201718,National,E92000001,England,unclassified,Total,FSM,Total,1101,564,51,579,53,31
+Academic year,201718,National,E92000001,England,unclassified,Total,FSM,Girls,526,322,61,330,63,32.7
+Academic year,201718,National,E92000001,England,unclassified,Total,FSM,Boys,575,242,42,249,43,29.5
+Academic year,201718,National,E92000001,England,unclassified,Total,All other pupils,Total,18818,10601,56,10801,57,33.2
+Academic year,201718,National,E92000001,England,unclassified,Total,All other pupils,Girls,9267,5824,63,5902,64,34.2
+Academic year,201718,National,E92000001,England,unclassified,Total,All other pupils,Boys,9551,4777,50,4899,51,32.1
+Academic year,201718,National,E92000001,England,White,White British,Total,Total,424179,306108,72,310788,73,35.1
+Academic year,201718,National,E92000001,England,White,White British,Total,Girls,206718,164088,79,165549,80,36.2
+Academic year,201718,National,E92000001,England,White,White British,Total,Boys,217461,142020,65,145239,67,34
+Academic year,201718,National,E92000001,England,White,White British,FSM,Total,58458,31059,53,31927,55,31.3
+Academic year,201718,National,E92000001,England,White,White British,FSM,Girls,28338,17557,62,17896,63,32.6
+Academic year,201718,National,E92000001,England,White,White British,FSM,Boys,30120,13502,45,14031,47,30
+Academic year,201718,National,E92000001,England,White,White British,All other pupils,Total,365721,275049,75,278861,76,35.7
+Academic year,201718,National,E92000001,England,White,White British,All other pupils,Girls,178380,146531,82,147653,83,36.8
+Academic year,201718,National,E92000001,England,White,White British,All other pupils,Boys,187341,128518,69,131208,70,34.6
+Academic year,201718,National,E92000001,England,White,Irish,Total,Total,1598,1180,74,1193,75,36
+Academic year,201718,National,E92000001,England,White,Irish,Total,Girls,791,630,80,635,80,36.8
+Academic year,201718,National,E92000001,England,White,Irish,Total,Boys,807,550,68,558,69,35.2
+Academic year,201718,National,E92000001,England,White,Irish,FSM,Total,215,95,44,98,46,31
+Academic year,201718,National,E92000001,England,White,Irish,FSM,Girls,100,54,54,54,54,31.3
+Academic year,201718,National,E92000001,England,White,Irish,FSM,Boys,115,41,36,44,38,30.8
+Academic year,201718,National,E92000001,England,White,Irish,All other pupils,Total,1383,1085,78,1095,79,36.8
+Academic year,201718,National,E92000001,England,White,Irish,All other pupils,Girls,691,576,83,581,84,37.6
+Academic year,201718,National,E92000001,England,White,Irish,All other pupils,Boys,692,509,74,514,74,35.9
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,Total,Total,591,181,31,185,31,29
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,Total,Girls,279,108,39,110,39,30.5
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,Total,Boys,312,73,23,75,24,27.6
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,FSM,Total,290,69,24,71,24,27.8
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,FSM,Girls,136,43,32,44,32,29.3
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,FSM,Boys,154,26,17,27,18,26.4
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Total,301,112,37,114,38,30.1
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Girls,143,65,45,66,46,31.6
+Academic year,201718,National,E92000001,England,White,Traveller of Irish heritage,All other pupils,Boys,158,47,30,48,30,28.8
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,Total,Total,2024,674,33,689,34,28.4
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,Total,Girls,957,380,40,386,40,29.6
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,Total,Boys,1067,294,28,303,28,27.2
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,FSM,Total,562,179,32,185,33,28.7
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,FSM,Girls,275,114,41,118,43,30.4
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,FSM,Boys,287,65,23,67,23,27.1
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,All other pupils,Total,1462,495,34,504,34,28.2
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,All other pupils,Girls,682,266,39,268,39,29.3
+Academic year,201718,National,E92000001,England,White,Gypsy Romany,All other pupils,Boys,780,229,29,236,30,27.3
+Academic year,201718,National,E92000001,England,White,Any other white background,Total,Total,45606,29331,64,30159,66,33
+Academic year,201718,National,E92000001,England,White,Any other white background,Total,Girls,22119,15809,71,16123,73,34.2
+Academic year,201718,National,E92000001,England,White,Any other white background,Total,Boys,23487,13522,58,14036,60,31.9
+Academic year,201718,National,E92000001,England,White,Any other white background,FSM,Total,2673,1478,55,1533,57,31.2
+Academic year,201718,National,E92000001,England,White,Any other white background,FSM,Girls,1277,797,62,816,64,32.3
+Academic year,201718,National,E92000001,England,White,Any other white background,FSM,Boys,1396,681,49,717,51,30.3
+Academic year,201718,National,E92000001,England,White,Any other white background,All other pupils,Total,42933,27853,65,28626,67,33.2
+Academic year,201718,National,E92000001,England,White,Any other white background,All other pupils,Girls,20842,15012,72,15307,73,34.3
+Academic year,201718,National,E92000001,England,White,Any other white background,All other pupils,Boys,22091,12841,58,13319,60,32
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,Total,Total,9973,6818,68,6947,70,34.2
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,Total,Girls,4840,3727,77,3768,78,35.5
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,Total,Boys,5133,3091,60,3179,62,33
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,FSM,Total,2961,1726,58,1766,60,32.3
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,FSM,Girls,1404,959,68,970,69,33.8
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,FSM,Boys,1557,767,49,796,51,30.9
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Total,7012,5092,73,5181,74,35
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Girls,3436,2768,81,2798,81,36.2
+Academic year,201718,National,E92000001,England,Mixed,White and black Caribbean,All other pupils,Boys,3576,2324,65,2383,67,33.9
+Academic year,201718,National,E92000001,England,Mixed,White and black African,Total,Total,5683,4077,72,4154,73,34.7
+Academic year,201718,National,E92000001,England,Mixed,White and black African,Total,Girls,2751,2182,79,2206,80,36
+Academic year,201718,National,E92000001,England,Mixed,White and black African,Total,Boys,2932,1895,65,1948,66,33.5
+Academic year,201718,National,E92000001,England,Mixed,White and black African,FSM,Total,1149,706,61,723,63,32.8
+Academic year,201718,National,E92000001,England,Mixed,White and black African,FSM,Girls,553,389,70,395,71,34.2
+Academic year,201718,National,E92000001,England,Mixed,White and black African,FSM,Boys,596,317,53,328,55,31.5
+Academic year,201718,National,E92000001,England,Mixed,White and black African,All other pupils,Total,4534,3371,74,3431,76,35.2
+Academic year,201718,National,E92000001,England,Mixed,White and black African,All other pupils,Girls,2198,1793,82,1811,82,36.5
+Academic year,201718,National,E92000001,England,Mixed,White and black African,All other pupils,Boys,2336,1578,68,1620,69,34
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,Total,Total,10288,7639,74,7787,76,35.7
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,Total,Girls,5000,4106,82,4146,83,37
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,Total,Boys,5288,3533,67,3641,69,34.4
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,FSM,Total,1330,783,59,816,61,32.6
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,FSM,Girls,640,436,68,446,70,33.9
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,FSM,Boys,690,347,50,370,54,31.4
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,All other pupils,Total,8958,6856,77,6971,78,36.1
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,All other pupils,Girls,4360,3670,84,3700,85,37.5
+Academic year,201718,National,E92000001,England,Mixed,White and Asian,All other pupils,Boys,4598,3186,69,3271,71,34.8
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,Total,Total,15677,11344,72,11551,74,35.1
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,Total,Girls,7633,6055,79,6127,80,36.3
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,Total,Boys,8044,5289,66,5424,67,33.9
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,FSM,Total,2533,1599,63,1632,64,32.8
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,FSM,Girls,1251,878,70,889,71,34.1
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,FSM,Boys,1282,721,56,743,58,31.7
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Total,13144,9745,74,9919,75,35.5
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Girls,6382,5177,81,5238,82,36.7
+Academic year,201718,National,E92000001,England,Mixed,Any other mixed background,All other pupils,Boys,6762,4568,68,4681,69,34.3
+Academic year,201718,National,E92000001,England,Asian,Indian,Total,Total,20190,15520,77,15928,79,35.4
+Academic year,201718,National,E92000001,England,Asian,Indian,Total,Girls,9954,8312,84,8464,85,36.6
+Academic year,201718,National,E92000001,England,Asian,Indian,Total,Boys,10236,7208,70,7464,73,34.2
+Academic year,201718,National,E92000001,England,Asian,Indian,FSM,Total,706,443,63,461,65,32.7
+Academic year,201718,National,E92000001,England,Asian,Indian,FSM,Girls,341,242,71,249,73,33.9
+Academic year,201718,National,E92000001,England,Asian,Indian,FSM,Boys,365,201,55,212,58,31.5
+Academic year,201718,National,E92000001,England,Asian,Indian,All other pupils,Total,19484,15077,77,15467,79,35.5
+Academic year,201718,National,E92000001,England,Asian,Indian,All other pupils,Girls,9613,8070,84,8215,85,36.7
+Academic year,201718,National,E92000001,England,Asian,Indian,All other pupils,Boys,9871,7007,71,7252,73,34.3
+Academic year,201718,National,E92000001,England,Asian,Pakistani,Total,Total,27076,16980,63,17712,65,32.5
+Academic year,201718,National,E92000001,England,Asian,Pakistani,Total,Girls,13263,9386,71,9671,73,33.9
+Academic year,201718,National,E92000001,England,Asian,Pakistani,Total,Boys,13813,7594,55,8041,58,31.1
+Academic year,201718,National,E92000001,England,Asian,Pakistani,FSM,Total,3346,1957,58,2029,61,31.4
+Academic year,201718,National,E92000001,England,Asian,Pakistani,FSM,Girls,1658,1124,68,1152,69,32.8
+Academic year,201718,National,E92000001,England,Asian,Pakistani,FSM,Boys,1688,833,49,877,52,30
+Academic year,201718,National,E92000001,England,Asian,Pakistani,All other pupils,Total,23730,15023,63,15683,66,32.6
+Academic year,201718,National,E92000001,England,Asian,Pakistani,All other pupils,Girls,11605,8262,71,8519,73,34
+Academic year,201718,National,E92000001,England,Asian,Pakistani,All other pupils,Boys,12125,6761,56,7164,59,31.3
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,Total,Total,10271,6777,66,7032,68,33
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,Total,Girls,5091,3775,74,3867,76,34.5
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,Total,Boys,5180,3002,58,3165,61,31.6
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,FSM,Total,1469,870,59,907,62,31.7
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,FSM,Girls,738,484,66,499,68,32.9
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,FSM,Boys,731,386,53,408,56,30.5
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,All other pupils,Total,8802,5907,67,6125,70,33.2
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,All other pupils,Girls,4353,3291,76,3368,77,34.7
+Academic year,201718,National,E92000001,England,Asian,Bangladeshi,All other pupils,Boys,4449,2616,59,2757,62,31.8
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,Total,Total,11617,7970,69,8216,71,33.6
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,Total,Girls,5687,4335,76,4422,78,34.9
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,Total,Boys,5930,3635,61,3794,64,32.4
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,FSM,Total,1190,723,61,754,63,32.2
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,FSM,Girls,576,401,70,412,72,33.6
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,FSM,Boys,614,322,52,342,56,30.9
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,All other pupils,Total,10427,7247,70,7462,72,33.8
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,All other pupils,Girls,5111,3934,77,4010,78,35.1
+Academic year,201718,National,E92000001,England,Asian,Any other Asian background,All other pupils,Boys,5316,3313,62,3452,65,32.6
+Academic year,201718,National,E92000001,England,Black,Caribbean,Total,Total,5659,3808,67,3888,69,33.8
+Academic year,201718,National,E92000001,England,Black,Caribbean,Total,Girls,2798,2109,75,2136,76,35.2
+Academic year,201718,National,E92000001,England,Black,Caribbean,Total,Boys,2861,1699,59,1752,61,32.5
+Academic year,201718,National,E92000001,England,Black,Caribbean,FSM,Total,1515,967,64,993,66,33
+Academic year,201718,National,E92000001,England,Black,Caribbean,FSM,Girls,766,552,72,561,73,34.5
+Academic year,201718,National,E92000001,England,Black,Caribbean,FSM,Boys,749,415,55,432,58,31.5
+Academic year,201718,National,E92000001,England,Black,Caribbean,All other pupils,Total,4144,2841,69,2895,70,34.1
+Academic year,201718,National,E92000001,England,Black,Caribbean,All other pupils,Girls,2032,1557,77,1575,78,35.4
+Academic year,201718,National,E92000001,England,Black,Caribbean,All other pupils,Boys,2112,1284,61,1320,63,32.8
+Academic year,201718,National,E92000001,England,Black,African,Total,Total,22099,15182,69,15663,71,33.6
+Academic year,201718,National,E92000001,England,Black,African,Total,Girls,10941,8419,77,8597,79,35.2
+Academic year,201718,National,E92000001,England,Black,African,Total,Boys,11158,6763,61,7066,63,32.1
+Academic year,201718,National,E92000001,England,Black,African,FSM,Total,4356,2750,63,2854,66,32.5
+Academic year,201718,National,E92000001,England,Black,African,FSM,Girls,2186,1555,71,1596,73,34
+Academic year,201718,National,E92000001,England,Black,African,FSM,Boys,2170,1195,55,1258,58,31.1
+Academic year,201718,National,E92000001,England,Black,African,All other pupils,Total,17743,12432,70,12809,72,33.9
+Academic year,201718,National,E92000001,England,Black,African,All other pupils,Girls,8755,6864,78,7001,80,35.5
+Academic year,201718,National,E92000001,England,Black,African,All other pupils,Boys,8988,5568,62,5808,65,32.4
+Academic year,201718,National,E92000001,England,Black,Any other black background,Total,Total,4584,3054,67,3130,68,33.5
+Academic year,201718,National,E92000001,England,Black,Any other black background,Total,Girls,2216,1654,75,1675,76,34.7
+Academic year,201718,National,E92000001,England,Black,Any other black background,Total,Boys,2368,1400,59,1455,61,32.4
+Academic year,201718,National,E92000001,England,Black,Any other black background,FSM,Total,930,559,60,581,62,32.5
+Academic year,201718,National,E92000001,England,Black,Any other black background,FSM,Girls,445,310,70,316,71,33.6
+Academic year,201718,National,E92000001,England,Black,Any other black background,FSM,Boys,485,249,51,265,55,31.4
+Academic year,201718,National,E92000001,England,Black,Any other black background,All other pupils,Total,3654,2495,68,2549,70,33.8
+Academic year,201718,National,E92000001,England,Black,Any other black background,All other pupils,Girls,1771,1344,76,1359,77,35
+Academic year,201718,National,E92000001,England,Black,Any other black background,All other pupils,Boys,1883,1151,61,1190,63,32.6
+Academic year,201718,National,E92000001,England,Chinese,Chinese,Total,Total,3278,2493,76,2576,79,35.8
+Academic year,201718,National,E92000001,England,Chinese,Chinese,Total,Girls,1595,1327,83,1352,85,37.1
+Academic year,201718,National,E92000001,England,Chinese,Chinese,Total,Boys,1683,1166,69,1224,73,34.5
+Academic year,201718,National,E92000001,England,Chinese,Chinese,FSM,Total,186,115,62,127,68,32.9
+Academic year,201718,National,E92000001,England,Chinese,Chinese,FSM,Girls,85,60,71,63,74,34.3
+Academic year,201718,National,E92000001,England,Chinese,Chinese,FSM,Boys,101,55,54,64,63,31.7
+Academic year,201718,National,E92000001,England,Chinese,Chinese,All other pupils,Total,3092,2378,77,2449,79,35.9
+Academic year,201718,National,E92000001,England,Chinese,Chinese,All other pupils,Girls,1510,1267,84,1289,85,37.2
+Academic year,201718,National,E92000001,England,Chinese,Chinese,All other pupils,Boys,1582,1111,70,1160,73,34.7
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,Total,Total,12037,7471,62,7690,64,32.5
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,Total,Girls,5844,4100,70,4185,72,33.9
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,Total,Boys,6193,3371,54,3505,57,31.2
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,FSM,Total,2220,1238,56,1276,57,31.2
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,FSM,Girls,1108,723,65,737,67,32.7
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,FSM,Boys,1112,515,46,539,48,29.7
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,All other pupils,Total,9817,6233,63,6414,65,32.8
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,All other pupils,Girls,4736,3377,71,3448,73,34.2
+Academic year,201718,National,E92000001,England,Other,Any other ethnic group,All other pupils,Boys,5081,2856,56,2966,58,31.5
+Academic year,201718,National,E92000001,England,unclassified,unclassified,Total,Total,19919,11165,56,11380,57,33
+Academic year,201718,National,E92000001,England,unclassified,unclassified,Total,Girls,9793,6146,63,6232,64,34.1
+Academic year,201718,National,E92000001,England,unclassified,unclassified,Total,Boys,10126,5019,50,5148,51,32
+Academic year,201718,National,E92000001,England,unclassified,unclassified,FSM,Total,1101,564,51,579,53,31
+Academic year,201718,National,E92000001,England,unclassified,unclassified,FSM,Girls,526,322,61,330,63,32.7
+Academic year,201718,National,E92000001,England,unclassified,unclassified,FSM,Boys,575,242,42,249,43,29.5
+Academic year,201718,National,E92000001,England,unclassified,unclassified,All other pupils,Total,18818,10601,56,10801,57,33.2
+Academic year,201718,National,E92000001,England,unclassified,unclassified,All other pupils,Girls,9267,5824,63,5902,64,34.2
+Academic year,201718,National,E92000001,England,unclassified,unclassified,All other pupils,Boys,9551,4777,50,4899,51,32.1
