@@ -1068,3 +1068,96 @@ sd_df_ward_fuel <- list_out_fuel[[4]]
 ward_map_simple(map_df = wards_sf_old_j_sp_out_fuel, variable_name = descending_sort_vars_not_all_fuel, popup = welcome_popup_fuel)
 
 
+# Census deprivation components =============
+
+dep_comp <- fread(paste(c(dir_stub, "../data/Deprivation census.csv"),collapse = ''))
+
+names(dep_comp)
+
+setnames(dep_comp,c("Electoral wards and divisions Code","Electoral wards and divisions",
+                    "Household deprived in the education dimension (3 categories) Code", "Value", "Attribute"),
+         c("Ward code", "Ward", "Deprivation status", "Number of households", "Deprivation dimension"), skip_absent = T)
+
+dep_comp_sum <- dep_comp[,.(`Total households`=sum(`Number of households`)), by=c("Deprivation dimension", "Ward")]
+
+dep_comp_j <- merge(dep_comp, dep_comp_sum, by.x = c("Deprivation dimension", "Ward"), 
+                    by.y = c("Deprivation dimension", "Ward"), how = "left")
+
+dep_comp_j <- dep_comp_j[`Deprivation status` == "Deprived"]
+
+dep_comp_j <- dep_comp_j[,`Percentage of households that are deprived` := round((`Number of households`/`Total households`)*100,1)]
+
+##
+
+
+
+dep_comp_j_g <- dep_comp_j %>% group_by(Ward) %>% summarise(Mean = mean(`Percentage of households that are deprived`, na.rm=T)) %>% arrange(desc(Mean))
+ordered_areas <- unique(dep_comp_j_g$Ward)
+
+dep_comp_j[, `:=`(Ward = ordered(Ward, levels=ordered_areas),
+                  `Percentage of households that are deprived` = as.numeric(`Percentage of households that are deprived`)
+)]
+
+##
+
+
+# Present on a ggplotly graph
+dep_comp_j_graph = ggplot(dep_comp_j,
+                          aes(x = Ward, y = `Percentage of households that are deprived`, 
+                              colour = `Deprivation dimension`, shape = `Deprivation dimension`,
+                              text= paste("Ward: ", Ward, "<br>",
+                                          "Percentage of households that are deprived: ", `Percentage of households that are deprived`, sep = "")#,
+                          )) +
+  #geom_col(position = position_dodge(width = 0.9)) +
+  geom_point(size = 3, alpha = 0.5)+
+  scale_colour_discrete(type=lambeth_palette_graph) +
+  theme_lam() +
+  theme(axis.title.x = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Percentage of households that are deprived") #+
+  #facet_wrap(~`Deprivation dimension`)
+
+#dep_comp_j_graph
+
+#ggplotly(dep_comp_j_graph)
+
+
+### Prepare spatial data 
+
+# vor_intersect_sf$pasted_location <- with(vor_intersect_sf, paste(longitude, latitude, sep = " "))
+
+ward_sf_j_dep_comp <- merge(wards_sf, dep_comp_j, by.x = "WARD_NAME", by.y = "Ward", all.x = T)
+ward_sf_j_dep_comp
+
+ward_sf_j_dep_comp$Theme = "Household deprivation categories"
+
+ward_sf_j_dep_comp$`Area Code` = NULL
+
+#names(ward_sf_j_dep_comp)[names(ward_sf_j_dep_comp) == "Variable"] = "Variable name"
+names(ward_sf_j_dep_comp)[names(ward_sf_j_dep_comp) == "Deprivation dimension"] = "Variable"
+ward_sf_j_dep_comp$Variable = as.factor(ward_sf_j_dep_comp$Variable)
+
+ward_sf_j_sp_dep_comp <-  as(ward_sf_j_dep_comp, 'Spatial')
+
+names(ward_sf_j_sp_dep_comp@data) = stringr::str_trim(gsub("\\.", " ", names(ward_sf_j_sp_dep_comp@data)))
+
+
+
+# Map variables to return to rmd
+
+welcome_popup_dep_comp <- welcome_popup(theme = unique(ward_sf_j_dep_comp$Theme), year = "2021")
+
+# Sort variable 
+
+descending_sort_vars_not_all_dep_comp <- ward_sf_j_dep_comp$Variable %>% unique()
+
+undebug(apply_metric_area)
+list_out_dep_comp <- apply_metric_area(ward_sf_j_sp_dep_comp, variable_name = descending_sort_vars_not_all_dep_comp, value_name = "Percentage of households that are deprived")
+
+ward_sf_j_sp_out_dep_comp <- list_out_dep_comp[[1]]
+ward_metric_numbers_dep_comp <- list_out_dep_comp[[2]]
+sd_ward_dep_comp <- list_out_dep_comp[[3]]
+sd_df_ward_dep_comp <- list_out_dep_comp[[4]]
+
+ward_map_simple(map_df = ward_sf_j_sp_out_dep_comp, variable_name = descending_sort_vars_not_all_dep_comp, popup = welcome_popup_dep_comp)
+
+

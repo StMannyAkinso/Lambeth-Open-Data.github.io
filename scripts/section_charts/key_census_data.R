@@ -165,4 +165,3 @@ for (i in c(1:3)) { #lsoa, ward, la
 }
 
 #totallist[[1]]
-

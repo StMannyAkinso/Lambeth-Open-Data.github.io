@@ -35,7 +35,6 @@ source('section_charts/jobs_earnings_business.r')
 source('section_charts/community.r')
 ```
 
-
 # Cover
 
 ```{r , echo=FALSE, out.width = '100%'}
@@ -44,40 +43,57 @@ source('section_charts/community.r')
 knitr::include_graphics("../img/front_page.png")
 ```
 
-
 # Introduction
 
-### __Cost of Living__
-Everyone is affected by rising living costs, but lower income groups spend comparably more of their income on essential goods, such as
-food and home energy, that are rising much faster than headline inflation.
+### **Cost of Living**
 
-- This contributes to a social gradient in the effects of the rising cost of living, and this is likely to mirror the social gr adi ent in health: the
-finding that people who are more socioeconomically advantaged have better health than people who are less advantaged, and thi s
-relationship is continuous from the lowest to the highest income groups.
+Everyone is affected by rising living costs, but lower income groups
+spend comparably more of their income on essential goods, such as food
+and home energy, that are rising much faster than headline inflation.
 
-- Similarly, people who are more affluent are likely to be better able to absorb rising living costs, but many people who were pre viously
-financially secure will be drawn towards, or into, poverty and financial hardship.
+-   This contributes to a social gradient in the effects of the rising
+    cost of living, and this is likely to mirror the social gr adi ent
+    in health: the finding that people who are more socioeconomically
+    advantaged have better health than people who are less advantaged,
+    and thi s relationship is continuous from the lowest to the highest
+    income groups.
 
+-   Similarly, people who are more affluent are likely to be better able
+    to absorb rising living costs, but many people who were pre viously
+    financially secure will be drawn towards, or into, poverty and
+    financial hardship.
 
-__This data companion__ pack accompanies a review of evidence for interventions to mitigate the impacts of the rising cost of living on
+**This data companion** pack accompanies a review of evidence for
+interventions to mitigate the impacts of the rising cost of living on
 Lambeth.
 
-- The data companion pack has been produced by the Data, Analytics and Insight Team for the London Borough of Lambeth.
+-   The data companion pack has been produced by the Data, Analytics and
+    Insight Team for the London Borough of Lambeth.
 
 # Introduction {data-navmenu="Deprivation map"}
 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UK_Census_2021_logo.svg/800px-UK_Census_2021_logo.svg.png){width=10%}
+![](https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UK_Census_2021_logo.svg/800px-UK_Census_2021_logo.svg.png){width="10%"}
 
 ### Why Census and not IMD?
-#### Census 2021 Data
-This section of the data pack explores new measures introduced in the 2021 Census relating to deprivation.    
 
+#### Census 2021 Data
+
+This section of the data pack explores new measures introduced in the
+2021 Census relating to deprivation.
 
 #### Index of Multiple Deprivation (IMD)
-Although commonly used; the IMD is now out of date. The last refresh of the IMD was in 2019 based on data from 2011 aligned to the old administrative wards. The latest Census was carried out in 2021 and aligns to the existing Lambeth administrative wards which went live in May 2022.
 
+Although commonly used; the IMD is now out of date. The last refresh of
+the IMD was in 2019 based on data from 2011 aligned to the old
+administrative wards. The latest Census was carried out in 2021 and
+aligns to the existing Lambeth administrative wards which went live in
+May 2022.
 
-# Deprivation {data-navmenu="Deprivation map"}
+# Deprivation map {data-navmenu="Deprivation map"}
+
+```{r echo=FALSE}
+ref_name="Deprivation"
+```
 
 ## Column {data-width="300"}
 
@@ -85,19 +101,84 @@ Although commonly used; the IMD is now out of date. The last refresh of the IMD 
 
 `r census_text`
 
-
 ## Column {.tabset data-width="700"}
 
 ### London Borough
+
 `r totallist[[3]]`
 
 ### Lambeth Wards
+
 `r totallist[[2]]`
 
 ### Lambeth Lower Super Output Areas (LSOAs)
+
 `r totallist[[1]]`
 
+### Deprivation components - ward level
 
+```{r}
+
+ggplotly(dep_comp_j_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Deprivation components - ward map
+
+```{r}
+
+ward_map_simple(map_df = ward_sf_j_sp_out_dep_comp, variable_name = descending_sort_vars_not_all_dep_comp, popup = welcome_popup_dep_comp)
+
+```
+
+### Deprivation components - data table
+
+```{r}
+
+make_datatable(dep_comp_j, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Deprivation components {data-navmenu="Deprivation map"}
+
+```{r echo=FALSE}
+ref_name="Deprivation components"
+```
+
+## Column {data-width="300"}
+
+### Deprivation components
+
+## Column {.tabset data-width="700"}
+
+### Deprivation components - ward level
+
+```{r}
+
+ggplotly(dep_comp_j_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Deprivation components - ward map
+
+```{r}
+
+ward_map_simple(map_df = ward_sf_j_sp_out_dep_comp, variable_name = descending_sort_vars_not_all_dep_comp, popup = welcome_popup_dep_comp)
+
+```
+
+### Deprivation components - data table
+
+```{r}
+
+make_datatable(dep_comp_j, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
 
 # Poverty rate {data-navmenu="Cost of living"}
 
@@ -147,7 +228,6 @@ make_datatable(pov_df_comb, visual_name = ref_name) #%>%
 
 ```
 
-
 # Children in low-income households {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
@@ -196,7 +276,6 @@ ggplotly(child_li_wd_df_lam_graph, tooltip = c("text")) %>% layout(autosize = T,
 
 ```
 
-
 ### `r ref_name` - map
 
 ```{r}
@@ -204,7 +283,6 @@ ggplotly(child_li_wd_df_lam_graph, tooltip = c("text")) %>% layout(autosize = T,
 ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending_sort_vars_not_all_child, popup = welcome_popup_child)
 
 ```
-
 
 ### Data table
 
@@ -214,7 +292,6 @@ make_datatable(child_li_wd_df_lam, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
-
 
 # Pension credit {data-navmenu="Cost of living"}
 
@@ -264,7 +341,6 @@ make_datatable(pension_df_m, visual_name = ref_name) %>%
 
 ```
 
-
 # Fuel poverty {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
@@ -313,7 +389,6 @@ ggplotly(fuel_all_perc_wd_graph, tooltip = c("text")) %>% layout(autosize = T, m
 
 ```
 
-
 ### `r ref_name` - LSOA map
 
 ```{r}
@@ -321,7 +396,6 @@ ggplotly(fuel_all_perc_wd_graph, tooltip = c("text")) %>% layout(autosize = T, m
 ward_map_simple(map_df = wards_sf_old_j_sp_out_fuel, variable_name = descending_sort_vars_not_all_fuel, popup = welcome_popup_fuel)
 
 ```
-
 
 ### Data table
 
@@ -331,7 +405,6 @@ make_datatable(fuel_all_perc_wd_lam, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
-
 
 # Cost of living - Resident survey {data-navmenu="Cost of living"}
 
@@ -387,8 +460,6 @@ make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
 
 ```
 
-
-
 # Unemployment benefit claimants {data-navmenu="Unemployment"}
 
 ```{r echo=FALSE}
@@ -418,7 +489,6 @@ next_button()
 ```
 
 ## Column {.tabset data-width="700"}
-
 
 ### Claimant count rate
 
@@ -455,8 +525,6 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_claim, variable_name = descending
 
 ```
 
-
-
 ### Data table
 
 ```{r}
@@ -464,7 +532,6 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_claim, variable_name = descending
 make_datatable(claim_latest_refined_m, visual_name=ref_name, data_link_col = "Summary data link")
 
 ```
-
 
 ### Data table - by age
 
@@ -529,9 +596,6 @@ ggplotly(unemp_m_comparison_disparity_graph, tooltip = c("text")) %>% layout(aut
 make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
 
 ```
-
-
-
 
 # Population {data-navmenu="Key demographics"}
 
@@ -606,7 +670,6 @@ ward_map_simple(map_df = wards_sf_j_sp_out_age, variable_name = descending_sort_
 
 ```
 
-
 ### Data table - population by sex
 
 ```{r}
@@ -649,8 +712,6 @@ print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
 
 `r print_source`
 
-
-
 ```{r}
 previous_button()
 next_button()
@@ -683,8 +744,6 @@ ggplotly(household_comp_l2_graph, tooltip = c("text")) %>% layout(autosize = T, 
 ward_map_simple(map_df = wards_sf_j_sp_out_hous, variable_name = descending_sort_vars_not_all_hous, popup = welcome_popup_hous)
 
 ```
-
-
 
 ### Data table
 
@@ -800,7 +859,6 @@ make_datatable(pass_m_d, visual_name = ref_name) %>%
 
 ```
 
-
 # Main language {data-navmenu="Key demographics"}
 
 ```{r echo=FALSE}
@@ -888,7 +946,6 @@ ggplotly(eng_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
 
 ```
 
-
 ### `r ref_name` map
 
 ```{r}
@@ -896,7 +953,6 @@ ggplotly(eng_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
 ward_map_simple(map_df = wards_sf_j_sp_out_eng, variable_name = descending_sort_vars_not_all_eng, popup = welcome_popup_eng)
 
 ```
-
 
 ### Data table
 
@@ -906,7 +962,6 @@ make_datatable(eng_d, visual_name = ref_name) %>%
   formatRound('Population', digits = 0)
 
 ```
-
 
 # Ethnicity {data-navmenu="Key demographics"}
 
@@ -1010,7 +1065,6 @@ ggplotly(rel_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
 ward_map_simple(map_df = wards_sf_j_sp_out_rel, variable_name = descending_sort_vars_not_all_rel, popup = welcome_popup_rel)
 
 ```
-
 
 ### Data table
 
@@ -1116,4 +1170,3 @@ make_datatable(gen_d, visual_name = ref_name) %>%
   formatRound('Population', digits = 0)
 
 ```
-
