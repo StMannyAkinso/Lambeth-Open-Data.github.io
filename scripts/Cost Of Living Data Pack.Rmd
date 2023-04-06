@@ -1,0 +1,1206 @@
+---
+title: "Cost of Living Data Pack"
+author: "London Borough of Lambeth"
+date: "2023"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    css: "style.css"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(plotly)
+library(DT)
+library(shiny)
+library(magrittr)
+library(htmltools)
+
+run_direct = F
+
+
+source('colour_theme.r')
+source('data and charts.r')
+
+source('section_charts/key_demographics.r')
+source('section_charts/map_ward_key_demographics.r')
+source('section_charts/key_census_data.r')
+source('section_charts/Health.r')
+source('section_charts/jobs_earnings_business.r')
+source('section_charts/community.r')
+```
+
+
+# Cover
+
+```{r , echo=FALSE, out.width = '100%'}
+#fig.cap="A caption",
+
+knitr::include_graphics("../img/front_page.png")
+```
+
+
+# Introduction
+
+### __Cost of Living__
+Everyone is affected by rising living costs, but lower income groups spend comparably more of their income on essential goods, such as
+food and home energy, that are rising much faster than headline inflation.
+
+- This contributes to a social gradient in the effects of the rising cost of living, and this is likely to mirror the social gr adi ent in health: the
+finding that people who are more socioeconomically advantaged have better health than people who are less advantaged, and thi s
+relationship is continuous from the lowest to the highest income groups.
+
+- Similarly, people who are more affluent are likely to be better able to absorb rising living costs, but many people who were pre viously
+financially secure will be drawn towards, or into, poverty and financial hardship.
+
+
+__This data companion__ pack accompanies a review of evidence for interventions to mitigate the impacts of the rising cost of living on
+Lambeth.
+
+- The data companion pack has been produced by the Data, Analytics and Insight Team for the London Borough of Lambeth.
+
+# Introduction {data-navmenu="Deprivation map"}
+
+![](https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UK_Census_2021_logo.svg/800px-UK_Census_2021_logo.svg.png){width=10%}
+
+### Why Census and not IMD?
+#### Census 2021 Data
+This section of the data pack explores new measures introduced in the 2021 Census relating to deprivation.    
+
+
+#### Index of Multiple Deprivation (IMD)
+Although commonly used; the IMD is now out of date. The last refresh of the IMD was in 2019 based on data from 2011 aligned to the old administrative wards. The latest Census was carried out in 2021 and aligns to the existing Lambeth administrative wards which went live in May 2022.
+
+
+# Deprivation {data-navmenu="Deprivation map"}
+
+## Column {data-width="300"}
+
+#### Census Deprivation
+
+`r census_text`
+
+
+## Column {.tabset data-width="700"}
+
+### London Borough
+`r totallist[[3]]`
+
+### Lambeth Wards
+`r totallist[[2]]`
+
+### Lambeth Lower Super Output Areas (LSOAs)
+`r totallist[[1]]`
+
+
+# Cost of living introduction {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name = "Cost of living introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+
+```{r}
+make_theme_index(data_sources, "Cost of living")
+
+previous_button()
+next_button()
+```
+
+
+## Column {data-width="700"}
+
+### Introduction
+
+We want Lambeth residents to thrive financially, no matter what life throws their way. Cost of living means having better chances at overall well-being: economic, physical, and emotional.
+ 
+The data presented here sets out how our residents view their Cost of living (their ability to withstand financial shocks), poverty rates across the borough and specifically how these impact children and older people.
+
+This information should be considered alongside information presented elsewhere in the report including employment and worklessness, homelessness (if included) and life expectancy.
+
+A good understanding of poverty in our borough, the Cost of living of residents and levels of deprivation enables us to understand better how to tackle the inequalities that walk hand-in-hand with deprivation.
+
+
+The data shows that:
+
+- Almost half of respondents reported that their financial circumstances got worse in the past year. 
+- About 27% of Lambeth residents think it will be at least fairly difficult to pay for food in the coming year, almost half expect it will be at least fairly difficult to pay for energy, and just under 40% expect it will be at least fairly difficult to pay for their rent/mortgage.
+- The after housing costs relative poverty rate is similar in Lambeth to London (26 vs 27%).
+- Children are more likely to live in poverty in Lambeth than in London, with a similar proportion to England.
+- The percentage of over 64s on pension credit is much higher in Lambeth (26.4%) than in London (17.7%) or England (11.1%).
+- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021.
+
+# Cost of living - Resident survey {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Cost of living - Resident survey"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_cost_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest')#, height = 550) # 
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+
+# Poverty rate {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Poverty rate"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(pov_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pov_df_comb, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Children in low-income households {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Children in low-income households"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` - ward level
+
+```{r}
+
+ggplotly(child_li_wd_df_lam_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### `r ref_name` - map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending_sort_vars_not_all_child, popup = welcome_popup_child)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Pension credit {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Pension credit"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(pension_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pension_df_m, visual_name = ref_name) %>%
+  formatRound(c('Population','Number of people aged 65+ on pension credit'), digits = 0)
+
+```
+
+
+# Fuel poverty {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Children in low-income households"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+#ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+#                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` - lsoa level
+
+```{r}
+
+ggplotly(fuel_all_perc_lsoa_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### `r ref_name` - map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_old_j_sp_out_fuel, variable_name = descending_sort_vars_not_all_fuel, popup = welcome_popup_fuel)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+# Unemployment benefit claimants {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Unemployment benefit claimants"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+
+### Claimant count rate
+
+```{r}
+
+ggplotly(claim_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+  font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Claimant count rate by age
+
+```{r}
+
+ggplotly(claim_comparison_age_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+  font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Claimant count rate by ward
+
+```{r}
+
+ggplotly(claim_all_perc_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+  font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Claimant count rate map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_old_j_sp_out_claim, variable_name = descending_sort_vars_not_all_claim, popup = welcome_popup_claim)
+
+```
+
+
+
+### Data table
+
+```{r}
+
+make_datatable(claim_latest_refined_m, visual_name=ref_name, data_link_col = "Summary data link")
+
+```
+
+
+### Data table - by age
+
+```{r}
+
+make_datatable(claim_all_ages, visual_name=ref_name, data_link_col = "Summary data link")
+
+```
+
+# Unemployment by sex and ethnicity {data-navmenu="Jobs earnings and businesses"}
+
+```{r echo=FALSE}
+ref_name="Unemployment by sex and ethnicity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Unemployment rate by group
+
+```{r}
+
+ggplotly(unemp_m_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Unemployment rate disparity
+
+```{r}
+
+ggplotly(unemp_m_comparison_disparity_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
+
+```
+
+
+
+
+# Key demographics introduction {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Key demographics introduction"
+```
+
+
+## Column {data-width="300"}
+
+### Menu
+
+```{r}
+make_theme_index(data_sources, "Key demographics")
+
+previous_button()
+next_button()
+```
+
+## Column {data-width="700"}
+
+### Introduction
+
+Lambeth has a goal by 2030 to make the borough a place we can all call home. This will be a borough with the best conditions to grow up and age well, where everyone can contribute to an inclusive economy, and have a place to call home. 'Everyone' in Lambeth terms means an exceptionally diverse population, in terms of background, ethnicity, religion, sexual orientation, and gender identity.
+
+Key aspects of the demographics in Lambeth include:
+
+- Lambeth has more people aged 20-24 and 25-34 (17.1%) than London (12.4%) and England (9.8%), and a lower proportion of older people.
+
+- Lambeth has a lower proportion of single-family households (50%) than London (58%) or England (63%), but a higher proportion of single parent and families where the parents are not married or in a civil partnership.
+
+- Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds (24%) than London (13.5%) or England (4.3%).
+
+- Lambeth has a slightly higher proportion of people from mixed/multiple ethnic groups (8.1% vs 5.7% for London), and significantly lower percentage of people from an Asian, Asian British, or Asian Welsh backgrounds (7.3%) than London as a whole (20.7%).
+
+- A similar percentage of Lambeth residents were born outside of the UK as London, both much higher than England (~40% vs 17% for England). Lambeth has a significantly higher proportion of people born in the Americas and the Caribbean or Africa (17.5%) than London or England (11.3% and 4.3%), and a similar percentage of EU residents to London (13.1%). Lambeth residents are more likely to hold a passport from another country.
+
+- Lambeth residents are more likely to speak English as their main language than London (82 vs 78% of residents). There are also significant proportions of people who speak Spanish (4%), Portuguese (2.9%), and an African language (1.7%) as their main language, more proportionally than London or England.
+
+- A slightly higher proportion of Lambeth residents say they cannot speak English well or at all than England as a whole, a similar percentage as London.
+
+- The largest religious group in Lambeth is Christian (43.7%), greater proportionally than in London (40.7%). Lambeth has more people reporting that they have no religion (37.5%) than London and England (27.1% and 36.7% respectively). Lambeth has a lower Muslim and Hindu population than London.
+
+- Lambeth has a higher percentage of people who identify as Gay/Lesbian, Bisexual, or another sexual orientation (8.3%) than London (4.2%) or England (3.1%).
+
+- Lambeth has a higher percentage of people who have a gender identity that is different from their sex registered at birth but did not give a specific identity, or identified as trans man or trans woman than England (0.8% vs 0.4%), a similar percentage to London (0.9%).
+
+Much of the data reported in this section comes from the latest UK Census (2021). A comparison between Lambeth demographics between the 2011 and 2021 Census can be found
+[here](https://www.ons.gov.uk/visualisations/censusareachanges/E09000022/).
+
+
+
+
+# Population {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Population"
+```
+
+## Column {.tabset data-width="300"}
+
+### Population by gender
+
+**`r ref_name` by gender**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+### Population by age
+
+**`r ref_name` by age**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary page 2`])
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` by sex
+
+```{r}
+
+ggplotly(pop_cen_m_d_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` by age
+
+```{r}
+
+ggplotly(comb_graph, tooltip = c("text")) %>% layout(autosize = T,  #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_age, variable_name = descending_sort_vars_not_all_age, popup = welcome_popup_age)
+
+```
+
+
+### Data table - population by sex
+
+```{r}
+
+make_datatable(pop_cen_m_d_g, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+### Data table - population by age
+
+```{r}
+
+make_datatable(comb, visual_name = ref_name) %>%
+  formatRound(c("All persons", "Female", "Male"), digits = 0) %>%
+  formatRound(c("Percentage Female", "Percentage Male", "Percentage All persons"), digits = 1)
+
+```
+
+# Household composition {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Household composition"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Household composition
+
+```{r}
+
+ggplotly(household_comp_l1_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Household composition - lower categories
+
+```{r}
+
+ggplotly(household_comp_l2_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_hous, variable_name = descending_sort_vars_not_all_hous, popup = welcome_popup_hous)
+
+```
+
+
+
+### Data table
+
+```{r}
+
+make_datatable(household_comp_m_d, visual_name = ref_name) %>%
+  formatRound(c("Population"), digits = 0)# %>%
+  #formatRound(c("Percentage Female", "Percentage Male", "Percentage All persons"), digits = 1)
+
+```
+
+# Country of birth {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Country of birth"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Country of birth
+
+```{r}
+
+ggplotly(cob_m_d_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_cob, variable_name = descending_sort_vars_not_all_cob, popup = welcome_popup_cob)
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(cob_m_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Passports held {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Passports held"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Passports held
+
+```{r}
+
+ggplotly(pass_m_d_graph, tooltip = c("text")) %>% layout(autosize = T,# margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(pass_m_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+
+# Main language {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "Main language"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(lang_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(lang_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# English proficiency {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name = "English proficiency"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(eng_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_eng, variable_name = descending_sort_vars_not_all_eng, popup = welcome_popup_eng)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(eng_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+
+# Ethnicity {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Ethnicity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(eth_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_eth, variable_name = descending_sort_vars_not_all_eth, popup = welcome_popup_eth)
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(eth_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Religion {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Religion"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Religion
+
+```{r}
+
+ggplotly(rel_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_j_sp_out_rel, variable_name = descending_sort_vars_not_all_rel, popup = welcome_popup_rel)
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(rel_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Sexual orientation {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Sexual orientation"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(ori_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(ori_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+
+# Gender identity {data-navmenu="Key demographics"}
+
+```{r echo=FALSE}
+ref_name="Gender identity"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(gen_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(gen_d, visual_name = ref_name) %>%
+  formatRound('Population', digits = 0)
+
+```
+

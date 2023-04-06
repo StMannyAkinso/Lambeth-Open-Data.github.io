@@ -1,4 +1,10 @@
 <style>
+  .navbar-inverse {background-color: #ff9900}
+
+  .body {font-family: "Arial"}
+
+  .btn {background-color: #006699}  
+
   body {
     font-family: Arial, sans-serif;
   }
