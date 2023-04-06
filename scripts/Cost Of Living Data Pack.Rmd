@@ -98,97 +98,6 @@ Although commonly used; the IMD is now out of date. The last refresh of the IMD 
 `r totallist[[1]]`
 
 
-# Cost of living introduction {data-navmenu="Cost of living"}
-
-```{r echo=FALSE}
-ref_name = "Cost of living introduction"
-```
-
-
-## Column {data-width="300"}
-
-### Menu
-
-
-```{r}
-make_theme_index(data_sources, "Cost of living")
-
-previous_button()
-next_button()
-```
-
-
-## Column {data-width="700"}
-
-### Introduction
-
-We want Lambeth residents to thrive financially, no matter what life throws their way. Cost of living means having better chances at overall well-being: economic, physical, and emotional.
- 
-The data presented here sets out how our residents view their Cost of living (their ability to withstand financial shocks), poverty rates across the borough and specifically how these impact children and older people.
-
-This information should be considered alongside information presented elsewhere in the report including employment and worklessness, homelessness (if included) and life expectancy.
-
-A good understanding of poverty in our borough, the Cost of living of residents and levels of deprivation enables us to understand better how to tackle the inequalities that walk hand-in-hand with deprivation.
-
-
-The data shows that:
-
-- Almost half of respondents reported that their financial circumstances got worse in the past year. 
-- About 27% of Lambeth residents think it will be at least fairly difficult to pay for food in the coming year, almost half expect it will be at least fairly difficult to pay for energy, and just under 40% expect it will be at least fairly difficult to pay for their rent/mortgage.
-- The after housing costs relative poverty rate is similar in Lambeth to London (26 vs 27%).
-- Children are more likely to live in poverty in Lambeth than in London, with a similar proportion to England.
-- The percentage of over 64s on pension credit is much higher in Lambeth (26.4%) than in London (17.7%) or England (11.1%).
-- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021.
-
-# Cost of living - Resident survey {data-navmenu="Cost of living"}
-
-```{r echo=FALSE}
-ref_name="Cost of living - Resident survey"
-```
-
-## Column {data-width="300"}
-
-### Commentary
-
-**`r ref_name`**
-
-```{r}
-commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
-
-print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
-
-```
-
-`r commentary`
-
-`r print_source`
-
-```{r}
-previous_button()
-next_button()
-```
-
-## Column {.tabset data-width="700"}
-
-### `r ref_name`
-
-```{r}
-
-ggplotly(surv_sat_f_cost_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
-                                                             font=lam_ggplotly_font, hovermode='closest')#, height = 550) # 
-
-```
-
-### Data table
-
-```{r}
-
-make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
-  #formatRound('Population', digits = 0)
-
-```
-
-
 
 # Poverty rate {data-navmenu="Cost of living"}
 
@@ -273,7 +182,7 @@ next_button()
 
 ```{r}
 
-ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+ggplotly(child_li_comparison_graph_time, tooltip = c("text")) %>% layout(autosize = T, margin = m,
                                                              font=lam_ggplotly_font, hovermode='closest') # , height = 500
 
 ```
@@ -301,7 +210,7 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending
 
 ```{r}
 
-make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+make_datatable(child_li_wd_df_lam, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
@@ -359,7 +268,7 @@ make_datatable(pension_df_m, visual_name = ref_name) %>%
 # Fuel poverty {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
-ref_name="Children in low-income households"
+ref_name="Fuel poverty"
 ```
 
 ## Column {data-width="300"}
@@ -390,22 +299,22 @@ next_button()
 
 ```{r}
 
-#ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
-#                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+ggplotly(fuel_li_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
 
 ```
 
-### `r ref_name` - lsoa level
+### `r ref_name` - ward level
 
 ```{r}
 
-ggplotly(fuel_all_perc_lsoa_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+ggplotly(fuel_all_perc_wd_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
                                                              font=lam_ggplotly_font, hovermode='closest') # , height = 500
 
 ```
 
 
-### `r ref_name` - map
+### `r ref_name` - LSOA map
 
 ```{r}
 
@@ -418,13 +327,69 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_fuel, variable_name = descending_
 
 ```{r}
 
-make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+make_datatable(fuel_all_perc_wd_lam, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
 
 
-# Unemployment benefit claimants {data-navmenu="Jobs earnings and businesses"}
+# Cost of living - Resident survey {data-navmenu="Cost of living"}
+
+```{r echo=FALSE}
+ref_name="Cost of living - Resident survey"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name`
+
+```{r}
+
+ggplotly(surv_sat_f_cost_graph, tooltip = c("text")) %>% layout(margin = list(
+  l = 5,#50,
+  r = 5,#50,
+  b = 10,#100,
+  t = 100,#100,
+  pad = 2#4
+), #autosize = T,
+                                                             font=lam_ggplotly_font, hovermode='closest')#, height = 550) # 
+
+```
+
+### Data table
+
+```{r}
+
+make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+
+
+# Unemployment benefit claimants {data-navmenu="Unemployment"}
 
 ```{r echo=FALSE}
 ref_name="Unemployment benefit claimants"
@@ -509,7 +474,7 @@ make_datatable(claim_all_ages, visual_name=ref_name, data_link_col = "Summary da
 
 ```
 
-# Unemployment by sex and ethnicity {data-navmenu="Jobs earnings and businesses"}
+# Unemployment by sex and ethnicity {data-navmenu="Unemployment"}
 
 ```{r echo=FALSE}
 ref_name="Unemployment by sex and ethnicity"
@@ -564,58 +529,6 @@ ggplotly(unemp_m_comparison_disparity_graph, tooltip = c("text")) %>% layout(aut
 make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
 
 ```
-
-
-
-
-# Key demographics introduction {data-navmenu="Key demographics"}
-
-```{r echo=FALSE}
-ref_name = "Key demographics introduction"
-```
-
-
-## Column {data-width="300"}
-
-### Menu
-
-```{r}
-make_theme_index(data_sources, "Key demographics")
-
-previous_button()
-next_button()
-```
-
-## Column {data-width="700"}
-
-### Introduction
-
-Lambeth has a goal by 2030 to make the borough a place we can all call home. This will be a borough with the best conditions to grow up and age well, where everyone can contribute to an inclusive economy, and have a place to call home. 'Everyone' in Lambeth terms means an exceptionally diverse population, in terms of background, ethnicity, religion, sexual orientation, and gender identity.
-
-Key aspects of the demographics in Lambeth include:
-
-- Lambeth has more people aged 20-24 and 25-34 (17.1%) than London (12.4%) and England (9.8%), and a lower proportion of older people.
-
-- Lambeth has a lower proportion of single-family households (50%) than London (58%) or England (63%), but a higher proportion of single parent and families where the parents are not married or in a civil partnership.
-
-- Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds (24%) than London (13.5%) or England (4.3%).
-
-- Lambeth has a slightly higher proportion of people from mixed/multiple ethnic groups (8.1% vs 5.7% for London), and significantly lower percentage of people from an Asian, Asian British, or Asian Welsh backgrounds (7.3%) than London as a whole (20.7%).
-
-- A similar percentage of Lambeth residents were born outside of the UK as London, both much higher than England (~40% vs 17% for England). Lambeth has a significantly higher proportion of people born in the Americas and the Caribbean or Africa (17.5%) than London or England (11.3% and 4.3%), and a similar percentage of EU residents to London (13.1%). Lambeth residents are more likely to hold a passport from another country.
-
-- Lambeth residents are more likely to speak English as their main language than London (82 vs 78% of residents). There are also significant proportions of people who speak Spanish (4%), Portuguese (2.9%), and an African language (1.7%) as their main language, more proportionally than London or England.
-
-- A slightly higher proportion of Lambeth residents say they cannot speak English well or at all than England as a whole, a similar percentage as London.
-
-- The largest religious group in Lambeth is Christian (43.7%), greater proportionally than in London (40.7%). Lambeth has more people reporting that they have no religion (37.5%) than London and England (27.1% and 36.7% respectively). Lambeth has a lower Muslim and Hindu population than London.
-
-- Lambeth has a higher percentage of people who identify as Gay/Lesbian, Bisexual, or another sexual orientation (8.3%) than London (4.2%) or England (3.1%).
-
-- Lambeth has a higher percentage of people who have a gender identity that is different from their sex registered at birth but did not give a specific identity, or identified as trans man or trans woman than England (0.8% vs 0.4%), a similar percentage to London (0.9%).
-
-Much of the data reported in this section comes from the latest UK Census (2021). A comparison between Lambeth demographics between the 2011 and 2021 Census can be found
-[here](https://www.ons.gov.uk/visualisations/censusareachanges/E09000022/).
 
 
 

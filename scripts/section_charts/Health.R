@@ -345,12 +345,14 @@ drug_plot <- drug %>%
 
 drug_plot
 
-# Healthy Life Expectancy at birth by Sex --------------------------------------------------------------
+# Life Expectancy at birth by Sex --------------------------------------------------------------
 LEMale <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/LE_Male.csv"),collapse = '')) %>% data.table()
 LEFemale <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/LE_Female.csv"),collapse = '')) %>% data.table()
 
 LEMale
 LE<- Reduce(function(x, y) merge(x, y, all=TRUE), list(LEMale,LEFemale))
+
+LE$Time.period <- as.factor(LE$Time.period)
 
 LE <- LE %>% select(c(AreaName, Sex, Time.period, Value, Lower.CI.95.0.limit, 
                         Upper.CI.95.0.limit))
@@ -362,11 +364,11 @@ LE_plot <- LE %>%
              text= paste("Area name: ", AreaName, "<br>",
                          "Period: ", Time.period, "<br>",
                          "Healthy Life expectancy: ", Value))
-  ) + facet_wrap(~Sex) +
+  )  + facet_wrap(~Sex) +
   geom_bar(position="dodge", stat="identity") +
   scale_fill_discrete(type=lambeth_palette_graph) + theme_lam() + 
   theme(axis.title.x = element_blank()) +
-  ylab('Life Expectancy at Birth') + labs(fill = "Area name")
+  ylab('Life Expectancy at Birth') + labs(fill = "Area name") 
 
 LE_plot
 
@@ -390,9 +392,9 @@ HLE_plot <- HLE %>%
          ) + facet_wrap(~Sex) +
   geom_line() + scale_linetype_manual(values=c('solid', "dashed", "dashed")) + 
   geom_point(show.legend = FALSE) + expand_limits(y = 0) + #scale_x_discrete(breaks = every_nth(n = 2)) +
-  scale_color_discrete(type=lambeth_palette_graph) +  
-  theme(axis.text.x = element_text(angle = 30, vjust = 0.5, hjust=1), axis.title.x = element_blank())+# theme_lam() +
-  ylab('Healthy Life Expectancy at Birth (Years)') + labs(linetype = "Area name", color = "Area name")
+  scale_color_discrete(type=lambeth_palette_graph) +  theme_lam() +
+  theme(axis.text.x = element_text(angle = 30, vjust = 0.5, hjust=1), axis.title.x = element_blank())+ 
+  ylab('Healthy Life Expectancy at Birth (Years)') + labs(linetype = "Area name", color = "Area name") 
 
 HLE_plot
 

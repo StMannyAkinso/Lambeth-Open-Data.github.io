@@ -1284,6 +1284,7 @@ llw_df_comb <- llw_df#rbind(llw_df_lon, llw_df_lam)
 
 llw_df_comb$Year <- "2022"
 
+llw_df_comb[, `Area` := ordered(`Area`, levels = c("Lambeth", "London", "England"))]
 
 
 # Present on a ggplotly graph
@@ -1326,7 +1327,7 @@ geom_col(position = position_dodge2(width = 0.9, reverse = T)) +
 scale_fill_discrete(type=lambeth_palette_graph) +
 theme_lam() +
 theme(axis.title.y = element_blank())+#,
-#axis.text.x = element_text(angle = 45, hjust = 1)) +
+# axis.text.x = element_text(angle = 45, hjust = 1)
 scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), limits = rev(levels(dist_d$`Distance travelled to work`))) +
 scale_x_continuous(labels = scales::comma) +
 xlab("Percentage of working population (%)")
@@ -1659,76 +1660,6 @@ pov_comparison_graph = ggplot(pov_df_comb, aes(x = Area, y = `Poverty rate (AHC,
 
 #ggplotly(pov_comparison_graph)
 
-# Children low income households ------------------------------------------
-
-child_li <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/children-in-low-income-families-local-area-statistics-2014-to-2021.xlsx"),collapse = ''), sheet = "1_Relative_Local_Authority", startRow = 10) %>% as.data.table()
-
-# Replace . in column names with " "
-names(child_li) = gsub("\\.", " ", names(child_li))
-
-names(child_li)
-
-cols <- c("Local Authority [note 2]",  "Area Code",
-          "Number of children FYE 2021 [p]", "Percentage of children FYE 2021 (%) [p] [note 3]"
-          )
-
-child_li_df <- child_li[, ..cols]
-
-names(child_li_df) <- c("Area", "Area Code", "Number of children in low income households", "Percentage of children in low income households (%)")
-
-child_li_df <- child_li_df[,`Percentage of children in low income households (%)` := round(`Percentage of children in low income households (%)` * 100,1)]
-
-child_li_df_lam <- child_li_df[Area=="Lambeth"]
-child_li_df_lam <- child_li_df_lam[,`Area Code` := NULL]
-
-
-# London
-child_li_df_lon <- child_li_df[grep("^E09", `Area Code`)]
-child_li_df_lon <- child_li_df_lon[Area != "City of London"]
-
-
-child_li_df_lon_g <- child_li_df_lon[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
-                                        `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
-                                         Area = "London"
-                                        )]
-
-# England
-child_li_df_eng <- child_li_df[grep("^E", `Area Code`)]
-#child_li_df_eng <- child_li_df_eng[Area != "City of London"]
-
-
-child_li_df_eng_g <- child_li_df_eng[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
-                                        `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
-                                        Area = "England"
-)]
-
-# Combine
-child_li_df_comb <- rbindlist(list(child_li_df_lon_g,child_li_df_eng_g, child_li_df_lam), use.names = T, fill = T)
-
-child_li_df_comb$Year <- "2021"
-
-# Make Area name an ordered factor with Lambeth, London, England
-child_li_df_comb[, Area := ordered(Area, levels = c("Lambeth", "London", "England"))]
-
-child_li_df_comb[,`Percentage of children in low income households (%)`:=as.numeric(`Percentage of children in low income households (%)`)]
-
-# Present on a ggplotly graph
-child_li_comparison_graph = ggplot(child_li_df_comb, aes(x = Area, y = `Percentage of children in low income households (%)`, 
-                                               fill = Area,
-                                               text= paste("Area: ", Area, "<br>",
-                                                           "Year: ", Year, "<br>",
-                                                           "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
-  geom_col(position = position_dodge(width = 0.9)) +
-  scale_fill_discrete(type=lambeth_palette_graph) +
-  theme_lam() +
-  theme(axis.title.x = element_blank()) +
-  ylab("Percentage of children in low income households (%)") +
-  expand_limits(y=0)
-
-#child_li_comparison_graph
-
-#ggplotly(child_li_comparison_graph)
-
 # Pensioners on pension credit ------------------------------------------
 
 pension <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/DWP statxplore pension credit aug 2018-2022.xlsx"),collapse = ''), sheet = "Data Sheet 0", startRow = 10) %>% as.data.table()
@@ -1784,3 +1715,245 @@ pension_comparison_graph = ggplot(pension_df_m, aes(x = Year, y = `Percentage of
 #pension_comparison_graph
 
 ggplotly(pension_comparison_graph)
+
+# Children low income households ------------------------------------------
+
+child_li <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/children-in-low-income-families-local-area-statistics-2014-to-2022.xlsx"),collapse = ''),
+                      sheet = "3_Relative_Local_Authority", startRow = 10) %>% as.data.table()
+
+child_li_reg <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/children-in-low-income-families-local-area-statistics-2014-to-2022.xlsx"),collapse = ''),
+                      sheet = "1_Relative_Gov_Office_Region", startRow = 10) %>% as.data.table()
+
+read_child_li <- function(child_li, cols = c("Local Authority [note 2]",  "Area Code",
+                                             "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]"), latest_year="2022") {
+  
+  # Replace . in column names with " "
+  names(child_li) = gsub("\\.", " ", names(child_li))
+  
+
+  
+  child_li_df <- child_li[, ..cols]
+  
+  names(child_li_df) <- c("Area", "Area Code", "Number of children in low income households", "Percentage of children in low income households (%)")
+  
+  child_li_df <- child_li_df[,`:=`(`Percentage of children in low income households (%)` = as.numeric(`Percentage of children in low income households (%)`),
+                                   `Number of children in low income households` = as.numeric(`Number of children in low income households`)
+                                   )]
+  
+  child_li_df_lam <- child_li_df[Area=="Lambeth"]
+  child_li_df_lam <- child_li_df_lam[,`Area Code` := NULL]
+  
+  
+  # London
+  
+  # Replace . in column names with " "
+  names(child_li_reg) = gsub("\\.", " ", names(child_li_reg))
+  
+  
+  child_li_reg_df <- child_li_reg[,c("Government Office Region [note 4]",  "Area Code",
+                                     "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]")]
+  
+  
+  
+  names(child_li_reg_df) <- c("Area", "Area Code", "Number of children in low income households", "Percentage of children in low income households (%)")
+  
+  
+  #child_li_df_lon <- child_li_df[grep("^E09", `Area Code`)]
+  child_li_df_lon <- child_li_reg_df[Area == "London"]
+  
+  
+  child_li_df_lon_g <- child_li_df_lon[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
+                                          `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
+                                          Area = "London"
+  )]
+  
+  # England
+  #child_li_df_eng <- child_li_df[grep("^E", `Area Code`)]
+  child_li_df_eng <- child_li_reg_df[Area == "United Kingdom [note 4]"]
+  
+  
+  child_li_df_eng_g <- child_li_df_eng[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
+                                          `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
+                                          Area = "United Kingdom"
+  )]
+  
+  # Combine
+  child_li_df_comb <- rbindlist(list(child_li_df_lon_g,child_li_df_eng_g, child_li_df_lam), use.names = T, fill = T)
+  
+  child_li_df_comb$Year <- latest_year
+  
+  # Make Area name an ordered factor with Lambeth, London, England
+  child_li_df_comb[, Area := ordered(Area, levels = c("Lambeth", "London", "United Kingdom"))]
+  
+  child_li_df_comb[,`Percentage of children in low income households (%)`:=round(as.numeric(`Percentage of children in low income households (%)`) * 100,1)]
+  
+  return(child_li_df_comb)
+}
+
+child_li_df_comb <- read_child_li(child_li)
+
+# Present on a ggplotly graph
+child_li_comparison_graph = ggplot(child_li_df_comb, aes(x = Area, y = `Percentage of children in low income households (%)`, 
+                                                         fill = Area,
+                                                         text= paste("Area: ", Area, "<br>",
+                                                                     "Year: ", Year, "<br>",
+                                                                     "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
+  geom_col(position = position_dodge(width = 0.9)) +
+  scale_fill_discrete(type=lambeth_palette_graph) +
+  theme_lam() +
+  theme(axis.title.x = element_blank()) +
+  ylab("Percentage of children in low income households (%)") +
+  expand_limits(y=0)
+
+child_li_comparison_graph
+
+#ggplotly(child_li_comparison_graph)
+
+
+
+read_child_li_time <- function(child_li, cols = c("Local Authority [note 2]",  "Area Code",
+                                             "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]"), latest_year="2022") {
+  
+  # Replace . in column names with " "
+  names(child_li) = gsub("\\.", " ", names(child_li))
+  
+  
+  
+  #child_li_df <- child_li[, ..cols]
+  
+  child_li_df <- melt(child_li, id.vars = c("Local Authority [note 2]",  "Area Code"))
+  
+  names(child_li_df) <- c("Area", "Area Code", "Variable", "Percentage of children in low income households (%)")
+  
+  child_li_df <- child_li_df[!grep("Number of", Variable)]
+  
+  #child_li_df <- child_li_df[,`:=`(`Percentage of children in low income households (%)` = round(as.numeric(`Percentage of children in low income households (%)`) * 100,1))]
+  
+  child_li_df_lam <- child_li_df[Area=="Lambeth"]
+  child_li_df_lam <- child_li_df_lam[,`Area Code` := NULL]
+  
+  
+  # London
+  
+  # Replace . in column names with " "
+  names(child_li_reg) = gsub("\\.", " ", names(child_li_reg))
+  
+  child_li_reg_df <- melt(child_li_reg, id.vars = c("Government Office Region [note 4]",  "Area Code"))
+  
+  names(child_li_reg_df) <- c("Area", "Area Code", "Variable", "Percentage of children in low income households (%)")
+  
+  child_li_reg_df <- child_li_reg_df[!grep("Number of", Variable)]
+  
+  #child_li_reg_df <- child_li_reg[,c("Government Office Region [note 4]",  "Area Code",
+  #                                   "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 #(%) [p] [note 3]")]
+  
+  
+  #child_li_df_lon <- child_li_df[grep("^E09", `Area Code`)]
+  child_li_df_lon <- child_li_reg_df[Area == "London"]
+  
+  #child_li_df_lon <- melt(child_li_df_lon, id.vars = c("Area",  "Area Code"))
+  
+  
+  #child_li_df_lon_g <- child_li_df_lon[,.(`Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
+  #                                        Area = "London"), by = .(Variable)]
+  
+  # England
+  #child_li_df_eng <- child_li_df[grep("^E", `Area Code`)]
+  child_li_df_eng <- child_li_reg_df[Area == "United Kingdom [note 4]"]
+  
+  child_li_df_eng[, Area := gsub("United Kingdom [note 4]", "United Kingdom", Area, fixed=T)]
+  
+  #child_li_df_eng_g <- child_li_df_eng[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
+ #                                         `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
+  #                                        Area = "United Kingdom"), by = .(Variable)]
+  
+  # Combine
+  child_li_df_comb <- rbindlist(list(child_li_df_lon,child_li_df_eng, child_li_df_lam), use.names = T, fill = T)
+  
+  child_li_df_comb[, Year:= as.integer(stringr::str_extract(Variable, "\\d\\d\\d\\d"))]
+  
+  # Make Area name an ordered factor with Lambeth, London, England
+  child_li_df_comb[, Area := ordered(Area, levels = c("Lambeth", "London", "United Kingdom"))]
+  
+  child_li_df_comb[,`Percentage of children in low income households (%)`:=round(as.numeric(`Percentage of children in low income households (%)`)*100,1)]
+  
+  return(child_li_df_comb)
+}
+
+child_li_df_comb_time <- read_child_li_time(child_li)
+
+# Present on a ggplotly graph
+child_li_comparison_graph_time = ggplot(child_li_df_comb_time, aes(x = Year, y = `Percentage of children in low income households (%)`, 
+                                                         colour = Area, group = Area,
+                                                         text= paste("Area: ", Area, "<br>",
+                                                                     "Year: ", Year, "<br>",
+                                                                     "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
+  geom_line()+#position = position_dodge(width = 0.9)) +
+  geom_point()+
+  scale_colour_discrete(type=lambeth_palette_graph) +
+  theme_lam() +
+  theme(axis.title.x = element_blank()) +
+  ylab("Percentage of children in low income households (%)") +
+  expand_limits(y=0)
+
+ggplotly(child_li_comparison_graph_time)
+
+# Fuel poverty households ------------------------------------------
+
+fuel_all_perc <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/sub-regional-fuel-poverty-2022-tables.xlsx"),collapse = ''),
+                      sheet = "Table 2", startRow = 3) %>% as.data.table()
+
+
+# Replace . in column names with " "
+names(fuel_all_perc) = gsub("\\.", " ", names(fuel_all_perc))
+
+
+
+# Combined
+
+
+#setnames(fuel_all_perc, "Value", "fuelant count rate (%)", skip_absent = T)
+
+
+#fuel_all_perc_2022 <- fuel_all_perc[Date > as.Date("2023-01-01")]
+#ordered_areas <- fuel_all_perc_2022[order(fuel_all_perc_2022, -`fuelant count rate (%)`),Area] %>% unique()
+
+#fuel_all_perc[, `:=`(Area = ordered(Area, levels=ordered_areas),
+##                      `fuelant count rate (%)` = as.numeric(`fuelant count rate (%)`)
+#)]
+
+names(fuel_all_perc)
+
+setnames(fuel_all_perc, "Proportion of households fuel poor (%)", "Proportion of households in fuel poverty (%)")
+
+fuel_all_perc[, `:=`(`Proportion of households in fuel poverty (%)` = as.numeric(`Proportion of households in fuel poverty (%)`))]
+
+fuel_all_perc[,`Area names` := stringr::str_trim(`Area names`)]
+
+fuel_all_perc_lam <- fuel_all_perc[ grep("Lambeth", `X4`)]
+fuel_all_perc_eng <- fuel_all_perc[`Area names` == "ENGLAND"]
+fuel_all_perc_lon <- fuel_all_perc[`Area names` == "LONDON"]
+
+fuel_li_df_comb <- rbindlist(list(fuel_all_perc_lam,fuel_all_perc_lon, fuel_all_perc_eng))
+fuel_li_df_comb[,Area:= ordered(c("Lambeth","London", "England"), levels = c("Lambeth","London", "England"))]
+
+fuel_li_df_comb[,Year:="2020"]
+# Present on a ggplotly graph
+fuel_li_comparison_graph = ggplot(fuel_li_df_comb, aes(x = Area, y = `Proportion of households in fuel poverty (%)`, 
+                                                         fill = Area,
+                                                         text= paste("Area: ", Area, "<br>",
+                                                                     "Year: ", Year, "<br>",
+                                                                     "Proportion of households in fuel poverty (%): ", `Proportion of households in fuel poverty (%)`, sep = ""))) +
+  geom_col(position = position_dodge(width = 0.9)) +
+  scale_fill_discrete(type=lambeth_palette_graph) +
+  theme_lam() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylab("Proportion of households in fuel poverty (%)") +
+  expand_limits(y=0)
+  
+
+fuel_li_comparison_graph
+
+#ggplotly(child_li_comparison_graph)
+

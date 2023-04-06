@@ -194,6 +194,8 @@ return(graph)
 }
 make_surv_graph_time_facets <- function(df, ncols = 3, nrows = 1, title_wrap = 50){
   
+  df[, Year:=ordered(Year, levels=c(2020, 2021, 2022))]
+  
   graph <- ggplot(df, aes(y = `Percentage of respondents`, x =  Year, 
                           colour = `Response group`, group = `Response group`,
                           linetype = `Response group`,
@@ -662,6 +664,7 @@ Response_unique_loc_all <- unique(surv_sat_f_health_all$`Response group`)
 surv_sat_f_health_all[, `Response group` := ordered(`Response group`, levels = Response_unique_loc_all)]
 
 surv_sat_f_health_all_grp <- surv_sat_f_health_all[,.(`Percentage of respondents`=sum(`Percentage of respondents`)), by = c("Year","Question","Response group")]
+
 
 
 # Graph for past three years
