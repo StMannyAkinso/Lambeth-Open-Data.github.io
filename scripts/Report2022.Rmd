@@ -1,5 +1,5 @@
 ---
-title: "State Of the Borough Report 2022"
+title: "State Of the Borough Report 2023"
 author: "London Borough of Lambeth"
 date: "April 2023"
 output: 
@@ -63,8 +63,8 @@ get_source = function(data_sources_f = data_sources, ref_name_f = ref_name) {
             data_sources_f[`Visual short name`== ref_name_f,`Year (latest year in data)`],". Underlying data sourced from ",
             data_sources_f[`Visual short name`== ref_name_f,`Source organisation`], " <a href=",
             data_sources_f[`Visual short name`== ref_name_f, ..data_link_col],' target="_blank">',
-            "here</a>.")
-      ),collapse=""))
+            "here</a>."), collapse=""
+      )))
 
 return(source_out)
 }
@@ -107,7 +107,7 @@ next_button()
 
 ### **About this document**
 
-Title: State of the Borough 2022\
+Title: State of the Borough 2023\
 Purpose: Summary of information about Lambeth\
 Approved by: Approval pending\
 Date: April 2023\
@@ -2284,7 +2284,46 @@ next_button()
 ## Column {data-width="700"}
 
 ### Introduction
-This section of the State of the Borough looks at the Health and Wellbeing outcomes. While some metrics are similar across the borough, London, and England, there are significant differences in other metrics that are worth highlighting to guide future policy. The order of the metrics represents a journey of one's health, from starting a healthy lifestyle from childhood, then living habits to maintain health, and finally aging metrics to examine mortality.
+The Health and Wellbeing section of State of the Borough report summarises the health of people living Lambeth by bringing together Office for Health Improvement and Dipartites (OHID) data and knowledge with information from other sources to give a broad picture of the health of people in Lambeth today.  
+
+Starting Well  
+Setting the foundations for health and wellbeing during pregnancy and in the early years is crucial to ensure we give every child the very best start in life as possible as what happens in pregnancy and early childhood impacts on physical and emotional health all the way through to adulthood. Several outcomes are described in this section:  
+
+•	Childhood vaccinations, MMR dose 1 at age 2 years old  
+•	Healthy weight at reception  
+•	Good level of development at end of reception  
+•	Healthy weight a year 6  
+
+Living well  
+Living well is essential in helping us manage our health and maintain our independence.  Unhealthy lifestyle behaviours, such as smoking or drinking alcohol, determine the burden of disease and illness within a population. Many of the risk factors associated with poor health are avoidable and can be prevented in some way by adopting healthy lifestyles. Several outcomes are described in this section:  
+
+•	Wellbeing  
+•	Sexual health  
+•	Substance misuse  
+•	Physical exercise  
+•	Healthy weight  
+•	Smoking  
+•	High blood pressure  
+•	Long term conditions  
+  
+Aging well  
+Over the next 10 years the number of people aged over 50 will grow by 50%. The public health agenda aims to improve the health of our population to enable more years spent in good health. Several outcomes are described in this section:  
+
+•	Life expectancy at birth  
+•	Healthy life expectancy  
+•	Deaths under 75, preventable cause  
+•	Preventable mortality – Covid-19  
+•	Preventable mortality – Cancer  
+•	Preventable mortality – Cardiovascular disease  
+•	Preventable mortality – Liver Disease  
+•	Preventable mortality – Respiratory disease  
+
+More detailed information on Health and Wellbeing in Lambeth is available from a range of sources including:  
+
+-	Lambeth JSNA (include weblink)  
+-	Health and wellbeing strategy (include weblink)  
+-	Health and Care Plan (include weblink) This section has a focus on starting well, living well and aging well in Lambeth, London and England.  
+
 
 # Childhood Vaccinations {data-navmenu="Health and Wellbeing"}
 
@@ -2838,6 +2877,145 @@ ggplotly(drug_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
 make_datatable(drug, visual_name = ref_name)
 
 ```
+
+# Diabetes {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Diabetes"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(diabetes_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(diabetes, visual_name = ref_name)
+
+```
+
+# Depression {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Depression"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(Depression_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(Depression, visual_name = ref_name)
+
+```
+
+# Coronary Heart Disease {data-navmenu="Health and Wellbeing"}
+
+```{r echo=FALSE}
+ref_name = "Coronary Heart Disease"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### `r ref_name` 
+
+```{r}
+
+ggplotly(CHD_plot, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+### Data table
+
+```{r}
+
+make_datatable(CHD, visual_name = ref_name)
+
+```
+
 
 # Life Expectancy at Birth {data-navmenu="Health and Wellbeing"}
 
