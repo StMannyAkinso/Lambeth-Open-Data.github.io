@@ -345,6 +345,76 @@ drug_plot <- drug %>%
 
 drug_plot
 
+#Diabetes ---------------------------------------------
+diabetes <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/Diabetes.csv"),collapse = '')) %>% data.table()
+diabetes
+
+diabetes <- diabetes %>% 
+  select(c(AreaName, Time.period, Value, Lower.CI.95.0.limit, Upper.CI.95.0.limit))
+diabetes
+diabetes[diabetes == "London region"] <- 'London'
+diabetes[, AreaName := ordered(AreaName, levels = c("Lambeth", "London", "England"))]
+
+diabetes_plot <- diabetes %>%
+  ggplot(aes(x=Time.period, y= Value, group = AreaName, color = AreaName, linetype= AreaName,
+             text= paste("Area name: ", AreaName, "<br>",
+                         "Period: ", Time.period, "<br>",
+                         "Prevalence: ", Value, '%'))
+  ) + geom_line() + scale_linetype_manual(values=c('solid', "dashed", "dashed")) + 
+  geom_point(show.legend = FALSE) + expand_limits(y = 0) + #scale_x_discrete(breaks = every_nth(n = 2)) +
+  scale_color_discrete(type=lambeth_palette_graph) + theme_lam() + 
+  theme(axis.text.x = element_text(angle = 30, vjust = 0.5, hjust=1), axis.title.x = element_blank()) +
+  ylab('Diabetes prevalence (%)') + labs(linetype = "Area name", color = "Area name")
+
+diabetes_plot
+
+#Depression ---------------------------------------------
+Depression <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/Depression.csv"),collapse = '')) %>% data.table()
+Depression
+
+Depression <- Depression %>% 
+  select(c(AreaName, Time.period, Value, Lower.CI.95.0.limit, Upper.CI.95.0.limit))
+Depression
+Depression[Depression == "London region"] <- 'London'
+Depression[, AreaName := ordered(AreaName, levels = c("Lambeth", "London", "England"))]
+
+Depression_plot <- Depression %>%
+  ggplot(aes(x=Time.period, y= Value, group = AreaName, color = AreaName, linetype= AreaName,
+             text= paste("Area name: ", AreaName, "<br>",
+                         "Period: ", Time.period, "<br>",
+                         "Prevalence: ", Value, '%'))
+  ) + geom_line() + scale_linetype_manual(values=c('solid', "dashed", "dashed")) + 
+  geom_point(show.legend = FALSE) + expand_limits(y = 0) + #scale_x_discrete(breaks = every_nth(n = 2)) +
+  scale_color_discrete(type=lambeth_palette_graph) + theme_lam() + 
+  theme(axis.text.x = element_text(angle = 30, vjust = 0.5, hjust=1), axis.title.x = element_blank()) +
+  ylab('Depression prevalence (%)') + labs(linetype = "Area name", color = "Area name")
+
+Depression_plot
+
+#Coronary Heart Disease ---------------------------------------------
+CHD <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/Coronary Heart Disease.csv"),collapse = '')) %>% data.table()
+CHD
+
+CHD <- CHD %>% 
+  select(c(AreaName, Time.period, Value, Lower.CI.95.0.limit, Upper.CI.95.0.limit))
+CHD
+CHD[CHD == "London region"] <- 'London'
+CHD[, AreaName := ordered(AreaName, levels = c("Lambeth", "London", "England"))]
+
+CHD_plot <- CHD %>%
+  ggplot(aes(x=Time.period, y= Value, group = AreaName, color = AreaName, linetype= AreaName,
+             text= paste("Area name: ", AreaName, "<br>",
+                         "Period: ", Time.period, "<br>",
+                         "Prevalence: ", Value, '%'))
+  ) + geom_line() + scale_linetype_manual(values=c('solid', "dashed", "dashed")) + 
+  geom_point(show.legend = FALSE) + expand_limits(y = 0) + #scale_x_discrete(breaks = every_nth(n = 2)) +
+  scale_color_discrete(type=lambeth_palette_graph) + theme_lam() + 
+  theme(axis.text.x = element_text(angle = 30, vjust = 0.5, hjust=1), axis.title.x = element_blank()) +
+  ylab('Coronary Heart Disease prevalence (%)') + labs(linetype = "Area name", color = "Area name")
+
+CHD_plot
+
+
 # Life Expectancy at birth by Sex --------------------------------------------------------------
 LEMale <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/LE_Male.csv"),collapse = '')) %>% data.table()
 LEFemale <- read.csv(paste(c(dir_stub, "../data/Health and wellbeing/LE_Female.csv"),collapse = '')) %>% data.table()
