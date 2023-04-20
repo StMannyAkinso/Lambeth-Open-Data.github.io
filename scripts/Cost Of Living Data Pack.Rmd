@@ -150,7 +150,20 @@ ref_name="Deprivation components"
 
 ## Column {data-width="300"}
 
-### Deprivation components
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
 
 ## Column {.tabset data-width="700"}
 
