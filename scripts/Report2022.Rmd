@@ -63,8 +63,8 @@ get_source = function(data_sources_f = data_sources, ref_name_f = ref_name) {
             data_sources_f[`Visual short name`== ref_name_f,`Year (latest year in data)`],". Underlying data sourced from ",
             data_sources_f[`Visual short name`== ref_name_f,`Source organisation`], " <a href=",
             data_sources_f[`Visual short name`== ref_name_f, ..data_link_col],' target="_blank">',
-            "here</a>."), collapse=""
-      )))
+            "here</a>.")
+      ),collapse=""))
 
 return(source_out)
 }
@@ -73,7 +73,11 @@ return(source_out)
 
 # Cover
 
-![Cover image](../img/front_cover.jpg)
+```{r , echo=FALSE, out.width = '100%'}
+#fig.cap="A caption",
+
+knitr::include_graphics("../img/front_cover.jpg")
+```
 
 # Introduction
 
@@ -88,7 +92,7 @@ ref_name = "Introduction"
 
 -   [Key demographics](#key-demographics-introduction)\
 -   [Jobs earnings and businesses](#jobs-earnings-and-businesses-introduction)\
--   [Financial resilience](#financial-resilience)\
+-   [Cost of living](#financial-resilience)\
 -   [Education](#education-introduction)\
 -   [Health and Wellbeing](#health-and-wellbeing-introduction)\
 -   [Crime, safety and
@@ -97,13 +101,6 @@ ref_name = "Introduction"
 -   [Housing and
     infrastructure](#housing-and-infrastructure-introduction)\
 -   [Community](#community-introduction)
-
-
-```{r}
-
-next_button()
-```
-
 
 ### **About this document**
 
@@ -116,9 +113,9 @@ Implementation date: Immediate\
 Review frequency: Refresh every 1 year\
 Next review date: April 2024
 
-## Column {data-width="700"}
+## Column {data-width="700" .tabset}
 
-### **Introduction**
+### Introduction
 
 **Welcome to the Lambeth State of the Borough report.** Over the last
 year we have engaged with residents, businesses and partners across
@@ -140,6 +137,115 @@ report will touch upon the effects that it has had on the borough,
 residents and businesses.
 
 The report has been divided into 8 key themes that spans across multiple facets of life in Lambeth, London, and England. There is also a key demographic section to reflect the new 2021 Census data. Click on the approriate dropdown menus at the top to explore the sections or the "Next" or "Previous" button to navigate through the report. 
+
+### Key takeaways
+
+**Key demographics**
+
+- Lambeth is a local authority with a particularly high proportion of young, working aged people. There significantly more people aged 20-34 (17.1%) than London (12.4%) or England (9.8%), and less children / older people.
+
+- Lambeth is a diverse borough. Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds (24%) than London (13.5%) or England (4.3%). Around 40% of residents were born outside of the UK, similar to London, and much higher than England (17%).
+
+- Lambeth has a significant percentage of residents who speak Spanish (4%), Portuguese (2.9%), or an African language (1.7%) as their main language, more than London and England.
+
+- Lambeth has a significant Christian population (43.7%). More people in Lambeth follow no religion (37.5%) than London or England.
+
+- Lambeth has much more people identifying as Gay/Lesbian, Bisexual, or another sexual orientation (8.3%) than London (4.2%) or England (3.1%). Just under 1% of Census respondents said they had a gender identity that is different from their sex registered at birth in Lambeth, similar to London.
+
+**Jobs, Earnings, and Businesses**
+
+- Lambeth has a larger working-age population (percentage-wise) than London and England.
+
+- Lambeth has a greater percentage of industry in office-related work and professional/scientific/technical areas than London or England (17.9% of workers vs 15.7% in London and 11.7% in England). Lambeth also has a significant creative arts and video/TV production industry (7.7% of workers vs 4.8% in London and 2.1% in England).
+
+- The adult population in Lambeth have more academic qualifications than other areas. 75% of Lambeth residents have an NVQ4 or above qualification (equivalent to a bachelor's degree), compared to 59% in London and 43% in England overall.
+
+- Weekly full-time earnings are greater overall in Lambeth compared to London and England. The pay disparity between men and women is slightly smaller in Lambeth (£783 vs £712, 91% of men’s earnings) and London (£772 vs £677, 88% of men’s earnings) than in England (£667 vs £557, 83% of men’s earnings). Despite this, a higher percentage of Lambeth workers earn less than the local Living Wage (18%) than in London (13.6%) and England (12.5%).
+
+- The disparity in unemployment rates in Lambeth between ethnic minorities and all working people is higher than in London and England. Considering unemployment from the perspective of unemployment benefit claims, the overall percentage is higher in Lambeth than in London and England. There is a particularly large difference between Lambeth and other areas for those aged 50+.
+
+**Cost of living**
+
+- Almost half of respondents reported that their financial circumstances got worse in the past year. - About 27% of Lambeth residents think it will be at least fairly difficult to pay for food in the coming year, almost half expect it will be at least fairly difficult to pay for energy, and just under 40% expect it will be at least fairly difficult to pay for their rent/mortgage.
+
+- The after housing costs relative poverty rate is similar in Lambeth to London (26 vs 27%).
+
+- Children are more likely to live in poverty in Lambeth than in London, with a similar proportion to England.
+
+- The percentage of over 64s on pension credit is much higher in Lambeth (26.4%) than in London (17.7%) or England (11.1%).
+
+- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021.
+
+**Education**
+
+- Lambeth has a similar percentage of children who achieve the expected level in all prime areas in early years settings as London and England.
+
+- Key stage 2 pupils in Lambeth perform in between the London (higher) and England (lower) average for Reading, Writing, and Maths.
+
+- Lambeth has a lower average Attainment 8 score than London or England (for 16 year olds).
+
+- Lambeth has a smaller gap between Black and White pupils in terms of Attainment 8 scores than London or England.
+
+- The attainment gap between disadvantaged and non-disadvantaged pupils is smaller in Lambeth than London or England.
+
+- The percentage of Key Stage 5 pupils who progressed on to education, apprenticeships, or employment is lower in Lambeth than London or England.
+
+- The percentage of 16/17 year olds who are not in education, employment, or training is higher in Lambeth than London.
+
+**Health**
+
+- Life expectancy in similar in Lambeth compared with other areas. However, healthy life expectancy at birth is lower in Lambeth than in London and England for women and men (59.5 for women in Lambeth vs ~64 in other areas and 60.9 for men in Lambeth vs ~ 63 in other areas in 2018-20).
+
+- Feelings of anxiety have increased in the borough since 2020 (24.5% feeling significant anxiety in 2022 vs 13.3% in 2020), and less people feel that things in their life are worthwhile (80% in 2022 vs 89% in 2020).
+
+- A higher percentage of Lambeth residents are physically active than other areas.
+
+- Lambeth has a higher rate of preventable mortality from cardiovascular disease (31.5 per 100k) than London or England (29.5 and 30.2 per 100k), and a higher rate for cancer (48.7 per 100k) and respiratory disease (14.6 per 100k) than London (43.3 and 12.1 per 100k). Lambeth has lower rates of preventable mortality from liver disease than other areas (12.9 per 100k vs 16.7 and 18.9 for London and England).
+
+**Crime, Safety, and Justice**
+
+- There is a higher overall crime rate in Lambeth than in London overall (115.6 per 1,000 people vs 104.3 in London).
+
+- Knife and drug related crimes in particular were significantly higher in Lambeth than in London.
+
+- The rate of domestic abuse offences and hate crimes have increased over the past four years in both Lambeth and London, but more rapidly in Lambeth.
+
+- Not all Lambeth residents feel safe in their local area, and people feel their area is less safe now than in 2020. 10.5% of residents feel that their local area is not at all safe at night, which has increased from only 4.8% in 2020.
+
+- The rate of stop and searches of people from an ethnic minority background is significantly higher in Lambeth (25.8 per 1,000 people from an ethnic minority background vs 7.7 for white people) than in London overall (18.4 vs 12 for white people).
+
+- Public perception of police is more negative in Lambeth than in London as a whole. In Lambeth, 43% of respondents said that police were doing a good job in the local area, which was lower than the average for London boroughs (49%). In the latest residents survey, 34% of Lambeth residents said they had confidence in the police, while 33% do not.
+
+**Environment**
+
+- Carbon dioxide emissions are falling year on year, and are lower per person in Lambeth compared to London and England.
+
+- Although air pollutant levels have been decreasing in recent years (for nitrous dioxide and PM 2.5), average concentrations are still above World Health Organisation recommended levels.
+
+- Tree canopy cover in Lambeth is lower than the London average. However, Lambeth residents have a similar number of green spaces close to their home as the rest of London (6.8), and significantly more than England (4.4).
+
+- Lambeth residents are more likely to travel to work by public transport or other sustainable means than residents of London or England.
+
+**Housing and infrastructure**
+
+- Lambeth has a higher proportion of social housing (34%) than London or England (23% and 17%), and a lower proportion of owner-occupied housing (33%) than London or England (45% and 61%).
+
+- Lambeth has a higher median house price than the London average (£546,000 vs £510,000).
+
+
+**Community**
+
+- The majority of Lambeth residents asked in the latest resident survey were satisfied with their local area, although just over 15% were not.
+
+- Just under half of residents were satisfied with how Lambeth Council runs things, showing that we need to do more to gain the trust of residents.
+
+- Lambeth residents are satisfied with the parks and open spaces in the area, and the diversity and multicultural communities in Lambeth.
+
+- Residents are concerned about cleanliness and crime in Lambeth.
+
+- Residents are willing to work together in their neighbourhood to help improve it. Residents also value friendships and people helping each other in their local area.
+
+- Lambeth and London have equivalent Internet use, and the vast majority of Lambeth residents access the Internet in their home. But 5% of residents haven't used the Internet in three months.
 
 # Key demographics introduction {data-navmenu="Key demographics"}
 
@@ -167,33 +273,31 @@ Lambeth has a goal by 2030 to make the borough a place we can all call home. Thi
 
 Key aspects of the demographics in Lambeth include:
 
-- Lambeth has a slightly higher proportion of women and people born in the UK.
+- Lambeth has more people aged 20-24 and 25-34 (17.1%) than London (12.4%) and England (9.8%), and a lower proportion of older people.
 
-- Lambeth has more people aged 25-34 than other areas, and a lower proportion of older people.
+- Lambeth has a lower proportion of single-family households (50%) than London (58%) or England (63%), but a higher proportion of single parent and families where the parents are not married or in a civil partnership.
 
-- Lambeth has a lower proportion of single-family households than London or England, but a higher proportion of single parent and families where the parents are not married or in a civil partnership.
+- Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds (24%) than London (13.5%) or England (4.3%).
 
-- Lambeth has a significantly higher proportion of people from Black, Black British, Black Welsh, or Caribbean, and African backgrounds than London or England.
+- Lambeth has a slightly higher proportion of people from mixed/multiple ethnic groups (8.1% vs 5.7% for London), and significantly lower percentage of people from an Asian, Asian British, or Asian Welsh backgrounds (7.3%) than London as a whole (20.7%).
 
-- Lambeth also has a slightly higher proportion of people from mixed/multiple ethnic groups, and significantly lower people from an Asian, Asian British, or Asian Welsh background than London as a whole.
+- A similar percentage of Lambeth residents were born outside of the UK as London, both much higher than England (~40% vs 17% for England). Lambeth has a significantly higher proportion of people born in the Americas and the Caribbean or Africa (17.5%) than London or England (11.3% and 4.3%), and a similar percentage of EU residents to London (13.1%). Lambeth residents are more likely to hold a passport from another country.
 
-- Lambeth has a significantly higher proportion of people born in the Americas and the Caribbean, Africa, and the EU than London or England.
-Lambeth residents are more likely to hold a passport from another country than London or England residents.
+- Lambeth residents are more likely to speak English as their main language than London (82 vs 78% of residents). There are also significant proportions of people who speak Spanish (4%), Portuguese (2.9%), and an African language (1.7%) as their main language, more proportionally than London or England.
 
-- Lambeth residents are more likely to speak English as their main language, but there are also significant proportions of people who speak Spanish, Portuguese, and an African language as their main language.
+- A slightly higher proportion of Lambeth residents say they cannot speak English well or at all than England as a whole, a similar percentage as London.
 
-- A slightly higher proportion of Lambeth residents say they cannot speak English well or cannot speak English at all than London or England residents.
+- The largest religious group in Lambeth is Christian (43.7%), greater proportionally than in London (40.7%). Lambeth has more people reporting that they have no religion (37.5%) than London and England (27.1% and 36.7% respectively). Lambeth has a lower Muslim and Hindu population than London.
 
-- The largest religious group in Lambeth is Christian, followed by people with no religion. More people say they have no religion than London or England. Lambeth has a lower Muslim and Hindu population than London.
+- Lambeth has a higher percentage of people who identify as Gay/Lesbian, Bisexual, or another sexual orientation (8.3%) than London (4.2%) or England (3.1%).
 
-- Lambeth has a higher percentage of people who identify as Gay/Lesbian , Bisexual, or another sexual orientation than London or England.
+- Lambeth has a higher percentage of people who have a gender identity that is different from their sex registered at birth but did not give a specific identity, or identified as trans man or trans woman than England (0.8% vs 0.4%), a similar percentage to London (0.9%).
 
-- Lambeth has a higher percentage of people who have a gender identity that is different from their sex registered at birth but did not give a specific identity, or identified as trans man or trans woman than England, but was similar to London.
-
-Much of the data reported in this section comes from the latest UK
-Census (2021). A comparison between Lambeth demographics between the
-2011 and 2021 Census can be found
+Much of the data reported in this section comes from the latest UK Census (2021). A comparison between Lambeth demographics between the 2011 and 2021 Census can be found
 [here](https://www.ons.gov.uk/visualisations/censusareachanges/E09000022/).
+
+
+
 
 # Population {data-navmenu="Key demographics"}
 
@@ -806,13 +910,25 @@ Skills and employment, access to good jobs, fair pay and resilience are key to a
 
 We need to:  
 
-Overcome the long-term skills and employment inequalities faced by many of our residents  
+- Overcome the long-term skills and employment inequalities faced by many of our residents  
 
-Tackle the current and lasting impact of Covid-19 on livelihoods  
+- Tackle the current and lasting impact of Covid-19 on livelihoods  
 
-Ensure our skills system is responsive to the rapidly changing needs of the economy and residents now and in the future. 
+- Ensure our skills system is responsive to the rapidly changing needs of the economy and residents now and in the future. 
 
 We want our economy to grow in a way which works better for all our residents, and in which no one finds themselves excluded from opportunity. We have many opportunities from our diverse business and employment base that benefits from being situated at the heart of one of the world’s greatest cities. Our employers rely on access to a talented and skilled workforce, and they share our ambition to provide opportunity for those most in need. 
+
+**Key takeaways:**
+
+- Lambeth has a larger working-age population (percentage-wise) than London and England.
+
+- Lambeth has a greater percentage of industry in office-related work and professional/scientific/technical areas than London or England (17.9% of workers vs 15.7% in London and 11.7% in England). Lambeth also has a significant creative arts and video/TV production industry (7.7% of workers vs 4.8% in London and 2.1% in England)
+
+- The adult population in Lambeth have more academic qualifications than other areas. 75% of Lambeth residents have an NVQ4 or above qualification (equivalent to a bachelor's degree), compared to 59% in London and 43% in England overall.
+
+- Weekly full-time earnings are greater overall in Lambeth compared to London and England. The pay disparity between men and women is slightly smaller in Lambeth (£783 vs £712, 91% of men’s earnings) and London (£772 vs £677, 88% of men’s earnings) than in England (£667 vs £557, 83% of men’s earnings). Despite this, a higher percentage of Lambeth workers earn less than the local Living Wage (18%) than in London (13.6%) and England (12.5%).
+
+- The disparity in unemployment rates in Lambeth between ethnic minorities and all working people is higher than in London and England. Considering unemployment from the perspective of unemployment benefit claims, the overall percentage is higher in Lambeth than in London and England. There is a particularly large difference between Lambeth and other areas for those aged 50+.
 
 # Working age population {data-navmenu="Jobs earnings and businesses"}
 
@@ -860,54 +976,6 @@ ggplotly(work_age_pop_graph, tooltip = c("text")) %>% layout(autosize = T, # mar
 make_datatable(work_age_pop_df_m_s, visual_name = ref_name)
 
 ```
-
-# Employment by occupation {data-navmenu="Jobs earnings and businesses"}
-
-```{r echo=FALSE}
-ref_name="Employment by occupation"
-```
-
-## Column {data-width="300"}
-
-### Commentary
-
-**`r ref_name`**
-
-```{r}
-commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
-
-print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
-
-```
-
-`r commentary`
-
-`r print_source`
-
-```{r}
-previous_button()
-next_button()
-```
-
-## Column {.tabset data-width="700"}
-
-### Employment categories
-
-```{r}
-
-ggplotly(emp_occ_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  margin = m,
-                                                                   font=lam_ggplotly_font, hovermode='closest') # , height = 500
-
-```
-
-### Data table
-
-```{r}
-
-make_datatable(emp_occ_latest_refined_m, visual_name = ref_name)
-
-```
-
 
 # Types of industry {data-navmenu="Jobs earnings and businesses"}
 
@@ -1118,56 +1186,6 @@ make_datatable(llw_df_comb, visual_name=ref_name)
 
 
 
-# Unemployment rate {data-navmenu="Jobs earnings and businesses"}
-
-```{r echo=FALSE}
-ref_name="Unemployment rate"
-```
-
-## Column {data-width="300"}
-
-### Commentary
-
-**`r ref_name`**
-
-```{r}
-commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
-
-print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
-
-```
-
-`r commentary`
-
-`r print_source`
-
-```{r}
-previous_button()
-next_button()
-```
-
-## Column {.tabset data-width="700"}
-
-### Unemployment rate
-
-```{r}
-
-ggplotly(unemp_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
-                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
-
-```
-
-
-### Data table - unemployment rate
-
-```{r}
-
-make_datatable(unemp_latest_refined_m, visual_name=ref_name)
-
-```
-
-
-
 # Unemployment by sex and ethnicity {data-navmenu="Jobs earnings and businesses"}
 
 ```{r echo=FALSE}
@@ -1226,10 +1244,10 @@ make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
 
 
 
-# Claimant count {data-navmenu="Jobs earnings and businesses"}
+# Unemployment benefit claimants {data-navmenu="Jobs earnings and businesses"}
 
 ```{r echo=FALSE}
-ref_name="Claimant count"
+ref_name="Unemployment benefit claimants"
 ```
 
 ## Column {data-width="300"}
@@ -1437,10 +1455,10 @@ make_datatable(nndr_df_m_d_yr_18_g, visual_name=ref_name)
 
 ```
 
-# Financial resilience introduction {data-navmenu="Financial resilience"}
+# Cost of living introduction {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
-ref_name = "Financial resilience introduction"
+ref_name = "Cost of living introduction"
 ```
 
 
@@ -1450,7 +1468,7 @@ ref_name = "Financial resilience introduction"
 
 
 ```{r}
-make_theme_index(data_sources, "Financial resilience")
+make_theme_index(data_sources, "Cost of living")
 
 previous_button()
 next_button()
@@ -1461,27 +1479,28 @@ next_button()
 
 ### Introduction
 
-We want Lambeth residents to thrive financially, no matter what life throws their way. Financial resilience means having better chances at overall well-being: economic, physical, and emotional.
+We want Lambeth residents to thrive financially, no matter what life throws their way. Cost of living means having better chances at overall well-being: economic, physical, and emotional.
  
-The data presented here sets out how our residents view their financial resilience (their ability to withstand financial shocks), poverty rates across the borough and specifically how these impact children and older people.
+The data presented here sets out how our residents view their Cost of living (their ability to withstand financial shocks), poverty rates across the borough and specifically how these impact children and older people.
 
 This information should be considered alongside information presented elsewhere in the report including employment and worklessness, homelessness (if included) and life expectancy.
 
-A good understanding of poverty in our borough, the financial resilience of residents and levels of deprivation enables us to understand better how to tackle the inequalities that walk hand-in-hand with deprivation.
+A good understanding of poverty in our borough, the Cost of living of residents and levels of deprivation enables us to understand better how to tackle the inequalities that walk hand-in-hand with deprivation.
 
 
 The data shows that:
 
-- The cost of living is increasing in Lambeth, and many residents are struggling to make ends meet.
-- Poverty rates in Lambeth as high as the London average.
+- Almost half of respondents reported that their financial circumstances got worse in the past year. 
+- About 27% of Lambeth residents think it will be at least fairly difficult to pay for food in the coming year, almost half expect it will be at least fairly difficult to pay for energy, and just under 40% expect it will be at least fairly difficult to pay for their rent/mortgage.
+- The after housing costs relative poverty rate is similar in Lambeth to London (26 vs 27%).
 - Children are more likely to live in poverty in Lambeth than in London, with a similar proportion to England.
-- Older people are more likely to live in poverty in Lambeth than in London or England.
-- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021. 
+- The percentage of over 64s on pension credit is much higher in Lambeth (26.4%) than in London (17.7%) or England (11.1%).
+- Lambeth is among the top half of boroughs that have the highest percentage of households that are deprived in three or four of the dimensions described in the Census 2021.
 
-# Financial resilience - Resident survey {data-navmenu="Financial resilience"}
+# Cost of living - Resident survey {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
-ref_name="Financial resilience - Resident survey"
+ref_name="Cost of living - Resident survey"
 ```
 
 ## Column {data-width="300"}
@@ -1528,7 +1547,7 @@ make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
 
 
 
-# Poverty rate {data-navmenu="Financial resilience"}
+# Poverty rate {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
 ref_name="Poverty rate"
@@ -1577,7 +1596,7 @@ make_datatable(pov_df_comb, visual_name = ref_name) #%>%
 ```
 
 
-# Children in low-income households {data-navmenu="Financial resilience"}
+# Children in low-income households {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
 ref_name="Children in low-income households"
@@ -1626,7 +1645,7 @@ make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
 ```
 
 
-# Pension credit {data-navmenu="Financial resilience"}
+# Pension credit {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
 ref_name="Pension credit"
@@ -1675,7 +1694,7 @@ make_datatable(pension_df_m, visual_name = ref_name) %>%
 ```
 
 
-# Census measures of deprivation {data-navmenu="Financial resilience"}
+# Census measures of deprivation {data-navmenu="Cost of living"}
 
 ```{r echo=FALSE}
 ref_name="Census measures of deprivation"
@@ -1750,20 +1769,20 @@ Lambeth has the aim by 2030 to make the borough a place we can all call home, in
 
 Overall, the data shows that until Key Stage 4, Lambeth education system performs in a similar way to London and England. From this age, Lambeth performs worse on average, in terms of average Attainment 8 score (for 16 year olds) and progression.
 
-***Early years***
+**Early years**
 
 - Lambeth has a higher provision of early years care providers than London or England.
 - Lambeth has a similar percentage of early years institutions that received a good or outstanding Ofsted rating as London and England.
 - Lambeth has a similar percentage of children who achieve the expected level in all prime areas in early years settings as London and England.
 
-***Schools***
+**Schools**
 
 - Key stage 2 pupils in Lambeth perform in between the London (higher) and England (lower) average for Reading, Writing, and Maths.
 - Lambeth has a lower average Attainment 8 score than London or England (for 16 year olds).
 - Lambeth has a smaller gap between Black and White pupils in terms of Attainment 8 scores than London or England.
 - The attainment gap between disadvantaged and non-disadvantaged pupils is smaller in Lambeth than London or England.
 
-***Progression***
+**Progression**
 
 - The percentage of Key Stage 5 pupils who progressed on to education, apprenticeships, or employment is lower in Lambeth than London or England.
 - The percentage of 16/17 year olds who are not in education, employment, or training is higher in Lambeth than London.
@@ -3413,7 +3432,7 @@ next_button()
 
 Lambeth aims to to be one of the safest Boroughs in London, the new Borough Plan states that 'By 2030, Lambeth will be one of the safest boroughs in London, where everyone feels safe and secure – in all places'. 
 
-However, not all Lambeth residents feel safe in their local area. 92% of Lambeth residents feel that their local area is safe during the day, and 63% feel it is safe at night. 10.5% of residents feel that their local area is not at all safe at night.
+However, not all Lambeth residents feel safe in their local area. 10.5% of residents feel that their local area is not at all safe at night. People feel their area is less safe now than in 2020. 10.5% of residents feel that their local area is not at all safe at night, which has increased from only 4.8% in 2020.
 
 However, currently the crime rate in Lambeth is higher than the London average. This applies to a number of sub-categories of crime:
 
@@ -4182,6 +4201,12 @@ Achieving this vision will require us to overcome the environmental challenges w
 
 Lambeth has made significant progress in recent years. Carbon emissions are falling year on year, and per capita emissions are lower than the London average and significantly lower than the UK wide average. Nitrogen dioxide pollution on Brixton Road has fallen by over 60% since 2014. And ongoing work to retrofit buildings, plant trees, install sustainable drainage systems and repurpose our streets to serve communities over cars, is helping to reduce carbon emissions, improve environmental quality, and increase the borough’s resilience to climate change. However, significant work remains to achieve the vision described above.  
 
+**Key takeaways:**
+- Carbon dioxide emissions are falling year on year, and are lower per person in Lambeth compared to London and England.
+- Although air pollutant levels have been decreasing in recent years (for nitrous dioxide and PM 2.5), average concentrations are still above World Health Organisation recommended levels.
+- Tree canopy cover in Lambeth is lower than the London average. However, Lambeth residents have a similar number of green spaces close to their home as the rest of London (6.8), and significantly more than England (4.4).
+- Lambeth residents are more likely to travel to work by public transport or other sustainable means than residents of London or England.
+
 
 # Greenhouse gas emissions {data-navmenu="Environment"}
 
@@ -4621,7 +4646,7 @@ Key data points include:
 - Lambeth has a lower proportion of owner-occupied housing (33%) than London (45%) or England (61%).
 - Lambeth has a higher proportion of properties in lower council tax bands than London (55% vs 44%) or England (65%).
 - Lambeth has a higher median house price than the London average (£546,000 vs £510,000).
-- Lambeth has a higher average PTAL score than Inner London (22 vs 20).
+- Lambeth has a higher average Public Transport Accessibility Score than Inner London (22 vs 20).
 - Lambeth has slightly less road traffic than the rest of London (3,200 vs 3,250 vehicles per km per day), but significantly more than the average in England.
 
 
@@ -4947,9 +4972,9 @@ We know Lambeth is a borough of great diversity; our history has been shaped by 
 
 We know that residents want to feel proud of their neighbourhoods, building on the strong sense of community across the borough. Residents are concerned with cleanliness and waste, crime and safety, and having accessible parks and open spaces to connect with one another. Residents also want to feel satisfied with the way the Council operates, being communicated with effectively and seeing value for money. 
 
-Key findings:
+**Key findings:**
 
-- The majority of Lambeth residents are satisfied with their local area, although a minority are not.
+- The majority of Lambeth residents asked were satisfied with their local area, although just over 15% were not.
 
 - Just under half of residents were satisfied with how Lambeth Council runs things, showing that we need to do more to gain the trust of residents.
 
@@ -4963,7 +4988,7 @@ Key findings:
 
 - Lambeth has a lower registration rate to vote, and a lower turnout in the 2022 local elections than London and England.
 
-- Lambeth and London have equivalent Internet use, and the vast majority of Lambeth residents access the Internet in their home. But 5% of residents haven't used the internet in three months.
+- Lambeth and London have equivalent Internet use, and the vast majority of Lambeth residents access the Internet in their home. But 5% of residents haven't used the Internet in three months.
 
 # Resident survey results - overall and Council {data-navmenu="Community"}
 
