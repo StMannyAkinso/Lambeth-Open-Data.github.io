@@ -1115,7 +1115,7 @@ ggplotly(earn_comparison_graph, tooltip = c("text")) %>% layout(autosize = T,#  
 
 ```{r}
 
-make_datatable(earn_part_df_m, visual_name=ref_name)
+make_datatable(earn_df_m, visual_name=ref_name)
 
 ```
 
@@ -1132,7 +1132,7 @@ ggplotly(earn_part_comparison_graph, tooltip = c("text")) %>% layout(autosize = 
 
 ```{r}
 
-make_datatable(earn_df_m, visual_name=ref_name)
+make_datatable(earn_part_df_m, visual_name=ref_name)
 
 ```
 
