@@ -8,7 +8,7 @@
   body {
     font-family: Arial, sans-serif;
   }
-  
+
   header img {
         height: 50px;
         margin-right: 20px;
@@ -18,12 +18,25 @@
     display:block;
   }*/
 
+  .container {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
   *, ::before, ::after {
       box-sizing: border-box;
       border-width: 0;
       border-style: solid;
       border-color: currentColor;
   }
+
+
+  #right, #left {
+    /*background-color: #006699;
+    background-image: none; */
+    border-radius: 20px;
+  }
+
 
   .intro {
     padding-left: 5%;
@@ -36,6 +49,58 @@
     margin-bottom: 1rem;
   }
 
+  .carousel_outer {
+    min-height: 400px;
+    max-height: 600px;
+    height: fit-content;
+    background-color: #fff;
+    border-color: #000;
+    border-width: 2px;
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 35px;
+  }
+
+  .carousel_inner {
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+  }
+  .carousel_inner li{
+    font-size: 18px;
+    line-height: 1.25;
+    padding-bottom: 10px;
+    font-family: Open Sans,Segoe UI,Tahoma,sans-serif;
+  }
+
+  #indicators >
+    .active{
+      /*border-color: #000;*/
+      height: 20px;
+      width: 20px;
+      border-width: 2.5px;
+      background-color: #993399;      
+    }
+  
+  #indicators 
+    li {
+      border-color: #000;
+      height: 15px;
+      width: 15px;
+      border-width: 2px;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  
+  #indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
   .nav li {
     display: inline-block;
     font-size: 20px;
