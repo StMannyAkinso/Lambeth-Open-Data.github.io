@@ -136,7 +136,7 @@ Almost three years on from the start of the Covid-19 global pandemic, this
 report will touch upon the effects that it has had on the borough,
 residents and businesses.
 
-The report has been divided into 8 key themes that spans across multiple facets of life in Lambeth, London, and England. There is also a key demographic section to reflect the new 2021 Census data. Click on the approriate dropdown menus at the top to explore the sections or the "Next" or "Previous" button to navigate through the report. 
+The report has been divided into 8 key themes that spans across multiple facets of life in Lambeth, London, and England. There is also a key demographic section to reflect the new 2021 Census data. Click on the appropriate dropdown menus at the top to explore the sections or the "Next" or "Previous" button to navigate through the report. 
 
 ### Key takeaways
 
@@ -2303,7 +2303,7 @@ next_button()
 ## Column {data-width="700"}
 
 ### Introduction
-The Health and Wellbeing section of State of the Borough report summarises the health of people living Lambeth by bringing together Office for Health Improvement and Dipartites (OHID) data and knowledge with information from other sources to give a broad picture of the health of people in Lambeth today.  
+The Health and Wellbeing section of State of the Borough report summarises the health of people living Lambeth by bringing together Office for Health Improvement and Disparities (OHID) data and knowledge with information from other sources to give a broad picture of the health of people in Lambeth today.  
 
 Starting Well  
 Setting the foundations for health and wellbeing during pregnancy and in the early years is crucial to ensure we give every child the very best start in life as possible as what happens in pregnancy and early childhood impacts on physical and emotional health all the way through to adulthood. Several outcomes are described in this section:  
@@ -2339,9 +2339,11 @@ Over the next 10 years the number of people aged over 50 will grow by 50%. The p
 
 More detailed information on Health and Wellbeing in Lambeth is available from a range of sources including:  
 
--	Lambeth JSNA (include weblink)  
--	Health and wellbeing strategy (include weblink)  
--	Health and Care Plan (include weblink) This section has a focus on starting well, living well and aging well in Lambeth, London and England.  
+-	[Lambeth JSNA](https://www.ons.gov.uk/visualisations/censusareachanges/E09000022/)
+-	[Health and wellbeing strategy](https://www.lambeth.gov.uk/adult-social-care-and-health/health-and-wellbeing/health-wellbeing-strategy-2023-2028)  
+-	[Health and Care Plan](https://www.lambeth.gov.uk/lambeths-send-local-offer/im-parent-or-carer/education-health-care-ehc-plans) 
+
+This section has a focus on starting well, living well and aging well in Lambeth, London and England.  
 
 
 # Childhood Vaccinations {data-navmenu="Health and Wellbeing"}
@@ -4197,7 +4199,7 @@ and enjoy life in our local areas, where we can travel safely and easily by foot
 and affordable to run, with good jobs and strong, inclusive, resilient communities where everyone’s needs 
 are met, and everyone plays a part.
 
-Achieving this vision will require us to overcome the environmental challenges we face as an inner London borough with one of the highest population densities of any London borough. Key challenges include air pollution that exceeds legal limits in parts of the borough, an aging building stock that is energy inefficient and at risk of overheating, high risk of exposure to heat and the Urban Heat Island effect, flood risk, and limited access to greenspace.
+Achieving this vision will require us to overcome the environmental challenges we face as an inner London borough with one of the highest population densities of any London borough. Key challenges include air pollution that exceeds legal limits in parts of the borough, an aging building stock that is energy inefficient and at risk of overheating, high risk of exposure to heat and the Urban Heat Island effect, flood risk, and limited access to green space.
 
 Lambeth has made significant progress in recent years. Carbon emissions are falling year on year, and per capita emissions are lower than the London average and significantly lower than the UK wide average. Nitrogen dioxide pollution on Brixton Road has fallen by over 60% since 2014. And ongoing work to retrofit buildings, plant trees, install sustainable drainage systems and repurpose our streets to serve communities over cars, is helping to reduce carbon emissions, improve environmental quality, and increase the borough’s resilience to climate change. However, significant work remains to achieve the vision described above.  
 
@@ -4638,7 +4640,7 @@ next_button()
 
 ### Introduction
 
-Lambeth has a more diverse housing stock than London and England. However, of houses that are owner occupied in Lambeth are on average more expensive than the London or England average. In terms of transport infrastructure, the latest available data suggest that Lambeth has a slighly better public transport infrastructure than inner London, and slightly less traffic.
+Lambeth has a more diverse housing stock than London and England. However, of houses that are owner occupied in Lambeth are on average more expensive than the London or England average. In terms of transport infrastructure, the latest available data suggest that Lambeth has a slightly better public transport infrastructure than inner London, and slightly less traffic.
 
 Key data points include: 
 
