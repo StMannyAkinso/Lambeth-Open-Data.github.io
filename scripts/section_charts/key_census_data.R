@@ -11,9 +11,18 @@ library(data.table)
 library(sf)
 library(htmlwidgets)
 
-source("jsCode.r")
 
-#setwd("C:/Users/msinclair/OneDrive - Lambeth Council/Sandbox/CostOfLiving Data Pack/scripts")
+# The following should be true when testing this file. When knitting the report together and sourcing externally, set this to false
+if (!exists("run_direct")){run_direct=T}
+
+if (run_direct == F){dir_stub = ''
+}else if (run_direct == T){
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  dir_stub = '../'
+  source(paste(c(dir_stub, 'colour_theme.r'),collapse = ''))
+}
+
+source(paste(c(dir_stub, "jsCode.r"),collapse = ''))
 
 
 # == Intro text =====================
@@ -38,11 +47,11 @@ __Housing__
 A household is classified as deprived in the housing dimension if the household's accommodation is either overcrowded, in a shared dwelling, or has no central heating."
 
 # == Data =============================
-LA <- read.csv("../data/census_Deprivation_London_LAs.csv")
-Ward <- read.csv("../data/census_Deprivation_Lambeth_Wards.csv")
-LSOA <- read.csv("../data/census_Deprivation_Lambeth_LSOAs.csv")
 
-head(LA)
+
+LA <- read.csv(paste(c(dir_stub, "../data/Financial stability/census_Deprivation_London_LAs.csv"),collapse = ''))
+Ward <- read.csv(paste(c(dir_stub, "../data/Financial stability/census_Deprivation_Lambeth_Wards.csv"),collapse = ''))
+LSOA <- read.csv(paste(c(dir_stub, "../data/Financial stability/census_Deprivation_Lambeth_LSOAs.csv"),collapse = ''))
 
 
 reCalcValues <- function(df){
@@ -73,19 +82,24 @@ LA <- reCalcValues(LA)
 Ward <- reCalcValues(Ward)
 LSOA <- reCalcValues(LSOA)
 
-head(LA)
+#head(LA)
 
 # == Plot boroughs =====
 #import map geojsons
-wardmap = read_sf("map_files/new_lambeth_wards_wgs84_riverclipped_simple.geojson", layer="new_lambeth_wards_wgs84_riverclipped_simple")
-lsoamap = read_sf("map_files/Lambeth_2021_Lower_Super_Output_Areas_simple.geojson", layer="Lambeth_2021_Lower_Super_Output_Areas_simple")
-lamap = read_sf("map_files/LondonBoroughs_simple.geojson", layer="LondonBoroughs_simple")
-allmaps <- list(lsoamap, wardmap, lamap)
-lsoamap
+
+# lsoamap is too precise for the purpose of State of the Borough
+
+wardmap = read_sf(paste(c(dir_stub, "../data/Map/new_lambeth_wards_wgs84_riverclipped_simple.geojson"),collapse = '')) %>% arrange(.$WARD_NAME)
+#lsoamap = read_sf(paste(c(dir_stub, "../data/Map/Lambeth_2021_Lower_Super_Output_Areas.geojson"),collapse = ''), layer="Lambeth_2021_Lower_Super_Output_Areas")
+lamap = read_sf(paste(c(dir_stub, "../data/Map/LondonBoroughs_simple.geojson"),collapse = ''), layer="LondonBoroughs_simple") %>% arrange(.$NAME)
+allmaps <- list( wardmap, lamap) #lsoamap,
+
+#lsoamap
+
 wardmap
 lamap
 
-alldata <- list(LSOA, Ward, LA)
+alldata <- list(Ward, LA) # LSOA, 
 
 variablenames<- c("Does not apply",
                   "Household is not deprived in any dimension",
@@ -94,12 +108,12 @@ variablenames<- c("Does not apply",
                   "Household is deprived in three dimensions",
                   "Household is deprived in four dimensions")
 LA
-totallist = vector('list', 3)
-area <- c("london-borough", "lambeth-wards", "lambeth-lower-super-output-areas-lsoas")
+totallist = vector('list', 2)#3)
+area <- c("london-borough", "lambeth-wards")#, "lambeth-lower-super-output-areas-lsoas")
 
-for (i in c(1:3)) { #lsoa, ward, la
+for (i in c(1:2)) {# 3)) { #lsoa, ward, la
   
-  if (i == 3) {
+  if (i == 2) {
     map<-leaflet(data = allmaps[[i]], options = leafletOptions(minZoom = 9.3)) %>% 
       addProviderTiles("CartoDB.Positron") %>% 
       setView(-0.116, 51.46, zoom = 9.3) %>% 
@@ -117,13 +131,17 @@ for (i in c(1:3)) { #lsoa, ward, la
   for (j in variablenames) {
     grouped <- alldata[[i]] %>% filter(HouseholdDeprivation == j)
     if (i == 1) {
-      popup <- paste0("<strong>LSOA:  </strong>", allmaps[[i]]$LSOA21NM,
-                      "<br><strong>Percentage of Households:  </strong>", grouped$`Percentage of Households`)
-    }
-    else if (i == 2) {
       popup <- paste0("<strong>Ward:  </strong>", allmaps[[i]]$WARD_NAME,
                       "<br><strong>Percentage of Households:  </strong>", grouped$`Percentage of Households`)
     }
+    ##if (i == 1) {
+     # popup <- paste0("<strong>LSOA:  </strong>", allmaps[[i]]$LSOA21NM,
+     #                 "<br><strong>Percentage of Households:  </strong>", grouped$`Percentage of Households`)
+    #}
+    #else if (i == 2) {
+    #  popup <- paste0("<strong>Ward:  </strong>", allmaps[[i]]$WARD_NAME,
+    #                  "<br><strong>Percentage of Households:  </strong>", grouped$`Percentage of Households`)
+    #}
     else {
       popup <- paste0("<strong>Local Authority:  </strong>", allmaps[[i]]$NAME,
                       "<br><strong>Percentage of Households:  </strong>", grouped$`Percentage of Households`)
@@ -155,7 +173,7 @@ for (i in c(1:3)) { #lsoa, ward, la
       #overlayGroups = c(variablenames), 
       options = layersControlOptions(collapsed = F))  %>%
     hideGroup(group=variablenames[-1]) 
-   if(i == 3) {
+   if(i == 2){#3) {
     map_mark <- map_mark %>% 
       htmlwidgets::onRender(jquery)
    } 
@@ -164,4 +182,5 @@ for (i in c(1:3)) { #lsoa, ward, la
   
 }
 
-#totallist[[1]]
+totallist[[1]]
+
