@@ -106,10 +106,9 @@ ref_name = "Introduction"
 
 Title: State of the Borough 2023\
 Purpose: Summary of information about Lambeth\
-Approved by: Approval pending\
+Approved by: Corporate Management Board\
 Date: April 2023\
-Status: Draft\
-Implementation date: Immediate\
+Status: Final\
 Review frequency: Refresh every 1 year\
 Next review date: April 2024
 
