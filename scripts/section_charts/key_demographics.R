@@ -370,9 +370,12 @@ pull_tables <- function(path, start_row, area_name = NULL){
 
   # cut table at first blank row
   df <- df[1:which(is.na(df[,2]))[1]-1,]
+  df <- df[Age != "Total: All usual residents"]
 
   # Remove . from columns
   names(df) = gsub("\\.", " ", names(df))
+  
+  print(df)
 
   # Make columns with numbers numeric
   df[, `All persons` := as.numeric(`All persons`)]
@@ -428,23 +431,25 @@ lam <- pull_tables(file_path, 9, "Lambeth")
 eng <- pull_tables(file_path, 35, "England")
 lon <- pull_tables(file_path, 61, "London")
 
+lam$`All persons`/sum(lam$`All persons`)
+
 # combine the three tables
-comb <- rbind(lam, eng, lon)
+comb_age <- rbind(lam, eng, lon)
 
 # Make Area name an ordered factor Lambeth, London, England
-comb[, `Area name` := ordered(`Area name`, levels = c("Lambeth", "London", "England"))]
+comb_age[, `Area name` := ordered(`Area name`, levels = c("Lambeth", "London", "England"))]
 
 # Create column total all persons as sum of All persons by Area name
-comb[, `Total all persons` := sum(`All persons`, na.rm = T), by =.(`Area name`)]
+comb_age[, `Total all persons` := sum(`All persons`, na.rm = T), by =.(`Area name`)]
 
 # Create Percentage Female all persons as Percentage Female/Total all persons
-comb[, `Percentage female all persons` := round((Female / `Total all persons`) * 100, 1)]
-comb[, `Percentage male all persons` := round((Male / `Total all persons`) * 100, 1)]
+comb_age[, `Percentage female all persons` := round((Female / `Total all persons`) * 100, 1)]
+comb_age[, `Percentage male all persons` := round((Male / `Total all persons`) * 100, 1)]
 
 
 
 # Make a graph of population by Age group and Area name by Female/Male with ggplot2
-comb_graph <- ggplot(comb, aes(x = `Percentage female all persons`, y = `Area name`, fill = `Area name`,
+comb_graph <- ggplot(comb_age, aes(x = `Percentage female all persons`, y = `Area name`, fill = `Area name`,
 text= paste("Area name: ", `Area name`, "<br>",  "Age: ",
 `Age`, "<br>", 
  "Female population: ", prettyNum(`Female`,big.mark=",", preserve.width="none"), "<br>",
@@ -466,7 +471,7 @@ geom_col(position = position_dodge2(width = 0.9, reverse=TRUE)) +
   #strip.background = element_rect(color = "grey", size = 0.5)
   ) +
   #axis.text.x = element_text(angle = 45, hjust = 1)) +
-  scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), limits = rev(levels(comb$`Area name`))) +
+  scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), limits = rev(levels(comb_age$`Area name`))) +
   scale_x_continuous(labels = scales::comma, name = "Female population") +
   #coord_cartesian(ylim = c(0, 1)) +
   facet_grid(rows = vars(`Age`)) #+
@@ -478,7 +483,7 @@ geom_col(position = position_dodge2(width = 0.9, reverse=TRUE)) +
 
 
   # Make a graph of population by Age group and Area name by All persons with ggplot2
-comb_all_graph <- ggplot(comb, aes(x = `Percentage All persons`, y =`Area name` , fill = `Area name`,
+comb_all_graph <- ggplot(comb_age, aes(x = `Percentage All persons`, y =`Area name` , fill = `Area name`,
 text= paste("Area name: ", `Area name`, "<br>",  "Age: ",
 `Age`, "<br>", 
  "All persons population: ", prettyNum(`All persons`,big.mark=",", preserve.width="none"), "<br>",
@@ -491,7 +496,7 @@ geom_col(position = position_dodge2(width = 0.9, reverse = TRUE)) +
   theme(axis.title.y = element_blank(),
   legend.position="none") +
   #axis.text.x = element_text(angle = 45, hjust = 1)) +
-  scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), limits = rev(levels(comb$`Area name`))) +
+  scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), limits = rev(levels(comb_age$`Area name`))) +
   scale_x_continuous(labels = scales::comma, name = "Age group population (% of total population)") +
   #coord_cartesian(ylim = c(0, 1)) +
   facet_grid(rows = vars(`Age`)) #+

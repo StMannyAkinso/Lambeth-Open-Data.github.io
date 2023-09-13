@@ -377,7 +377,7 @@ ward_map_simple(map_df = wards_sf_j_sp_out_age, variable_name = descending_sort_
 ```{r}
 
 make_datatable(pop_cen_m_d_g, visual_name = ref_name) %>%
-  formatRound('Population', digits = 0)
+  formatRound('Population', digits = 0) #pop_cen_m_d_g,
 
 ```
 
@@ -385,7 +385,7 @@ make_datatable(pop_cen_m_d_g, visual_name = ref_name) %>%
 
 ```{r}
 
-make_datatable(comb, visual_name = ref_name) %>%
+make_datatable(comb_age, visual_name = ref_name) %>%
   formatRound(c("All persons", "Female", "Male"), digits = 0) %>%
   formatRound(c("Percentage Female", "Percentage Male", "Percentage All persons"), digits = 1)
 
