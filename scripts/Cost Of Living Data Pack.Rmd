@@ -30,7 +30,6 @@ source('data and charts.r')
 source('section_charts/key_demographics.r')
 source('section_charts/map_ward_key_demographics.r')
 source('section_charts/key_census_data.r')
-source('section_charts/Health.r')
 source('section_charts/jobs_earnings_business.r')
 source('section_charts/community.r')
 ```
@@ -115,32 +114,14 @@ ref_name="Deprivation"
 
 `r totallist[[1]]`
 
-### Deprivation components - ward level
+### Deprivation - data table
 
 ```{r}
 
-ggplotly(dep_comp_j_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
-                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
-
-```
-
-### Deprivation components - ward map
-
-```{r}
-
-ward_map_simple(map_df = ward_sf_j_sp_out_dep_comp, variable_name = descending_sort_vars_not_all_dep_comp, popup = welcome_popup_dep_comp)
-
-```
-
-### Deprivation components - data table
-
-```{r}
-
-make_datatable(dep_comp_j, visual_name = ref_name) #%>%
+make_datatable(deprivation, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
-
 
 # Deprivation components {data-navmenu="Deprivation map"}
 
@@ -150,20 +131,7 @@ ref_name="Deprivation components"
 
 ## Column {data-width="300"}
 
-### Commentary
-
-**`r ref_name`**
-
-```{r}
-commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
-
-print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
-
-```
-
-`r commentary`
-
-`r print_source`
+### Deprivation components
 
 ## Column {.tabset data-width="700"}
 
@@ -1181,5 +1149,24 @@ ggplotly(gen_graph, tooltip = c("text")) %>% layout(autosize = T, #margin = m,
 
 make_datatable(gen_d, visual_name = ref_name) %>%
   formatRound('Population', digits = 0)
+
+```
+
+# Data Sources {data-navmenu="Data Sources"}
+
+```{r echo=FALSE}
+ref_name="Data Sources"
+```
+
+
+## Column {.tabset data-width="700"}
+
+### Data Sources
+
+```{r}
+sources <- read.xlsx("Data sources.xlsx", startRow = 1) %>% as.data.table()
+
+make_datatable(sources, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
 
 ```
