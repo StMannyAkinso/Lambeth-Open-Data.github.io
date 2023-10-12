@@ -239,6 +239,15 @@ next_button()
 
 ## Column {.tabset data-width="700"}
 
+### `r ref_name` Before and After Housing Costs 2022
+
+```{r}
+
+ggplotly(child_li_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
 ### `r ref_name`
 
 ```{r}
@@ -265,7 +274,7 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending
 
 ```
 
-### Data table
+### Data table - Ward level
 
 ```{r}
 
