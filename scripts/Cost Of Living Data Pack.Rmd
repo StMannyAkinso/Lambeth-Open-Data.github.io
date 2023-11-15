@@ -274,6 +274,15 @@ ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending
 
 ```
 
+### Data table - BHC and AHC
+
+```{r}
+
+make_datatable(child_compare_time_BA, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
 ### Data table - Ward level
 
 ```{r}
@@ -450,7 +459,7 @@ make_datatable(surv_sat_f_cost, visual_name = ref_name) #%>%
 
 ```
 
-# Unemployment benefit claimants {data-navmenu="Unemployment"}
+# Unemployment benefit claimants {data-navmenu="Work"}
 
 ```{r echo=FALSE}
 ref_name="Unemployment benefit claimants"
@@ -531,7 +540,7 @@ make_datatable(claim_all_ages, visual_name=ref_name, data_link_col = "Summary da
 
 ```
 
-# Unemployment by sex and ethnicity {data-navmenu="Unemployment"}
+# Unemployment by sex and ethnicity {data-navmenu="Work"}
 
 ```{r echo=FALSE}
 ref_name="Unemployment by sex and ethnicity"
@@ -586,6 +595,55 @@ ggplotly(unemp_m_comparison_disparity_graph, tooltip = c("text")) %>% layout(aut
 make_datatable(unemp_m_latest_refined_m_disp, visual_name=ref_name)
 
 ```
+
+# Low Income {data-navmenu="Work"}
+
+```{r echo=FALSE}
+ref_name="Low Income"
+```
+
+## Column {data-width="300"}
+
+### Commentary
+
+**`r ref_name`**
+
+```{r}
+commentary <- as.character(data_sources[`Visual short name` == ref_name, `Page commentary`])
+
+print_source <- get_source(data_sources_f = data_sources, ref_name_f = ref_name)
+
+```
+
+`r commentary`
+
+`r print_source`
+
+```{r}
+previous_button()
+next_button()
+```
+
+## Column {.tabset data-width="700"}
+
+### Living Below Living Wage by Area
+
+```{r}
+
+ggplotly(lowpay2022_graph, tooltip = c("text")) %>% layout(autosize = T, # margin = m,
+                                                                 font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+
+### Data table
+
+```{r}
+
+make_datatable(lowpay2022all, visual_name=ref_name)
+
+```
+
 
 # Population {data-navmenu="Key demographics"}
 
