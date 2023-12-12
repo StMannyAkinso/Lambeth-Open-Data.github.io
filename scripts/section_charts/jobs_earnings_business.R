@@ -2,8 +2,10 @@
 
 require(ggplot2)
 require(plotly)
+require(dplyr)
 require(data.table)
 require(rstudioapi)
+require(tidyverse)
 #require(xlsx)
 #library(readxl)
 library(openxlsx)
@@ -1722,7 +1724,13 @@ child_li <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/children-in
                       sheet = "3_Relative_Local_Authority", startRow = 10) %>% as.data.table()
 
 child_li_reg <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/children-in-low-income-families-local-area-statistics-2014-to-2022.xlsx"),collapse = ''),
-                      sheet = "1_Relative_Gov_Office_Region", startRow = 10) %>% as.data.table()
+                          sheet = "1_Relative_Gov_Office_Region", startRow = 10) %>% as.data.table()
+
+child_li_AFC <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/Child-Poverty-AHC-estimates-2015-2022_final.xlsx"),collapse = ''),
+                          sheet = "Local Authority", startRow = 1) %>% as.data.table()
+
+child_li_reg_AFC <- read.xlsx(paste(c(dir_stub, "../data/Financial stability/Child-Poverty-AHC-estimates-2015-2022_final.xlsx"),collapse = ''),
+                              sheet = "Country & Region", rows = 2:7) %>% as.data.table()
 
 read_child_li <- function(child_li, cols = c("Local Authority [note 2]",  "Area Code",
                                              "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]"), latest_year="2022") {
@@ -1730,7 +1738,7 @@ read_child_li <- function(child_li, cols = c("Local Authority [note 2]",  "Area 
   # Replace . in column names with " "
   names(child_li) = gsub("\\.", " ", names(child_li))
   
-
+  
   
   child_li_df <- child_li[, ..cols]
   
@@ -1738,7 +1746,7 @@ read_child_li <- function(child_li, cols = c("Local Authority [note 2]",  "Area 
   
   child_li_df <- child_li_df[,`:=`(`Percentage of children in low income households (%)` = as.numeric(`Percentage of children in low income households (%)`),
                                    `Number of children in low income households` = as.numeric(`Number of children in low income households`)
-                                   )]
+  )]
   
   child_li_df_lam <- child_li_df[Area=="Lambeth"]
   child_li_df_lam <- child_li_df_lam[,`Area Code` := NULL]
@@ -1791,13 +1799,42 @@ read_child_li <- function(child_li, cols = c("Local Authority [note 2]",  "Area 
 }
 
 child_li_df_comb <- read_child_li(child_li)
+child_li_df_comb
+
+
+child_li_reg_AFC
+colnames(child_li_reg_AFC)[1] ="Region"
+child_li_reg_AFC <- subset(child_li_reg_AFC, select = -c(2:9))
+child_li_reg_AFC_filtered<-child_li_reg_AFC %>% filter(grepl('UK|London', Region)) %>% select(c(1,5:9))
+child_li_reg_AFC_filtered$Region<- c('UK','London')
+
+
+child_li_AFC_filtered <- subset(child_li_AFC, select = -c(4:14))
+colnames(child_li_AFC_filtered)[4:8] <- c('2017/18','2018/19','2019/20','2020/21','2021/22')
+child_li_AFC_filtered <- child_li_AFC_filtered[-1,]
+child_li_AFC_filtered <- child_li_AFC_filtered %>% filter(Local.authority=='Lambeth')
+
+child_compare_2022 <- child_li_df_comb[,2:3]
+child_compare_2022$PovType <- 'BHC'
+
+newdf<- child_li_reg_AFC_filtered[1:2, c(6,1)]
+newdf2<- child_li_AFC_filtered[1, c(8,2)]
+colnames(newdf2)[2] = 'Region'
+newdf<- rbind(newdf,newdf2)
+colnames(newdf) = c('Percentage of children in low income households (%)','Area')
+newdf$`Percentage of children in low income households (%)`<-round(as.numeric(newdf$`Percentage of children in low income households (%)`)*100,1) 
+newdf$PovType <- 'AHC'
+
+child_compare_2022<-rbind(child_compare_2022, newdf)
+child_compare_2022[4,2]<-'United Kingdom'
+child_compare_2022$PovType<- relevel(as.factor(child_compare_2022$PovType),'BHC')
 
 # Present on a ggplotly graph
-child_li_comparison_graph = ggplot(child_li_df_comb, aes(x = Area, y = `Percentage of children in low income households (%)`, 
-                                                         fill = Area,
-                                                         text= paste("Area: ", Area, "<br>",
-                                                                     "Year: ", Year, "<br>",
-                                                                     "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
+child_li_comparison_graph = ggplot(child_compare_2022, aes(x = Area, y = `Percentage of children in low income households (%)`, 
+                                                           fill = PovType,
+                                                           text= paste("Area: ", Area, "<br>",
+                                                                       "Poverty Type: ", PovType, "<br>",
+                                                                       "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
   geom_col(position = position_dodge(width = 0.9)) +
   scale_fill_discrete(type=lambeth_palette_graph) +
   theme_lam() +
@@ -1812,7 +1849,7 @@ child_li_comparison_graph
 
 
 read_child_li_time <- function(child_li, cols = c("Local Authority [note 2]",  "Area Code",
-                                             "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]"), latest_year="2022") {
+                                                  "Number of children FYE 2022 [p]", "Percentage of children FYE 2022 (%) [p] [note 3]"), latest_year="2022") {
   
   # Replace . in column names with " "
   names(child_li) = gsub("\\.", " ", names(child_li))
@@ -1864,7 +1901,7 @@ read_child_li_time <- function(child_li, cols = c("Local Authority [note 2]",  "
   child_li_df_eng[, Area := gsub("United Kingdom [note 4]", "United Kingdom", Area, fixed=T)]
   
   #child_li_df_eng_g <- child_li_df_eng[,.(`Number of children in low income households` = sum(`Number of children in low income households`),
- #                                         `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
+  #                                         `Percentage of children in low income households (%)` = mean(`Percentage of children in low income households (%)`), 
   #                                        Area = "United Kingdom"), by = .(Variable)]
   
   # Combine
@@ -1881,16 +1918,38 @@ read_child_li_time <- function(child_li, cols = c("Local Authority [note 2]",  "
 }
 
 child_li_df_comb_time <- read_child_li_time(child_li)
+child_li_df_comb_time <- child_li_df_comb_time %>% filter(Area != 'United Kingdom') %>%
+  select(-2)
+melted <- melt(child_li_AFC_filtered, variable.name = 'Year', value.name='Percentage of children in low income households (%)', id = 'Local.authority')
+melted <- melted[-c(1:2,8)]
+melted$`Percentage of children in low income households (%)`<-round(as.numeric(melted$`Percentage of children in low income households (%)`)*100,1)
+colnames(melted)[1]<-'Area'
+meltedreg <- melt(child_li_reg_AFC_filtered, variable.name = 'Year', value.name='Percentage of children in low income households (%)', id = 'Region')
+meltedreg$`Percentage of children in low income households (%)`<-round(meltedreg$`Percentage of children in low income households (%)`*100,1)
+colnames(meltedreg)[1]<-'Area'
+child_compare_time <- rbind(melted, meltedreg)
+child_compare_time <- child_compare_time %>% filter(Area != 'UK')
+child_compare_time$Year <- c('2018','2019','2020','2021','2022','2018','2019','2020','2021','2022')
+child_compare_time <- child_compare_time[, c(1,3,2)]
+child_compare_time$PovType <- 'AHC'
+child_li_df_comb_time<-subset(child_li_df_comb_time, select = c(1,3,4))
+child_li_df_comb_time$PovType <- 'BHC'
+child_compare_time_BA <- rbind(child_li_df_comb_time, child_compare_time)
+child_compare_time_BA <- child_compare_time_BA%>%filter(Year %in% c(2018:2022))
+child_compare_time_BA$PovType <- relevel(as.factor(child_compare_time_BA$PovType), 'BHC')
+
 
 # Present on a ggplotly graph
-child_li_comparison_graph_time = ggplot(child_li_df_comb_time, aes(x = Year, y = `Percentage of children in low income households (%)`, 
-                                                         colour = Area, group = Area,
-                                                         text= paste("Area: ", Area, "<br>",
-                                                                     "Year: ", Year, "<br>",
-                                                                     "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
-  geom_line()+#position = position_dodge(width = 0.9)) +
+child_li_comparison_graph_time = ggplot(child_compare_time_BA, aes(x = Year, y = `Percentage of children in low income households (%)`, 
+                                                                   colour = Area, group = PovType,
+                                                                   text= paste("Area: ", Area, "<br>",
+                                                                               "Year: ", Year, "<br>",
+                                                                               'Poverty Type: ', PovType, "<br>",
+                                                                               "Percentage of children in low income households (%): ", `Percentage of children in low income households (%)`, sep = ""))) +
+  geom_line(aes(linetype=PovType))+#position = position_dodge(width = 0.9)) +
   geom_point()+
-  scale_colour_discrete(type=lambeth_palette_graph) +
+  scale_colour_discrete(type=lambeth_palette_graph, labels= c('Lambeth AHC','Lambeth BHC',
+                                                              'London AHC', 'London BHC')) +
   theme_lam() +
   theme(axis.title.x = element_blank()) +
   ylab("Percentage of children in low income households (%)") +

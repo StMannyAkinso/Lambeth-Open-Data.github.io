@@ -202,7 +202,6 @@ pop_tot[, Population := as.numeric(Population)]
 
 
 # Overall crime rate ----------------------------------------
-require(data.table)
 
 # Load data
 crime <- fread(paste(c(dir_stub, '../data/Crime safety/Crime incidents/MPS_BoroughSNT_TNOCrimeDatafy21-22.csv'), collapse = '')) %>% data.table()
