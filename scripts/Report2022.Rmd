@@ -19,6 +19,7 @@ library(plotly)
 library(DT)
 library(shiny)
 library(magrittr)
+library(htmltools)
 
 run_direct = F
 
@@ -1625,20 +1626,55 @@ next_button()
 
 ## Column {.tabset data-width="700"}
 
-### `r ref_name`
+### `r ref_name` Before and After Housing Costs 2022
 
 ```{r}
 
-ggplotly(ChildrenRelLowIncome_plot, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+ggplotly(child_li_comparison_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
                                                              font=lam_ggplotly_font, hovermode='closest') # , height = 500
 
 ```
 
-### Data table
+### `r ref_name`
 
 ```{r}
 
-make_datatable(ChildrenRelLowIncome, visual_name = ref_name) #%>%
+ggplotly(child_li_comparison_graph_time, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` - ward level
+
+```{r}
+
+ggplotly(child_li_wd_df_lam_graph, tooltip = c("text")) %>% layout(autosize = T, margin = m,
+                                                             font=lam_ggplotly_font, hovermode='closest') # , height = 500
+
+```
+
+### `r ref_name` - map
+
+```{r}
+
+ward_map_simple(map_df = wards_sf_old_j_sp_out_child, variable_name = descending_sort_vars_not_all_child, popup = welcome_popup_child)
+
+```
+
+### Data table - BHC and AHC
+
+```{r}
+
+make_datatable(child_compare_time_BA, visual_name = ref_name) #%>%
+  #formatRound('Population', digits = 0)
+
+```
+
+### Data table - Ward level
+
+```{r}
+
+make_datatable(child_li_wd_df_lam, visual_name = ref_name) #%>%
   #formatRound('Population', digits = 0)
 
 ```
