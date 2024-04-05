@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Data Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+        .chart {
+            display: inline-block;
+            vertical-align: top; /* Align tops of SVGs if they have different heights */
+            margin-right: 20px;
+        }
+        text.title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="visualization"></div>
+<div id="tooltip" style="position: absolute; opacity: 0; background: #fff; border: 1px solid #000; padding: 10px; pointer-events: none;"></div>
+    <style>
+        #tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+    </style>
+
+<script>
+d3.json('survey_data.json').then(function(data) {
+    const margin = {top: 60, right: 20, bottom: 100, left: 40}, // Increased bottom margin
+          width = 200 - margin.left - margin.right,
+          height = 400 - margin.top - margin.bottom; // Increased height for labels
+
+    // Group data by question
+    const questions = Array.from(new Set(data.map(d => d.Question)));
+
+    questions.forEach((question, qIndex) => {
+        // Filter data for this question
+        const questionData = data.filter(d => d.Question === question);
+
+        // Create an SVG for each question
+        const svg = d3.select("#visualization").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom + 60)
+            .attr("class", "chart")
+          .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Function to split title into two lines if necessary
+        function splitTextIntoLines(title, maxLength) {
+            const words = title.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 <= maxLength) {
+                    // Add word to current line if it fits
+                    currentLine += " " + words[i];
+                } else {
+                    // Otherwise, start a new line and add the word there
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            // Add the last line
+            lines.push(currentLine);
+
+            return lines;
+        }
+        // Apply the splitTitle function
+        const titleLines = splitTextIntoLines(question, 50);
+        titleLines.forEach((line, index) => {
+            // Title for each question
+            svg.append("text")
+                .attr("x", width / 2)             
+                .attr("y", -40 + (index * 15))
+                .attr("text-anchor", "middle")  
+                .style("font-size", "8px")  
+                .text(line)
+                .attr("class", "title");
+            });
+        
+
+        // X Scale
+        const x = d3.scaleBand()
+            .range([0, width])
+            .domain(questionData.map(d => d.Response))
+            .padding(0.1);
+
+        // X-axis and rotate labels
+        svg.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+              .style("text-anchor", "end")
+              .attr("dx", "-.8em")
+              .attr("dy", ".15em")
+              .attr("transform", "rotate(-65)");
+
+        // Y Scale
+        const y = d3.scaleLinear()
+            .domain([0, d3.max(questionData, d => d['Percentage of respondents'])])
+            .range([height, 0]);
+
+        svg.append("g")
+          .call(d3.axisLeft(y));
+
+        // Bars
+        svg.selectAll(".bar")
+            .data(questionData)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", d => x(d.Response))
+            .attr("width", x.bandwidth())
+            .attr("y", d => y(d['Percentage of respondents']))
+            .attr("height", d => height - y(d['Percentage of respondents']))
+            .on("mouseover", function(event, d) {
+            d3.select("#tooltip")
+                .style("opacity", 1)
+                .html(`Response: ${d.Response}<br>Percentage: ${d['Percentage of respondents']}%`) // Customize tooltip content here
+                .style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mousemove", function(event) {
+                d3.select("#tooltip")
+                    .style("left", (event.pageX + 5) + "px")
+                    .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mouseout", function() {
+                d3.select("#tooltip").style("opacity", 0);
+            });
+        
+    });
+});
+</script>
+</body>
+</html>
