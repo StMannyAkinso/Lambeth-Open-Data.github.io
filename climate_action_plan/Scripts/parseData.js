@@ -351,8 +351,8 @@ function wrapText(text, maxLength) {
 
 // Main function to load data and initialize the dashboard
 async function initializeDashboard() {
-  const chartsDataPath = "/Data/Content/Charts-Database.csv";
-  const sectorsDataPath = "/Data/Content/Sector-Database.csv";
+  const chartsDataPath = "Data/Content/Charts-Database.csv";
+  const sectorsDataPath = "Data/Content/Sector-Database.csv";
 
   try {
     // Load CSV data
