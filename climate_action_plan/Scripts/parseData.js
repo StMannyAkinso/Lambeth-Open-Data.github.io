@@ -99,7 +99,7 @@ async function displayChartsForSector(sectorId, sectorsMap, chartsMap) {
 
   if (chartsMap[sectorId]) {
     for (const chart of chartsMap[sectorId]) {
-      const csvFilePath = `/Data/CSV Files/${encodeURIComponent(
+      const csvFilePath = `Data/CSV Files/${encodeURIComponent(
         chart["CSV-File"]
       )}`;
       const xAxis = chart["X-Axis"];
