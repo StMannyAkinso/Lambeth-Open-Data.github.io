@@ -1,0 +1,14 @@
+header {
+  height: 7vh;
+  width: 100%;
+  border: solid 1px lightgray;
+  align-items: center;
+}
+.search-container {
+  margin-right: 30px;
+}
+
+.logo {
+  max-height: 5vh;
+  margin-left: 20px;
+}

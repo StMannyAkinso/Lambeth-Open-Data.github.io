@@ -1,0 +1,35 @@
+.sideMenu {
+  border: solid 1px lightgray;
+}
+.mainSection {
+  width: 100%;
+  padding: 20px;
+  overflow-y: hidden;
+}
+.charts-container {
+  overflow-y: scroll;
+}
+.chart-container {
+  border: gray solid 1px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 400px;
+  margin: 25px;
+  box-shadow: 0px 5px 20px 0px lightgray;
+  overflow-x: visible;
+}
+.chart-info {
+  padding: 20px;
+  background-color: white;
+  width: 85%;
+  height: 85%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.sector-details {
+  max-width: 30vw;
+}

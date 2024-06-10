@@ -1,0 +1,12 @@
+p,
+h1,
+h2 {
+  font-family: sans-serif;
+}
+#homePageContent p {
+  line-height: 30px;
+}
+#homePageContent h1 {
+  font-size: 4em;
+  font-weight: 900;
+}

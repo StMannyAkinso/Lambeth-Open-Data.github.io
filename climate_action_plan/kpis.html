@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Zero Dashboard</title>
+    <link
+      rel="icon"
+      href="Images/climate-action-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/sections.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/elements.css" />
+  </head>
+  <body>
+    <header class="header flex space-between">
+      <a href="https://uat.lambethclimatepartnership.org/"
+        ><img src="Images/lambeth-logo.png" class="logo" alt="lambeth-logo"
+      /></a>
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search..." />
+        <i class="fa fa-search search-icon"></i>
+      </div>
+    </header>
+    <main class="flex">
+      <div class="sideMenu">
+        <ul id="sectorMenu">
+          <li>
+            <!-- Change the href attribute to point to your homepage -->
+            <a href="#" id="homeButton"><i class="fa fa-home"></i> Home</a>
+          </li>
+        </ul>
+      </div>
+      <section id="mainSection" class="flex mainSection">
+        <div id="homePageContent" style="width: 100%">
+          <div class="flex">
+            <div>
+              <!-- Your homepage content goes here -->
+              <h1>Welcome to Net Zero Dashboard</h1>
+              <p>
+                The impacts of the climate crisis are already being felt in our
+                borough with increased flood risk, poor air quality and extreme
+                weather events. Together we can turn the tide to build a more
+                sustainable and just future for Lambeth.
+              </p>
+              <p>
+                The Lambeth Climate Partnership is a growing network of
+                businesses, organisations, communities, and schools committed to
+                delivering Lambeth's Climate Action Plan and working together to
+                tackle the climate and ecological emergency.
+              </p>
+            </div>
+            <img
+              src="Images/hope-nz-2030.png"
+              alt=""
+              style="max-height: 80vh"
+            />
+          </div>
+        </div>
+        <div id="chartsContainer" class="charts-container flex-w"></div>
+      </section>
+    </main>
+    <script src="Scripts/data.js"></script>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/chart.js"></script>
+    <script src="Scripts/main.js"></script>
+    <footer class="flex space-between align-center">
+      <p>&copy; Lambeth Council 2024. All rights reserved.</p>
+      <p>Designed by <a href="">Smyrna Design</a></p>
+    </footer>
+  </body>
+</html>
