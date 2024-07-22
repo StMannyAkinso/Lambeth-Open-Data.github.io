@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Zero Dashboard - Sector</title>
+    <link
+      rel="icon"
+      href="images/climate-action-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/sections.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/elements.css" />
+    <link rel="stylesheet" href="Styles/menu.css" />
+
+    <style>
+      .chart {
+        position: relative;
+        border: gray solid 1px;
+        border-radius: 10px;
+        margin: 25px;
+        padding: 20px;
+        box-shadow: 0px 5px 20px 0px lightgray;
+        width: 400px;
+      }
+      .y {
+        border: #e60000 2px solid;
+      }
+      .chart-meta {
+        width: 400px;
+      }
+      .chart-meta p {
+        line-height: 15px;
+        font-size: smaller;
+      }
+      #sectorInfo {
+        overflow-y: scroll;
+        max-width: 40%;
+      }
+      h4,
+      h3,
+      h2,
+      strong,
+      .line {
+        font-family: sans-serif;
+        color: var(
+          --sectorColour,
+          black
+        ); /* Default to black if the variable is not set */
+      }
+      li {
+        font-family: sans-serif;
+        font-size: small;
+      }
+      .goal {
+        border-bottom: 1px solid gray;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .goal h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      .fa-plus {
+        font-size: large;
+        color: var(--sectorColour, black);
+      }
+      #goalsButton {
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgba(211, 211, 211, 0.37);
+        width: 100%;
+        transition: all ease-in 0.3s;
+      }
+      #goalsButton:hover {
+        background-color: lightgray;
+      }
+      .toggle-content {
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .toggle-content.visible {
+        opacity: 1;
+        height: auto; /* Adjusts the height automatically based on the content */
+      }
+      .chart h3 {
+        text-align: center;
+      }
+      .chart h5 {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      #target-img {
+        height: 1.5em;
+        width: 1.5em;
+        margin-left: 5px;
+      }
+      .target-container {
+        cursor: pointer;
+        padding: 3px;
+        background-color: rgba(211, 211, 211, 0.37);
+        border-left: 1px solid gray;
+        border-bottom: 1px solid gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      a {
+        word-break: break-all; /* Break words as needed to prevent overflow */
+        overflow-wrap: break-word; /* Allows breaking at word boundaries */
+        white-space: normal; /* Allow normal text wrapping */
+        text-decoration: underline;
+        color: black;
+      }
+      .coverageBtn {
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: rgba(211, 211, 211, 0.37);
+        transition: ease-in all 0.2s;
+      }
+      .coverageBtn:hover {
+        background-color: lightgray;
+      }
+      .hidden {
+        display: none;
+      }
+      @media (min-width: 1300px) {
+        #sectorDescription {
+          font-size: x-large;
+          line-height: 2;
+        }
+        .chart {
+          width: 350px;
+        }
+        .chart-meta {
+          width: 300px;
+        }
+        svg {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header flex space-between"></header>
+    <main class="flex">
+      <div class="sideMenu"></div>
+      <section id="mainSection" class="flex mainSection">
+        <div id="sectorInfo">
+          <div class="flex align-center">
+            <img
+              id="sectorImage"
+              src=""
+              alt="Sector Image"
+              style="width: 100px; height: 100px; margin-right: 10px"
+            />
+            <h2 id="sectorName">Sector Name</h2>
+          </div>
+          <p id="sectorDescription">Sector Description</p>
+          <ul id="sectorGoals">
+            Sector Goals
+          </ul>
+        </div>
+        <div style="width: 100%; overflow-y: scroll">
+          <div class="flex centred">
+            <a id="coverageBtn" href="coverage.html"
+              ><button class="coverageBtn">Tree Canopy Coverage</button></a
+            >
+          </div>
+          <div id="chartsContainer" class="charts-container flex-w"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex space-between align-center"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+      function toggleVisibility(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+          element.classList.toggle("visible");
+        }
+      }
+    </script>
+    <script>
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var id = getUrlParameter("id");
+        var coverageBtn = document.getElementById("coverageBtn");
+        if (id !== "1") {
+          coverageBtn.classList.add("hidden");
+        }
+      });
+    </script>
+
+    <script type="module" src="js/sector.js"></script>
+  </body>
+</html>

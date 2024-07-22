@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Zero Dashboard - Sector</title>
+    <link
+      rel="icon"
+      href="images/climate-action-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/sections.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/elements.css" />
+    <link rel="stylesheet" href="Styles/menu.css" />
+
+    <style>
+      .chart {
+        border: gray solid 1px;
+        border-radius: 10px;
+        margin: 25px;
+        padding: 20px;
+        box-shadow: 0px 5px 20px 0px lightgray;
+        width: 400px;
+      }
+      .chart-meta {
+        width: 400px;
+      }
+      .chart-meta p {
+        line-height: 15px;
+        font-size: smaller;
+      }
+      #sectorInfo {
+        overflow-y: scroll;
+        max-width: 40%;
+      }
+      h4,
+      h3,
+      h2,
+      strong,
+      .line {
+        font-family: sans-serif;
+        color: #7851a9; /* Default to black if the variable is not set */
+      }
+      .line {
+        stroke: #7851a9; /* Line color */
+        stroke-width: 2; /* Line width */
+        fill: none; /* Lines typically do not have a fill */
+      }
+      .circle {
+        fill: #7851a9; /* Set the fill color of the circles */
+        stroke: #ffffff; /* Set the stroke color (border) of the circles */
+        stroke-width: 1; /* Set the width of the stroke */
+      }
+      li {
+        font-family: sans-serif;
+        font-size: small;
+      }
+
+      .chart h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header flex space-between"></header>
+    <main class="flex">
+      <div class="sideMenu"></div>
+      <section id="mainSection" class="flex mainSection centred">
+        <div id="chartsContainer" class="charts-container flex-w"></div>
+      </section>
+    </main>
+    <footer class="flex space-between align-center"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+      function toggleVisibility(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+          element.classList.toggle("visible");
+        }
+      }
+    </script>
+
+    <script type="module" src="js/sector.js"></script>
+  </body>
+</html>

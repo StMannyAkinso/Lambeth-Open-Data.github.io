@@ -1,0 +1,14 @@
+p,
+h1,
+h2 {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 900;
+}
+p {
+  line-height: 30px;
+}

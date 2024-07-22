@@ -1,0 +1,44 @@
+.sideMenu li {
+  cursor: pointer;
+  text-wrap: nowrap;
+
+  border-radius: 15px;
+  font-size: small;
+  padding: 10px;
+}
+.sideMenu a {
+  text-decoration: none;
+  margin: 3px;
+}
+/* CSS file */
+
+/* Default styles for menu items */
+.sideMenu ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(211, 211, 211, 0.37); /* Default background color */
+  color: black; /* Default text color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.sideMenu ul li a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from li */
+}
+.sideMenu p {
+  line-height: normal;
+}
+
+/* Hover effect */
+.sideMenu ul li:hover {
+  background-color: var(
+    --sector-color,
+    black
+  ); /* Use the color set by JavaScript */
+  color: white; /* Text color on hover */
+}
+
+.sideMenu p {
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(211, 211, 211, 0.32);
+}
+.sideMenu {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.mainSection {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  overflow-y: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.charts-container {
+  overflow-y: scroll;
+  width: 100%;
+}
+#sectorInfo::-webkit-scrollbar,
+.charts-container::-webkit-scrollbar {
+  display: none;
+}

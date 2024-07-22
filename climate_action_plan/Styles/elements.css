@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li a {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+main {
+  height: 88vh;
+}
+.chart-info::-webkit-scrollbar {
+  display: none;
+}

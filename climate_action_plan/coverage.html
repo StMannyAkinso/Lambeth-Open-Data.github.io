@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Coverage</title>
+    <link
+      rel="icon"
+      href="images/climate-action-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/sections.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/elements.css" />
+    <link rel="stylesheet" href="Styles/menu.css" />
+    <style>
+      #mainSection {
+        position: relative;
+      }
+      #breadcrumbButton {
+        position: absolute;
+        top: 0;
+        left: 5px;
+      }
+      #breadcrumb {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: ease-in all 0.3s;
+      }
+      #breadcrumb:hover {
+        transform: scale(1.1);
+      }
+      #breadcrumb p {
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      #map-info {
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 100%;
+      }
+      #map-info h2 {
+        margin-top: 0;
+      }
+      path {
+        stroke: #fff;
+        stroke-width: 0.5;
+      }
+
+      path:hover {
+        cursor: pointer;
+        stroke-width: 4;
+        stroke: gold;
+      }
+      #map-data {
+        width: 100%;
+        overflow-y: scroll;
+      }
+      #map-data li {
+        font-size: 0.75em;
+        border: 1px solid black;
+        padding: 5px;
+        white-space: nowrap;
+      }
+      select {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      h2 {
+        color: #238b45;
+      }
+      li {
+        cursor: pointer;
+        transition: ease-in all 0.1s;
+      }
+      li:hover {
+        color: white;
+      }
+
+      @media (min-width: 1300px) {
+        ul {
+          font-size: x-large;
+        }
+        #map-info {
+          padding: 100px;
+        }
+        #map-info h2 {
+          font-size: xx-large;
+        }
+        #map-info p {
+          font-size: x-large;
+          line-height: 2;
+        }
+        #map-data {
+          justify-content: center;
+        }
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <header class="header flex space-between"></header>
+    <main class="flex">
+      <div class="sideMenu"></div>
+      <section id="mainSection" class="mainSection flex space-between">
+        <a id="breadcrumbButton" href="sector.html?id=1"
+          ><button id="breadcrumb" class="flex centred">
+            <p>< Back to Adaptation</p>
+            <img
+              src="Images/Lambeth-CAP-Climate Goals Icons/PNGS/Adaptation-white.png"
+              alt=""
+              style="max-width: 2em"
+            /></button
+        ></a>
+        <div id="map" class="flex centred"></div>
+
+        <div id="map-info">
+          <h2>Increasing Canopy Cover</h2>
+          <p>
+            Canopy cover is the area of a tree's canopy when viewed from above.
+            The ecosystem benefits of an urban forest are proportional to the
+            size of its canopy cover; increasing canopy cover will help Lambeth
+            towards its climate goals. Lambeth's current canopy cover varies
+            significantly from ward to ward averaging 17% overall, but is not
+            distributed evenly or equitably.
+          </p>
+          <div>
+            <select id="" name="ward-data">
+              <option value="1" selected>Percentage tree cover by ward</option>
+              <option value="0">No more data</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="map-data" class="flex-c align-center"></div>
+      </section>
+    </main>
+    <footer class="flex space-between align-center"></footer>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/mapMain.js"></script>
+    <script type="module" src="js/displayCsvData.js"></script>
+    <script type="module" src="js/menu.js"></script>
+  </body>
+</html>

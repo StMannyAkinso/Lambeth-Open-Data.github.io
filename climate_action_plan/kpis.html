@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Zero Dashboard</title>
+    <link
+      rel="icon"
+      href="images/climate-action-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/sections.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/elements.css" />
+    <link rel="stylesheet" href="Styles/menu.css" />
+    <style>
+      h2 .mainSection {
+        padding: 0;
+      }
+      h2 {
+        text-align: center;
+      }
+      .mainSection {
+        padding: 0;
+      }
+      .box {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .box h3,
+      .box p {
+        color: white;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      .bck-blue {
+        background-color: #006699;
+      }
+      .bck-red {
+        background-color: #cc0033;
+      }
+      .bck-green {
+        background-color: #3f8628;
+      }
+      @media (min-width: 1300px) {
+        .box {
+          padding: 25px;
+        }
+        .box p {
+          font-size: x-large;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header flex space-between"></header>
+    <main class="flex">
+      <div class="sideMenu"></div>
+      <section id="mainSection" class="mainSection" style="position: relative">
+        <div
+          style="width: 100%; height: 35%; overflow: hidden; position: relative"
+        >
+          <img
+            src="Images/Streatham Common Woodland_DSC5907 Max A Rush_Magnus Andersson.jpg"
+            alt=""
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              background: rgba(0, 0, 0, 0.201);
+            "
+          >
+            <div style="width: 60%; text-align: center">
+              <h2>MONITORING OUR PROGRESS</h2>
+              <p>
+                Tracking Lambeth’s Climate Action Plan progress helps us
+                understand where we’re making positive strides, what is working,
+                and where we need to accelerate action.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2>
+          Lambeth’s Climate Partnership is tracking progress at three levels:
+        </h2>
+        <div class="flex">
+          <div class="box bck-green">
+            <h3>NET-ZERO TARGET</h3>
+            <p><strong>Metric:</strong> Overall reduction in emissions</p>
+            <p>
+              Annual monitoring on the borough emissions inventory, tracking
+              trends across sectors, and per capita emissions.
+            </p>
+          </div>
+          <div class="box bck-red">
+            <h3>GOALS</h3>
+            <p>
+              <strong>Metric:</strong>
+              Progress on Goals in Lambeth's Climate Action Plan
+            </p>
+            <p>
+              Tracking progress against the 20 goals and 5 climate themes –
+              where trend data is available and possible to visualise.
+            </p>
+          </div>
+          <div class="box bck-blue">
+            <h3>ACTION</h3>
+            <p>
+              <strong>Metric:</strong>
+              Progress on Actions in Lambeth's Climate Action Plan
+            </p>
+
+            <p>
+              Monitoring actions taken towards the goals, publishing an
+              assessment of progress, insights, and barriers.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex space-between align-center"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

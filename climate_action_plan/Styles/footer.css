@@ -1,0 +1,16 @@
+footer {
+  background-color: white;
+  height: 5vh;
+  border: solid 1px lightgray;
+  z-index: 10;
+}
+footer a {
+  text-decoration: none;
+  color: #917313;
+  font-style: italic;
+}
+
+footer p {
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,61 @@
+li button {
+  text-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+#homeButton {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  background-color: white;
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+#homeButton i {
+  margin-right: 5px;
+}
+#homeButton:hover {
+  background-color: #f0f0f0;
+}
+
+.sideMenu button:hover {
+  background-color: #f0f0f0;
+}
+
+.info-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#sectorMenu button {
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+#sectorMenu button.active {
+  background-color: var(--sector-color, transparent);
+  color: white;
+}
